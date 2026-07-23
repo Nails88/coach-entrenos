@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-07-17",
+  "patron": "Empuje — Pecho / Hombro anterior / Tríceps",
+  "entorno": "Gimnasio con máquinas",
+  "tiempo": "45 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff5a3c",
+  "intro": "Split Push/Pull/Legs, día 1. Trabajamos los tres grupos que empujan juntos porque comparten los mismos músculos secundarios (tríceps y deltoide anterior entran en casi todos los empujes), así no interferimos con la recuperación de espalda o pierna esta semana.",
+  "calentamiento": "2 min bici o remo suave · 10 círculos de brazos cada sentido · 10 flexiones de rodillas (bombeo escapular) · 1 serie ligera (empty bar) de press banca, 12 reps, para activar el patrón de empuje.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0025", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Túmbate en el banco, agarre pronado un poco más ancho que los hombros. Baja la barra controlada hasta el pecho con los codos pegados al cuerpo, pausa breve y empuja.", "nota": "es tu compuesto principal — prioriza técnica sobre carga, ve subiendo peso semana a semana." },
+        { "id": "0047", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Pecho superior", "Hombros"], "instruccion": "Banco a 45°. Baja la barra hacia el pecho alto manteniendo los codos a 45° del torso, pausa abajo y empuja a la posición inicial.", "nota": "trabaja la parte alta del pecho, que suele quedar rezagada en el press plano." },
+        { "id": "0396", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Hombros"], "instruccion": "Sentado, espalda recta, mancuernas a los lados. Levanta con ligera flexión de codo hasta paralelo al suelo, pausa arriba y baja controlado.", "nota": "sentado evitas el impulso de piernas/cadera — más aislamiento en el deltoide lateral." },
+        { "id": "0241", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Tríceps"], "instruccion": "De pie frente a la polea alta, codos pegados al cuerpo. Empuja el accesorio en V hacia abajo hasta extensión completa, aprieta y controla la vuelta.", "nota": "los codos no se mueven — si se abren, estás usando hombro en vez de tríceps." }
+      ]
+    },
+    {
+      "titulo": "⚡ Finisher",
+      "ejercicios": [
+        { "id": "0464", "series": "3", "tiempo": "30-40s", "descanso": "30s", "musculos": ["Oblicuos", "Core"], "instruccion": "Plancha alta, manos bajo hombros. Gira el torso llevando un brazo al techo, alternando lados, cadera estable.", "nota": "cierre metabólico corto — mantén el ritmo de respiración, no aguantes el aire." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de pecho en marco de puerta (30s/lado), estiramiento de tríceps sobre cabeza (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "primera sesión tras la vuelta — el foco de hoy es reconectar con el patrón de empuje, no batir marcas. Vienes de una base de CrossFit sólida, así que la técnica te va a salir rápido; usa esta sesión para sentir el peso, no para forzar. La próxima vez dime entorno, tiempo y energía y seguimos con el día de Tirón (Pull)."
+}

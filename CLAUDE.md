@@ -68,14 +68,39 @@ Cuando generes la rutina, además de describirla en el chat, monta la página HT
 
 ---
 
-## Base de datos de ejercicios (para el propio Claude)
+## Cómo generar la sesión (flujo rápido — para el propio Claude)
 
-- `exercises.json` en la raíz del proyecto: 1,324 ejercicios reales (dataset [hasaneyldrm/exercises-dataset](https://github.com/hasaneyldrm/exercises-dataset)). Úsalo siempre como fuente de verdad para nombres, músculos, equipo e instrucciones — no inventes ejercicios ni instrucciones.
-- Campos relevantes por ejercicio: `id`, `name`, `body_part`, `equipment`, `muscle_group`, `secondary_muscles`, `target`, `instructions.es` / `instruction_steps.es` (instrucciones ya traducidas), `image` (ruta relativa tipo `images/{id}-{media_id}.jpg`), `gif_url` (ruta relativa tipo `videos/{id}-{media_id}.gif`).
-- **No está clonado el repo completo** (pesa ~125MB en imágenes/GIFs). Para cada ejercicio que uses en una rutina, descarga solo su GIF/imagen bajo demanda desde:
-  `https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/<gif_url o image>`
-- Mapeo de equipment por entorno:
-  - **Gimnasio con máquinas:** `barbell`, `dumbbell`, `cable`, `leverage machine`, `smith machine`, `ez barbell`, `olympic barbell`, `trap bar`
-  - **Casa:** `body weight`, `band`, `resistance band`, `dumbbell` (si el usuario confirma que tiene), `stability ball`
-  - **Box de CrossFit:** `barbell`, `olympic barbell`, `kettlebell`, `medicine ball`, `rope`, `body weight`, `tire`, `sled machine`
-- Al generar la sesión de hoy: filtra por `body_part`/`muscle_group` según el split decidido y por `equipment` según el entorno, elige los ejercicios, descarga sus GIFs a una carpeta `sessions/<fecha>/media/`, y genera `sessions/<fecha>/index.html` con una tarjeta por ejercicio (GIF, nombre, grupo muscular, series/reps/descanso, instrucción breve en español). Abre esa página en el navegador para que el usuario la vea.
+El objetivo es **poca herramienta y pocos turnos** (importa en móvil). No sondees datasets grandes
+ni escribas HTML a mano. El flujo es:
+
+1. **Check-in**: entorno, tiempo, energía + qué se entrenó el último día (para decidir el split).
+2. **Decide el split** con las reglas de compatibilidad de más arriba.
+3. **Lee la guía del día**: `guia/<patron>-<entorno>.md` (p. ej. `guia/tiron-gym.md`). Son menús
+   curados cortos: elige 5-7 ejercicios (2-3 compuestos + 2-4 accesorios) por sus `id`.
+4. **Escribe la spec**: crea `sessions/<fecha>/sesion.json` con la meta de la sesión y los
+   ejercicios elegidos (ver esquema en `generar-sesion.js`). Redacta tú `intro`, `calentamiento`,
+   `nota` por ejercicio, `vuelta_calma` y `cierre` — ahí va la inteligencia de COACH.
+5. **Genera la página**: `node generar-sesion.js sessions/<fecha>/sesion.json`. El script completa
+   nombre, músculos, instrucciones y el GIF (URL remota) desde `catalogo.json` y escribe
+   `sessions/<fecha>/index.html`. Ábrela para que el usuario la vea.
+
+### Datos y ficheros
+- `catalogo.json` (raíz): **fuente de verdad**, 1.254 ejercicios reales de los 3 entornos (dataset
+  [hasaneyldrm/exercises-dataset](https://github.com/hasaneyldrm/exercises-dataset)), slim. Campos:
+  `id`, `name`, `body_part`, `equipment`, `muscle`, `secondary`, `target`, `gif`, `pasos_es`.
+  No inventes ejercicios ni instrucciones. **Para variar o buscar alternativas fuera de las guías,
+  consulta este catálogo** (`node -e` o grep) — las guías son solo un atajo, no un límite.
+- `guia/*.md`: menús cortos por patrón × entorno. Regenerables con `node construir-guias.js`.
+- `generar-sesion.js`: generador de la página (plantilla + CSS + traducción de músculos). Soporta
+  `reps` **o** `tiempo` por ejercicio, y `musculos` opcional para sobreescribir las etiquetas
+  cuando la etiqueta del dataset sea imprecisa (p. ej. un curl marcado como "forearms").
+- GIFs: **remotos** desde `https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/<gif>`.
+  No se descargan (la página necesita internet al abrirse; el móvil ya lo tiene).
+- `exercises.json` (17 MB, dataset completo con 10 idiomas): **no está en el repo** (`.gitignore`).
+  Solo se usa en local para regenerar `catalogo.json`. Si falta, se puede rebajar de nuevo desde el
+  raw URL del dataset.
+
+### Mapeo de equipment por entorno (referencia)
+- **Gimnasio con máquinas:** `barbell`, `dumbbell`, `cable`, `leverage machine`, `smith machine`, `ez barbell`, `olympic barbell`, `trap bar`
+- **Casa:** `body weight`, `band`, `resistance band`, `dumbbell` (si el usuario confirma que tiene), `stability ball`
+- **Box de CrossFit:** `barbell`, `olympic barbell`, `kettlebell`, `medicine ball`, `rope`, `body weight`, `tire`, `sled machine`

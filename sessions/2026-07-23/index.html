@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>COACH — Sesión Tirón · 23 Jul 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COACH — Tirón — Espalda / Bíceps / Romboides · 2026-07-23</title>
 <style>
   :root {
     --bg: #0f1115;
@@ -41,6 +42,7 @@
     color: var(--muted);
   }
   .pill b { color: var(--text); }
+  .prose { color: var(--muted); line-height: 1.6; margin-top: -6px; }
   .block-title {
     font-size: 1.05rem;
     font-weight: 700;
@@ -64,14 +66,15 @@
     border-radius: 10px;
     background: #000;
   }
-  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; text-transform: capitalize; }
+  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
   .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
   .muscles span {
-    background: rgba(60,168,255,0.15);
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
     color: var(--accent);
     padding: 2px 8px;
     border-radius: 6px;
     margin-right: 6px;
+    display: inline-block;
   }
   .prescription { display: flex; gap: 18px; margin-bottom: 10px; font-size: 0.9rem; }
   .prescription div b { display: block; font-size: 1.05rem; }
@@ -88,7 +91,7 @@
   }
   @media (max-width: 560px) {
     .card { grid-template-columns: 1fr; }
-    .card img { width: 100%; height: auto; max-height: 220px; }
+    .card img { width: 100%; height: auto; max-height: 260px; }
   }
 </style>
 </head>
@@ -106,99 +109,96 @@
     </div>
   </header>
 
-  <div class="block-title">🔥 Calentamiento (8 min)</div>
-  <p style="color:var(--muted); line-height:1.6; margin-top:-6px;">
-    2 min bici o remo suave · 15 band pull-aparts · 10 dead hangs de 5-8s en la barra (activa dorsales y agarre) ·
-    1 serie ligera de jalón al pecho, 15 reps, para sentir la retracción escapular antes de cargar peso.
-  </p>
+  <div class="block-title">🔥 Calentamiento</div>
+  <p class="prose">2 min bici o remo suave · 15 band pull-aparts · 10 dead hangs de 5-8s en la barra (activa dorsales y agarre) · 1 serie ligera de jalón al pecho, 15 reps, para sentir la retracción escapular antes de cargar peso.</p>
 
   <div class="block-title">💪 Bloque principal</div>
 
   <div class="card">
-    <img src="media/2330-LEprlgG.gif" alt="cable lat pulldown full range of motion">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/2330-LEprlgG.gif" alt="cable lat pulldown full range of motion" loading="lazy">
     <div class="card-body">
-      <h3>Cable Lat Pulldown (Full Range of Motion)</h3>
+      <h3>Cable Lat Pulldown Full Range Of Motion</h3>
       <div class="muscles"><span>Dorsales</span><span>Bíceps</span><span>Romboides</span></div>
-      <div class="prescription">
-        <div><b>4</b><span>Series</span></div>
-        <div><b>10-12</b><span>Reps</span></div>
-        <div><b>75s</b><span>Descanso</span></div>
-      </div>
+        <div class="prescription">
+          <div><b>4</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
       <p class="instructions">Siéntate con las rodillas bajo las almohadillas, agarre prono un poco más ancho que los hombros. Jala la barra hacia el pecho alto apretando los omóplatos, pausa abajo y sube controlado.</p>
       <p class="note">Nota técnica: como llegas con energía alta, es el momento de subir carga en este básico — prioriza el rango completo sobre el peso.</p>
     </div>
   </div>
 
   <div class="card">
-    <img src="media/0861-fUBheHs.gif" alt="cable seated row">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0861-fUBheHs.gif" alt="cable seated row" loading="lazy">
     <div class="card-body">
       <h3>Cable Seated Row</h3>
       <div class="muscles"><span>Espalda media</span><span>Bíceps</span></div>
-      <div class="prescription">
-        <div><b>4</b><span>Series</span></div>
-        <div><b>10-12</b><span>Reps</span></div>
-        <div><b>75s</b><span>Descanso</span></div>
-      </div>
+        <div class="prescription">
+          <div><b>4</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
       <p class="instructions">Sentado, pies en los apoyapiés, rodillas ligeramente flexionadas. Jala las agarraderas hacia el cuerpo apretando los omóplatos, pausa arriba y suelta controlado.</p>
       <p class="note">Nota técnica: espalda recta todo el recorrido — si te curvas hacia atrás estás compensando con lumbar en vez de dorsal.</p>
     </div>
   </div>
 
   <div class="card">
-    <img src="media/0383-EAs3xL9.gif" alt="dumbbell reverse fly">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0383-EAs3xL9.gif" alt="dumbbell reverse fly" loading="lazy">
     <div class="card-body">
       <h3>Dumbbell Reverse Fly</h3>
       <div class="muscles"><span>Trapecios</span><span>Romboides</span></div>
-      <div class="prescription">
-        <div><b>3</b><span>Series</span></div>
-        <div><b>12-15</b><span>Reps</span></div>
-        <div><b>60s</b><span>Descanso</span></div>
-      </div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
       <p class="instructions">De pie, rodillas semiflexionadas, inclinado desde la cadera con espalda recta. Levanta los brazos hacia los lados con ligera flexión de codo hasta paralelo al suelo, pausa y baja controlado.</p>
       <p class="note">Nota técnica: peso ligero aquí — es aislamiento para postura y romboides, no para levantar carga.</p>
     </div>
   </div>
 
   <div class="card">
-    <img src="media/0031-25GPyDY.gif" alt="barbell curl">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0031-25GPyDY.gif" alt="barbell curl" loading="lazy">
     <div class="card-body">
       <h3>Barbell Curl</h3>
       <div class="muscles"><span>Bíceps</span><span>Antebrazos</span></div>
-      <div class="prescription">
-        <div><b>3</b><span>Series</span></div>
-        <div><b>10-12</b><span>Reps</span></div>
-        <div><b>60s</b><span>Descanso</span></div>
-      </div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
       <p class="instructions">De pie, agarre supino a la anchura de los hombros. Codos pegados al torso, sube contrayendo bíceps, pausa arriba y baja controlado.</p>
       <p class="note">Nota técnica: sin balanceo de cadera — si necesitas impulso, baja el peso.</p>
     </div>
   </div>
 
   <div class="card">
-    <img src="media/0313-slDvUAU.gif" alt="dumbbell hammer curl">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0313-slDvUAU.gif" alt="dumbbell hammer curl" loading="lazy">
     <div class="card-body">
       <h3>Dumbbell Hammer Curl</h3>
       <div class="muscles"><span>Bíceps</span><span>Antebrazos</span></div>
-      <div class="prescription">
-        <div><b>3</b><span>Series</span></div>
-        <div><b>12-15</b><span>Reps</span></div>
-        <div><b>60s</b><span>Descanso</span></div>
-      </div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
       <p class="instructions">De pie, mancuernas con agarre neutro (palmas hacia el torso). Flexiona manteniendo el brazo superior quieto, pausa arriba y baja controlado.</p>
       <p class="note">Nota técnica: el agarre neutro mete más braquial y antebrazo — buen complemento al curl con barra.</p>
     </div>
   </div>
 
   <div class="card">
-    <img src="media/0095-dG7tG5y.gif" alt="barbell shrug">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0095-dG7tG5y.gif" alt="barbell shrug" loading="lazy">
     <div class="card-body">
       <h3>Barbell Shrug</h3>
       <div class="muscles"><span>Trapecios</span></div>
-      <div class="prescription">
-        <div><b>3</b><span>Series</span></div>
-        <div><b>12-15</b><span>Reps</span></div>
-        <div><b>60s</b><span>Descanso</span></div>
-      </div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
       <p class="instructions">De pie, barra frente a ti con agarre prono, brazos rectos. Sube los hombros hacia las orejas apretando trapecios arriba, pausa y baja controlado.</p>
       <p class="note">Nota técnica: sube y baja, no gires los hombros — el giro no añade nada y carga mal la articulación.</p>
     </div>
@@ -207,29 +207,24 @@
   <div class="block-title">⚡ Finisher</div>
 
   <div class="card">
-    <img src="media/0472-I3tsCnC.gif" alt="hanging leg raise">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0472-I3tsCnC.gif" alt="hanging leg raise" loading="lazy">
     <div class="card-body">
       <h3>Hanging Leg Raise</h3>
       <div class="muscles"><span>Flexores de cadera</span><span>Core</span></div>
-      <div class="prescription">
-        <div><b>3</b><span>Series</span></div>
-        <div><b>10-12</b><span>Reps</span></div>
-        <div><b>45s</b><span>Descanso</span></div>
-      </div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>45s</b><span>Descanso</span></div>
+        </div>
       <p class="instructions">Colgado de la barra, brazos extendidos. Activa el core y sube las piernas rectas al frente hasta donde puedas con control, pausa arriba y baja lento.</p>
       <p class="note">Nota técnica: aprovecha que ya calentaste el agarre en el warm-up — si el agarre falla antes que el core, usa correas.</p>
     </div>
   </div>
 
   <div class="block-title">🧘 Vuelta a la calma</div>
-  <p style="color:var(--muted); line-height:1.6; margin-top:-6px;">
-    2-3 min: estiramiento de dorsal colgado o en polea baja (30s/lado), estiramiento de bíceps con brazo extendido contra pared (30s/lado), respiración profunda 5 ciclos.
-  </p>
+  <p class="prose">2-3 min: estiramiento de dorsal colgado o en polea baja (30s/lado), estiramiento de bíceps con brazo extendido contra pared (30s/lado), respiración profunda 5 ciclos.</p>
 
-  <footer>
-    <b>Nota de coach:</b> segunda sesión de la semana y llegas con energía alta — perfecto momento para apretar en los básicos (jalón y remo) sin miedo, el cuerpo con base de CrossFit responde rápido a esto.
-    Mantén la técnica en el agarre del hanging leg raise, que suele ser el limitante. La próxima sesión te toca Pierna — dime entorno, tiempo y energía cuando llegue el día.
-  </footer>
+  <footer><b>Nota de coach:</b> segunda sesión de la semana y llegas con energía alta — perfecto momento para apretar en los básicos (jalón y remo) sin miedo, el cuerpo con base de CrossFit responde rápido a esto. Mantén la técnica en el agarre del hanging leg raise, que suele ser el limitante. La próxima sesión te toca Pierna — dime entorno, tiempo y energía cuando llegue el día.</footer>
 </div>
 </body>
 </html>

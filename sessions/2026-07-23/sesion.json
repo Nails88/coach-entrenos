@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-07-23",
+  "patron": "Tirón — Espalda / Bíceps / Romboides",
+  "entorno": "Gimnasio con máquinas",
+  "tiempo": "60 min",
+  "energia": "Alta",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#3ca8ff",
+  "intro": "Ayer hiciste Empuje (pecho + hombro anterior + tríceps), así que hoy toca Tirón — el segundo día de tu split Push/Pull/Legs. Ningún grupo de hoy compite con el trabajo de ayer, así que vas con la recuperación completa y podemos apretar más porque llegas con energía alta.",
+  "calentamiento": "2 min bici o remo suave · 15 band pull-aparts · 10 dead hangs de 5-8s en la barra (activa dorsales y agarre) · 1 serie ligera de jalón al pecho, 15 reps, para sentir la retracción escapular antes de cargar peso.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "2330", "series": "4", "reps": "10-12", "descanso": "75s", "musculos": ["Dorsales", "Bíceps", "Romboides"], "instruccion": "Siéntate con las rodillas bajo las almohadillas, agarre prono un poco más ancho que los hombros. Jala la barra hacia el pecho alto apretando los omóplatos, pausa abajo y sube controlado.", "nota": "como llegas con energía alta, es el momento de subir carga en este básico — prioriza el rango completo sobre el peso." },
+        { "id": "0861", "series": "4", "reps": "10-12", "descanso": "75s", "musculos": ["Espalda media", "Bíceps"], "instruccion": "Sentado, pies en los apoyapiés, rodillas ligeramente flexionadas. Jala las agarraderas hacia el cuerpo apretando los omóplatos, pausa arriba y suelta controlado.", "nota": "espalda recta todo el recorrido — si te curvas hacia atrás estás compensando con lumbar en vez de dorsal." },
+        { "id": "0383", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Trapecios", "Romboides"], "instruccion": "De pie, rodillas semiflexionadas, inclinado desde la cadera con espalda recta. Levanta los brazos hacia los lados con ligera flexión de codo hasta paralelo al suelo, pausa y baja controlado.", "nota": "peso ligero aquí — es aislamiento para postura y romboides, no para levantar carga." },
+        { "id": "0031", "series": "3", "reps": "10-12", "descanso": "60s", "musculos": ["Bíceps", "Antebrazos"], "instruccion": "De pie, agarre supino a la anchura de los hombros. Codos pegados al torso, sube contrayendo bíceps, pausa arriba y baja controlado.", "nota": "sin balanceo de cadera — si necesitas impulso, baja el peso." },
+        { "id": "0313", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Bíceps", "Antebrazos"], "instruccion": "De pie, mancuernas con agarre neutro (palmas hacia el torso). Flexiona manteniendo el brazo superior quieto, pausa arriba y baja controlado.", "nota": "el agarre neutro mete más braquial y antebrazo — buen complemento al curl con barra." },
+        { "id": "0095", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Trapecios"], "instruccion": "De pie, barra frente a ti con agarre prono, brazos rectos. Sube los hombros hacia las orejas apretando trapecios arriba, pausa y baja controlado.", "nota": "sube y baja, no gires los hombros — el giro no añade nada y carga mal la articulación." }
+      ]
+    },
+    {
+      "titulo": "⚡ Finisher",
+      "ejercicios": [
+        { "id": "0472", "series": "3", "reps": "10-12", "descanso": "45s", "musculos": ["Flexores de cadera", "Core"], "instruccion": "Colgado de la barra, brazos extendidos. Activa el core y sube las piernas rectas al frente hasta donde puedas con control, pausa arriba y baja lento.", "nota": "aprovecha que ya calentaste el agarre en el warm-up — si el agarre falla antes que el core, usa correas." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de dorsal colgado o en polea baja (30s/lado), estiramiento de bíceps con brazo extendido contra pared (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "segunda sesión de la semana y llegas con energía alta — perfecto momento para apretar en los básicos (jalón y remo) sin miedo, el cuerpo con base de CrossFit responde rápido a esto. Mantén la técnica en el agarre del hanging leg raise, que suele ser el limitante. La próxima sesión te toca Pierna — dime entorno, tiempo y energía cuando llegue el día."
+}

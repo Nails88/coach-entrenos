@@ -1,1 +1,8 @@
 .claude/settings.local.json
+
+# Dataset completo (17 MB, 10 idiomas). No va al repo: solo se usa en local para
+# regenerar catalogo.json. Se puede rebajar de nuevo desde el raw URL del dataset.
+exercises.json
+
+# Los GIFs se sirven remotos desde GitHub; no se guardan por sesión.
+sessions/*/media/
