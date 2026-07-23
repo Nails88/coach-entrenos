@@ -82,7 +82,21 @@ ni escribas HTML a mano. El flujo es:
    `nota` por ejercicio, `vuelta_calma` y `cierre` — ahí va la inteligencia de COACH.
 5. **Genera la página**: `node generar-sesion.js sessions/<fecha>/sesion.json`. El script completa
    nombre, músculos, instrucciones y el GIF (URL remota) desde `catalogo.json` y escribe
-   `sessions/<fecha>/index.html`. Ábrela para que el usuario la vea.
+   `sessions/<fecha>/index.html`.
+6. **Versión autocontenida**: `node construir-artifact.js sessions/<fecha>/index.html`. Descarga los
+   GIFs y los incrusta como `data:` URI en `sessions/<fecha>/artifact.html` (sin recursos externos,
+   necesario porque el CSP de los Artifacts bloquea imágenes remotas).
+7. **Publica y entrega la URL** (esto es lo que el usuario ve en el móvil):
+   - Publica `sessions/<fecha>/artifact.html` con la herramienta **Artifact** (privado por defecto;
+     favicon 🦵/💪 según patrón; título `COACH — <patrón corto> · <fecha>`).
+   - Entrega la URL resultante **dentro de un bloque de código** ```` ```text ... ``` ````, para que
+     la app de Claude muestre su botón de copiar (un toque → copiado → pegar en el navegador). El
+     usuario abre así la sesión a pantalla completa con scroll fluido.
+   - Contexto de por qué así (no cambiar sin preguntar): la vista incrustada en el chat no hace
+     scroll bien en la app móvil, el botón "Abrir" del preview de enlaces va roto, y el hospedaje
+     externo (GitHub Pages/githack) o es público o no se puede verificar desde el entorno. El
+     Artifact es privado y verificable; el bloque de código da el copiado de un toque.
+8. **Commit + push** de `sessions/<fecha>/` (spec + index.html + artifact.html) a la rama de trabajo.
 
 ### Datos y ficheros
 - `catalogo.json` (raíz): **fuente de verdad**, 1.254 ejercicios reales de los 3 entornos (dataset
@@ -94,8 +108,10 @@ ni escribas HTML a mano. El flujo es:
 - `generar-sesion.js`: generador de la página (plantilla + CSS + traducción de músculos). Soporta
   `reps` **o** `tiempo` por ejercicio, y `musculos` opcional para sobreescribir las etiquetas
   cuando la etiqueta del dataset sea imprecisa (p. ej. un curl marcado como "forearms").
-- GIFs: **remotos** desde `https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/<gif>`.
-  No se descargan (la página necesita internet al abrirse; el móvil ya lo tiene).
+- `construir-artifact.js`: genera `sessions/<fecha>/artifact.html`, la versión autocontenida (GIFs
+  incrustados como `data:` URI, sin `<html>/<head>/<body>`) que se publica como Artifact.
+- GIFs: en `index.html` son **remotos** desde `https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/<gif>`
+  (la página necesita internet al abrirse; el móvil ya lo tiene). En `artifact.html` van **incrustados**.
 - `exercises.json` (17 MB, dataset completo con 10 idiomas): **no está en el repo** (`.gitignore`).
   Solo se usa en local para regenerar `catalogo.json`. Si falta, se puede rebajar de nuevo desde el
   raw URL del dataset.
