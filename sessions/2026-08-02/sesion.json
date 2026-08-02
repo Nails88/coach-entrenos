@@ -23,6 +23,7 @@
     {
       "titulo": "⚡ Finisher",
       "ejercicios": [
+        { "id": "0662", "series": "3", "reps": "AMRAP", "descanso": "60s", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Sobre la esterilla, manos algo más anchas que los hombros y cuerpo en línea recta de cabeza a talones. Baja el pecho casi al suelo con los codos a unos 45° del torso y empuja arriba sin dejar caer la cadera. Máximo de repeticiones limpias por serie.", "nota": "burnout de pecho a fallo técnico — como llegas pre-fatigado de todo el bloque, saldrán menos de las que crees, y está perfecto. Si el pecho ya no puede, pasa a rodillas apoyadas y sigue exprimiendo; corta la serie cuando se rompa la línea del cuerpo, no cuando duela." },
         { "id": "0464", "series": "3", "tiempo": "30-40s", "descanso": "30s", "musculos": ["Oblicuos", "Core"], "instruccion": "Plancha alta sobre la esterilla, manos bajo los hombros. Gira el torso llevando un brazo hacia el techo, alternando lados, con la cadera estable y sin dejar caer los lumbares.", "nota": "cierre metabólico corto en la zona de esterillas — mantén respiración fluida, no aguantes el aire; la cadera firme es lo que hace el trabajo, no la velocidad." }
       ]
     }
