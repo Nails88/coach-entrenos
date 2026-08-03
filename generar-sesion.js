@@ -117,11 +117,14 @@ function renderCard(ej) {
 
   const nota = ej.nota ? `<p class="note">Nota técnica: ${esc(ej.nota)}</p>` : '';
 
+  // Nombre: si la spec trae "nombre", se usa tal cual (override, p. ej. cardio con GIF prestado).
+  const nombre = ej.nombre ? ej.nombre : titleCase(ex.name);
+
   return `
   <div class="card">
-    <img src="${esc(gif)}" alt="${esc(ex.name)}" loading="lazy">
+    <img src="${esc(gif)}" alt="${esc(nombre)}" loading="lazy">
     <div class="card-body">
-      <h3>${esc(titleCase(ex.name))}</h3>
+      <h3>${esc(nombre)}</h3>
       <div class="muscles">${tags}</div>${presc}
       <p class="instructions">${esc(instruccion)}</p>
       ${nota}

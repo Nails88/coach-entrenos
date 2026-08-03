@@ -23,7 +23,7 @@
     {
       "titulo": "⚡ Finisher",
       "ejercicios": [
-        { "id": "0472", "series": "3", "reps": "10-12", "descanso": "45s", "musculos": ["Core", "Flexores de cadera"], "instruccion": "Colgado de la barra, brazos extendidos y cuerpo estable sin balanceo. Activa el core y sube las piernas rectas al frente hasta donde puedas con control, pausa arriba y baja lento sin coger impulso.", "nota": "aprovecha que el agarre ya está caliente del jalón — si la mano falla antes que el abdomen, usa correas o dobla las rodillas; el balanceo lo hace fácil pero le roba el trabajo al core." }
+        { "id": "3666", "nombre": "Carrera suave en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta a ritmo suave-moderado, respirando por la nariz y manteniendo una zancada relajada. No busques velocidad: es cierre metabólico, no un test.", "nota": "cardio de baja intensidad al final aprovecha que ya tienes las reservas de glucógeno tocadas del trabajo de fuerza, así que tira más de grasa — ideal para tu objetivo de definición. Si el kilómetro te sabe a poco y te sobra energía, súbelo a ritmo moderado los últimos 200 m." }
       ]
     }
   ],
