@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-08-03",
+  "patron": "Tirón — Espalda / Bíceps / Romboides",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "60 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#3ca8ff",
+  "intro": "Segundo día del ciclo: ayer hiciste Empuje, hoy toca Tirón (espalda + bíceps + romboides). Ningún grupo de hoy compitió con el trabajo de ayer, así que llegas con la recuperación intacta en la zona que vamos a tocar. Con energía media, la estrategia es cubrir los dos vectores de la espalda —un tirón vertical (jalón) para anchura y uno horizontal (remo) para grosor— y rematar con brazos y postura. Ojo a lo de siempre en tirón: la espalda tira, el bíceps solo acompaña; si notas que trabajan más los brazos que la espalda, baja peso y prioriza llevar los codos atrás apretando los omóplatos.",
+  "calentamiento": "3 min remo o bici suave · 15 band pull-aparts (activa romboides y deltoide posterior) · 8-10 dead hangs de 5-8s colgado de la barra (despierta agarre y dorsales) · 1 serie ligera de jalón al pecho, 15 reps, para sentir la retracción escapular antes de cargar.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0198", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Dorsales", "Bíceps"], "instruccion": "Sentado con las rodillas bajo las almohadillas, agarre prono algo más ancho que los hombros. Jala la barra hacia el pecho alto liderando con los codos hacia abajo y atrás, aprieta los omóplatos abajo y sube controlado hasta estirar del todo.", "nota": "tu compuesto de anchura — inicia el tirón bajando los codos, no tirando con las manos; la pausa abajo apretando la espalda es donde se construye el dorsal." },
+        { "id": "1350", "series": "4", "reps": "10-12", "descanso": "75s", "musculos": ["Espalda media", "Bíceps"], "instruccion": "Sentado con el pecho apoyado en el soporte, agarra las asas y jala llevando los codos hacia atrás pegados al cuerpo, apretando los omóplatos al final. Vuelve controlado sin dejar que los hombros se vayan al frente.", "nota": "este es el grosor de la espalda — pecho firme contra el soporte para que no compenses con lumbar; junta los omóplatos como si sujetaras un lápiz entre ellos." },
+        { "id": "0238", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Dorsales"], "instruccion": "De pie frente a la polea alta, brazos casi estirados y codos con una ligera flexión fija. Lleva la barra hacia los muslos en arco, solo desde el hombro, apretando el dorsal abajo, y vuelve controlado.", "nota": "aislamiento puro de dorsal sin que entre el bíceps — brazos casi rectos todo el rato; sentirás el dorsal trabajar solo, que es justo el objetivo." },
+        { "id": "0868", "series": "3", "reps": "10-12", "descanso": "60s", "musculos": ["Bíceps"], "instruccion": "De pie frente a la polea baja, agarre supino a la anchura de los hombros y codos pegados al torso. Flexiona subiendo el agarre hacia los hombros, aprieta arriba y baja controlado.", "nota": "la polea mantiene tensión constante en todo el recorrido — nada de balancear la cadera; si necesitas impulso, baja el peso." },
+        { "id": "1328", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Deltoide posterior", "Romboides"], "instruccion": "Tumbado boca abajo en un banco inclinado, mancuernas colgando. Rema llevando los codos hacia arriba y atrás bien abiertos (a 90°), apretando la parte alta de la espalda, y baja controlado.", "nota": "codos abiertos a propósito para llevar el trabajo al deltoide posterior y romboides — peso ligero y contracción; es postura y salud de hombro, no fuerza bruta." },
+        { "id": "0604", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Trapecios"], "instruccion": "De pie o sentado en la máquina, hombros relajados abajo. Encógete de hombros subiendo hacia las orejas, aprieta arriba un segundo y baja controlado con estiramiento completo.", "nota": "sube y baja recto, sin rotar los hombros — la rotación no añade nada y carga mal la articulación." }
+      ]
+    },
+    {
+      "titulo": "⚡ Finisher",
+      "ejercicios": [
+        { "id": "0472", "series": "3", "reps": "10-12", "descanso": "45s", "musculos": ["Core", "Flexores de cadera"], "instruccion": "Colgado de la barra, brazos extendidos y cuerpo estable sin balanceo. Activa el core y sube las piernas rectas al frente hasta donde puedas con control, pausa arriba y baja lento sin coger impulso.", "nota": "aprovecha que el agarre ya está caliente del jalón — si la mano falla antes que el abdomen, usa correas o dobla las rodillas; el balanceo lo hace fácil pero le roba el trabajo al core." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: colgado o en polea baja, estiramiento de dorsal (30s/lado), estiramiento de bíceps con brazo extendido contra la pared (30s/lado), estiramiento de cuello/trapecio inclinando la cabeza a cada lado (20s/lado), respiración profunda 5 ciclos.",
+  "cierre": "buen día de tirón con energía media: has cubierto anchura (jalón), grosor (remo), bíceps y postura sin necesidad de forzar carga. Mantén el foco en llevar los codos atrás apretando la espalda — cuando eso se automatiza, la espalda crece sola. La próxima cierra el ciclo con Pierna. Cuando toque, dime entorno, tiempo y energía y te lo dejo montado con su enlace."
+}
