@@ -1,0 +1,24 @@
+{
+  "fecha": "2026-08-11",
+  "patron": "Full Body en casa — Circuito corto",
+  "entorno": "Casa (peso corporal)",
+  "tiempo": "~20-25 min",
+  "energia": "Media-baja",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#2ec5b6",
+  "intro": "Día suave y cortito en casa, sin material. Con energía media-baja no eliminamos la sesión: reducimos volumen y vamos a lo compuesto, que es lo que más rinde en poco tiempo. Formato circuito: haces los 4 ejercicios seguidos (40s de trabajo y 20s de transición cada uno), descansas 60s al terminar la ronda, y repites 3 veces. Tocamos pierna, empuje, glúteo y core en una sola pasada. La idea es moverte y activar, no fundirte: mantén un ritmo cómodo con el que puedas respirar.",
+  "calentamiento": "3 min suaves sin cinta (hoy entrenas en casa): 30s de marcha en el sitio elevando rodillas · 10 círculos de brazos por sentido · 10 sentadillas al aire lentas · 10 rotaciones de cadera por lado · 5 respiraciones profundas para activar. Sin prisa, solo entrar en calor.",
+  "bloques": [
+    {
+      "titulo": "🔄 Circuito (3 vueltas · 40s trabajo / 20s transición · 60s entre vueltas)",
+      "ejercicios": [
+        { "id": "1685", "series": "3", "tiempo": "40s", "descanso": "20s", "musculos": ["Cuádriceps", "Glúteos", "Hombros"], "instruccion": "Pies a la anchura de hombros. Baja en sentadilla llevando la cadera atrás con el pecho alto y, al subir, estira los brazos por encima de la cabeza. Ritmo controlado, sin rebotes.", "nota": "compuesto de pierna con un extra de movilidad de hombro al subir — si te cansas, quita los brazos y haz solo la sentadilla; lo importante es no parar los 40s." },
+        { "id": "0662", "series": "3", "tiempo": "40s", "descanso": "20s", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Manos algo más anchas que los hombros, cuerpo en línea recta. Baja el pecho casi al suelo con los codos a ~45° y empuja arriba sin dejar caer la cadera.", "nota": "si con energía baja no salen desde el suelo, hazlas con las rodillas apoyadas o contra una pared/sofá — mismo patrón, menos carga; prioriza mantener el ritmo antes que la versión difícil." },
+        { "id": "3013", "series": "3", "tiempo": "40s", "descanso": "20s", "musculos": ["Glúteos", "Isquiotibiales"], "instruccion": "Tumbado boca arriba, rodillas dobladas y pies apoyados cerca del glúteo. Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1s y baja controlado.", "nota": "ejercicio de glúteo cómodo y de bajo impacto, ideal para un día flojo — busca apretar el glúteo arriba en cada repetición, no la velocidad." },
+        { "id": "0464", "series": "3", "tiempo": "40s", "descanso": "20s", "musculos": ["Core", "Oblicuos"], "instruccion": "Plancha alta, manos bajo los hombros. Gira el torso llevando un brazo hacia el techo, alternando lados, con la cadera estable y sin dejar caer los lumbares.", "nota": "cierre de core de la ronda — respiración fluida, no aguantes el aire; si molesta la muñeca, apoya en los antebrazos y haz plancha isométrica los 40s." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de cuádriceps de pie (30s/lado), estiramiento de pecho en marco de puerta (30s/lado), postura del niño para espalda baja (30s), respiración profunda 5 ciclos para bajar pulsaciones.",
+  "cierre": "sesión corta y de bajo impacto para no romper la racha en un día flojo — has movido todo el cuerpo en 20 minutos, que es infinitamente mejor que saltártelo. Un día así también cuenta: mantiene el hábito y algo de gasto sin cargar la recuperación. Cuando vuelvas al gym seguimos con el ciclo. Si tienes cinta en casa y te apetece, remata con 1 km suave; si no, con el calentamiento y el circuito vas servido."
+}
