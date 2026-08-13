@@ -277,10 +277,12 @@ ${cierre}</div>
 </html>
 `;
 
-const outDir = path.join(root, 'sessions', fecha);
+// La página se escribe en la MISMA carpeta que el sesion.json (no en sessions/<fecha>),
+// para permitir varias sesiones el mismo día (p. ej. sessions/<fecha>-core/).
+const outDir = path.dirname(specPath);
 fs.mkdirSync(outDir, { recursive: true });
 const outPath = path.join(outDir, 'index.html');
 fs.writeFileSync(outPath, html);
 
 const nEj = (spec.bloques || []).reduce((n, b) => n + (b.ejercicios || []).length, 0);
-console.log(`OK -> sessions/${fecha}/index.html (${nEj} ejercicios, GIFs remotos)`);
+console.log(`OK -> ${outPath} (${nEj} ejercicios, GIFs remotos)`);
