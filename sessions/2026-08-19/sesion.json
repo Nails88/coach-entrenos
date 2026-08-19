@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-08-19",
+  "patron": "Pierna con énfasis en glúteo",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45 min",
+  "energia": "Media-alta",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Día de pierna con el glúteo de protagonista, que dijiste que hace tiempo que no lo notas. La clave para que el glúteo trabaje (y no se lo lleve todo el cuádriceps) son dos patrones: empuje de cadera (hip thrust) y trabajo unilateral con recorrido profundo (búlgara). Empezamos por el hip thrust fresco porque es donde más carga puedes mover apretando el glúteo, y rematamos con abducción para el glúteo medio, que es el que da forma redonda al lateral. Lo dejo cortito y directo: 4 ejercicios bien elegidos para que en 45 min quepa todo con los dos kilómetros de cinta sin que se haga eterno.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta para subir pulsaciones. Después, activación de glúteo (importante hoy para 'despertarlo' y que tire él): 15 puentes de glúteo en el suelo apretando arriba · 12 patadas de glúteo a cuatro apoyos por lado · 15 pasos laterales con banda en los tobillos (o sin banda) · 10 sentadillas al aire lentas. Con esto llegas al hip thrust sintiendo ya el glúteo.",
+  "bloques": [
+    {
+      "titulo": "🍑 Bloque principal",
+      "ejercicios": [
+        { "id": "3562", "nombre": "Hip thrust con barra (espalda en banco)", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Glúteos", "Isquiotibiales"], "instruccion": "Espalda alta apoyada en un banco, barra sobre la cadera (usa almohadilla), pies planos a la anchura de caderas. Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo fuerte arriba 1-2s y baja controlado.", "nota": "el rey del glúteo — la clave es la BASCULA de pelvis y apretar arriba, no arquear la lumbar; mete el coxis por debajo y costillas abajo. Empuja con el talón (no la puntera) para que tire el glúteo y no el cuádriceps. Barbilla al pecho, mirada al frente." },
+        { "id": "0410", "nombre": "Sentadilla búlgara con mancuernas", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Glúteos", "Cuádriceps"], "instruccion": "Pie trasero apoyado en un banco por detrás, mancuerna en cada mano, tronco ligeramente inclinado al frente. Baja flexionando la rodilla y la cadera delanteras hasta que el muslo quede paralelo, y sube empujando con el talón delantero. Termina una pierna antes de cambiar.", "nota": "para sentir GLÚTEO y no cuádriceps: inclina un poco el tronco hacia delante y da un paso algo más largo, así la cadera se abre más y el glúteo se estira. Empuja con el talón del pie de delante." },
+        { "id": "0739", "nombre": "Prensa a 45° (pies altos)", "series": "3", "reps": "12", "descanso": "60s", "musculos": ["Glúteos", "Cuádriceps"], "instruccion": "Sentado en la prensa a 45°, coloca los pies un poco más ALTOS y algo más anchos en la plataforma (esa posición mete más glúteo e isquio). Empuja sin bloquear rodillas y baja controlado buscando profundidad sin que la cadera se despegue del respaldo.", "nota": "el truco es la posición del pie: cuanto más arriba lo pones, más glúteo/isquio y menos cuádriceps. Baja todo lo que puedas sin que la zona baja de la espalda se redondee." },
+        { "id": "0597", "series": "3", "reps": "15-20", "descanso": "45s", "musculos": ["Glúteos", "Abductores"], "instruccion": "Sentado con la espalda apoyada, abre las piernas empujando contra las almohadillas todo lo que puedas, pausa apretando el glúteo lateral al final y junta lento.", "nota": "remate para el glúteo MEDIO (el que redondea el lateral de la cadera) — aguanta 1s en la apertura máxima y controla la vuelta; quema, pero es barato de recuperar. Inclínate un pelín hacia delante para notarlo aún más." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte: ritmo que te deje hablar en frases cortas. Si subes 1-2% de inclinación, el glúteo sigue trabajando al andar/trotar.", "nota": "el kilómetro final tira más de grasa al llegar con las reservas tocadas — y con un poco de inclinación mantienes el glúteo activo. Si vas cargado, trote muy suave, pero remátalo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de glúteo tumbado cruzando el tobillo sobre la rodilla y llevando la pierna al pecho (30s/lado), estiramiento de cuádriceps de pie (30s/lado), estiramiento de flexor de cadera en zancada (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "buen día para reconectar con el glúteo: hip thrust y búlgara son los dos que más lo hacen 'despertar', y la abducción remata el glúteo medio que da forma. Si hoy notas el glúteo con agujetas mañana o pasado, señal de que por fin ha trabajado él y no el cuádriceps robándole el protagonismo. Repetir este enfoque 1 vez por semana durante unas semanas y lo vas a notar. Cuando vuelvas, dime entorno, tiempo y energía y seguimos."
+}
