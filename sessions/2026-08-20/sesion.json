@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-08-20",
+  "patron": "Empuje — Pecho / Hombro anterior / Tríceps",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff5a3c",
+  "intro": "Tren superior de empuje, que era lo más rezagado: pecho + hombro anterior + tríceps, los tres músculos que empujan juntos. Además hoy le das descanso a la pierna después del glúteo de ayer. Con energía media vamos a volumen sólido y técnica, sin cazar récords. Empiezo por el press de pecho en máquina porque es el compuesto que más mueve y quieres pegarle fresco; luego hombro y un aislamiento de cada zona. Lo dejo en 5 ejercicios para que en 45 min entre todo con los dos kilómetros de cinta sin alargarse.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta. Después, específico de empuje: 12 círculos de brazos por sentido · 10 flexiones con rodillas apoyadas (bombeo escapular) · 15 face-pulls suaves con banda o polea (salud de hombro) · 1 serie ligera en la máquina de pecho, 15 reps, para sentir el recorrido antes de cargar.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0577", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Sentado, espalda pegada al respaldo y agarres a la altura del pecho medio (ajusta el asiento). Empuja hasta casi extender los codos sin bloquearlos de golpe, pausa breve al frente y vuelve controlado sintiendo el estiramiento del pecho.", "nota": "tu compuesto principal — con energía media prioriza recorrido completo sobre carga. Codos a unos 45° del torso, ni muy pegados ni muy abiertos. Es la Chest Press de tu gym." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Hombros", "Tríceps"], "instruccion": "Sentado en banco con respaldo (o de pie), core apretado, mancuernas a la altura de los hombros con las palmas al frente. Empuja arriba sin arquear la lumbar, pausa arriba y baja controlado a los hombros.", "nota": "sentado aíslas más el hombro y proteges la espalda — como te gusta. Glúteo y abdomen apretados; si arqueas para subir, baja el peso." },
+        { "id": "0308", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Pecho", "Hombros"], "instruccion": "Tumbado en banco, mancuernas arriba con codos ligeramente flexionados y fijos. Abre en arco amplio hasta notar el estiramiento del pecho y vuelve juntando como si abrazaras, sin cambiar el ángulo del codo.", "nota": "es apertura, no press — el codo mantiene su flexión todo el rato; busca el estiramiento del pecho abajo, ahí está el trabajo. Peso moderado y control." },
+        { "id": "0584", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Hombros"], "instruccion": "Sentado en la máquina, brazos bajo las almohadillas. Sube hasta que los brazos queden paralelos al suelo liderando con el codo, pausa arriba y baja controlado. (También vale con mancuernas si prefieres.)", "nota": "aislamiento del deltoide lateral para dar anchura al hombro — peso moderado y sin impulso; que suba el codo, no la muñeca." },
+        { "id": "0241", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Tríceps"], "instruccion": "De pie frente a la polea alta, codos pegados al cuerpo. Empuja el accesorio en V hacia abajo hasta extensión completa, aprieta el tríceps abajo y controla la vuelta.", "nota": "los codos no se mueven de su sitio — si se abren hacia los lados, estás usando hombro en vez de tríceps. Cierre de brazo del día." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte: ritmo que te deje hablar en frases cortas. Zancada relajada y respiración controlada.", "nota": "el kilómetro final tira más de grasa al llegar con las reservas tocadas — y hoy las piernas van descansadas del trabajo de empuje, así que puedes apretar un poco más el ritmo si te apetece." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de pecho en marco de puerta o con brazo contra pared (30s/lado), estiramiento de tríceps sobre la cabeza (30s/lado), estiramiento de hombro cruzando el brazo por delante (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "buen día de empuje para equilibrar la balanza, que el tren superior de pecho/hombro iba algo rezagado con tanto full body y pierna. Con energía media y foco en técnica has metido volumen de calidad sin fundirte. Y la pierna, descansando tras el glúteo de ayer, que buena falta le hacía. Cuando vuelvas, dime entorno, tiempo y energía y seguimos equilibrando el cuerpo."
+}
