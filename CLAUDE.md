@@ -139,3 +139,18 @@ ni escribas HTML a mano. El flujo es:
 - **Gimnasio con máquinas:** `barbell`, `dumbbell`, `cable`, `leverage machine`, `smith machine`, `ez barbell`, `olympic barbell`, `trap bar`
 - **Casa:** `body weight`, `band`, `resistance band`, `dumbbell` (si el usuario confirma que tiene), `stability ball`
 - **Box de CrossFit:** `barbell`, `olympic barbell`, `kettlebell`, `medicine ball`, `rope`, `body weight`, `tire`, `sled machine`
+
+### Notas del gym del usuario (Technogym) y GIFs a evitar
+El usuario entrena en un gimnasio **Technogym**. Ten en cuenta al montar días de gym:
+
+- **Máquinas que SÍ tiene y quiere usar** (mételas cuando encajen):
+  - **Pec deck / contractor de pecho** → usa `0596` (lever seated fly). Buena para aislar pecho (alternativa a las aperturas con mancuerna).
+  - **Reverse fly / pájaros en máquina** → usa `0602` (lever seated reverse fly). Deltoide posterior; va genial en días de empuje/tirón para equilibrar hombro.
+  - (Es una máquina dual Pectoral + Reverse Fly.)
+- **Máquinas que NO tiene** (no las propongas; usa la alternativa):
+  - **Máquina de elevación lateral** (`0584`) → NO está. Usa **mancuernas** `0334` (dumbbell lateral raise).
+- **Por identificar:** hay una "máquina de hombro" con recorrido de arriba a abajo (no es press ni la de laterales). Pendiente de foto para fijar el ejercicio.
+- **GIFs poco fiables del dataset (el usuario los ha detectado; evítalos y usa el que sí coincide):**
+  - `1350` lever seated row → usa `0861` (cable seated row).
+  - `0760` smith leg press → usa `0739` (sled 45° leg press).
+  - `3562` barbell glute bridge two legs on bench → usa `1409` (barbell glute bridge en suelo).
