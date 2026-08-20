@@ -149,7 +149,7 @@ El usuario entrena en un gimnasio **Technogym**. Ten en cuenta al montar días d
   - (Es una máquina dual Pectoral + Reverse Fly.)
 - **Máquinas que NO tiene** (no las propongas; usa la alternativa):
   - **Máquina de elevación lateral** (`0584`) → NO está. Usa **mancuernas** `0334` (dumbbell lateral raise).
-- **Por identificar:** hay una "máquina de hombro" con recorrido de arriba a abajo (no es press ni la de laterales). Pendiente de foto para fijar el ejercicio.
+- **Vertical Traction (Technogym)** = **jalón vertical / lat pulldown → ESPALDA (dorsales)**, no hombro (el usuario la tenía como "de hombro de arriba a abajo"; en realidad es un tirón vertical). Úsala en días de **Tirón**. Equivale a `0198` (cable pulldown) como GIF de referencia.
 - **GIFs poco fiables del dataset (el usuario los ha detectado; evítalos y usa el que sí coincide):**
   - `1350` lever seated row → usa `0861` (cable seated row).
   - `0760` smith leg press → usa `0739` (sled 45° leg press).
