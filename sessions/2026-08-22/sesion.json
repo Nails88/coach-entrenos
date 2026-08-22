@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-08-22",
+  "patron": "Tirón — Espalda / Bíceps / Deltoide posterior",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#3ca8ff",
+  "intro": "Día de Tirón para cerrar el tren superior tras el empuje de ayer: espalda + bíceps + deltoide posterior. Ninguno de estos grupos compitió con el empuje, así que llegas fresco. Y estrenamos dos máquinas que fichaste: la Vertical Traction (jalón vertical, para anchura de espalda) y el Reverse fly (deltoide posterior, que equilibra todo el hombro anterior que trabajaste ayer). Con energía media, volumen sólido y técnica: en el tirón, la espalda tira y el bíceps solo acompaña. Lo dejo en 5 ejercicios para que quepa en 45 min con los dos kilómetros de cinta.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta. Después, específico de tirón: 15 band pull-aparts (activan deltoide posterior y romboides) · 8-10 dead hangs de 5-8s colgado (despiertan agarre y dorsales) · 1 serie ligera en la Vertical Traction, 15 reps, para sentir la retracción escapular antes de cargar.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0198", "nombre": "Vertical Traction (jalón vertical)", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Dorsales", "Bíceps"], "instruccion": "Sentado con el pecho apoyado en el cojín y los muslos asegurados, agarra las asas de arriba con los brazos estirados. Jala hacia abajo llevando los codos abajo y atrás hasta los hombros, apretando los omóplatos, y sube controlado hasta estirar del todo.", "nota": "estreno de máquina — tu compuesto de anchura de espalda. Inicia el tirón BAJANDO los codos, no tirando con las manos; el pecho apoyado te impide hacer trampa echándote atrás, así que sale todo de la espalda." },
+        { "id": "0861", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Espalda media", "Bíceps"], "instruccion": "Sentado frente a la polea baja, pies en los apoyapiés y rodillas algo flexionadas. Espalda recta, jala las agarraderas hacia el abdomen llevando los codos atrás y apretando los omóplatos, y suelta controlado sin dejar que los hombros se vayan al frente.", "nota": "tu tirón horizontal (grosor de espalda) — espalda recta; si te echas atrás con el tronco para mover el peso, estás usando lumbar en vez de espalda." },
+        { "id": "0602", "nombre": "Reverse fly en máquina (pájaros)", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Deltoide posterior", "Romboides"], "instruccion": "Sentado con el pecho apoyado en el cojín, agarra las asas al frente con los brazos casi estirados. Abre los brazos hacia atrás en arco, liderando con el codo/dorso de la mano, apretando la parte de atrás del hombro, y vuelve controlado.", "nota": "la otra máquina nueva — deltoide posterior, que equilibra el hombro anterior que empujaste ayer. Brazos casi rectos, peso moderado y aprieta atrás; es salud de hombro y postura, no fuerza bruta." },
+        { "id": "0868", "series": "3", "reps": "10-12", "descanso": "60s", "musculos": ["Bíceps"], "instruccion": "De pie frente a la polea baja, agarre supino a la anchura de los hombros y codos pegados al torso. Flexiona subiendo el agarre hacia los hombros, aprieta arriba y baja controlado.", "nota": "la polea mantiene tensión constante en todo el recorrido — nada de balancear la cadera; si necesitas impulso, baja el peso." },
+        { "id": "0313", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Bíceps", "Antebrazos"], "instruccion": "De pie, mancuernas con agarre neutro (palmas hacia el torso). Flexiona manteniendo el brazo superior quieto, pausa arriba y baja controlado. Puedes alternar brazos o hacer los dos a la vez.", "nota": "el agarre neutro mete más braquial y antebrazo — buen complemento al curl en polea y remate del brazo." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte: ritmo que te deje hablar en frases cortas. Zancada relajada y respiración controlada.", "nota": "el kilómetro final tira más de grasa al llegar con las reservas tocadas — y hoy las piernas van descansadas (día de tirón), así que puedes apretar un poco el ritmo si te apetece." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de dorsal colgado o en polea baja (30s/lado), estiramiento de bíceps con brazo extendido contra la pared (30s/lado), estiramiento de deltoide posterior cruzando el brazo por delante (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "buen día de tirón estrenando la Vertical Traction y el Reverse fly: has cubierto anchura (jalón), grosor (remo), deltoide posterior (que equilibra el empuje de ayer) y bíceps. Foco de siempre: lleva los codos atrás apretando la espalda, que el bíceps solo acompaña. Con esto tienes la semana muy equilibrada entre empuje y tirón. Cuando vuelvas, dime entorno, tiempo y energía y seguimos."
+}
