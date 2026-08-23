@@ -19,9 +19,10 @@
       ]
     },
     {
-      "titulo": "🔥 Core finisher",
+      "titulo": "🔥 Core finisher (crunch con peso + plancha)",
       "ejercicios": [
-        { "id": "0472", "series": "3", "reps": "10-12", "descanso": "45s", "musculos": ["Core", "Flexores de cadera"], "instruccion": "Colgado de la barra, brazos extendidos y cuerpo estable sin balanceo. Activa el core y sube las piernas rectas al frente hasta donde puedas con control, pausa arriba y baja lento sin coger impulso.", "nota": "core corto para cerrar — si el agarre falla antes que el abdomen, usa correas o dobla las rodillas (rodillas al pecho es la versión más fácil). El balanceo lo hace fácil pero le roba el trabajo al core." }
+        { "id": "0274", "nombre": "Crunch con peso (mancuerna o balón)", "series": "3", "reps": "12-15", "descanso": "45s", "musculos": ["Recto abdominal", "Core"], "instruccion": "Tumbado boca arriba, rodillas dobladas, sujetando una mancuerna o un balón medicinal contra el pecho. Enrolla el tronco despegando los omóplatos llevando las costillas hacia la pelvis, aprieta el abdomen arriba y baja controlado. (El GIF es el crunch sin peso, de referencia; tú añades la carga sobre el pecho.)", "nota": "el peso lo hace directo y progresable — sube con el abdomen enrollando el tronco, no tires del cuello. Para más dificultad, sujeta el peso estirado por encima de la cabeza en vez de en el pecho." },
+        { "id": "0464", "nombre": "Plancha (aguante isométrico)", "series": "3", "tiempo": "30-40s", "descanso": "30s", "musculos": ["Core", "Abdomen"], "instruccion": "Plancha sobre los antebrazos (o manos), codos bajo los hombros, cuerpo en línea recta de cabeza a talones. Aprieta glúteo y abdomen y aguanta quieto. (El GIF muestra la versión con giro; aquí de base es aguantar isométrico, sin girar.)", "nota": "cierre isométrico — no dejes caer la cadera ni subas el culo; línea recta y a respirar. Si aguantas fácil los 40s, sube un pie o un brazo unos segundos para complicarlo." }
       ]
     },
     {
