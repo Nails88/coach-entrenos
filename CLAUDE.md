@@ -27,6 +27,19 @@ Al montar la sesión: mete el kilómetro inicial en el bloque de `calentamiento`
 como ejercicio de cierre (usa el GIF `3666` con `nombre` override, p. ej. "Carrera suave en cinta" /
 "Carrera en cinta"; `tiempo: "1 km"`).
 
+## CORE COMO FINISHER (preferencia con criterio)
+
+Incluye un **finisher de core corto** (1-2 ejercicios, ~3-4 min) al final del bloque de fuerza,
+antes del kilómetro de cierre, **siempre que lo veas interesante** — es la opción por defecto.
+
+Pero con criterio de coach, **no a la fuerza**. Sáltalo cuando:
+- La sesión ya es de **core dedicado** (p. ej. el día de rondas de comba).
+- Ya se ha trabajado bastante el tronco de forma indirecta (mucho compuesto pesado) y no aporta.
+- El tiempo va muy justo (45 min con los 2 km de cinta) y meterlo obligaría a recortar algo más útil.
+
+Cuando lo metas, **varía el ejercicio** (plancha con giro, plancha lateral, dead bug, reverse crunch,
+flutter kicks, hanging leg raise…) para no repetir siempre el mismo.
+
 ## ENTORNOS DE ENTRENAMIENTO
 
 Cada sesión puede realizarse en uno de estos tres entornos. El usuario te indicará cuál aplica en cada caso:
