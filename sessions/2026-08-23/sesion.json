@@ -1,0 +1,36 @@
+{
+  "fecha": "2026-08-23",
+  "patron": "Pierna (cuádriceps) + Core",
+  "entorno": "Gimnasio con máquinas",
+  "tiempo": "45 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Día de pierna con acento en cuádriceps: el último día de pierna (19) fue dominante de glúteo (hip thrust, búlgara, abducción), así que hoy le toca protagonismo a la parte frontal del muslo, con un isquio para no descompensar. Y como pediste algo de core, lo cierro con un finisher corto antes del kilómetro de cinta. Con energía media, máquinas para el trabajo pesado (menos gasto en estabilizar) y foco en rango completo. Lo dejo en 4 ejercicios de pierna + 1 de core para que quepa en 45 min con los dos kilómetros de cinta.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta para subir pulsaciones. Después, específico de pierna: 15 sentadillas al aire con pausa abajo · 10 zancadas caminando por pierna · 10 balanceos de pierna adelante-atrás por lado · 1 serie ligera en el Smith, 12 reps, para grabar el patrón antes de cargar.",
+  "bloques": [
+    {
+      "titulo": "🦵 Bloque principal",
+      "ejercicios": [
+        { "id": "0770", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Cuádriceps", "Glúteos", "Isquiotibiales"], "instruccion": "Barra sobre trapecios, pies a la anchura de hombros y puntas ligeramente hacia fuera. Core activo y pecho alto, baja doblando cadera y rodilla hasta que el muslo quede paralelo (o algo por debajo), pausa breve y empuja con los talones.", "nota": "tu compuesto principal — con energía media prioriza profundidad y control sobre la carga; el Smith guía la barra y te deja apretar seguro. Para cargar más el cuádriceps, mantén el torso lo más vertical que puedas." },
+        { "id": "0739", "series": "3", "reps": "12", "descanso": "75s", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentado en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y algo más BAJOS en la plataforma (esa posición carga más cuádriceps). Empuja sin bloquear rodillas y baja controlado flexionando hasta unos 90°.", "nota": "hoy pies un poco más bajos que el día de glúteo: así el cuádriceps se lleva el protagonismo. Empuja con toda la planta y no dejes que las rodillas se metan hacia dentro." },
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo justo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento.", "nota": "aislamiento puro de cuádriceps para rematar la parte frontal — busca la contracción y la pausa arriba; ahí está el trabajo, no en el peso." },
+        { "id": "0586", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo, pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos todo lo que puedas, aprieta arriba y baja lento sin soltar de golpe.", "nota": "un isquio para equilibrar tanto cuádriceps — un muslo balanceado protege la rodilla; no despegues la cadera del banco para ganar rango." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0472", "series": "3", "reps": "10-12", "descanso": "45s", "musculos": ["Core", "Flexores de cadera"], "instruccion": "Colgado de la barra, brazos extendidos y cuerpo estable sin balanceo. Activa el core y sube las piernas rectas al frente hasta donde puedas con control, pausa arriba y baja lento sin coger impulso.", "nota": "core corto para cerrar — si el agarre falla antes que el abdomen, usa correas o dobla las rodillas (rodillas al pecho es la versión más fácil). El balanceo lo hace fácil pero le roba el trabajo al core." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte: ritmo que te deje hablar en frases cortas. Zancada relajada y respiración controlada.", "nota": "el kilómetro final aprovecha que llegas con el glucógeno de las piernas tocado del trabajo de fuerza, así que tira más de grasa. Si vas cargado de piernas, bájalo a trote muy suave, pero remátalo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de cuádriceps de pie sujetando el tobillo (30s/lado), estiramiento de isquios con pierna estirada apoyada (30s/lado), estiramiento de glúteo sentado con tobillo sobre rodilla (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "buen día de cuádriceps para equilibrar el foco de glúteo del último día de pierna, con un isquio de seguro y un core corto para cerrar como pediste. Entre este día (cuádriceps) y el del 19 (glúteo) tienes la pierna trabajada por ambos lados. Ojo que las piernas avisan al segundo día, así que mañana descanso o movilidad suave. Cuando vuelvas, dime entorno, tiempo y energía y seguimos."
+}
