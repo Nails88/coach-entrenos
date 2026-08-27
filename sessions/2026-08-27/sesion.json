@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-08-27",
+  "patron": "Home WOD estilo CrossFit — Fuerza + AMRAP + Core",
+  "entorno": "Casa (peso corporal + comba + mancuerna/KB si tienes)",
+  "tiempo": "~45 min",
+  "energia": "Media (con opción de apretar)",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#f5563d",
+  "intro": "¡Sorpresa en clave CrossFit! Como pediste algo distinto y vienes de box, hoy en casa montamos el formato que más te suena: una parte de FUERZA por rondas + un WOD tipo AMRAP + un remate de core. La gracia del AMRAP es que lo marcas tú: a media energía vas a ritmo cómodo y sostenible, pero si a mitad te animas (que suele pasar), aprietas el pace y sacas más rondas. Ojo a la estrategia del AMRAP: empieza más lento de lo que crees que puedes, para no fundirte en la ronda 2 y acabar parando — mejor ritmo constante que salir a tope y morir.",
+  "calentamiento": "5 min para entrar en calor (en casa, sin cinta): 90s de comba suave a ritmo cómodo · 10 círculos de brazos por sentido · 10 sentadillas al aire con pausa abajo · 8 inchworms (camina con las manos hasta plancha y vuelve) · 10 zancadas caminando. Sube pulsaciones sin fundirte, que el motor lo enciendes en el WOD.",
+  "bloques": [
+    {
+      "titulo": "🏋️ BLOQUE 1 — Fuerza (4 rondas · descansa 60-75s entre rondas)",
+      "ejercicios": [
+        { "id": "1760", "nombre": "Sentadilla goblet (mancuerna/KB)", "series": "4", "reps": "12", "descanso": "0s", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sujeta una mancuerna o kettlebell contra el pecho (a la altura del esternón). Baja en sentadilla con el pecho alto y los codos por dentro de las rodillas, hasta la máxima profundidad cómoda, y sube empujando con los talones.", "nota": "si no tienes peso en casa, hazla al aire con pausa de 2s abajo, o como sentadilla con salto para subir la intensidad. El peso al pecho te ayuda a mantener el torso vertical." },
+        { "id": "0662", "nombre": "Flexiones", "series": "4", "reps": "10-12", "descanso": "0s", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Manos algo más anchas que los hombros, cuerpo en línea recta. Baja el pecho casi al suelo con los codos a ~45° y empuja arriba sin dejar caer la cadera.", "nota": "si cansado no salen limpias, pasa a rodillas apoyadas y sigue — mantén la calidad, no busques el fallo aquí que aún queda WOD." },
+        { "id": "0652", "nombre": "Dominadas estrictas", "series": "4", "reps": "4-6", "descanso": "60-75s", "musculos": ["Dorsales", "Bíceps"], "instruccion": "Colgado con agarre prono, brazos extendidos y core activo. Sube tirando de los codos hacia abajo hasta pasar la barbilla por la barra, sin balanceo, y baja controlado.", "nota": "sé realista con el número: si te salen 3-4 estrictas, haz esas y usa negativas (bajada lenta) para completar. Descansa 60-75s aquí antes de la siguiente ronda." }
+      ]
+    },
+    {
+      "titulo": "🔥 BLOQUE 2 — WOD · AMRAP 12 min (máximas rondas posibles)",
+      "ejercicios": [
+        { "id": "2612", "nombre": "Comba", "series": "AMRAP 12'", "reps": "40 saltos", "descanso": "—", "musculos": ["Cardio", "Gemelos"], "instruccion": "40 saltos simples (o 15 dobles si los llevas). Ritmo sostenible; si te trabas, recoloca y sigue sin reiniciar la cuenta mental.", "nota": "es el motor de cada ronda del AMRAP — no salgas a máxima velocidad; ritmo constante que puedas repetir 4-5 rondas." },
+        { "id": "1460", "nombre": "Zancadas caminando", "series": "AMRAP 12'", "reps": "12 (6/pierna)", "descanso": "—", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Zancadas caminando alternando pierna, rodilla trasera casi al suelo y tronco erguido. 12 en total (6 por pierna).", "nota": "controla la bajada, no te dejes caer; si el espacio en casa es corto, hazlas en el sitio alternando." },
+        { "id": "1160", "nombre": "Burpees", "series": "AMRAP 12'", "reps": "8", "descanso": "—", "musculos": ["Cuerpo completo", "Cardio"], "instruccion": "Desde de pie: baja a plancha, pecho al suelo, empuja, recoge los pies y salta con las manos arriba (palmada opcional). 8 por ronda.", "nota": "el termómetro del WOD — si te ahogas, baja el ritmo de los burpees (paso a paso en vez de saltar), pero no pares del todo. Aquí es donde, si te animas, aprietas." }
+      ]
+    },
+    {
+      "titulo": "💪 Core finisher",
+      "ejercicios": [
+        { "id": "3204", "nombre": "Sit-ups (abdominales completos)", "series": "3", "reps": "15-20", "descanso": "40s", "musculos": ["Recto abdominal", "Core"], "instruccion": "Tumbado boca arriba, rodillas dobladas (o plantas juntas tipo mariposa, estilo CrossFit), brazos estirados por detrás de la cabeza. Sube el tronco completo llevando las manos hacia los pies y baja controlado tocando el suelo detrás con las manos.", "nota": "clásico de box para rematar — sube enrollando el abdomen, sin dar tirón con los brazos; si molesta la lumbar, reduce el rango y sube solo hasta despegar los omóplatos." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3-4 min: camina por casa 1 min para bajar pulsaciones · estiramiento de cuádriceps de pie (30s/lado) · estiramiento de pecho en marco de puerta (30s/lado) · estiramiento de dorsal colgado o agarrado a algo (30s/lado) · respiración profunda 5-8 ciclos.",
+  "cierre": "¡eso es un home WOD de los que te suenan! Fuerza para mantener el músculo, AMRAP para el pulso y la quema, y core para cerrar — todo con tu propio peso y la comba, sin necesitar gym. El truco del AMRAP a media energía es salir conservador: casi siempre acabas apretando más de lo que pensabas al principio. Apúntame cuántas rondas sacaste en el AMRAP si quieres, y la próxima ajustamos el objetivo. ¡A pasarlo bien!"
+}
