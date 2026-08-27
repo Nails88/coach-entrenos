@@ -40,6 +40,10 @@ Pero con criterio de coach, **no a la fuerza**. Sáltalo cuando:
 Cuando lo metas, **varía el ejercicio** (plancha con giro, plancha lateral, dead bug, reverse crunch,
 flutter kicks, hanging leg raise…) para no repetir siempre el mismo.
 
+**Ajusta la dificultad del core a la energía del día:** al usuario los **sit-ups le resultan fáciles**
+(poco exigentes), así que van bien como cierre en **días muy fundidos** (mucho metcon/AMRAP previo).
+Reserva el **core más exigente** (v-sit/hollow, plancha larga, colgado…) para días con energía.
+
 ## ENTORNOS DE ENTRENAMIENTO
 
 Cada sesión puede realizarse en uno de estos tres entornos. El usuario te indicará cuál aplica en cada caso:
