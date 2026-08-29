@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-08-29",
+  "patron": "Empuje — Pecho / Hombro anterior / Tríceps",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff5a3c",
+  "intro": "Empuje con criterio, no por cambiar por cambiar: mantengo tus clásicos que funcionan (press de pecho, press de hombro, laterales) y toco solo lo que tapa un hueco real. Cambio 1: meto press inclinado, porque llevabas tiempo solo con press plano y el pecho superior te quedaba rezagado. Cambio 2: la extensión de tríceps va por encima de la cabeza (cabeza larga del tríceps), que el pushdown de siempre no trabaja. Lo demás, clásicos — y ahí la clave es meter MÁS PESO que la última vez, que el progreso está en la sobrecarga, no en rotar ejercicios. El pec deck (tu máquina nueva) lo dejo como extra opcional al final por si te sobra tiempo y energía.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta. Después, específico de empuje: 12 círculos de brazos por sentido · 10 flexiones con rodillas apoyadas (bombeo escapular) · 15 face-pulls suaves con banda o polea (salud de hombro) · 1 serie ligera en la máquina de pecho, 15 reps, para grabar el patrón antes de cargar.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0577", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Sentado, espalda pegada al respaldo y agarres a la altura del pecho medio (ajusta el asiento). Empuja hasta casi extender los codos sin bloquearlos de golpe, pausa breve al frente y vuelve controlado sintiendo el estiramiento del pecho.", "nota": "tu compuesto base — HOY el objetivo es superar el peso o las reps de la última vez. Codos a ~45° del torso. Es la Chest Press de tu gym." },
+        { "id": "0314", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Pecho superior", "Hombros"], "instruccion": "Banco inclinado a ~30-45°, una mancuerna en cada mano a la altura del pecho alto, codos a unos 45° del torso. Empuja arriba juntando ligeramente las mancuernas sin chocarlas, pausa breve y baja controlado hasta notar el estiramiento.", "nota": "el cambio estrella de hoy: ataca el PECHO SUPERIOR, que te quedaba rezagado con solo press plano. No subas la inclinación por encima de 45° o se convierte en press de hombro." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Hombros", "Tríceps"], "instruccion": "Sentado en banco con respaldo (o de pie), core apretado, mancuernas a la altura de los hombros con las palmas al frente. Empuja arriba sin arquear la lumbar, pausa arriba y baja controlado.", "nota": "tu press vertical de hombro — sentado aíslas más el deltoide y proteges la espalda, como te gusta. Glúteo y abdomen apretados." },
+        { "id": "0334", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Hombros"], "instruccion": "De pie, una mancuerna en cada mano a los lados, codos con una ligera flexión FIJA (~10-20°). Sube los brazos hacia los lados (un pelín adelantados) liderando con el codo, hasta que queden paralelos al suelo, pausa y baja controlado.", "nota": "clásico de deltoide lateral, se queda — codo blandito y fijo, sube hasta el hombro, sin encoger los hombros ni impulso de cadera. Como si vertieras agua de dos jarras." },
+        { "id": "0194", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Tríceps"], "instruccion": "De espaldas a la polea alta con la cuerda por encima de la cabeza, codos apuntando al frente y pegados a la cabeza. Extiende los brazos hacia delante-arriba hasta estirar del todo, aprieta el tríceps y vuelve controlado sin abrir los codos.", "nota": "la novedad útil: al ir con los brazos por ENCIMA de la cabeza, estiras y trabajas la cabeza larga del tríceps, la que el pushdown no toca. Codos quietos apuntando al frente, solo se mueve el antebrazo." }
+      ]
+    },
+    {
+      "titulo": "➕ Extra opcional (estrena el pec deck si te sobra tiempo/energía)",
+      "ejercicios": [
+        { "id": "0596", "nombre": "Pec deck (contractor de pecho)", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Pecho"], "instruccion": "Sentado con la espalda apoyada, antebrazos/manos contra las almohadillas y codos a la altura de los hombros. Junta los brazos al frente apretando el pecho en el centro, pausa 1s y abre controlado hasta notar el estiramiento, sin pasarte de rango atrás.", "nota": "tu máquina nueva — da tensión constante en todo el recorrido (mejor que las aperturas con mancuerna para definición). Aprieta 1s en el centro; el trabajo está en juntar, no en abrir de más." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte. Zancada relajada y respiración controlada.", "nota": "el kilómetro final tira más de grasa al llegar con las reservas tocadas — y hoy las piernas van descansadas (día de empuje), así que puedes apretar un poco el ritmo si te apetece." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de pecho en marco de puerta (30s/lado), estiramiento de tríceps sobre la cabeza (30s/lado), estiramiento de hombro cruzando el brazo por delante (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "empuje bien pensado: dos cambios con motivo (pecho superior con el inclinado, cabeza larga del tríceps con la extensión por encima) y el resto clásicos donde toca apretar carga. Hoy no meto core a propósito — vienes de un WOD con mucho abdomen indirecto el 27 y el tiempo va justo con los 2 km; no aporta forzarlo. Si haces el pec deck opcional, ya tienes pecho de sobra. Apúntame los pesos que muevas hoy en el press y el inclinado, y la próxima vamos a por más. ¡A darle!"
+}
