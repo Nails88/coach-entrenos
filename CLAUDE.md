@@ -44,6 +44,19 @@ flutter kicks, hanging leg raise…) para no repetir siempre el mismo.
 (poco exigentes), así que van bien como cierre en **días muy fundidos** (mucho metcon/AMRAP previo).
 Reserva el **core más exigente** (v-sit/hollow, plancha larga, colgado…) para días con energía.
 
+## REGISTRO DE PESOS (referencia entre sesiones)
+
+El usuario reporta los pesos usados tras entrenar (los suyos y los de su **novia**, entrenan juntos).
+Se guardan en `pesos.json` (raíz), por `id` de ejercicio. Estructura: `registro[<id>]` = lista de
+entradas `{ "fecha", "tu": "...", "ella": "..." }` (texto libre, p. ej. `"30/35/40 kg"`).
+
+Flujo:
+- **Cuando el usuario dé pesos**, añade una entrada nueva a `pesos.json` para ese ejercicio y haz commit.
+- **Al montar una sesión**, para cada ejercicio con historial coge la **última entrada** y ponla en el
+  campo `referencia` de esa tarjeta, p. ej. `"referencia": "tú 30/35/40 kg · ella 15/20 kg"`. El
+  generador la muestra como una línea 📈 "Última vez: …" en la tarjeta, para que no tenga que recordar
+  la carga de cada máquina. Muestra los pesos de las series (lo más útil); si solo hay uno, ese.
+
 ## ENTORNOS DE ENTRENAMIENTO
 
 Cada sesión puede realizarse en uno de estos tres entornos. El usuario te indicará cuál aplica en cada caso:

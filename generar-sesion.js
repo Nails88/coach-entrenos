@@ -117,6 +117,10 @@ function renderCard(ej) {
 
   const nota = ej.nota ? `<p class="note">Nota técnica: ${esc(ej.nota)}</p>` : '';
 
+  // Referencia de pesos de la última vez (del registro pesos.json). Texto libre, p. ej.
+  // "tú 30/35/40 kg · ella 15/20 kg". Ayuda a no tener que recordar la carga en cada máquina.
+  const ref = ej.referencia ? `<p class="ref">📈 Última vez: ${esc(ej.referencia)}</p>` : '';
+
   // Tipo: etiqueta opcional para saber el orden. "compuesto" = hazlo primero (fresco);
   // "accesorio" = orden flexible (si la máquina está pillada, puedes reordenar sin problema).
   const tipo = ej.tipo === 'compuesto'
@@ -133,6 +137,7 @@ function renderCard(ej) {
       <h3>${esc(nombre)}</h3>
       ${tipo}
       <div class="muscles">${tags}</div>${presc}
+      ${ref}
       <p class="instructions">${esc(instruccion)}</p>
       ${nota}
     </div>
@@ -256,6 +261,12 @@ const html = `<!DOCTYPE html>
   .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
   .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
   .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
   footer {
     margin-top: 36px;
     padding-top: 20px;
