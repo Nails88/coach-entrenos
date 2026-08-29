@@ -1,8 +1,8 @@
 {
   "_doc": "Registro de pesos por ejercicio (histórico). Al montar una sesión, para cada ejercicio con historial se coge la ÚLTIMA entrada y se pone en el campo 'referencia' de esa tarjeta (p. ej. 'tú 30/35/40 kg · ella 15/20 kg'). Se actualiza cuando el usuario reporta los pesos tras entrenar.",
   "personas": {
-    "tu": "Tú",
-    "ella": "Ella"
+    "tu": "Noel",
+    "ella": "Vicky"
   },
   "registro": {
   }
