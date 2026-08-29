@@ -117,6 +117,12 @@ function renderCard(ej) {
 
   const nota = ej.nota ? `<p class="note">Nota técnica: ${esc(ej.nota)}</p>` : '';
 
+  // Tipo: etiqueta opcional para saber el orden. "compuesto" = hazlo primero (fresco);
+  // "accesorio" = orden flexible (si la máquina está pillada, puedes reordenar sin problema).
+  const tipo = ej.tipo === 'compuesto'
+    ? `<span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>`
+    : (ej.tipo === 'accesorio' ? `<span class="tipo tipo-acc">🔄 Orden flexible</span>` : '');
+
   // Nombre: si la spec trae "nombre", se usa tal cual (override, p. ej. cardio con GIF prestado).
   const nombre = ej.nombre ? ej.nombre : titleCase(ex.name);
 
@@ -125,6 +131,7 @@ function renderCard(ej) {
     <img src="${esc(gif)}" alt="${esc(nombre)}" loading="lazy">
     <div class="card-body">
       <h3>${esc(nombre)}</h3>
+      ${tipo}
       <div class="muscles">${tags}</div>${presc}
       <p class="instructions">${esc(instruccion)}</p>
       ${nota}
@@ -229,6 +236,12 @@ const html = `<!DOCTYPE html>
     background: #000;
   }
   .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
   .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
   .muscles span {
     background: color-mix(in srgb, var(--accent) 15%, transparent);

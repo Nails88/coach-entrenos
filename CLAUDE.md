@@ -114,6 +114,11 @@ ni escribas HTML a mano. El flujo es:
 4. **Escribe la spec**: crea `sessions/<fecha>/sesion.json` con la meta de la sesión y los
    ejercicios elegidos (ver esquema en `generar-sesion.js`). Redacta tú `intro`, `calentamiento`,
    `nota` por ejercicio, `vuelta_calma` y `cierre` — ahí va la inteligencia de COACH.
+   **Marca cada ejercicio del bloque de fuerza con `tipo`**: `"compuesto"` (hazlo primero, en
+   fresco) o `"accesorio"` (orden flexible). Ordena siempre los compuestos antes que los accesorios
+   dentro del bloque. Esto le sirve al usuario para reordenar sin problema si una máquina está pillada
+   (los accesorios se pueden mover; los compuestos mejor hacerlos frescos). No hace falta `tipo` en
+   calentamiento, cardio de cinta ni core finisher.
 5. **Genera la página**: `node generar-sesion.js sessions/<fecha>/sesion.json`. El script completa
    nombre, músculos, instrucciones y el GIF (URL remota) desde `catalogo.json` y escribe
    `sessions/<fecha>/index.html`.
