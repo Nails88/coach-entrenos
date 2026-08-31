@@ -20,6 +20,12 @@
       ]
     },
     {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0872", "nombre": "Reverse crunch (encogimiento inverso)", "series": "3", "reps": "12-15", "descanso": "40s", "musculos": ["Abdomen inferior", "Core"], "instruccion": "Tumbado boca arriba, rodillas dobladas y manos a los lados. Lleva las rodillas hacia el pecho enrollando la cadera y despegando el glúteo del suelo, y baja controlado sin tocar del todo.", "nota": "core corto para cerrar — el movimiento es ENROLLAR la pelvis con el abdomen bajo, no balancear las piernas ni coger impulso. Variado respecto a los sit-ups del 27." }
+      ]
+    },
+    {
       "titulo": "🏁 Cierre en cinta",
       "ejercicios": [
         { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte. Zancada relajada y respiración controlada.", "nota": "el kilómetro final tira más de grasa al llegar con las reservas tocadas — y hoy las piernas van descansadas (día de tirón), así que puedes apretar un poco el ritmo si te apetece." }
@@ -27,5 +33,5 @@
     }
   ],
   "vuelta_calma": "2-3 min: estiramiento de dorsal colgado o en polea baja (30s/lado), estiramiento de bíceps con brazo extendido contra la pared (30s/lado), estiramiento de deltoide posterior cruzando el brazo por delante (30s/lado), respiración profunda 5 ciclos.",
-  "cierre": "buen tirón para equilibrar la semana: anchura, grosor, hombro posterior y bíceps, con los grupos frescos tras el empuje del 29. Foco de siempre: codos atrás apretando la espalda, el bíceps solo acompaña. Hoy no meto core a propósito — el tiempo va justo con los 5 ejercicios y los 2 km, y de core andas servido de estos días. Apúntame los pesos de la Vertical Traction, el remo y los curls, y la próxima te salen ya como referencia. ¡A darle!"
+  "cierre": "buen tirón para equilibrar la semana: anchura, grosor, hombro posterior y bíceps, con los grupos frescos tras el empuje del 29. Foco de siempre: codos atrás apretando la espalda, el bíceps solo acompaña. Y cierre de core corto (reverse crunch), que no lo tocabas desde el WOD del 27. Apúntame los pesos de la Vertical Traction, el remo y los curls, y la próxima te salen ya como referencia. ¡A darle!"
 }
