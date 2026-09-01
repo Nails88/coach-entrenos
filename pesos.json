@@ -75,13 +75,6 @@
         "ella": "6/6/6 kg (mancuerna)"
       }
     ],
-    "0770": [
-      {
-        "fecha": "2026-09-01",
-        "tu": "30/45/60 kg (back squat con barra libre)",
-        "ella": "30/40/50 kg (back squat con barra libre)"
-      }
-    ],
     "0085": [
       {
         "fecha": "2026-09-01",
@@ -115,6 +108,13 @@
         "fecha": "2026-09-01",
         "tu": "8/12,5/15 kg",
         "ella": "8/10/12,5 kg"
+      }
+    ],
+    "0043": [
+      {
+        "fecha": "2026-09-01",
+        "tu": "30/45/60 kg (back squat con barra libre)",
+        "ella": "30/40/50 kg (back squat con barra libre)"
       }
     ]
   }

@@ -189,3 +189,4 @@ El usuario entrena en un gimnasio **Technogym**. Ten en cuenta al montar días d
   - `1350` lever seated row → usa `0861` (cable seated row).
   - `0760` smith leg press → usa `0739` (sled 45° leg press).
   - `3562` barbell glute bridge two legs on bench → usa `1409` (barbell glute bridge en suelo).
+- **Sentadilla por defecto:** el usuario prefiere **back squat con barra libre** (`0043` barbell full squat), estilo CrossFit, en vez del Smith squat (`0770`). Úsalo como sentadilla base en días de pierna salvo que pida lo contrario.
