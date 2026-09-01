@@ -1,0 +1,44 @@
+{
+  "fecha": "2026-09-01",
+  "patron": "Pierna completa — Cuádriceps / Isquios / Glúteos / Gemelos",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45-60 min",
+  "energia": "Media-alta",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Día de pierna completo y equilibrado, aprovechando que vienes con energía media-alta. Tus dos últimas piernas fueron una de glúteo (19) y otra de cuádriceps (23), así que hoy tocamos todo por igual: sentadilla (rodilla) + peso muerto rumano (cadera) como base, y remate de cada zona con aislamiento. Los tres compuestos van primero para pegarles frescos y apretar carga. Como es la primera vez que registramos pesos de pierna, apúntalos hoy y a partir de la próxima te salen como referencia. Dejo la búlgara como extra opcional por si os animáis a rematar el glúteo.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta. Después, específico de pierna: 15 sentadillas al aire con pausa abajo · 10 zancadas caminando por pierna · 15 puentes de glúteo en el suelo · 10 balanceos de pierna adelante-atrás por lado · 1 serie ligera en el Smith, 12 reps, para grabar el patrón antes de cargar.",
+  "bloques": [
+    {
+      "titulo": "🦵 Bloque principal",
+      "ejercicios": [
+        { "id": "0770", "series": "4", "reps": "8-10", "descanso": "90s", "tipo": "compuesto", "musculos": ["Cuádriceps", "Glúteos", "Isquiotibiales"], "instruccion": "Barra sobre trapecios, pies a la anchura de hombros y puntas ligeramente hacia fuera. Core activo y pecho alto, baja doblando cadera y rodilla hasta que el muslo quede paralelo (o algo por debajo), pausa breve y empuja con los talones.", "nota": "tu compuesto rey — con energía media-alta sube carga, pero sin perder profundidad; el Smith guía la barra y te deja apretar seguro." },
+        { "id": "0085", "series": "3", "reps": "10-12", "descanso": "90s", "tipo": "compuesto", "musculos": ["Isquiotibiales", "Glúteos", "Lumbar"], "instruccion": "De pie con la barra pegada a los muslos, rodillas ligeramente flexionadas y fijas. Lleva la cadera atrás bajando la barra pegada al cuerpo hasta notar el estiramiento en los isquios, y empuja la cadera al frente apretando glúteos arriba.", "nota": "el patrón de cadera que complementa la sentadilla — movimiento de cadera, no de rodilla; espalda recta y para cuando la notes curvarse." },
+        { "id": "0739", "series": "3", "reps": "12", "descanso": "75s", "tipo": "compuesto", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentado en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros en la plataforma. Empuja sin bloquear las rodillas de golpe y baja controlado flexionando hasta unos 90°.", "nota": "más volumen de cuádriceps y glúteo con la espalda protegida — empuja con toda la planta y no dejes que las rodillas se metan hacia dentro." },
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo justo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento.", "nota": "aislamiento de cuádriceps para rematar la parte frontal — busca la contracción y la pausa arriba." },
+        { "id": "0586", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo, pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos todo lo que puedas, aprieta arriba y baja lento sin soltar de golpe.", "nota": "equilibra el trabajo de extensión — no despegues la cadera del banco para ganar rango." },
+        { "id": "0605", "series": "4", "reps": "15-20", "descanso": "45s", "tipo": "accesorio", "musculos": ["Gemelos", "Sóleo"], "instruccion": "De pie con los hombros bajo las almohadillas, pies a la anchura de cadera. Sube los talones tan alto como puedas extendiendo el tobillo, pausa 1s arriba y baja hasta notar el estiramiento completo.", "nota": "el gemelo, que solemos tener abandonado — rango completo y repeticiones altas, nada de rebotes; sube apretando y estira abajo en cada rep." }
+      ]
+    },
+    {
+      "titulo": "➕ Extra opcional (rematar glúteo si os animáis)",
+      "ejercicios": [
+        { "id": "0410", "nombre": "Sentadilla búlgara con mancuernas", "series": "3", "reps": "10-12", "descanso": "60s", "tipo": "accesorio", "musculos": ["Glúteos", "Cuádriceps"], "instruccion": "Pie trasero apoyado en un banco por detrás, mancuerna en cada mano, tronco ligeramente inclinado al frente. Baja flexionando la rodilla y la cadera delanteras hasta que el muslo quede paralelo, y sube empujando con el talón delantero. Termina una pierna antes de cambiar.", "nota": "burnout unilateral de glúteo y cuádriceps — inclina un poco el tronco al frente para llevar el trabajo al glúteo. Solo si llegáis con ganas; si las piernas ya están fritas, mejor dejarlo." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0276", "nombre": "Dead bug (bicho muerto)", "series": "3", "reps": "10/lado", "descanso": "40s", "musculos": ["Core", "Transverso abdominal"], "instruccion": "Boca arriba, brazos al techo y rodillas a 90°. Baja de forma alterna brazo y pierna contrarios hasta casi rozar el suelo, mantén la lumbar pegada al suelo y vuelve. Alterna lados.", "nota": "core elegido a propósito para después del peso muerto: trabaja el abdomen SIN cargar la lumbar (que viene tocada del RDL). La clave es que la lumbar no se despegue; si se arquea, baja menos la pierna." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte. Zancada relajada y respiración controlada.", "nota": "el kilómetro final aprovecha que llegas con el glucógeno de las piernas tocado, así que tira más de grasa. Si vas muy cargado por la sentadilla y el RDL, bájalo a trote muy suave, pero remátalo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de cuádriceps de pie sujetando el tobillo (30s/lado), estiramiento de isquios con pierna estirada apoyada (30s/lado), estiramiento de glúteo sentado con tobillo sobre rodilla (30s/lado), estiramiento de gemelo contra la pared (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "día de pierna completo: sentadilla y peso muerto de base, aislamiento de cuádriceps e isquio, gemelo y, si os animasteis, la búlgara de remate. Entre este día equilibrado y los dos anteriores (glúteo y cuádriceps), tienes la pierna trabajada por todos lados. El RDL carga la recuperación, así que si mañana notas isquios y glúteo, es buena señal. Apúntame los pesos (Smith squat, RDL, prensa, extensión, femoral, gemelo) tuyos y de Vicky, y estrenamos la ficha de pierna. ¡A darle!"
+}
