@@ -1,0 +1,43 @@
+{
+  "fecha": "2026-09-03",
+  "patron": "Empuje — Pecho / Hombro anterior / Tríceps",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff5a3c",
+  "intro": "Empuje para reabrir el ciclo tras el PPL completo (Empuje 29 → Tirón 31 → Pierna 01). Hoy estrenamos las REFERENCIAS: debajo de cada ejercicio tienes lo que movisteis el 29, así que la misión es clara — igualar o superar esos números (más peso o una repe más). Misma estructura que funcionó: press de pecho de base, inclinado para pecho superior, hombro, lateral y tríceps por encima de la cabeza. La sobrecarga progresiva es lo que da resultados, y ahora la tienes delante en números.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta. Después, específico de empuje: 12 círculos de brazos por sentido · 10 flexiones con rodillas apoyadas (bombeo escapular) · 15 face-pulls suaves con banda o polea (salud de hombro) · 1 serie ligera en la máquina de pecho, 15 reps.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0577", "series": "4", "reps": "8-10", "descanso": "90s", "tipo": "compuesto", "referencia": "Noel 32,5/37,5/42,5 kg · Vicky 12,5/17,5/22,5 kg", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Sentado, espalda pegada al respaldo y agarres a la altura del pecho medio. Empuja hasta casi extender los codos sin bloquearlos de golpe, pausa breve al frente y vuelve controlado sintiendo el estiramiento del pecho.", "nota": "compuesto base — HOY a batir el 42,5 de Noel (a por 45 o una repe más) y el 22,5 de Vicky. Codos a ~45° del torso." },
+        { "id": "0314", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 8/10/12 kg · Vicky 6/8/10 kg (mancuerna)", "musculos": ["Pecho superior", "Hombros"], "instruccion": "Banco inclinado a ~30-45°, una mancuerna en cada mano a la altura del pecho alto, codos a unos 45° del torso. Empuja arriba juntando ligeramente las mancuernas sin chocarlas, pausa breve y baja controlado.", "nota": "pecho superior — si el 12 de la última serie salió sólido, prueba el 14. No subas la inclinación por encima de 45°." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 8/10/10 kg · Vicky 6/8/8 kg (mancuerna)", "musculos": ["Hombros", "Tríceps"], "instruccion": "Sentado en banco con respaldo, core apretado, mancuernas a la altura de los hombros con las palmas al frente. Empuja arriba sin arquear la lumbar, pausa arriba y baja controlado.", "nota": "la última vez os quedasteis en 10/10 y 8/8 (repetisteis peso en las dos últimas) — si salió con margen, hoy toca subir esa última serie." },
+        { "id": "0334", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 6/8/8 kg · Vicky 4/4/5 kg (mancuerna)", "musculos": ["Hombros"], "instruccion": "De pie, una mancuerna en cada mano a los lados, codos con una ligera flexión FIJA (~10-20°). Sube los brazos hacia los lados (un pelín adelantados) liderando con el codo, hasta que queden paralelos al suelo, pausa y baja controlado.", "nota": "codo blandito y fijo, sube hasta el hombro, sin encoger ni impulso. Aquí mejor subir REPS antes que peso (es aislamiento)." },
+        { "id": "0194", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 7,5/10/10 kg · Vicky 5/5/7,5 kg", "musculos": ["Tríceps"], "instruccion": "De espaldas a la polea alta con la cuerda por encima de la cabeza, codos apuntando al frente y pegados a la cabeza. Extiende los brazos hacia delante-arriba hasta estirar del todo, aprieta el tríceps y vuelve controlado sin abrir los codos.", "nota": "cabeza larga del tríceps — codos quietos apuntando al frente, solo se mueve el antebrazo." }
+      ]
+    },
+    {
+      "titulo": "➕ Extra opcional (pec deck si te sobra tiempo/energía)",
+      "ejercicios": [
+        { "id": "0596", "nombre": "Pec deck (contractor de pecho)", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 15/20/25/30 kg · Vicky 5/10/15/20 kg", "musculos": ["Pecho"], "instruccion": "Sentado con la espalda apoyada, antebrazos/manos contra las almohadillas y codos a la altura de los hombros. Junta los brazos al frente apretando el pecho en el centro, pausa 1s y abre controlado hasta notar el estiramiento, sin pasarte de rango atrás.", "nota": "tensión constante — aprieta 1s en el centro. La última llegasteis a 30 (Noel) y 20 (Vicky); a por más si os animáis." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0687", "nombre": "Russian twist (giros rusos)", "series": "3", "reps": "20 (10/lado)", "descanso": "40s", "musculos": ["Oblicuos", "Core"], "instruccion": "Sentado, tronco algo inclinado atrás y pies elevados (o apoyados si cuesta). Gira el tronco llevando las manos a un lado y al otro, tocando el suelo junto a la cadera. Si quieres más, sujeta una mancuerna o disco.", "nota": "core corto y variado (oblicuos) — el giro sale del tronco, no solo de los brazos; controla, no lances por inercia." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte. Zancada relajada y respiración controlada.", "nota": "el kilómetro final tira más de grasa al llegar con las reservas tocadas — y hoy las piernas van descansadas (día de empuje), así que puedes apretar un poco el ritmo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de pecho en marco de puerta (30s/lado), estiramiento de tríceps sobre la cabeza (30s/lado), estiramiento de hombro cruzando el brazo por delante (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "empuje para reabrir el ciclo, y con las referencias delante ya sabéis contra qué competís: batir el 29. Recuerda que el progreso no es lineal cada día — a veces igualas y otras subes — pero con el registro delante es mucho más fácil apretar donde toca. Apúntame los pesos de hoy (tú y Vicky) y vemos la progresión respecto a la última. ¡A por las marcas!"
+}
