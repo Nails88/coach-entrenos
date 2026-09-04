@@ -50,8 +50,15 @@ El usuario reporta los pesos usados tras entrenar (los suyos y los de su **novia
 Se guardan en `pesos.json` (raíz), por `id` de ejercicio. Estructura: `registro[<id>]` = lista de
 entradas `{ "fecha", "tu": "...", "ella": "..." }` (texto libre, p. ej. `"30/35/40 kg"`).
 
+Cada página de sesión incluye un **registrador de pesos rellenable** (inputs por ejercicio + botón
+"Generar"/"Copiar") que produce un texto tipo:
+`PESOS <fecha>` seguido de líneas `Nombre del ejercicio: <pesos tú> | <pesos ella>` (el `-` = en blanco).
+Cuando el usuario pegue ese texto, **parsea cada línea**, mapea el nombre del ejercicio a su `id`
+(por la sesión de esa fecha) y añade la entrada a `pesos.json`. Antes del `|` van los pesos del
+usuario (`tu`), después los de la novia (`ella`).
+
 Flujo:
-- **Cuando el usuario dé pesos**, añade una entrada nueva a `pesos.json` para ese ejercicio y haz commit.
+- **Cuando el usuario dé pesos** (pegando el texto del registrador o a mano), añade una entrada nueva a `pesos.json` para ese ejercicio, regenera el panel (`node construir-registro.js`) y haz commit.
 - **Al montar una sesión**, para cada ejercicio con historial coge la **última entrada** y ponla en el
   campo `referencia` de esa tarjeta, p. ej. `"referencia": "tú 30/35/40 kg · ella 15/20 kg"`. El
   generador la muestra como una línea 📈 "Última vez: …" en la tarjeta, para que no tenga que recordar

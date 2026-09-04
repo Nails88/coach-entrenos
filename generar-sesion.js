@@ -165,6 +165,61 @@ const cierre = spec.cierre
   ? `  <footer><b>Nota de coach:</b> ${esc(spec.cierre)}</footer>\n`
   : '';
 
+// --- Registrador de pesos en la propia página (rellenar + generar texto para pegar a COACH) ---
+let regNames = { tu: 'Tú', ella: 'Ella' };
+try { const pj = JSON.parse(fs.readFileSync(path.join(root, 'pesos.json'), 'utf8')); if (pj.personas) regNames = pj.personas; } catch {}
+
+const loggables = [];
+(spec.bloques || []).forEach(b => (b.ejercicios || []).forEach(ej => {
+  if (ej.id === '3666') return; // el cardio de cinta no lleva peso
+  const ex = byId.get(ej.id);
+  const nombre = ej.nombre ? ej.nombre : (ex ? titleCase(ex.name) : `Ejercicio ${ej.id}`);
+  loggables.push(nombre);
+}));
+
+const wlogJS = `
+(function(){
+  var fecha=${JSON.stringify(fecha)};
+  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout');
+  if(!gen) return;
+  function build(){
+    var map={};
+    document.querySelectorAll('.win').forEach(function(inp){
+      var v=(inp.value||'').trim(); if(!v) return;
+      var n=inp.getAttribute('data-name'), who=inp.getAttribute('data-who');
+      map[n]=map[n]||{}; map[n][who]=v;
+    });
+    var lines=['PESOS '+fecha]; var seen={};
+    document.querySelectorAll('.win[data-who="tu"]').forEach(function(inp){
+      var n=inp.getAttribute('data-name'); if(seen[n]) return; seen[n]=1;
+      if(!map[n]) return;
+      lines.push(n+': '+(map[n].tu||'-')+' | '+(map[n].ella||'-'));
+    });
+    return lines.length>1?lines.join('\\n'):'PESOS '+fecha+' (rellena algún peso primero)';
+  }
+  gen.addEventListener('click',function(){
+    out.value=build(); out.hidden=false; copy.hidden=false;
+    out.style.height='auto'; out.style.height=(out.scrollHeight+4)+'px';
+  });
+  copy.addEventListener('click',function(){
+    out.select(); out.setSelectionRange(0,99999);
+    var done=function(){copy.textContent='¡Copiado!';setTimeout(function(){copy.textContent='Copiar';},1500);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(out.value).then(done,function(){try{document.execCommand('copy');done();}catch(e){}});}
+    else{try{document.execCommand('copy');done();}catch(e){}}
+  });
+})();`;
+
+const registroPesos = loggables.length ? `  <div class="block-title">📋 Registrar pesos</div>
+  <p class="prose">Apunta aquí los pesos según entrenáis (p. ej. <b>30/35/40</b>). Deja en blanco lo que no hagáis. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH.</p>
+  <div class="reglog">
+    <div class="wrow whead"><label></label><span>${esc(regNames.tu)}</span><span>${esc(regNames.ella)}</span></div>
+    ${loggables.map(n => `<div class="wrow"><label>${esc(n)}</label><input class="win" data-name="${esc(n)}" data-who="tu" placeholder="${esc(regNames.tu)}"><input class="win" data-name="${esc(n)}" data-who="ella" placeholder="${esc(regNames.ella)}"></div>`).join('\n    ')}
+  </div>
+  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button></div>
+  <textarea id="wout" readonly hidden></textarea>
+  <script>${wlogJS}</script>
+` : '';
+
 const metaPills = [
   spec.entorno ? `<div class="pill">Entorno: <b>${esc(spec.entorno)}</b></div>` : '',
   spec.tiempo ? `<div class="pill">Tiempo: <b>${esc(spec.tiempo)}</b></div>` : '',
@@ -261,6 +316,16 @@ const html = `<!DOCTYPE html>
   .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
   .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
   .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 12px; }
+  .wrow { display: grid; grid-template-columns: 1fr 84px 84px; gap: 8px; align-items: center; }
+  .wrow label { font-size: 0.9rem; color: var(--text); }
+  .wrow.whead span { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; text-align: center; }
+  .win { width: 100%; padding: 8px; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
   .ref {
     font-size: 0.82rem; font-weight: 600; color: var(--text);
     background: color-mix(in srgb, var(--accent) 12%, transparent);
@@ -296,6 +361,7 @@ ${calentamiento}
 ${bloquesHtml}
 
 ${vuelta}
+${registroPesos}
 ${cierre}</div>
 </body>
 </html>
