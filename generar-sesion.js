@@ -174,7 +174,9 @@ const loggables = [];
   if (ej.id === '3666') return; // el cardio de cinta no lleva peso
   const ex = byId.get(ej.id);
   const nombre = ej.nombre ? ej.nombre : (ex ? titleCase(ex.name) : `Ejercicio ${ej.id}`);
-  loggables.push(nombre);
+  let sets = parseInt(ej.series, 10);
+  if (!(sets >= 1 && sets <= 8)) sets = 1;
+  loggables.push({ nombre, sets });
 }));
 
 const wlogJS = `
@@ -183,17 +185,19 @@ const wlogJS = `
   var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout');
   if(!gen) return;
   function build(){
-    var map={};
+    var order=[],data={};
     document.querySelectorAll('.win').forEach(function(inp){
-      var v=(inp.value||'').trim(); if(!v) return;
-      var n=inp.getAttribute('data-name'), who=inp.getAttribute('data-who');
-      map[n]=map[n]||{}; map[n][who]=v;
+      var n=inp.getAttribute('data-name'),who=inp.getAttribute('data-who'),set=+inp.getAttribute('data-set');
+      if(order.indexOf(n)<0) order.push(n);
+      data[n]=data[n]||{tu:[],ella:[]};
+      data[n][who][set]=(inp.value||'').trim();
     });
-    var lines=['PESOS '+fecha]; var seen={};
-    document.querySelectorAll('.win[data-who="tu"]').forEach(function(inp){
-      var n=inp.getAttribute('data-name'); if(seen[n]) return; seen[n]=1;
-      if(!map[n]) return;
-      lines.push(n+': '+(map[n].tu||'-')+' | '+(map[n].ella||'-'));
+    var lines=['PESOS '+fecha];
+    order.forEach(function(n){
+      var tu=(data[n].tu||[]).filter(function(v){return v;}).join('/');
+      var ella=(data[n].ella||[]).filter(function(v){return v;}).join('/');
+      if(!tu&&!ella) return;
+      lines.push(n+': '+(tu||'-')+' | '+(ella||'-'));
     });
     return lines.length>1?lines.join('\\n'):'PESOS '+fecha+' (rellena algún peso primero)';
   }
@@ -209,11 +213,20 @@ const wlogJS = `
   });
 })();`;
 
+function wexRow(o) {
+  const boxes = who => Array.from({ length: o.sets }, (_, i) =>
+    `<input class="win" data-name="${esc(o.nombre)}" data-who="${who}" data-set="${i}" placeholder="${i + 1}">`).join('');
+  return `<div class="wex">
+      <div class="wname">${esc(o.nombre)}</div>
+      <div class="wline"><span class="wwho">${esc(regNames.tu)}</span><div class="wsets">${boxes('tu')}</div></div>
+      <div class="wline"><span class="wwho">${esc(regNames.ella)}</span><div class="wsets">${boxes('ella')}</div></div>
+    </div>`;
+}
+
 const registroPesos = loggables.length ? `  <div class="block-title">📋 Registrar pesos</div>
-  <p class="prose">Apunta aquí los pesos según entrenáis (p. ej. <b>30/35/40</b>). Deja en blanco lo que no hagáis. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH.</p>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH.</p>
   <div class="reglog">
-    <div class="wrow whead"><label></label><span>${esc(regNames.tu)}</span><span>${esc(regNames.ella)}</span></div>
-    ${loggables.map(n => `<div class="wrow"><label>${esc(n)}</label><input class="win" data-name="${esc(n)}" data-who="tu" placeholder="${esc(regNames.tu)}"><input class="win" data-name="${esc(n)}" data-who="ella" placeholder="${esc(regNames.ella)}"></div>`).join('\n    ')}
+    ${loggables.map(wexRow).join('\n    ')}
   </div>
   <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button></div>
   <textarea id="wout" readonly hidden></textarea>
@@ -316,12 +329,15 @@ const html = `<!DOCTYPE html>
   .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
   .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
   .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
-  .reglog { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 12px; }
-  .wrow { display: grid; grid-template-columns: 1fr 84px 84px; gap: 8px; align-items: center; }
-  .wrow label { font-size: 0.9rem; color: var(--text); }
-  .wrow.whead span { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; text-align: center; }
-  .win { width: 100%; padding: 8px; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
   .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
   .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
   .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
   #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
