@@ -77,6 +77,11 @@
         "fecha": "2026-08-31",
         "tu": "32,5/42,5/42,5 kg (jalón al pecho, Vertical Traction ocupada)",
         "ella": "22,5/27,5/32,5 kg"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "20/25/30/35 kg"
       }
     ],
     "0861": [
@@ -84,6 +89,11 @@
         "fecha": "2026-08-31",
         "tu": "35/40/45 kg",
         "ella": "20/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "20/35/35 kg"
       }
     ],
     "0602": [
@@ -91,12 +101,22 @@
         "fecha": "2026-08-31",
         "tu": "6/6/8 kg (mancuerna; reverse fly ocupada)",
         "ella": "4/4 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "4/4/4 kg (mancuerna; máquina ocupada)"
       }
     ],
     "0313": [
       {
         "fecha": "2026-08-31",
         "tu": "10/10/10 kg (mancuerna)",
+        "ella": "6/6/6 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
         "ella": "6/6/6 kg (mancuerna)"
       }
     ],
@@ -140,6 +160,13 @@
         "fecha": "2026-09-01",
         "tu": "30/45/60 kg (back squat con barra libre)",
         "ella": "30/40/50 kg (back squat con barra libre)"
+      }
+    ],
+    "0868": [
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "5/7,5/7,5 kg"
       }
     ]
   }
