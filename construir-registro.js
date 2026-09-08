@@ -29,7 +29,8 @@ const META = {
   '0198': ['Jalón vertical (Vertical Traction)', 'Tirón'], '0861': ['Remo sentado en polea', 'Tirón'],
   '0602': ['Reverse fly (pájaros)', 'Tirón'], '0868': ['Curl en polea', 'Tirón'], '0313': ['Curl martillo con mancuernas', 'Tirón'],
   '0043': ['Back squat (barra libre)', 'Pierna'], '0085': ['Peso muerto rumano', 'Pierna'], '0739': ['Prensa 45°', 'Pierna'],
-  '0585': ['Extensión de cuádriceps', 'Pierna'], '0586': ['Curl femoral', 'Pierna'], '0605': ['Gemelo de pie', 'Pierna']
+  '0585': ['Extensión de cuádriceps', 'Pierna'], '0586': ['Curl femoral', 'Pierna'], '0605': ['Gemelo de pie', 'Pierna'],
+  '1409': ['Hip thrust / puente de glúteo', 'Pierna'], '0597': ['Abducción sentado (abrir)', 'Pierna'], '0598': ['Aducción sentado (cerrar)', 'Pierna']
 };
 const GRUPOS = ['Empuje', 'Tirón', 'Pierna', 'Otros'];
 const ACENTO = { 'Empuje': '#ff5a3c', 'Tirón': '#3ca8ff', 'Pierna': '#35c46a', 'Otros': '#f5a623' };
