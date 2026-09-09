@@ -2,7 +2,11 @@
   "_doc": "Registro de composición corporal (InBody / báscula del gym). Una toma ~mensual por persona, misma hora/condiciones (Noel: por la tarde tras entrenar). Se añade una entrada por fecha en registro.tu / registro.ella. El panel (construir-composicion.js) dibuja la evolución de cada métrica. Campos por entrada: fecha + métricas (kg/%/índice). Deja fuera lo que no venga en la lectura.",
   "personas": { "tu": "Noel", "ella": "Vicky" },
   "objetivo": {
-    "tu": { "peso": 68.1 },
+    "tu": {
+      "peso": 68.1,
+      "grasa_pct": 15,
+      "hito": { "peso": 74, "grasa_pct": 22, "plazo": "3-4 meses" }
+    },
     "ella": {}
   },
   "registro": {

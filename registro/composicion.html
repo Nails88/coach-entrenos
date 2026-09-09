@@ -12,6 +12,7 @@
   .dash{width:16px;height:0;border-top:2px dashed #35c46a;display:inline-block}
   .resumen{background:var(--card);border:1px solid var(--border);border-left:4px solid #4aa3ff;border-radius:12px;padding:12px 16px;margin-top:16px}
   .resumen p{margin:0 0 6px;line-height:1.5;font-size:.92rem}
+  .resumen .hito-line{color:#f5a623;font-size:.88rem;margin:0 0 6px;line-height:1.5}
   .resumen .hint{color:var(--muted);font-size:.85rem;margin:0}
   .grupo{margin-top:26px}
   .grupo>h2{font-size:1.15rem;margin:0 0 12px;border-bottom:2px solid currentColor;display:inline-block;padding-bottom:3px}
@@ -37,30 +38,31 @@
     <div class="eyebrow">COACH · Composición corporal</div>
     <h1>🧬 Composición — Noel & Vicky</h1>
     <p>Evolución de las mediciones del InBody, toma a toma (≈1/mes). Lo que importa es la <b>tendencia</b>: grasa bajando mientras el músculo aguanta. Cada punto es una medición; una toma suelta fluctúa con hidratación y hora, así que miramos la línea, no el decimal de un día.</p>
-    <div class="legend"><span><i class="dot" style="background:#4aa3ff"></i>Noel</span><span><i class="dot" style="background:#ff8fab"></i>Vicky</span><span><i class="dash"></i>meta</span></div>
+    <div class="legend"><span><i class="dot" style="background:#4aa3ff"></i>Noel</span><span><i class="dot" style="background:#ff8fab"></i>Vicky</span><span><i class="dash" style="border-top-color:#f5a623"></i>hito</span><span><i class="dash"></i>meta</span></div>
   </header>
   <div class="resumen">
-    <p><b>Noel</b> · última toma 08/09: <b>81,5 kg</b>, <b>29,0%</b> grasa, <b>32,5 kg</b> de músculo. A <b>13,4 kg</b> de la meta (68,1 kg), todo de grasa manteniendo el músculo.</p>
+    <p><b>Noel</b> · última toma 08/09: <b>81,5 kg</b>, <b>29,0%</b> grasa, <b>32,5 kg</b> de músculo. 🎯 Meta final: <b>68,1 kg</b> / <b>15%</b> de grasa (a 13,4 kg), perdiendo grasa y manteniendo el músculo.</p>
+    <p class="hito-line">🟠 Próximo hito (3-4 meses): <b>74,0 kg</b> / <b>22%</b> de grasa. Objetivo alcanzable antes de mirar la meta final.</p>
     <p class="hint">Primera toma registrada: aún no hay tendencia. En cuanto haya una segunda medición (≈1 mes) verás las líneas y si la grasa baja mientras el músculo aguanta — que es la señal de que el plan funciona.</p>
   </div>
   <div class="grupo"><h2 style="color:#35c46a">Lo que miramos</h2>
 <div class="grid"><div class="mcard">
     <div class="mhead"><h3>Peso</h3></div>
     <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de peso" style="max-width:340px">
-    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">67</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">75</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">83</text><line x1="34" y1="120.0" x2="310" y2="120.0" stroke="#35c46a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="117.0" text-anchor="end" fill="#35c46a" font-size="8">meta 68,1</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">67</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">75</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">83</text><line x1="34" y1="76.0" x2="310" y2="76.0" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="73.0" text-anchor="end" fill="#f5a623" font-size="8">hito 74,0</text><line x1="34" y1="120.0" x2="310" y2="120.0" stroke="#35c46a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="117.0" text-anchor="end" fill="#35c46a" font-size="8">meta 68,1</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
     <circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
   </svg></div>
     <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">81,5<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval muted">sin datos</span></div>
-    <div class="meta-note">🎯 Meta Noel: 68,1 kg — faltan 13,4 kg</div>
+    <div class="meta-note">🟠 Hito: 74,0 kg — faltan 7,5 kg</div><div class="meta-note">🎯 Meta: 68,1 kg — faltan 13,4 kg</div>
   </div>
 <div class="mcard">
     <div class="mhead"><h3>% Masa grasa</h3></div>
     <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de grasa_pct" style="max-width:340px">
-    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">27,8</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">29,0</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">30,2</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
-    <circle cx="172.0" cy="70.0" r="2.8" fill="#4aa3ff"/>
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">14</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">22</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">30</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="67.0" text-anchor="end" fill="#f5a623" font-size="8">hito 22,0</text><line x1="34" y1="120.0" x2="310" y2="120.0" stroke="#35c46a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="117.0" text-anchor="end" fill="#35c46a" font-size="8">meta 15,0</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
   </svg></div>
     <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">29,0<small>%</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval muted">sin datos</span></div>
-    
+    <div class="meta-note">🟠 Hito: 22,0 % — faltan 7,0 %</div><div class="meta-note">🎯 Meta: 15,0 % — faltan 14,0 %</div>
   </div>
 <div class="mcard">
     <div class="mhead"><h3>Masa grasa</h3></div>

@@ -20,7 +20,8 @@ const reg = d.registro || { tu: [], ella: [] };
 
 const C_TU = '#4aa3ff';    // Noel
 const C_ELLA = '#ff8fab';  // Vicky
-const C_GOAL = '#35c46a';
+const C_GOAL = '#35c46a';  // meta final
+const C_HITO = '#f5a623';  // hito intermedio
 
 // Métricas a mostrar. lower:true = baja es mejor · higher:true = sube es mejor.
 const METRICS = [
@@ -49,13 +50,14 @@ const ellaE = sorted(reg.ella);
 const lastVal = (entries, k) => { for (let i = entries.length - 1; i >= 0; i--) if (entries[i][k] != null) return entries[i][k]; return null; };
 const prevVal = (entries, k) => { let seen = 0; for (let i = entries.length - 1; i >= 0; i--) if (entries[i][k] != null) { seen++; if (seen === 2) return entries[i][k]; } return null; };
 
-// Gráfica SVG de evolución de UNA métrica, con línea de Noel y de Vicky (+ meta opcional).
-function chartSVG(k, goalTu) {
+// Gráfica SVG de evolución de UNA métrica, con línea de Noel y de Vicky (+ meta e hito opcionales).
+function chartSVG(k, goalTu, hitoTu) {
   const seriesTu = tuE.map(e => ({ f: e.fecha, v: e[k] == null ? null : +e[k] }));
   const seriesElla = ellaE.map(e => ({ f: e.fecha, v: e[k] == null ? null : +e[k] }));
   const fechas = Array.from(new Set([...seriesTu, ...seriesElla].map(p => p.f))).sort();
   const vals = [...seriesTu, ...seriesElla].map(p => p.v).filter(v => v != null);
   if (goalTu != null) vals.push(goalTu);
+  if (hitoTu != null) vals.push(hitoTu);
   if (!vals.length) return '<div class="noimg">sin datos aún</div>';
 
   const W = 320, H = 150, padL = 34, padR = 10, padT = 12, padB = 22;
@@ -78,10 +80,10 @@ function chartSVG(k, goalTu) {
     return `<text x="${xOf(i).toFixed(1)}" y="${H - 6}" text-anchor="middle" fill="#9aa0ab" font-size="8">${esc(fechaCorta(f))}</text>`;
   }).join('');
 
-  const goal = goalTu != null
-    ? `<line x1="${padL}" y1="${yOf(goalTu).toFixed(1)}" x2="${W - padR}" y2="${yOf(goalTu).toFixed(1)}" stroke="${C_GOAL}" stroke-width="1.5" stroke-dasharray="4 3"/>` +
-      `<text x="${W - padR}" y="${(yOf(goalTu) - 3).toFixed(1)}" text-anchor="end" fill="${C_GOAL}" font-size="8">meta ${esc(fmt(goalTu, 1))}</text>`
-    : '';
+  const refLine = (val, color, label) => val == null ? '' :
+    `<line x1="${padL}" y1="${yOf(val).toFixed(1)}" x2="${W - padR}" y2="${yOf(val).toFixed(1)}" stroke="${color}" stroke-width="1.5" stroke-dasharray="4 3"/>` +
+    `<text x="${W - padR}" y="${(yOf(val) - 3).toFixed(1)}" text-anchor="end" fill="${color}" font-size="8">${label} ${esc(fmt(val, 1))}</text>`;
+  const goal = refLine(hitoTu, C_HITO, 'hito') + refLine(goalTu, C_GOAL, 'meta');
 
   function serie(series, color) {
     const P = series.filter(p => p.v != null).map(p => [xOf(fechas.indexOf(p.f)), yOf(p.v)]);
@@ -112,6 +114,7 @@ function deltaBadge(m, entries) {
 
 function metricCard(m) {
   const goalTu = (objetivo.tu || {})[m.k];
+  const hitoTu = ((objetivo.tu || {}).hito || {})[m.k];
   const lt = lastVal(tuE, m.k), le = lastVal(ellaE, m.k);
   const valLine = who => {
     const entries = who === 'tu' ? tuE : ellaE;
@@ -122,17 +125,17 @@ function metricCard(m) {
     return `<div class="mrow"><span class="mwho" style="color:${color}">${esc(name)}</span>` +
       `<span class="mval">${esc(fmt(v, m.dec))}<small>${esc(m.unit)}</small> ${deltaBadge(m, entries)}</span></div>`;
   };
-  // Nota de meta (solo Noel, solo métricas con objetivo).
-  let metaNote = '';
-  if (goalTu != null && lt != null) {
-    const falta = lt - goalTu;
-    metaNote = Math.abs(falta) < 0.05
-      ? `<div class="meta-note">🎯 ${esc(personas.tu)} en su meta de ${esc(fmt(goalTu, 1))} ${esc(m.unit)}</div>`
-      : `<div class="meta-note">🎯 Meta ${esc(personas.tu)}: ${esc(fmt(goalTu, 1))} ${esc(m.unit)} — ${falta > 0 ? 'faltan' : 'te has pasado'} ${esc(fmt(Math.abs(falta), 1))} ${esc(m.unit)}</div>`;
-  }
+  // Notas de hito y meta (solo Noel, solo métricas con objetivo).
+  const noteLine = (val, icon, word) => {
+    if (val == null || lt == null) return '';
+    const falta = lt - val;
+    if (Math.abs(falta) < 0.05) return `<div class="meta-note">${icon} ${esc(word)} alcanzado (${esc(fmt(val, 1))} ${esc(m.unit)})</div>`;
+    return `<div class="meta-note">${icon} ${esc(word)}: ${esc(fmt(val, 1))} ${esc(m.unit)} — ${falta > 0 ? 'faltan' : 'te has pasado'} ${esc(fmt(Math.abs(falta), 1))} ${esc(m.unit)}</div>`;
+  };
+  const metaNote = noteLine(hitoTu, '🟠', 'Hito') + noteLine(goalTu, '🎯', 'Meta');
   return `<div class="mcard">
     <div class="mhead"><h3>${esc(m.label)}</h3></div>
-    <div class="chart">${chartSVG(m.k, goalTu)}</div>
+    <div class="chart">${chartSVG(m.k, goalTu, hitoTu)}</div>
     ${valLine('tu')}${valLine('ella')}
     ${metaNote}
   </div>`;
@@ -146,11 +149,20 @@ const sec = (titulo, list, color) => `<div class="grupo"><h2 style="color:${colo
 let resumen = '';
 if (tuE.length) {
   const peso = lastVal(tuE, 'peso'), grasa = lastVal(tuE, 'grasa_pct'), musc = lastVal(tuE, 'musculo');
-  const goal = (objetivo.tu || {}).peso;
+  const obj = objetivo.tu || {}, hito = obj.hito || {};
+  const goal = obj.peso;
   const falta = (peso != null && goal != null) ? peso - goal : null;
   const nTomas = tuE.length;
+  let hitoLine = '';
+  if (hito.peso != null || hito.grasa_pct != null) {
+    const parts = [];
+    if (hito.peso != null) parts.push(`<b>${esc(fmt(hito.peso, 1))} kg</b>`);
+    if (hito.grasa_pct != null) parts.push(`<b>${esc(fmt(hito.grasa_pct, 0))}%</b> de grasa`);
+    hitoLine = `<p class="hito-line">🟠 Próximo hito (${esc(hito.plazo || 'medio plazo')}): ${parts.join(' / ')}. Objetivo alcanzable antes de mirar la meta final.</p>`;
+  }
   resumen = `<div class="resumen">
-    <p><b>${esc(personas.tu)}</b> · última toma ${esc(fechaCorta(tuE[tuE.length - 1].fecha))}: <b>${esc(fmt(peso, 1))} kg</b>, <b>${esc(fmt(grasa, 1))}%</b> grasa, <b>${esc(fmt(musc, 1))} kg</b> de músculo.${falta != null ? ` A <b>${esc(fmt(Math.abs(falta), 1))} kg</b> de la meta (${esc(fmt(goal, 1))} kg), todo de grasa manteniendo el músculo.` : ''}</p>
+    <p><b>${esc(personas.tu)}</b> · última toma ${esc(fechaCorta(tuE[tuE.length - 1].fecha))}: <b>${esc(fmt(peso, 1))} kg</b>, <b>${esc(fmt(grasa, 1))}%</b> grasa, <b>${esc(fmt(musc, 1))} kg</b> de músculo.${(goal != null || obj.grasa_pct != null) ? ` 🎯 Meta final: ${goal != null ? `<b>${esc(fmt(goal, 1))} kg</b>` : ''}${(goal != null && obj.grasa_pct != null) ? ' / ' : ''}${obj.grasa_pct != null ? `<b>${esc(fmt(obj.grasa_pct, 0))}%</b> de grasa` : ''}${falta != null ? ` (a ${esc(fmt(Math.abs(falta), 1))} kg), perdiendo grasa y manteniendo el músculo.` : '.'}` : ''}</p>
+    ${hitoLine}
     ${nTomas < 2 ? `<p class="hint">Primera toma registrada: aún no hay tendencia. En cuanto haya una segunda medición (≈1 mes) verás las líneas y si la grasa baja mientras el músculo aguanta — que es la señal de que el plan funciona.</p>` : ''}
   </div>`;
 }
@@ -169,6 +181,7 @@ const html = `<style>
   .dash{width:16px;height:0;border-top:2px dashed ${C_GOAL};display:inline-block}
   .resumen{background:var(--card);border:1px solid var(--border);border-left:4px solid ${C_TU};border-radius:12px;padding:12px 16px;margin-top:16px}
   .resumen p{margin:0 0 6px;line-height:1.5;font-size:.92rem}
+  .resumen .hito-line{color:${C_HITO};font-size:.88rem;margin:0 0 6px;line-height:1.5}
   .resumen .hint{color:var(--muted);font-size:.85rem;margin:0}
   .grupo{margin-top:26px}
   .grupo>h2{font-size:1.15rem;margin:0 0 12px;border-bottom:2px solid currentColor;display:inline-block;padding-bottom:3px}
@@ -194,7 +207,7 @@ const html = `<style>
     <div class="eyebrow">COACH · Composición corporal</div>
     <h1>🧬 Composición — ${esc(personas.tu)} & ${esc(personas.ella)}</h1>
     <p>Evolución de las mediciones del InBody, toma a toma (≈1/mes). Lo que importa es la <b>tendencia</b>: grasa bajando mientras el músculo aguanta. Cada punto es una medición; una toma suelta fluctúa con hidratación y hora, así que miramos la línea, no el decimal de un día.</p>
-    <div class="legend"><span><i class="dot" style="background:${C_TU}"></i>${esc(personas.tu)}</span><span><i class="dot" style="background:${C_ELLA}"></i>${esc(personas.ella)}</span><span><i class="dash"></i>meta</span></div>
+    <div class="legend"><span><i class="dot" style="background:${C_TU}"></i>${esc(personas.tu)}</span><span><i class="dot" style="background:${C_ELLA}"></i>${esc(personas.ella)}</span><span><i class="dash" style="border-top-color:${C_HITO}"></i>hito</span><span><i class="dash"></i>meta</span></div>
   </header>
   ${resumen}
   ${sec('Lo que miramos', clave, C_GOAL)}
