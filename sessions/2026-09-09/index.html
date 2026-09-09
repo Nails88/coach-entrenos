@@ -100,6 +100,7 @@
   .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
   #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
   .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
+  .wsec.warn { color: #ff5a3c !important; border-color: #ff5a3c !important; }
   #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
   .ref {
     font-size: 0.82rem; font-weight: 600; color: var(--text);
@@ -318,11 +319,16 @@
     try{var v=localStorage.getItem(key(inp));if(v!=null&&!inp.value)inp.value=v;}catch(e){}
     inp.addEventListener('input',function(){save(inp);});
   });
-  if(clr)clr.addEventListener('click',function(){
-    if(!confirm('¿Borrar los pesos guardados de esta sesión en este dispositivo?'))return;
-    document.querySelectorAll('.win').forEach(function(inp){inp.value='';try{localStorage.removeItem(key(inp));}catch(e){}});
-    if(out){out.value='';out.hidden=true;}if(copy)copy.hidden=true;
-  });
+  if(clr){
+    var armed=false,at;
+    function disarm(){armed=false;clr.textContent='Borrar';clr.classList.remove('warn');}
+    clr.addEventListener('click',function(){
+      if(!armed){armed=true;clr.textContent='¿Seguro? Pulsa otra vez';clr.classList.add('warn');at=setTimeout(disarm,3000);return;}
+      clearTimeout(at);disarm();
+      document.querySelectorAll('.win').forEach(function(inp){inp.value='';try{localStorage.removeItem(key(inp));}catch(e){}});
+      if(out){out.value='';out.hidden=true;}if(copy)copy.hidden=true;
+    });
+  }
   function build(){
     var order=[],data={};
     document.querySelectorAll('.win').forEach(function(inp){
