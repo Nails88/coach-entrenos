@@ -182,8 +182,21 @@ const loggables = [];
 const wlogJS = `
 (function(){
   var fecha=${JSON.stringify(fecha)};
-  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout');
+  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout'),clr=document.getElementById('wclear');
   if(!gen) return;
+  var KP='pw:'+fecha+'|';
+  function key(inp){return KP+inp.getAttribute('data-name')+'|'+inp.getAttribute('data-who')+'|'+inp.getAttribute('data-set');}
+  function save(inp){try{var v=(inp.value||'').trim();if(v)localStorage.setItem(key(inp),v);else localStorage.removeItem(key(inp));}catch(e){}}
+  // Restaura lo guardado en este navegador y autoguarda según se escribe (no se pierde al salir del artefacto).
+  document.querySelectorAll('.win').forEach(function(inp){
+    try{var v=localStorage.getItem(key(inp));if(v!=null&&!inp.value)inp.value=v;}catch(e){}
+    inp.addEventListener('input',function(){save(inp);});
+  });
+  if(clr)clr.addEventListener('click',function(){
+    if(!confirm('¿Borrar los pesos guardados de esta sesión en este dispositivo?'))return;
+    document.querySelectorAll('.win').forEach(function(inp){inp.value='';try{localStorage.removeItem(key(inp));}catch(e){}});
+    if(out){out.value='';out.hidden=true;}if(copy)copy.hidden=true;
+  });
   function build(){
     var order=[],data={};
     document.querySelectorAll('.win').forEach(function(inp){
@@ -224,11 +237,11 @@ function wexRow(o) {
 }
 
 const registroPesos = loggables.length ? `  <div class="block-title">📋 Registrar pesos</div>
-  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH.</p>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
   <div class="reglog">
     ${loggables.map(wexRow).join('\n    ')}
   </div>
-  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button></div>
+  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button><button type="button" id="wclear" class="wsec">Borrar</button></div>
   <textarea id="wout" readonly hidden></textarea>
   <script>${wlogJS}</script>
 ` : '';
@@ -341,6 +354,7 @@ const html = `<!DOCTYPE html>
   .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
   .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
   #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
   #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
   .ref {
     font-size: 0.82rem; font-weight: 600; color: var(--text);
