@@ -64,6 +64,31 @@ Flujo:
   generador la muestra como una línea 📈 "Última vez: …" en la tarjeta, para que no tenga que recordar
   la carga de cada máquina. Muestra los pesos de las series (lo más útil); si solo hay uno, ese.
 
+### Autoguardado del registrador (localStorage)
+El registrador de cada sesión **autoguarda cada casilla en el navegador** (localStorage, por
+artefacto/dispositivo) según se escribe y la restaura al reabrir el artefacto — así se puede salir de
+la página sin perder lo metido. Tiene botón **Borrar** (doble toque; el sandbox de los Artifacts
+bloquea `confirm()`, por eso NO se usa `confirm`/`alert`/`prompt` en el código del artefacto).
+
+## REGISTRO DE COMPOSICIÓN CORPORAL (InBody / báscula del gym)
+
+El usuario se pesa ~**1 vez al mes** en la báscula de bioimpedancia del gym (InBody), misma hora y
+condiciones (Noel: por la tarde tras entrenar). Reporta las métricas (suyas y de Vicky) y se guardan
+en `composicion.json` (raíz): `registro.tu` / `registro.ella` = listas de entradas
+`{ "fecha", "peso", "grasa_pct", "grasa_kg", "musculo", "mlg", "agua", "visceral", "imc", "tmb",
+"inbody", "proteinas", "minerales", "grado_obesidad" }` (mete solo lo que venga en la lectura).
+`objetivo.tu/ella` guarda metas (p. ej. `{ "peso": 68.1 }`).
+
+Flujo:
+- **Cuando el usuario dé una toma nueva**, añade la entrada a la persona correspondiente en
+  `composicion.json`, regenera el panel (`node construir-composicion.js` → `registro/composicion.html`)
+  y **republica ese Artifact** (mismo URL) + commit.
+- El panel (`construir-composicion.js`) es autocontenido (sin GIFs), con una gráfica SVG de evolución
+  por métrica (línea de Noel y de Vicky + meta discontinua) agrupadas en "Lo que miramos" (peso, %/kg
+  grasa, músculo, MLG, visceral) y "Otros/avanzados".
+- Enfoque de coach: lo que importa es la **tendencia** (grasa ↓ manteniendo músculo), no el dato de un
+  día; la bioimpedancia fluctúa con hidratación/hora. No obsesionar: ~1 toma/mes basta.
+
 ## ENTORNOS DE ENTRENAMIENTO
 
 Cada sesión puede realizarse en uno de estos tres entornos. El usuario te indicará cuál aplica en cada caso:
