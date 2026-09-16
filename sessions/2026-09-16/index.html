@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COACH — Full Body A (6 patrones, sin superseries) · 2026-09-16</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card-bg: #1a1d24;
+    --accent: #9b5de5;
+    --text: #f2f2f2;
+    --muted: #9aa0ab;
+    --border: #2a2e37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  header .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  header h1 { margin: 6px 0 8px; font-size: 1.8rem; }
+  header p { color: var(--muted); margin: 0; line-height: 1.5; }
+  .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .pill b { color: var(--text); }
+  .prose { color: var(--muted); line-height: 1.6; margin-top: -6px; }
+  .block-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 32px 0 14px;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 18px;
+  }
+  .card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+  }
+  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
+  .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
+  .muscles span {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .prescription { display: flex; gap: 18px; margin-bottom: 10px; font-size: 0.9rem; }
+  .prescription div b { display: block; font-size: 1.05rem; }
+  .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+  .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
+  .wsec.warn { color: #ff5a3c !important; border-color: #ff5a3c !important; }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
+  footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 560px) {
+    .card { grid-template-columns: 1fr; }
+    .card img { width: 100%; height: auto; max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COACH · Sesión de hoy</div>
+    <h1>Full Body A (6 patrones, sin superseries)</h1>
+    <p>Volvéis tras unos días parados, así que Full Body: tocamos el cuerpo entero de una, que es lo más rentable con vuestra frecuencia y lo más amable para retomar. Seguimos el esqueleto de 6 patrones (idea de tu podcast, que es de libro): rodilla, bisagra de cadera, empuje horizontal, empuje vertical, tirón vertical y tirón horizontal — un ejercicio por patrón. TODO en series normales (nada de superseries), porque dependéis de máquinas que suelen estar llenas; si un día están libres y sobra tiempo/energía, ya encadenáis press+remo o press hombro+jalón por vuestra cuenta. Ajustes por el tobillo tocado: la pierna va en PRENSA (sin equilibrio ni impacto) y la bisagra en peso muerto RUMANO ligerito (el tobillo queda casi neutro) — bajad carga como dijiste; si el RDL te molesta al cargar, cámbialo por hip thrust. Arranque caminando o en bici suave (sin correr por el tobillo) y hoy sin el kilómetro de cierre. Energía media: 3 series por ejercicio, técnica por delante de la carga y sin ir a fallo. Empezad conservadores: tras el parón, con 6 compuestos vais a tener buenas agujetas. Debajo de cada ejercicio, vuestras referencias.</p>
+    <div class="meta-row">
+      <div class="pill">Entorno: <b>Gimnasio con máquinas y mancuernas</b></div>
+      <div class="pill">Tiempo: <b>~50 min</b></div>
+      <div class="pill">Energía: <b>Media</b></div>
+      <div class="pill">Objetivo: <b>Definición / pérdida de grasa</b></div>
+    </div>
+  </header>
+
+  <div class="block-title">🔥 Calentamiento</div>
+  <p class="prose">5-8 min de bici o caminando suave para entrar en calor sin impacto (hoy sin trote por el tobillo). Después, activación general: 15 puentes de glúteo en suelo · 10 sentadillas a peso corporal a rango cómodo · 15 band pull-aparts para hombro/espalda · movilidad de cadera y hombro. Y 1-2 series de aproximación ligeras en la prensa y en el press antes de las de trabajo.</p>
+
+  <div class="block-title">🏋️ Full Body — un ejercicio por patrón</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0739-10Z2DXU.gif" alt="Sled 45в° Leg Press" loading="lazy">
+    <div class="card-body">
+      <h3>Sled 45в° Leg Press</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Cuádriceps</span><span>Glúteos</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>90s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 40/60/80/100 kg · Vicky 40/60/80/100 kg</p>
+      <p class="instructions">Sentado en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y planos en la plataforma. Empuja con toda la planta (talón firme) sin bloquear las rodillas de golpe y baja controlado a un rango CÓMODO, sin forzar que el tobillo se doble a tope.</p>
+      <p class="note">Nota técnica: tu patrón de rodilla, sustituyendo la sentadilla libre por el tobillo — pie plano y empuje de talón/mediopié, cero impacto. Si notas el tobillo, reduce el rango de bajada; no fuerces la dorsiflexión.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0085-wQ2c4XD.gif" alt="Barbell Romanian Deadlift" loading="lazy">
+    <div class="card-body">
+      <h3>Barbell Romanian Deadlift</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Isquiotibiales</span><span>Glúteos</span><span>Espalda baja</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>90s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 30/40/50/60 kg · Vicky 30/40/50/60 kg (hoy MÁS LIGERO)</p>
+      <p class="instructions">De pie, barra (o mancuernas) pegada a los muslos, rodillas ligeramente flexionadas y fijas. Baja la barra deslizándola por la pierna llevando la CADERA atrás (bisagra), con la espalda recta, hasta notar el estiramiento del isquio; sube apretando glúteo. El movimiento es de cadera, no de rodilla.</p>
+      <p class="note">Nota técnica: tu bisagra de cadera (lo que buscaba el 'peso muerto' del podcast) pero con el tobillo casi neutro. HOY LIGERO: baja la carga respecto a tu referencia por el tobillo y el parón. Espalda recta siempre; si molesta el tobillo al cargar, cámbialo por hip thrust.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0577-T0yTjgW.gif" alt="Lever Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>Lever Chest Press</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Pecho</span><span>Tríceps</span><span>Hombro anterior</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 32,5/37,5/42,5/47,5 kg · Vicky 12,5/17,5/22,5/27,5 kg</p>
+      <p class="instructions">Sentado en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlado notando el pecho, con las escápulas retraídas.</p>
+      <p class="note">Nota técnica: tu empuje horizontal (el 'press de banca' del plan, en máquina que es lo que tenéis). Controla la bajada; no hace falta ir a fallo hoy.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0426-A6wtbuL.gif" alt="Dumbbell Standing Overhead Press" loading="lazy">
+    <div class="card-body">
+      <h3>Dumbbell Standing Overhead Press</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Hombro</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 10/12/12 kg (mancuerna) · Vicky 8/10/8 kg (mancuerna)</p>
+      <p class="instructions">Sentado con respaldo (mejor que de pie hoy, para no cargar equilibrio en el tobillo), mancuernas a la altura de los hombros y palmas al frente. Empuja arriba sin bloquear del todo ni arquear la lumbar, y baja controlado hasta los hombros. Aprieta el abdomen.</p>
+      <p class="note">Nota técnica: tu empuje vertical. Hazlo SENTADO con respaldo hoy: quitas el equilibrio (mejor para el tobillo) y aíslas mejor el hombro.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0198-RVwzP10.gif" alt="Vertical Traction / Jalón vertical" loading="lazy">
+    <div class="card-body">
+      <h3>Vertical Traction / Jalón vertical</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Dorsales</span><span>Espalda</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 30/35/45 kg · Vicky 25/30/35 kg</p>
+      <p class="instructions">En la Vertical Traction de Technogym (o jalón al pecho si está ocupada), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA, baja el agarre hasta el pecho apretando el dorsal y sube controlado sin soltar la tensión.</p>
+      <p class="note">Nota técnica: tu tirón vertical. Recuerda: la Vertical Traction es de ESPALDA. Pecho arriba, tira con los codos hacia los bolsillos y aprieta abajo.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0861-fUBheHs.gif" alt="Cable Seated Row" loading="lazy">
+    <div class="card-body">
+      <h3>Cable Seated Row</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Espalda</span><span>Dorsales</span><span>Romboides</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 35/40/45 kg · Vicky 25/30/35 kg</p>
+      <p class="instructions">Sentado en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.</p>
+      <p class="note">Nota técnica: tu tirón horizontal, cierre de sesión. Aprieta juntando los omóplatos atrás, tronco quieto sin balanceo. Buen final de Full Body.</p>
+    </div>
+  </div>
+
+  <div class="block-title">🧘 Vuelta a la calma</div>
+  <p class="prose">3-4 min de estiramientos: cuádriceps de pie (suave, sujetando el tobillo sin forzar), isquios sentado (30s/lado), pecho en marco de puerta (30s/lado) y dorsal/espalda colgado o agarrado inclinándote (30s/lado). Hoy sin el kilómetro de cierre; si os quedan ganas y tiempo y el tobillo lo permite, 5-8 min de bici suave opcionales. Hielo en el tobillo si lo notáis tras la prensa/RDL.</p>
+
+  <div class="block-title">📋 Registrar pesos</div>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
+  <div class="reglog">
+    <div class="wex">
+      <div class="wname">Sled 45в° Leg Press</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Sled 45в° Leg Press" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Sled 45в° Leg Press" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Sled 45в° Leg Press" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Sled 45в° Leg Press" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Sled 45в° Leg Press" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Sled 45в° Leg Press" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Barbell Romanian Deadlift</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Barbell Romanian Deadlift" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Barbell Romanian Deadlift" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Barbell Romanian Deadlift" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Barbell Romanian Deadlift" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Barbell Romanian Deadlift" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Barbell Romanian Deadlift" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Lever Chest Press</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Lever Chest Press" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Lever Chest Press" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Lever Chest Press" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Lever Chest Press" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Lever Chest Press" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Lever Chest Press" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Dumbbell Standing Overhead Press</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Dumbbell Standing Overhead Press" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Dumbbell Standing Overhead Press" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Dumbbell Standing Overhead Press" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Dumbbell Standing Overhead Press" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Dumbbell Standing Overhead Press" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Dumbbell Standing Overhead Press" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Vertical Traction / Jalón vertical</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Cable Seated Row</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Cable Seated Row" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Cable Seated Row" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Cable Seated Row" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Cable Seated Row" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Cable Seated Row" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Cable Seated Row" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+  </div>
+  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button><button type="button" id="wclear" class="wsec">Borrar</button></div>
+  <textarea id="wout" readonly hidden></textarea>
+  <script>
+(function(){
+  var fecha="2026-09-16";
+  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout'),clr=document.getElementById('wclear');
+  if(!gen) return;
+  var KP='pw:'+fecha+'|';
+  function key(inp){return KP+inp.getAttribute('data-name')+'|'+inp.getAttribute('data-who')+'|'+inp.getAttribute('data-set');}
+  function save(inp){try{var v=(inp.value||'').trim();if(v)localStorage.setItem(key(inp),v);else localStorage.removeItem(key(inp));}catch(e){}}
+  // Restaura lo guardado en este navegador y autoguarda según se escribe (no se pierde al salir del artefacto).
+  document.querySelectorAll('.win').forEach(function(inp){
+    try{var v=localStorage.getItem(key(inp));if(v!=null&&!inp.value)inp.value=v;}catch(e){}
+    inp.addEventListener('input',function(){save(inp);});
+  });
+  if(clr){
+    var armed=false,at;
+    function disarm(){armed=false;clr.textContent='Borrar';clr.classList.remove('warn');}
+    clr.addEventListener('click',function(){
+      if(!armed){armed=true;clr.textContent='¿Seguro? Pulsa otra vez';clr.classList.add('warn');at=setTimeout(disarm,3000);return;}
+      clearTimeout(at);disarm();
+      document.querySelectorAll('.win').forEach(function(inp){inp.value='';try{localStorage.removeItem(key(inp));}catch(e){}});
+      if(out){out.value='';out.hidden=true;}if(copy)copy.hidden=true;
+    });
+  }
+  function build(){
+    var order=[],data={};
+    document.querySelectorAll('.win').forEach(function(inp){
+      var n=inp.getAttribute('data-name'),who=inp.getAttribute('data-who'),set=+inp.getAttribute('data-set');
+      if(order.indexOf(n)<0) order.push(n);
+      data[n]=data[n]||{tu:[],ella:[]};
+      data[n][who][set]=(inp.value||'').trim();
+    });
+    var lines=['PESOS '+fecha];
+    order.forEach(function(n){
+      var tu=(data[n].tu||[]).filter(function(v){return v;}).join('/');
+      var ella=(data[n].ella||[]).filter(function(v){return v;}).join('/');
+      if(!tu&&!ella) return;
+      lines.push(n+': '+(tu||'-')+' | '+(ella||'-'));
+    });
+    return lines.length>1?lines.join('\n'):'PESOS '+fecha+' (rellena algún peso primero)';
+  }
+  gen.addEventListener('click',function(){
+    out.value=build(); out.hidden=false; copy.hidden=false;
+    out.style.height='auto'; out.style.height=(out.scrollHeight+4)+'px';
+  });
+  copy.addEventListener('click',function(){
+    out.select(); out.setSelectionRange(0,99999);
+    var done=function(){copy.textContent='¡Copiado!';setTimeout(function(){copy.textContent='Copiar';},1500);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(out.value).then(done,function(){try{document.execCommand('copy');done();}catch(e){}});}
+    else{try{document.execCommand('copy');done();}catch(e){}}
+  });
+})();</script>
+
+  <footer><b>Nota de coach:</b> buen día para retomar: Full Body completo con los 6 patrones, tuneado para respetar el tobillo (pierna en prensa, bisagra en RDL ligero, cardio sin impacto) y en series normales para que las máquinas llenas no os agobien. Empezad flojos de carga que venís del parón — las agujetas de mañana ya avisarán. Si al acabar veis que sobra tiempo y ánimo, ahí metéis las superseries o alargáis un poco; si no, con esto está la sesión bien cubierta. Rellenad los dos el registrador de abajo (Noel, apunta el RDL con la carga real de hoy) y me lo pasáis. ¡A darle con cabeza y sin forzar el tobillo! 💪</footer>
+</div>
+</body>
+</html>
