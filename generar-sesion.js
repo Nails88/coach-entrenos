@@ -169,6 +169,9 @@ const cierre = spec.cierre
 let regNames = { tu: 'Tú', ella: 'Ella' };
 try { const pj = JSON.parse(fs.readFileSync(path.join(root, 'pesos.json'), 'utf8')); if (pj.personas) regNames = pj.personas; } catch {}
 
+// Valores para precargar el registrador (p. ej. lo ya hecho a media sesión).
+// spec.prellenado[<id>] = { tu: ["60","80",...], ella: [...] } (una casilla por serie).
+const prellenado = spec.prellenado || {};
 const loggables = [];
 (spec.bloques || []).forEach(b => (b.ejercicios || []).forEach(ej => {
   if (ej.id === '3666') return; // el cardio de cinta no lleva peso
@@ -176,7 +179,8 @@ const loggables = [];
   const nombre = ej.nombre ? ej.nombre : (ex ? titleCase(ex.name) : `Ejercicio ${ej.id}`);
   let sets = parseInt(ej.series, 10);
   if (!(sets >= 1 && sets <= 8)) sets = 1;
-  loggables.push({ nombre, sets });
+  const pre = prellenado[ej.id] || {};
+  loggables.push({ nombre, sets, pre: { tu: pre.tu || [], ella: pre.ella || [] } });
 }));
 
 const wlogJS = `
@@ -232,8 +236,10 @@ const wlogJS = `
 })();`;
 
 function wexRow(o) {
-  const boxes = who => Array.from({ length: o.sets }, (_, i) =>
-    `<input class="win" data-name="${esc(o.nombre)}" data-who="${who}" data-set="${i}" placeholder="${i + 1}">`).join('');
+  const boxes = who => Array.from({ length: o.sets }, (_, i) => {
+    const pv = (o.pre && o.pre[who] && o.pre[who][i] != null) ? String(o.pre[who][i]).trim() : '';
+    return `<input class="win" data-name="${esc(o.nombre)}" data-who="${who}" data-set="${i}" placeholder="${i + 1}"${pv ? ` value="${esc(pv)}"` : ''}>`;
+  }).join('');
   return `<div class="wex">
       <div class="wname">${esc(o.nombre)}</div>
       <div class="wline"><span class="wwho">${esc(regNames.tu)}</span><div class="wsets">${boxes('tu')}</div></div>
