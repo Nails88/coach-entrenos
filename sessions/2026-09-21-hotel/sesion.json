@@ -1,0 +1,27 @@
+{
+  "fecha": "2026-09-21",
+  "patron": "Mini full body de hotel (goma + peso corporal)",
+  "entorno": "Habitación de hotel — solo goma elástica",
+  "tiempo": "15-20 min",
+  "energia": "Media",
+  "objetivo": "Mantener el hábito y el estímulo en viaje",
+  "acento": "#f5a623",
+  "intro": "De viaje y con la mañana justa: circuito full body exprés para la habitación, solo con la goma y el suelo. El objetivo hoy no es batir marcas, es MANTENER el hábito y mover el cuerpo entero antes de currar — con esto ya ganas el día. Todo SIN saltos ni impacto (por los vecinos de abajo y por tu tobillo). Formato circuito: haces los 6 ejercicios seguidos con poco descanso, y repites 3 rondas. Ajusta la tensión de la goma (más corta o doblada = más dura) para que las últimas 2-3 reps cuesten pero salgan limpias. Si vas MUY justo de tiempo, haz 2 rondas y listo: mejor eso que nada.",
+  "calentamiento": "2-3 min sin material: 10 círculos de brazos hacia delante y atrás · 10 sentadillas a peso corporal suaves · 10 rotaciones de cadera por lado · 10 band pull-aparts flojos con la goma para despertar la espalda y el hombro. Entrar en calor, sin prisa.",
+  "bloques": [
+    {
+      "titulo": "🔁 Circuito full body — 3 rondas, descanso 45-60s entre rondas",
+      "ejercicios": [
+        { "id": "1004", "nombre": "Sentadilla con goma", "series": "3 rondas", "reps": "15", "descanso": "encadenado", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Pisa la goma con los dos pies a la anchura de los hombros y sujeta los extremos a la altura de los hombros. Baja en sentadilla (cadera atrás, rodillas hacia fuera, talones en el suelo) a un rango cómodo y sube apretando glúteo. Sin despegar los talones (mejor para el tobillo).", "nota": "tu pierna. La goma añade resistencia arriba: cuanto más corta la agarres, más dura. Talones clavados y control." },
+        { "id": "0662", "nombre": "Flexiones", "series": "3 rondas", "reps": "8-12", "descanso": "encadenado", "musculos": ["Pecho", "Tríceps", "Hombro"], "instruccion": "Manos algo más anchas que los hombros, cuerpo en línea recta de cabeza a talones. Baja el pecho al suelo con los codos a ~45° y empuja. Si cuesta, apoya las rodillas manteniendo la línea tronco-cadera.", "nota": "tu empuje de pecho. Línea recta apretando abdomen y glúteo; mejor rango completo de rodillas que medias reps de puntas." },
+        { "id": "0988", "nombre": "Remo con goma (pisándola)", "series": "3 rondas", "reps": "15", "descanso": "encadenado", "musculos": ["Espalda", "Dorsales", "Bíceps"], "instruccion": "Pisa el centro de la goma, inclina el tronco hacia delante con la espalda recta y las rodillas algo flexionadas. Tira de los extremos llevando los codos atrás y pegados al cuerpo, juntando las escápulas, y vuelve controlado.", "nota": "tu tirón de espalda. Tira con los codos hacia atrás (no con las manos) y aprieta juntando los omóplatos. Ajusta la tensión pisando más o menos goma." },
+        { "id": "0997", "nombre": "Press de hombro con goma", "series": "3 rondas", "reps": "12-15", "descanso": "encadenado", "musculos": ["Hombro", "Tríceps"], "instruccion": "Pisa la goma con un pie (o los dos para más tensión) y sujeta los extremos a la altura de los hombros, palmas al frente. Empuja hacia arriba sin bloquear del todo ni arquear la lumbar, y baja controlado a los hombros.", "nota": "tu empuje vertical. Aprieta el abdomen para no arquear la espalda; sube y baja con control, sin dar tirones." },
+        { "id": "1010", "nombre": "Peso muerto a una pierna estirada con goma", "series": "3 rondas", "reps": "12", "descanso": "encadenado", "musculos": ["Isquiotibiales", "Glúteos", "Espalda baja"], "instruccion": "Pisa la goma con los dos pies y sujeta los extremos con las manos por delante de los muslos. Con las rodillas casi rectas, lleva la CADERA atrás bajando el tronco (espalda recta) hasta notar el estiramiento del isquio, y sube apretando glúteo. Es bisagra de cadera, no sentadilla.", "nota": "tu bisagra de cadera (isquio/glúteo). Espalda recta siempre, el movimiento sale de la cadera hacia atrás. Rango cómodo, sin redondear la espalda." },
+        { "id": "0464", "nombre": "Plancha", "series": "3 rondas", "reps": "30-40s", "tiempo": "30-40s", "descanso": "fin de ronda", "musculos": ["Core", "Abdomen"], "instruccion": "Plancha sobre los antebrazos, codos bajo los hombros, cuerpo en línea recta de cabeza a talones. Aprieta glúteo y abdomen y aguanta quieto (sin el giro que muestra el GIF).", "nota": "cierre de core de cada ronda. Línea recta, no dejes caer la cadera ni la subas. Respira." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2 min de estiramientos rápidos: cuádriceps de pie, isquios inclinándote hacia delante, pecho abriendo brazos contra el marco de la puerta y cuello suave. Una respiración profunda y a la ducha listo para el día.",
+  "cierre": "así se mantiene el hábito en viaje: full body completo en 15-20 min con solo la goma, cero impacto y sin material del hotel. No es tu sesión más dura, pero mueves todo el cuerpo y empiezas el día activado — que es justo lo que toca cuando entrenar es difícil. Cuando vuelvas al gym retomamos donde lo dejaste. El registrador de abajo hoy ignóralo (esto va por sensaciones, no por kilos). ¡Buen viaje y a darle suave! 💪",
+  "notas_extra": "Noel de viaje, sesión de hotel solo con goma elástica, 15-20 min por la mañana. Sin impacto (vecinos + tobillo). Circuito de 3 rondas. No hay pesos que registrar (banda/peso corporal); el registrador de la página se puede ignorar."
+}
