@@ -103,6 +103,7 @@ Cuando el entorno sea **Casa**, da por hecho que Noel dispone de:
 - **Varias gomas elásticas** de distintas resistencias.
 - **Barra de dominadas** (permite dominadas, negativas, colgarse, elevaciones de pierna colgado).
 - **Kettlebell de 8 kg** (una sola).
+- **TRX / entrenador en suspensión** (remos, fondos, press, curl femoral, sentadilla asistida, etc.).
 - **Esterilla** y **sillas** (para ejercicios sentado, fondos en silla, apoyos).
 Monta los entrenos de casa con este material salvo que el usuario diga otra cosa ese día. Ojo al
 límite de 10 kg/mancuerna: para piernas usa alto rep, tempo lento, unilateral o goma para añadir
