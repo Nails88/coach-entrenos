@@ -7,7 +7,11 @@
       "grasa_pct": 15,
       "hito": { "peso": 74, "grasa_pct": 22, "plazo": "3-4 meses" }
     },
-    "ella": {}
+    "ella": {
+      "peso": 55,
+      "grasa_pct": 25,
+      "hito": { "peso": 61, "grasa_pct": 31, "plazo": "3-4 meses" }
+    }
   },
   "registro": {
     "tu": [
@@ -28,6 +32,23 @@
         "inbody": 68
       }
     ],
-    "ella": []
+    "ella": [
+      {
+        "fecha": "2026-09-08",
+        "peso": 67.2,
+        "imc": 26.3,
+        "grasa_pct": 38.6,
+        "grasa_kg": 25.9,
+        "musculo": 22.5,
+        "mlg": 41.3,
+        "agua": 30.3,
+        "visceral": 13,
+        "proteinas": 8.1,
+        "minerales": 2.9,
+        "tmb": 1262,
+        "grado_obesidad": 122,
+        "inbody": 66
+      }
+    ]
   }
 }
