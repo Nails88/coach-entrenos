@@ -23,7 +23,7 @@
     {
       "titulo": "🔥 Core finisher (sin tobillo)",
       "ejercicios": [
-        { "id": "0472", "nombre": "Elevación de piernas colgado", "series": "3", "reps": "10-12", "descanso": "45s", "musculos": ["Core", "Abdomen inferior"], "instruccion": "Colgado de la barra, sube las piernas rectas (o las rodillas si no llegas) hasta la horizontal controlando, sin balancearte, y baja lento. Aprieta el abdomen para no columpiarte.", "nota": "core colgado, cero tobillo (vas en el aire). Si te columpias, dobla las rodillas; si no hay barra cómoda, plancha 3×30-40s." }
+        { "id": "0175", "nombre": "Crunch en polea (de rodillas)", "series": "3", "reps": "12-15", "descanso": "45s", "musculos": ["Abdomen", "Core"], "instruccion": "De rodillas frente a la polea alta con la cuerda, sujétala a los lados de la cabeza. Enrolla el abdomen llevando los codos hacia los muslos (la cadera casi fija), aprieta abajo 1s y sube controlado sin tirar con los brazos ni la espalda baja.", "nota": "core con carga y progresable, de rodillas en la colchoneta (cero tobillo). El movimiento sale de flexionar el tronco enrollando el abdomen, no de tirar con los brazos ni de bascular la cadera." }
       ]
     }
   ],
