@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-10-09-box",
+  "patron": "Metcon en el box (sin impacto de tobillo)",
+  "entorno": "Box de CrossFit",
+  "tiempo": "~20-30 min (según rondas)",
+  "energia": "Media-alta",
+  "objetivo": "Acondicionamiento / quema — estilo CrossFit",
+  "acento": "#f5a623",
+  "intro": "¡Día diferente en el box, versión ankle-safe! Tu idea de metcon, pero quitando los 3 movimientos que te cargaban el tobillo (burpees, box step-over y wall balls) y metiendo equivalentes que respetan la lesión: kettlebell swing (bisagra, pies clavados), cardio en bici/SkiErg (sin impacto) y core. Mismo pulmón y mismo sufrimiento, cero riesgo mientras esperas el alta del fisio. FORMATO METCON: cada ronda es un pase completo de los 4 ejercicios en orden (1→2→3→4); al acabar el 4º, enlazas la siguiente ronda. Haz entre 5 y 10 RONDAS según cómo vayas: 5 flojito · 7-8 medio · 10 a tope. (NO hagas las rondas de un ejercicio seguidas: es vuelta completa, y otra, y otra.) Ritmo sostenible: elige un número de rondas que puedas mantener sin pararte a morir, y si algo MOLESTA el tobillo (no que canse), lo paras.",
+  "calentamiento": "6-8 min progresivo SIN impacto: bici o SkiErg suave 3 min para subir pulsaciones · 15 band pull-aparts · 10 swings en vacío o con KB ligera para ensayar la bisagra · 20s de colgarse de la barra · movilidad de hombro y cadera. Nada de saltos en el calentamiento.",
+  "bloques": [
+    {
+      "titulo": "🔁 METCON — 5 a 10 RONDAS (un pase completo 1→4, repetir según energía)",
+      "ejercicios": [
+        { "id": "0652", "nombre": "Dominadas (estrictas o kipping)", "series": "5-10 rondas", "reps": "5", "descanso": "encadenado", "musculos": ["Dorsales", "Espalda", "Bíceps"], "instruccion": "Cuélgate de la barra y tira llevando el pecho hacia la barra. Puedes usar kipping para el ritmo del metcon, pero al bajar NO saltes al suelo: descuelga controlado o baja a un cajón/step para no dar impacto al tobillo.", "nota": "tu tirón del WOD. Si 5 kipping es mucho mantenido, haz estrictas, con banda o negativas. OJO: la bajada controlada (nada de saltar del bar), que ahí es donde el tobillo come impacto." },
+        { "id": "0549", "nombre": "Kettlebell swing (ruso)", "series": "5-10 rondas", "reps": "10", "descanso": "encadenado", "musculos": ["Glúteos", "Isquiotibiales", "Core"], "instruccion": "Pies clavados a la anchura de hombros. Bisagra de cadera: la KB baja entre las piernas y sube por empuje de cadera (no de brazos) hasta la altura de los ojos. Aprieta glúteo arriba. Elige una KB moderada del box (que las 10 salgan fuertes pero limpias).", "nota": "sustituye a los wall balls. Potencia de cadera con los pies SIEMPRE plantados → cero impacto y cero dorsiflexión forzada, perfecto para el tobillo. La fuerza sale de la cadera, no de los hombros." },
+        { "id": "3679", "nombre": "Sit-ups (abdominales)", "series": "5-10 rondas", "reps": "15", "descanso": "encadenado", "musculos": ["Abdomen", "Core"], "instruccion": "Tumbado, sube el tronco completo hasta sentarte y baja controlado. Usa AbMat si lo tenéis. 15 por ronda.", "nota": "sustituye al box step-over — core en vez de subir al cajón. Te resultan fáciles, así que van perfectos de relleno a buen ritmo cuando ya vas con pulsaciones altas." },
+        { "id": "0798", "nombre": "Cardio — alterna Assault Bike / SkiErg cada ronda", "series": "5-10 rondas", "tiempo": "10-12 cal bici · 12-15 cal SkiErg", "descanso": "fin de ronda", "musculos": ["Cardio", "Full body"], "instruccion": "Sustituye a los burpees. Alterna la máquina cada ronda: rondas impares Assault Bike (10-12 cal), rondas pares SkiErg (12-15 cal). Las dos sin impacto en el tobillo. Ajusta las cal para que cada ronda te lleve un tiempo parecido (~45-60s fuerte).", "nota": "el motor del WOD, cambiando los burpees por cardio sin impacto. Las cal de bici son más 'caras' que las de SkiErg, por eso el número es distinto; lo que importa es que sudes parecido cada ronda, no el número exacto." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3-4 min suaves: bici o SkiErg muy flojo 2 min para bajar pulsaciones, estiramiento de dorsal colgado, isquios y glúteo (bisagra), y hombros. Respira hondo. Nada de cinta/impacto. Hielo en el tobillo solo si lo notaras (que no debería, con esto).",
+  "cierre": "metcon al estilo box pero con cabeza: mantienes la intensidad y el rollo CrossFit que te pide el cuerpo, sin que el tobillo cargue ni reciba un solo impacto. Elige rondas que puedas sostener (mejor acabar fuerte 7 que arrastrarte 10), y recuerda: el formato es RONDA completa, no las 5 de un ejercicio seguidas. Lo que canse, bien; lo que moleste el tobillo, se para. ¡A sudar! 🔥",
+  "notas_extra": "WOD en el box adaptado a la rehab de tobillo de Noel. Sustituciones respecto a su idea original: wall balls→KB swing (0549), burpees→cardio bici/SkiErg alternando (sin impacto), box step-over→sit-ups (3679). Dominadas con bajada controlada (sin saltar del bar). 5-10 rondas segun energia. GIF de cardio: 0798 (bici) prestado, no hay GIF propio de SkiErg/Assault. Sin pesos que registrar (metcon)."
+}
