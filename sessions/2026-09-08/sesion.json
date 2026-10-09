@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-09-08",
+  "patron": "Pierna (sin impacto de tobillo) — con caña",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "55-60 min",
+  "energia": "Alta",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Día de PIERNA para los dos, con caña de verdad — pero con el tobillo de Noel todavía en cuarentena de impacto. La estrategia: todo a máquinas y sentados/tumbados, donde el tobillo no carga ni recibe impacto, y ahí SÍ apretamos volumen e intensidad (más series, series de aproximación + tope, y un rematador metabólico en prensa). Nada de sentadilla libre, gemelo de pie, zancadas ni correr. La caña la mete la CARGA y la densidad, no el impacto. Objetivo hoy: batir la última vez en prensa y extensión. VICKY: tu tobillo está fino, así que si quieres puedes añadir back squat con barra al principio y correr en el cierre; el resto igual. Debajo de cada ejercicio tenéis vuestras referencias.",
+  "calentamiento": "6-8 min de bici o elíptica progresiva (hoy sin cinta, para no dar impacto al tobillo), subiendo pulsaciones. Después, activación sin cargar tobillo: 20 puentes de glúteo en suelo · 15 extensiones de rodilla sentado suaves · 2 series ligeras de aproximación en la prensa antes de ir a por las de trabajo. Nada de saltos ni sentadillas profundas con peso.",
+  "bloques": [
+    {
+      "titulo": "🦵 Bloque principal (máquinas, sin tobillo — a darle)",
+      "ejercicios": [
+        { "id": "0739", "series": "4", "reps": "10-12", "descanso": "90s", "tipo": "compuesto", "referencia": "Noel 40/60/70 kg · Vicky 40/60/70 kg", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentado en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y planos en la plataforma. Empuja con toda la planta (talón firme) sin bloquear las rodillas de golpe, y baja controlado a un rango CÓMODO sin forzar la dorsiflexión del tobillo.", "nota": "tu compuesto rey hoy — sube carga sobre la última vez (a batir 70 kg). Pie plano y empuje de talón/mediopié: el tobillo no sufre. Deja la 4ª serie a fallo técnico con un peso que te haga sudar." },
+        { "id": "1409", "series": "4", "reps": "10-12", "descanso": "80s", "tipo": "compuesto", "musculos": ["Glúteos", "Isquiotibiales"], "instruccion": "Tumbado con la espalda apoyada en un banco, barra sobre la cadera (con almohadilla). Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1-2s y baja controlado.", "nota": "hip thrust: todo cadera, tobillo neutro y aquí puedes cargar fuerte. Empuja con el talón y basculando la pelvis; pausa de 2s arriba en cada rep para meter más caña al glúteo." },
+        { "id": "0585", "series": "4", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 20/22,5/25 kg · Vicky 10/15/15 kg", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento (2-3s).", "nota": "aislamiento puro de cuádriceps, cero tobillo. A batir la última vez. Truco de caña: en la última serie, al llegar al fallo baja el pin 2 placas y sigue sin descanso (drop set) hasta fallar otra vez." },
+        { "id": "0586", "series": "4", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 20/25/25 kg · Vicky 15/15/15 kg", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo, pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos, aprieta arriba y baja lento sin soltar de golpe.", "nota": "isquio por flexión de rodilla, cero tobillo. No despegues la cadera del banco para robar rango; controla la bajada. A subir carga respecto a la última." },
+        { "id": "0597", "series": "3", "reps": "15-20", "descanso": "45s", "tipo": "accesorio", "musculos": ["Glúteos", "Abductores"], "instruccion": "Sentado con la espalda apoyada, abre las piernas empujando contra las almohadillas todo lo que puedas, pausa apretando el glúteo lateral 1s al final y junta lento.", "nota": "glúteo medio, sentado y sin tobillo. Inclínate un pelín hacia delante para notarlo más. Series altas, buscando ardor — buen accesorio para redondear la cadera." }
+      ]
+    },
+    {
+      "titulo": "🔥 Rematador metabólico (prensa)",
+      "ejercicios": [
+        { "id": "0739", "nombre": "Prensa 45° — quema final (rest-pause)", "series": "1", "reps": "20-25", "descanso": "—", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Baja el peso a ~50-60% de tu serie de trabajo. Haz el máximo de reps controladas; cuando falles, para 10-15s respirando y sigue. Repite hasta juntar 20-25 reps totales. Rango cómodo, sin forzar el tobillo.", "nota": "el que te deja las piernas temblando — todo el estímulo metabólico sin nada de impacto. Si el tobillo dice algo (que no sea la quemazón del cuádriceps), lo paras." }
+      ]
+    },
+    {
+      "titulo": "🧱 Core finisher (corto)",
+      "ejercicios": [
+        { "id": "0464", "nombre": "Plancha (aguante isométrico)", "series": "3", "tiempo": "40-50s", "descanso": "30s", "musculos": ["Core", "Abdomen"], "instruccion": "Plancha sobre antebrazos, codos bajo hombros, cuerpo en línea recta de cabeza a talones. Aprieta glúteo y abdomen y aguanta quieto (sin el giro que muestra el GIF).", "nota": "cierre de core seguro para el tobillo. NOEL: ayer cargaste mucho core, si vienes fundido puedes saltarte este bloque; VICKY, dale sin problema." }
+      ]
+    }
+  ],
+  "vuelta_calma": "4 min: estiramiento de cuádriceps de pie sujetando el tobillo (suave, sin forzar), isquios sentado (30s/lado), glúteo tumbado (figura-4, 30s/lado). Cardio de cierre opcional: 6-8 min de bici o elíptica suave (Noel: sin correr por el tobillo; Vicky: puedes correr si te apetece). Hielo 10 min en el tobillo de Noel si lo notó cargado.",
+  "cierre": "así se le mete caña a la pierna respetando el tobillo: máquinas y sentados con carga alta, drop set en extensión, rest-pause en prensa y hip thrust con pausa — estímulo de sobra sin un solo impacto. Noel: la única regla innegociable sigue siendo que si algo MOLESTA el tobillo (no que canse), lo paras; ya queda poco para volver a la sentadilla libre y la comba. Rellenad los dos el registrador de abajo con los pesos y me lo pasáis para actualizar el progreso. ¡A reventarlas!"
+}

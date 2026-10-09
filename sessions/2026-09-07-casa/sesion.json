@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-09-07",
+  "patron": "Pierna + Core en casa (sin impacto ni tobillo)",
+  "entorno": "Casa (peso corporal)",
+  "tiempo": "~40 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Cambio a casa y tú solo, con el tobillo tocado — así que hoy: cero comba, cero saltos, cero correr. Pierna a base de suelo y un isométrico, todo glúteo/isquio (que casi no piden tobillo) + un wall sit para el cuádriceps sin impacto, y core de propina. Si tienes una mancuerna, kettlebell o una mochila con peso, úsala en el puente de glúteo para cargar más; si no, a peso corporal apretando la contracción. Regla del día: cualquier cosa que MOLESTE el tobillo (no que canse), la paras.",
+  "calentamiento": "5 min sin impacto: movilidad de cadera (círculos a cuatro apoyos, 10/lado) · 10 gato-camello · 15 puentes de glúteo suaves en el suelo · 10 balanceos de pierna suaves agarrado a algo. Nada de saltos ni marcha fuerte por el tobillo.",
+  "bloques": [
+    {
+      "titulo": "🦵 Bloque principal (suelo, sin tobillo)",
+      "ejercicios": [
+        { "id": "1685", "nombre": "Wall sit (sentadilla isométrica en pared)", "series": "3", "tiempo": "30-45s", "descanso": "60s", "tipo": "compuesto", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Espalda apoyada en la pared, baja deslizando hasta que los muslos queden paralelos al suelo (rodillas a ~90°), pies planos y separados a la anchura de cadera. Aguanta la posición apretando cuádriceps y glúteo. (El GIF es una sentadilla de referencia; aquí el ejercicio es AGUANTAR quieto contra la pared.)", "nota": "cuádriceps sin impacto ni equilibrio, ideal para el tobillo. Peso repartido en toda la planta; si el tobillo molesta, sube un poco (rodillas menos flexionadas)." },
+        { "id": "3013", "nombre": "Puente de glúteo en suelo (con peso si tienes)", "series": "4", "reps": "12-15", "descanso": "60s", "tipo": "compuesto", "musculos": ["Glúteos", "Isquiotibiales"], "instruccion": "Tumbado boca arriba, rodillas dobladas y pies planos cerca del glúteo. Si tienes mancuerna/KB/mochila, ponla sobre la cadera. Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1-2s y baja controlado.", "nota": "el rey del glúteo en casa, y el tobillo queda neutro. Empuja con el TALÓN y basculando la pelvis; para más, súbelo a una pierna." },
+        { "id": "3561", "nombre": "Glute bridge march (puente con marcha)", "series": "3", "reps": "20 (10/pierna)", "descanso": "45s", "tipo": "accesorio", "musculos": ["Isquiotibiales", "Glúteos"], "instruccion": "En posición de puente arriba (cadera elevada y estable), lleva una rodilla hacia el pecho sin que la cadera caiga ni rote, baja el pie y alterna. La cadera se mantiene alta y quieta todo el rato.", "nota": "isquio y glúteo con un extra de estabilidad de core — lo difícil es que la cadera no se hunda al cambiar de pierna. Sin impacto." },
+        { "id": "0710", "nombre": "Abducción lateral tumbado", "series": "3", "reps": "15/lado", "descanso": "40s", "tipo": "accesorio", "musculos": ["Glúteos", "Abductores"], "instruccion": "Tumbado de lado, piernas estiradas o rodillas algo dobladas. Sube la pierna de arriba en abanico controlando, pausa arriba y baja lento. Termina un lado antes de cambiar.", "nota": "glúteo medio, tumbado y cero tobillo — controla la bajada, no la dejes caer; si quieres más, una banda por encima de las rodillas." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0276", "nombre": "Dead bug (bicho muerto)", "series": "3", "reps": "10/lado", "descanso": "40s", "musculos": ["Core", "Transverso abdominal"], "instruccion": "Boca arriba, brazos al techo y rodillas a 90°. Baja de forma alterna brazo y pierna contrarios hasta casi rozar el suelo, mantén la lumbar pegada al suelo y vuelve. Alterna lados.", "nota": "control y anti-extensión, cero impacto — la lumbar NO se despega; si se arquea, baja menos la pierna." },
+        { "id": "0464", "nombre": "Plancha (aguante isométrico)", "series": "3", "tiempo": "30-40s", "descanso": "30s", "musculos": ["Core", "Abdomen"], "instruccion": "Plancha sobre los antebrazos, codos bajo los hombros, cuerpo en línea recta de cabeza a talones. Aprieta glúteo y abdomen y aguanta quieto (sin el giro que muestra el GIF).", "nota": "cierre isométrico de core — línea recta, no dejes caer la cadera. Seguro para el tobillo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de cuádriceps de pie sujetando el tobillo (suave), estiramiento de isquios sentado (30s/lado), estiramiento de glúteo tumbado (30s/lado), respiración profunda 5 ciclos. Hoy sin cardio de impacto; si tienes bici estática y el tobillo lo permite, 5-8 min suaves opcionales. Hielo 10 min en el tobillo si lo notas.",
+  "cierre": "buen apaño en casa resolviendo el tobillo: glúteo e isquio de suelo (que apenas lo piden), wall sit para el cuádriceps sin impacto, y core. No es tu día más pesado, pero mantiene el estímulo y el hábito sin arriesgar la lesión — que es exactamente lo que toca. Cuida el tobillo estos días (hielo, nada de correr/saltar) y en cuanto esté fino volvemos a la sentadilla libre y la comba. Rellena el registrador si has usado peso en el puente; si fue todo a peso corporal, déjalo en blanco. ¡Con cabeza!"
+}

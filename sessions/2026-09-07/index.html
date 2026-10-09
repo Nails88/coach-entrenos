@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COACH — Pierna (sin carga de tobillo) + Core · 2026-09-07</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card-bg: #1a1d24;
+    --accent: #35c46a;
+    --text: #f2f2f2;
+    --muted: #9aa0ab;
+    --border: #2a2e37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  header .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  header h1 { margin: 6px 0 8px; font-size: 1.8rem; }
+  header p { color: var(--muted); margin: 0; line-height: 1.5; }
+  .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .pill b { color: var(--text); }
+  .prose { color: var(--muted); line-height: 1.6; margin-top: -6px; }
+  .block-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 32px 0 14px;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 18px;
+  }
+  .card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+  }
+  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
+  .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
+  .muscles span {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .prescription { display: flex; gap: 18px; margin-bottom: 10px; font-size: 0.9rem; }
+  .prescription div b { display: block; font-size: 1.05rem; }
+  .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+  .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
+  footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 560px) {
+    .card { grid-template-columns: 1fr; }
+    .card img { width: 100%; height: auto; max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COACH · Sesión de hoy</div>
+    <h1>Pierna (sin carga de tobillo) + Core</h1>
+    <p>Toca Pierna (Vicky hizo Tirón), pero Noel tiene el tobillo tocado, así que hoy va TODO a máquinas y sentados: nada de sentadilla libre, gemelo de pie ni correr (impacto). Trabajamos rodilla y cadera sin que el tobillo cargue — prensa controlada, hip thrust, extensión, femoral y abducción — y rematamos con core, que es seguro para el tobillo. El cardio hoy va en bici o elíptica (sin impacto). NOTA PARA VICKY: tu tobillo está bien, así que si quieres puedes añadir back squat con barra y hacer el cierre corriendo; el resto igual. Debajo de cada ejercicio tenéis vuestras referencias.</p>
+    <div class="meta-row">
+      <div class="pill">Entorno: <b>Gimnasio con máquinas y mancuernas</b></div>
+      <div class="pill">Tiempo: <b>50-60 min</b></div>
+      <div class="pill">Energía: <b>Media</b></div>
+      <div class="pill">Objetivo: <b>Definición / pérdida de grasa</b></div>
+    </div>
+  </header>
+
+  <div class="block-title">🔥 Calentamiento</div>
+  <p class="prose">5-6 min de bici o elíptica suave (hoy sin cinta, para no dar impacto al tobillo) para subir pulsaciones. Después, activación sin cargar tobillo: 15 puentes de glúteo en el suelo · 10 elevaciones de rodilla sentado · movilidad suave de cadera. Nada de saltos ni sentadillas profundas con peso en el calentamiento.</p>
+
+  <div class="block-title">🦵 Bloque principal (máquinas, sin tobillo)</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0739-10Z2DXU.gif" alt="Sled 45в° Leg Press" loading="lazy">
+    <div class="card-body">
+      <h3>Sled 45в° Leg Press</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Cuádriceps</span><span>Glúteos</span></div>
+        <div class="prescription">
+          <div><b>4</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>90s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 40/60/70 kg · Vicky 40/60/70 kg</p>
+      <p class="instructions">Sentado en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y planos en la plataforma. Empuja con toda la planta (talón firme) sin bloquear las rodillas de golpe, y baja controlado a un rango CÓMODO sin que el tobillo tenga que doblarse a tope.</p>
+      <p class="note">Nota técnica: tu compuesto principal hoy — el pie va plano y empujas con talón/mediopié, así el tobillo no sufre. Si notas molestia, reduce el rango de bajada; no fuerces la dorsiflexión.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1409-qKBpF7I.gif" alt="Barbell Glute Bridge" loading="lazy">
+    <div class="card-body">
+      <h3>Barbell Glute Bridge</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Glúteos</span><span>Isquiotibiales</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Tumbado boca arriba, rodillas dobladas y pies planos cerca del glúteo. Barra sobre la cadera (con almohadilla). Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1-2s y baja controlado.</p>
+      <p class="note">Nota técnica: hip thrust: todo el trabajo es de cadera, el tobillo queda neutro (perfecto hoy). Empuja con el talón y basculando la pelvis, no arqueando la lumbar.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0585-my33uHU.gif" alt="Lever Leg Extension" loading="lazy">
+    <div class="card-body">
+      <h3>Lever Leg Extension</h3>
+      <span class="tipo tipo-acc">🔄 Orden flexible</span>
+      <div class="muscles"><span>Cuádriceps</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 20/22,5/25 kg · Vicky 10/15/15 kg</p>
+      <p class="instructions">Sentado, espalda apoyada, el rodillo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento.</p>
+      <p class="note">Nota técnica: aislamiento de cuádriceps sin nada de tobillo — busca la contracción y la pausa arriba. A batir la última vez.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0586-17lJ1kr.gif" alt="Lever Lying Leg Curl" loading="lazy">
+    <div class="card-body">
+      <h3>Lever Lying Leg Curl</h3>
+      <span class="tipo tipo-acc">🔄 Orden flexible</span>
+      <div class="muscles"><span>Isquiotibiales</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 20/25/25 kg · Vicky 15/15/15 kg</p>
+      <p class="instructions">Tumbado boca abajo, pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos, aprieta arriba y baja lento sin soltar de golpe.</p>
+      <p class="note">Nota técnica: isquio por flexión de rodilla, cero tobillo — no despegues la cadera del banco para ganar rango.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0597-CHpahtl.gif" alt="Lever Seated Hip Abduction" loading="lazy">
+    <div class="card-body">
+      <h3>Lever Seated Hip Abduction</h3>
+      <span class="tipo tipo-acc">🔄 Orden flexible</span>
+      <div class="muscles"><span>Glúteos</span><span>Abductores</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>15-20</b><span>Reps</span></div>
+          <div><b>45s</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Sentado con la espalda apoyada, abre las piernas empujando contra las almohadillas todo lo que puedas, pausa apretando el glúteo lateral al final y junta lento.</p>
+      <p class="note">Nota técnica: glúteo medio, sentado y sin tobillo — inclínate un pelín hacia delante para notarlo más. Buen cierre de pierna hoy.</p>
+    </div>
+  </div>
+
+  <div class="block-title">🔥 Core finisher</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0276-iny3m5y.gif" alt="Dead bug (bicho muerto)" loading="lazy">
+    <div class="card-body">
+      <h3>Dead bug (bicho muerto)</h3>
+      
+      <div class="muscles"><span>Core</span><span>Transverso abdominal</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10/lado</b><span>Reps</span></div>
+          <div><b>40s</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Boca arriba, brazos al techo y rodillas a 90°. Baja de forma alterna brazo y pierna contrarios hasta casi rozar el suelo, mantén la lumbar pegada al suelo y vuelve. Alterna lados.</p>
+      <p class="note">Nota técnica: control y anti-extensión, cero impacto — la clave es que la lumbar NO se despegue; si se arquea, baja menos la pierna.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0464-CosupLu.gif" alt="Plancha (aguante isométrico)" loading="lazy">
+    <div class="card-body">
+      <h3>Plancha (aguante isométrico)</h3>
+      
+      <div class="muscles"><span>Core</span><span>Abdomen</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>30-40s</b><span>Tiempo</span></div>
+          <div><b>30s</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Plancha sobre los antebrazos, codos bajo los hombros y cuerpo en línea recta de cabeza a talones. Aprieta glúteo y abdomen y aguanta quieto (sin el giro que muestra el GIF).</p>
+      <p class="note">Nota técnica: cierre isométrico de core — línea recta, no dejes caer la cadera. Seguro para el tobillo.</p>
+    </div>
+  </div>
+
+  <div class="block-title">🧘 Vuelta a la calma</div>
+  <p class="prose">3 min: estiramiento de cuádriceps de pie sujetando el tobillo (suave, sin forzar), estiramiento de isquios sentado (30s/lado), estiramiento de glúteo tumbado (30s/lado). Cardio de cierre opcional: 5-8 min de bici o elíptica suave (Noel: sin correr; Vicky: puedes correr si quieres). Y si el tobillo lo pide, hielo 10 min al acabar.</p>
+
+  <div class="block-title">📋 Registrar pesos</div>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH.</p>
+  <div class="reglog">
+    <div class="wex">
+      <div class="wname">Sled 45в° Leg Press</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Sled 45в° Leg Press" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Sled 45в° Leg Press" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Sled 45в° Leg Press" data-who="tu" data-set="2" placeholder="3"><input class="win" data-name="Sled 45в° Leg Press" data-who="tu" data-set="3" placeholder="4"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Sled 45в° Leg Press" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Sled 45в° Leg Press" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Sled 45в° Leg Press" data-who="ella" data-set="2" placeholder="3"><input class="win" data-name="Sled 45в° Leg Press" data-who="ella" data-set="3" placeholder="4"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Barbell Glute Bridge</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Barbell Glute Bridge" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Barbell Glute Bridge" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Barbell Glute Bridge" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Barbell Glute Bridge" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Barbell Glute Bridge" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Barbell Glute Bridge" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Lever Leg Extension</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Lever Leg Extension" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Lever Leg Extension" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Lever Leg Extension" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Lever Leg Extension" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Lever Leg Extension" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Lever Leg Extension" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Lever Lying Leg Curl</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Lever Lying Leg Curl" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Lever Lying Leg Curl" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Lever Lying Leg Curl" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Lever Lying Leg Curl" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Lever Lying Leg Curl" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Lever Lying Leg Curl" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Lever Seated Hip Abduction</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Lever Seated Hip Abduction" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Lever Seated Hip Abduction" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Lever Seated Hip Abduction" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Lever Seated Hip Abduction" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Lever Seated Hip Abduction" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Lever Seated Hip Abduction" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Dead bug (bicho muerto)</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Dead bug (bicho muerto)" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Dead bug (bicho muerto)" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Dead bug (bicho muerto)" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Dead bug (bicho muerto)" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Dead bug (bicho muerto)" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Dead bug (bicho muerto)" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Plancha (aguante isométrico)</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Plancha (aguante isométrico)" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Plancha (aguante isométrico)" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Plancha (aguante isométrico)" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Plancha (aguante isométrico)" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Plancha (aguante isométrico)" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Plancha (aguante isométrico)" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+  </div>
+  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button></div>
+  <textarea id="wout" readonly hidden></textarea>
+  <script>
+(function(){
+  var fecha="2026-09-07";
+  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout');
+  if(!gen) return;
+  function build(){
+    var order=[],data={};
+    document.querySelectorAll('.win').forEach(function(inp){
+      var n=inp.getAttribute('data-name'),who=inp.getAttribute('data-who'),set=+inp.getAttribute('data-set');
+      if(order.indexOf(n)<0) order.push(n);
+      data[n]=data[n]||{tu:[],ella:[]};
+      data[n][who][set]=(inp.value||'').trim();
+    });
+    var lines=['PESOS '+fecha];
+    order.forEach(function(n){
+      var tu=(data[n].tu||[]).filter(function(v){return v;}).join('/');
+      var ella=(data[n].ella||[]).filter(function(v){return v;}).join('/');
+      if(!tu&&!ella) return;
+      lines.push(n+': '+(tu||'-')+' | '+(ella||'-'));
+    });
+    return lines.length>1?lines.join('\n'):'PESOS '+fecha+' (rellena algún peso primero)';
+  }
+  gen.addEventListener('click',function(){
+    out.value=build(); out.hidden=false; copy.hidden=false;
+    out.style.height='auto'; out.style.height=(out.scrollHeight+4)+'px';
+  });
+  copy.addEventListener('click',function(){
+    out.select(); out.setSelectionRange(0,99999);
+    var done=function(){copy.textContent='¡Copiado!';setTimeout(function(){copy.textContent='Copiar';},1500);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(out.value).then(done,function(){try{document.execCommand('copy');done();}catch(e){}});}
+    else{try{document.execCommand('copy');done();}catch(e){}}
+  });
+})();</script>
+
+  <footer><b>Nota de coach:</b> buen día de pierna resolviendo la limitación: todo máquinas y sentados, sin que el tobillo cargue ni reciba impacto, y con core de propina. Noel: cuida ese tobillo — si durante la sesión algo lo molesta, para ese ejercicio; no merece la pena. Cuando pase la molestia volvemos a la sentadilla libre y la cinta. Rellenad el registrador de abajo con los pesos (los dos) y me lo pasáis. ¡A darle con cabeza!</footer>
+</div>
+</body>
+</html>

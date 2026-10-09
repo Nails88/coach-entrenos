@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-09-11",
+  "patron": "Tirón (espalda + bíceps)",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "50-60 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#3ca8ff",
+  "intro": "Día de TIRÓN para los dos, cerrando el ciclo (Pierna → Empuje → hoy Tirón). Trabajamos toda la cadena posterior del tren superior: dorsal y espalda con dos tirones (uno vertical, uno horizontal), trasero de hombro para equilibrar tanto press del otro día, y bíceps de cierre. Energía media, así que volumen contenido y bien ejecutado — nada de héroes: 3 series sólidas por ejercicio y a por la técnica. El tirón no carga el tobillo, así que tranquilo; lo único a cuidar son los dos kilómetros de cinta: hoy a trote SUAVE (o bici/elíptica si lo notas). Si al calentar veis que hay menos batería de la esperada, recortamos una serie y listo. Debajo de cada ejercicio tenéis vuestras referencias.",
+  "calentamiento": "1 km a trote SUAVE en la cinta para arrancar (Noel: sin forzar el tobillo, bici/elíptica si molesta; Vicky: ritmo cómodo). Después, activación de espalda sin impacto: 15 band pull-aparts o aperturas con banda · 10 dislocaciones de hombro con banda/palo · 10-12 remos ligeros de aproximación en la polea antes de las series de trabajo. Suelta bien dorsal y escápulas.",
+  "bloques": [
+    {
+      "titulo": "🎯 Bloque principal (tirón)",
+      "ejercicios": [
+        { "id": "0198", "nombre": "Vertical Traction / Jalón vertical", "series": "4", "reps": "10-12", "descanso": "80s", "tipo": "compuesto", "referencia": "Noel 32,5/42,5/42,5 kg · Vicky 20/25/30/35 kg", "musculos": ["Dorsales", "Espalda"], "instruccion": "En la Vertical Traction de Technogym (o jalón al pecho si está ocupada), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA (no con los brazos), baja la barra/agarre hasta el pecho apretando el dorsal y sube controlado sin soltar la tensión.", "nota": "tu tirón vertical principal — recuerda que la Vertical Traction es de ESPALDA, no de hombro. Pecho arriba, tira con los codos hacia los bolsillos y aprieta abajo. La última vez la tuviste ocupada; si hoy está libre, úsala." },
+        { "id": "0861", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 35/40/45 kg · Vicky 20/35/35 kg", "musculos": ["Espalda", "Dorsales", "Romboides"], "instruccion": "Sentado en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.", "nota": "tu tirón horizontal: grosor de espalda y romboides. La clave es apretar juntando los omóplatos atrás, no tirar con los brazos. Tronco quieto, sin balanceo. A batir la última vez." },
+        { "id": "0602", "series": "3", "reps": "15", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 6/6/8 kg (mancuerna) · Vicky 4/4/4 kg", "musculos": ["Hombro posterior"], "instruccion": "En la máquina de reverse fly (la dual del pec deck) mirando al respaldo, o sentado inclinado con mancuernas. Abre los brazos hacia atrás apretando el trasero del hombro y vuelve lento. Codos casi fijos, sin usar impulso.", "nota": "deltoide posterior: equilibra todo el empuje del otro día y mejora la postura. Manda la contracción, no el peso — 15 reps limpias apretando atrás." },
+        { "id": "0868", "series": "3", "reps": "12-15", "descanso": "45s", "tipo": "accesorio", "referencia": "Vicky 5/7,5/7,5 kg (Noel: primera vez, empieza cómodo)", "musculos": ["Bíceps"], "instruccion": "De pie frente a la polea baja con barra o cuerda. Codos pegados al costado y quietos; flexiona subiendo hasta arriba apretando el bíceps y baja controlado (2s). No balancees el cuerpo para subir.", "nota": "curl en polea: tensión constante en el bíceps de principio a fin. Codos clavados al costado, solo se mueve el antebrazo. Noel, como es tu primera vez aquí, empieza con un peso cómodo y lo apuntamos." },
+        { "id": "0313", "series": "3", "reps": "10-12", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 10/10/10 kg (mancuerna) · Vicky 6/6/6 kg (mancuerna)", "musculos": ["Bíceps", "Braquial"], "instruccion": "De pie con mancuernas, agarre neutro (palmas mirándose, tipo martillo). Sube alternando o a la vez sin girar la muñeca, codos pegados al cuerpo, y baja controlado. Sin balanceo del tronco.", "nota": "curl martillo: pega al braquial y da grosor al brazo/antebrazo. Agarre neutro todo el rato y bajada controlada. Buen cierre de bíceps." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher (corto)",
+      "ejercicios": [
+        { "id": "0872", "nombre": "Reverse crunch (encogimiento inverso)", "series": "3", "reps": "12-15", "descanso": "40s", "musculos": ["Abdomen inferior", "Core"], "instruccion": "Tumbado boca arriba, piernas dobladas a 90°. Lleva las rodillas hacia el pecho enrollando la pelvis (despega el coxis del suelo) y baja controlado sin arquear la lumbar. El movimiento sale del abdomen, no del impulso de las piernas.", "nota": "core inferior, para variar del habitual y sin nada de tobillo. Recorrido corto pero apretando: sube enrollando la cadera, no lanzando las piernas. Ajustado a la energía media de hoy." }
+      ]
+    }
+  ],
+  "vuelta_calma": "Estiramiento de dorsal colgado o agarrado a un poste inclinándote (30s/lado), estiramiento de bíceps contra la pared (30s/lado) y de trapecio/cuello suave. Y para cerrar, el kilómetro de cinta: 1 km, Noel a ritmo suave (sin forzar el tobillo; bici si lo notas), Vicky puede apretar un poco más si quiere.",
+  "cierre": "buen día de tirón cerrando el ciclo: dos tirones para espalda (vertical y horizontal), trasero de hombro para compensar el empuje y bíceps de remate — todo con volumen ajustado a la energía media y sin tocar el tobillo. Recordad que en el tirón la fuerza sale de la ESPALDA, no de los brazos: si notáis los bíceps antes que la espalda, bajad peso y apretad los omóplatos. Rellenad los dos el registrador de abajo (Noel, apunta el curl en polea que es nuevo) y me lo pasáis. ¡A tirar fuerte! 💪"
+}

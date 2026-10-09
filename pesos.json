@@ -1,0 +1,444 @@
+{
+  "_doc": "Registro de pesos por ejercicio (histórico). Al montar una sesión, para cada ejercicio con historial se coge la ÚLTIMA entrada y se pone en el campo 'referencia' de esa tarjeta (p. ej. 'tú 30/35/40 kg · ella 15/20 kg'). Se actualiza cuando el usuario reporta los pesos tras entrenar.",
+  "personas": {
+    "tu": "Noel",
+    "ella": "Vicky"
+  },
+  "registro": {
+    "1409": [
+      {
+        "fecha": "2026-09-08",
+        "tu": "12,5/17,5/17,5 kg",
+        "ella": "5/5/5 kg"
+      },
+      {
+        "fecha": "2026-09-18",
+        "tu": "15/17,5/20 kg",
+        "ella": "10/15/20 kg"
+      },
+      {
+        "fecha": "2026-10-04",
+        "tu": "-",
+        "ella": "15/20/20 kg"
+      }
+    ],
+    "0577": [
+      {
+        "fecha": "2026-08-29",
+        "tu": "32,5/37,5/42,5 kg",
+        "ella": "12,5/17,5/22,5 kg"
+      },
+      {
+        "fecha": "2026-09-03",
+        "tu": "35/40/45 kg",
+        "ella": "15/20/25 kg"
+      },
+      {
+        "fecha": "2026-09-09",
+        "tu": "32,5/37,5/42,5/47,5 kg",
+        "ella": "12,5/17,5/22,5/27,5 kg"
+      },
+      {
+        "fecha": "2026-09-16",
+        "tu": "37,5/42,5/47,5 kg",
+        "ella": "17,5 kg (1 serie, luego pasó a pec deck)"
+      },
+      {
+        "fecha": "2026-09-18",
+        "tu": "37,5/42,5/45 kg",
+        "ella": "-"
+      },
+      {
+        "fecha": "2026-09-30",
+        "tu": "37,5/40/42,5 kg",
+        "ella": "12,5/15/20 kg"
+      },
+      {
+        "fecha": "2026-10-04",
+        "tu": "-",
+        "ella": "17,5/22,5/22,5 kg"
+      },
+      {
+        "fecha": "2026-10-07",
+        "tu": "37,5/42,5/45 kg",
+        "ella": "17,5/22,5/25 kg"
+      }
+    ],
+    "0314": [
+      {
+        "fecha": "2026-08-29",
+        "tu": "8/10/12 kg (mancuerna)",
+        "ella": "6/8/10 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-03",
+        "tu": "8/10/12/14 kg (mancuerna)",
+        "ella": "6/8/10/12 kg (mancuerna)"
+      }
+    ],
+    "0426": [
+      {
+        "fecha": "2026-08-29",
+        "tu": "8/10/10 kg (mancuerna)",
+        "ella": "6/8/8 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-03",
+        "tu": "8/10/12 kg (mancuerna)",
+        "ella": "6/8/10 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-09",
+        "tu": "10/12/12 kg (mancuerna)",
+        "ella": "8/10/8 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-28",
+        "tu": "10/12/14 kg (mancuerna)",
+        "ella": "6/8/10 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-10-04",
+        "tu": "-",
+        "ella": "6/8/10 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-10-07",
+        "tu": "10/12/14 kg (mancuerna)",
+        "ella": "6/8/10 kg (mancuerna)"
+      }
+    ],
+    "0334": [
+      {
+        "fecha": "2026-08-29",
+        "tu": "6/8/8 kg (mancuerna)",
+        "ella": "4/4/5 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-03",
+        "tu": "6/6/8 kg (mancuerna)",
+        "ella": "4/5/5 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-09",
+        "tu": "6/6/8 kg (mancuerna)",
+        "ella": "4/4/4 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-16",
+        "tu": "6/6/8 kg (mancuerna)",
+        "ella": "4/4/4 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-18",
+        "tu": "6/6/8 kg (mancuerna)",
+        "ella": "4/5/5 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-30",
+        "tu": "6/6/6 kg (mancuerna)",
+        "ella": "4/4/4 kg (mancuerna)"
+      }
+    ],
+    "0194": [
+      {
+        "fecha": "2026-08-29",
+        "tu": "7,5/10/10 kg",
+        "ella": "5/5/7,5 kg"
+      },
+      {
+        "fecha": "2026-09-03",
+        "tu": "7,5/10/12,5 kg",
+        "ella": "5/7,5/7,5 kg"
+      },
+      {
+        "fecha": "2026-09-09",
+        "tu": "10/12,5/12,5 kg",
+        "ella": "5/7,5/7,5 kg"
+      },
+      {
+        "fecha": "2026-10-07",
+        "tu": "10/12,5/12,5 kg",
+        "ella": "5/7,5/7,5 kg"
+      }
+    ],
+    "0596": [
+      {
+        "fecha": "2026-08-29",
+        "tu": "15/20/25/30 kg",
+        "ella": "5/10/15/20 kg"
+      },
+      {
+        "fecha": "2026-09-09",
+        "tu": "22,5/27,5/32,5 kg",
+        "ella": "5/15/15 kg"
+      },
+      {
+        "fecha": "2026-09-16",
+        "tu": "-",
+        "ella": "17,5/15 kg"
+      },
+      {
+        "fecha": "2026-09-18",
+        "tu": "-",
+        "ella": "12,5/15/17,5 kg"
+      },
+      {
+        "fecha": "2026-09-28",
+        "tu": "25/27,5/30 kg",
+        "ella": "12,5/15/17,5 kg"
+      }
+    ],
+    "0198": [
+      {
+        "fecha": "2026-08-31",
+        "tu": "32,5/42,5/42,5 kg (jalón al pecho, Vertical Traction ocupada)",
+        "ella": "22,5/27,5/32,5 kg"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "20/25/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-11",
+        "tu": "30/35/45 kg",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-16",
+        "tu": "37,5/42,5/47,5 kg",
+        "ella": "27,5/30/30 kg"
+      },
+      {
+        "fecha": "2026-09-18",
+        "tu": "35/40/45 kg",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-28",
+        "tu": "35/40/45 kg",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-30",
+        "tu": "35/40/45 kg",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-10-04",
+        "tu": "-",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-10-07",
+        "tu": "35/40/40 kg",
+        "ella": "25/30/35 kg"
+      }
+    ],
+    "0861": [
+      {
+        "fecha": "2026-08-31",
+        "tu": "35/40/45 kg",
+        "ella": "20/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "20/35/35 kg"
+      },
+      {
+        "fecha": "2026-09-11",
+        "tu": "35/40/45 kg",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-18",
+        "tu": "35/40/45/50 kg (4ª serie 50 kg x9, al fallo)",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-09-28",
+        "tu": "35/40/45 kg",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-10-04",
+        "tu": "-",
+        "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-10-07",
+        "tu": "35/40/45 kg",
+        "ella": "25/30/35 kg"
+      }
+    ],
+    "0602": [
+      {
+        "fecha": "2026-08-31",
+        "tu": "6/6/8 kg (mancuerna; reverse fly ocupada)",
+        "ella": "4/4 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "4/4/4 kg (mancuerna; máquina ocupada)"
+      },
+      {
+        "fecha": "2026-09-11",
+        "tu": "6 kg (máquina reverse fly)",
+        "ella": "4 kg (máquina reverse fly)"
+      },
+      {
+        "fecha": "2026-10-07",
+        "tu": "5/10/10 kg",
+        "ella": "2,5/5/5 kg"
+      }
+    ],
+    "0313": [
+      {
+        "fecha": "2026-08-31",
+        "tu": "10/10/10 kg (mancuerna)",
+        "ella": "6/6/6 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "6/6/6 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-11",
+        "tu": "10/10/10 kg (mancuerna)",
+        "ella": "6/6/6 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-09-30",
+        "tu": "10/10/10 kg (mancuerna)",
+        "ella": "6/6/6 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-10-07",
+        "tu": "10/10/10 kg (mancuerna)",
+        "ella": "6/6/6 kg (mancuerna)"
+      }
+    ],
+    "0085": [
+      {
+        "fecha": "2026-09-01",
+        "tu": "30/40/50/60 kg",
+        "ella": "30/40/50/60 kg"
+      },
+      {
+        "fecha": "2026-09-16",
+        "tu": "37,5/42,5/47,5 kg (RDL)",
+        "ella": "27,5/30/30 kg (RDL)"
+      }
+    ],
+    "0739": [
+      {
+        "fecha": "2026-09-01",
+        "tu": "40/60/70 kg",
+        "ella": "40/60/70 kg"
+      },
+      {
+        "fecha": "2026-09-08",
+        "tu": "40/60/80/100 kg",
+        "ella": "40/60/80/100 kg"
+      },
+      {
+        "fecha": "2026-09-16",
+        "tu": "60/80/100 kg",
+        "ella": "60/80/100 kg"
+      },
+      {
+        "fecha": "2026-10-04",
+        "tu": "-",
+        "ella": "60/80/100 kg"
+      }
+    ],
+    "0585": [
+      {
+        "fecha": "2026-09-01",
+        "tu": "20/22,5/25 kg",
+        "ella": "10/15/15 kg"
+      },
+      {
+        "fecha": "2026-09-08",
+        "tu": "20/25/30 kg",
+        "ella": "10/15/17,5 kg"
+      },
+      {
+        "fecha": "2026-09-18",
+        "tu": "20/25/30 kg",
+        "ella": "10/15/17,5 kg"
+      },
+      {
+        "fecha": "2026-09-28",
+        "tu": "20/25/30 kg",
+        "ella": "10/15/17,5 kg"
+      }
+    ],
+    "0586": [
+      {
+        "fecha": "2026-09-01",
+        "tu": "20/25/25 kg",
+        "ella": "15/15/15 kg"
+      },
+      {
+        "fecha": "2026-09-08",
+        "tu": "22,5/25/27,5 kg",
+        "ella": "15/17,5/20 kg"
+      },
+      {
+        "fecha": "2026-09-28",
+        "tu": "22,5/25/27,5 kg",
+        "ella": "10/12/15 kg"
+      }
+    ],
+    "0597": [
+      {
+        "fecha": "2026-09-08",
+        "tu": "40/40/45 kg",
+        "ella": "30/35/40 kg"
+      },
+      {
+        "fecha": "2026-09-28",
+        "tu": "40/42,5/45 kg",
+        "ella": "30/35/40 kg"
+      }
+    ],
+    "0598": [
+      {
+        "fecha": "2026-09-08",
+        "tu": "25/30/35 kg",
+        "ella": "25/30/35 kg"
+      }
+    ],
+    "0605": [
+      {
+        "fecha": "2026-09-01",
+        "tu": "8/12,5/15 kg",
+        "ella": "8/10/12,5 kg"
+      }
+    ],
+    "0043": [
+      {
+        "fecha": "2026-09-01",
+        "tu": "30/45/60 kg (back squat con barra libre)",
+        "ella": "30/40/50 kg (back squat con barra libre)"
+      }
+    ],
+    "0868": [
+      {
+        "fecha": "2026-09-05",
+        "tu": "-",
+        "ella": "5/7,5/7,5 kg"
+      },
+      {
+        "fecha": "2026-09-11",
+        "tu": "7,5/10/15 kg",
+        "ella": "5/7,5/10 kg"
+      }
+    ]
+  }
+}

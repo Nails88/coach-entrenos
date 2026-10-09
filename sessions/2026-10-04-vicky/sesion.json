@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-10-04-vicky",
+  "patron": "Full Body (Vicky)",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "50-55 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff7aa8",
+  "intro": "¡Día para ti sola, Vicky! Como tú no arrastras lo del tobillo, hoy aprovechamos para hacer un full body COMPLETO con pierna de verdad (prensa y hip thrust), que estas semanas íbamos limitados por Noel. Tocamos el cuerpo entero: pierna, pecho, espalda y hombro, con 3 series por ejercicio y energía media — técnica por delante y sin ir al fallo. Tu muñeca ya va mejor (el otro día aguantaste el press hasta 20 kg), así que probamos press de pecho y de hombro; pero si alguno te molesta la muñeca, tienes la alternativa anotada (pec deck y laterales) — tú mandas. Debajo de cada ejercicio, tus referencias de la última vez.",
+  "calentamiento": "1 km a trote suave en la cinta para arrancar. Después, activación: 15 puentes de glúteo en suelo · 10 sentadillas a peso corporal · 15 band pull-aparts para espalda/hombro · movilidad de cadera y hombro · 1-2 series de aproximación ligeras en la prensa y en el press antes de las de trabajo.",
+  "bloques": [
+    {
+      "titulo": "🏋️ Full Body",
+      "ejercicios": [
+        { "id": "0739", "series": "3", "reps": "10-12", "descanso": "90s", "tipo": "compuesto", "referencia": "Vicky 60/80/100 kg", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentada en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y planos en la plataforma. Empuja con toda la planta sin bloquear las rodillas de golpe y baja controlada a un rango cómodo.", "nota": "tu pierna principal, en fresco. A batir o igualar la última vez (100 arriba); empuja con el talón y baja controlada." },
+        { "id": "0577", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Vicky 12,5/15/20 kg (si molesta la muñeca → pec deck)", "musculos": ["Pecho", "Tríceps", "Hombro anterior"], "instruccion": "Sentada en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlada notando el pecho. Muñeca recta (nudillos al techo) o agarres neutros.", "nota": "empuje de pecho. Vigila la muñeca: si molesta, cámbialo por el pec deck (12,5/15/17,5). Controla la bajada." },
+        { "id": "0198", "nombre": "Vertical Traction / Jalón vertical", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Vicky 25/30/35 kg", "musculos": ["Dorsales", "Espalda"], "instruccion": "En la Vertical Traction (o jalón al pecho), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA, baja el agarre hasta el pecho apretando el dorsal y sube controlada.", "nota": "tu tirón vertical. Pecho arriba y tira con los codos hacia los bolsillos, no con las manos. Aprieta abajo." },
+        { "id": "1409", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Vicky 10/15/20 kg", "musculos": ["Glúteos", "Isquiotibiales"], "instruccion": "Tumbada con la espalda apoyada en un banco, barra sobre la cadera (con almohadilla). Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1-2s y baja controlada.", "nota": "hip thrust, tu rey del glúteo (¡subiste a 20 el otro día!). Pausa apretando glúteo arriba; empuja con el talón y basculando la pelvis, no arqueando la lumbar." },
+        { "id": "0861", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Vicky 25/30/35 kg", "musculos": ["Espalda", "Dorsales", "Romboides"], "instruccion": "Sentada en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.", "nota": "tu tirón horizontal. Aprieta juntando los omóplatos atrás, tronco quieto sin balanceo." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "60s", "tipo": "accesorio", "referencia": "Vicky 6/8/10 kg (mancuerna; si molesta la muñeca → laterales)", "musculos": ["Hombro", "Tríceps"], "instruccion": "Sentada en un banco con respaldo casi vertical (~85-90°), mancuernas a la altura de los hombros y palmas al frente. Empuja arriba sin bloquear del todo ni arquear la lumbar, y baja controlada hasta los hombros.", "nota": "tu hombro. El otro día lo hiciste sin problema de muñeca; si hoy molesta, pásate a elevaciones laterales (4/5/5). Abdomen apretado para no arquear." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0276", "nombre": "Dead bug (bicho muerto)", "series": "3", "reps": "10/lado", "descanso": "40s", "musculos": ["Core", "Transverso abdominal"], "instruccion": "Boca arriba, brazos al techo y rodillas a 90°. Baja de forma alterna brazo y pierna contrarios hasta casi rozar el suelo, mantén la lumbar pegada al suelo y vuelve. Alterna lados.", "nota": "core de control, para variar de la plancha del otro día. La clave: la lumbar NO se despega del suelo; si se arquea, baja menos la pierna." }
+      ]
+    },
+    {
+      "titulo": "🏃 Cardio de cierre",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio"], "instruccion": "1 km en la cinta a ritmo cómodo, un poco más vivo que el del calentamiento si te quedan ganas. Para cerrar y sumar algo de cardio.", "nota": "kilómetro de cierre. Ajusta el ritmo a cómo vayas de energía; si vas muy justa, acábalo caminando rápido." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min de estiramientos: glúteo tumbado (figura-4, 30s/lado), cuádriceps de pie, isquios sentada, pecho en marco de puerta y dorsal agarrada inclinándote. Respira hondo y lista.",
+  "cierre": "buen full body, Vicky, aprovechando que hoy no había límite de tobillo: pierna completa (prensa + hip thrust), pecho, espalda y hombro, con tu muñeca ya tirando bien. Técnica por delante y sin fallo, que es como progresas sin lesionarte. Rellena el registrador con tus pesos y se lo pasas a Noel para que me lo diga. ¡A darle con cabeza! 💪",
+  "notas_extra": "Sesión de Vicky SOLA (Noel no entrena). Full body completo SIN restricción de tobillo (ese es de Noel): prensa + hip thrust de pierna. Muñeca de Vicky ya mejor (aguantó lever press a 20 el 30/09); se incluye press de pecho y de hombro con alternativas (pec deck / laterales) por si molesta. Cinta: 1 km inicio + 1 km cierre (Vicky sin problema de tobillo). Al registrar, usar tu:'-' (solo Vicky)."
+}

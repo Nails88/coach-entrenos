@@ -1,0 +1,34 @@
+{
+  "fecha": "2026-09-07",
+  "patron": "Metcon Full Body + Core (improvisado, en casa) — REGISTRO",
+  "entorno": "Casa / material básico (kettlebell)",
+  "tiempo": "~25-30 min",
+  "energia": "Alta",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#f5a623",
+  "intro": "REGISTRO de lo que montaste tú solo (no la sesión planificada). Te saliste del guion de máquinas/tobillo y te fuiste a un metcon estilo CrossFit: 5 rondas de un circuito Full Body + un finisher de core de 10 min a intervalos. Lo apunto tal cual para que quede en el histórico. Nota de coach: los burpees llevan salto e impacto — si el tobillo estaba tocado, ojo con esto; si aguantó bien, buena señal de que va mejorando (pero vigílalo estos días).",
+  "calentamiento": "1 km de carrera suave en cinta (arranque habitual) + movilidad general antes de arrancar el circuito.",
+  "bloques": [
+    {
+      "titulo": "🔁 Circuito — 5 rondas (For Time / AMRAP)",
+      "ejercicios": [
+        { "id": "1160", "nombre": "Burpees", "series": "5 rondas", "reps": "5", "descanso": "encadenado", "musculos": ["Full body", "Cardio"], "instruccion": "Pecho al suelo, subes y saltas con palmada arriba. 5 por ronda.", "nota": "el que mete el pico cardiovascular y el impacto — si el tobillo protesta, se puede escalar a burpee sin salto (step-back)." },
+        { "id": "0549", "nombre": "Kettlebell swing", "series": "5 rondas", "reps": "7", "descanso": "encadenado", "musculos": ["Glúteos", "Isquiotibiales", "Core"], "instruccion": "Bisagra de cadera, la kettlebell sube por empuje de cadera (no de brazos), hasta la altura de los ojos/hombros. 7 por ronda.", "nota": "potencia de cadera y espalda baja — swing ruso a la altura de los ojos. Aprieta glúteo arriba." },
+        { "id": "0662", "nombre": "Flexiones (push-ups)", "series": "5 rondas", "reps": "10", "descanso": "encadenado", "musculos": ["Pecho", "Tríceps", "Hombro"], "instruccion": "Cuerpo en línea, codos ~45°, pecho al suelo y arriba. 10 por ronda.", "nota": "empuje de tronco superior — línea recta, sin que caiga la cadera. Se escalan de rodillas si el pico de fatiga aprieta." },
+        { "id": "3679", "nombre": "Sit-ups (abdominales)", "series": "5 rondas", "reps": "15", "descanso": "fin de ronda", "musculos": ["Abdomen", "Core"], "instruccion": "Tumbado, subes el tronco completo hasta sentarte y bajas controlado. 15 por ronda.", "nota": "los que te resultan fáciles — perfectos como remate de ronda cuando ya vas fundido." }
+      ]
+    },
+    {
+      "titulo": "🔥 Finisher de core — 10 min a intervalos (30s ON / 30s OFF)",
+      "ejercicios": [
+        { "id": "0464", "nombre": "Plancha", "series": "intervalos", "tiempo": "30s ON / 30s OFF", "musculos": ["Core", "Abdomen"], "instruccion": "Plancha sobre antebrazos, cuerpo en línea, apretando glúteo y abdomen (aguante isométrico).", "nota": "uno de los ejercicios del bloque de 10 min de core variado." },
+        { "id": "0489", "nombre": "Superman (extensión lumbar)", "series": "intervalos", "tiempo": "30s ON / 30s OFF", "musculos": ["Lumbar", "Glúteos"], "instruccion": "Boca abajo, elevas brazos y piernas a la vez apretando glúteo y espalda baja, y bajas controlado.", "nota": "compensa el trabajo de abdomen con la cadena posterior — no tires del cuello." },
+        { "id": "0274", "nombre": "Crunch", "series": "intervalos", "tiempo": "30s ON / 30s OFF", "musculos": ["Abdomen"], "instruccion": "Tumbado, despegas los omóplatos enrollando el abdomen (recorrido corto) y bajas controlado.", "nota": "recorrido corto y foco en apretar, no en subir mucho." },
+        { "id": "0267", "nombre": "Crunch con peso", "series": "intervalos", "tiempo": "30s ON / 30s OFF", "musculos": ["Abdomen"], "instruccion": "Igual que el crunch pero sujetando un peso (disco/mancuerna) sobre el pecho o detrás de la cabeza para añadir carga.", "nota": "la versión cargada — sube el estímulo sin cambiar el patrón." }
+      ]
+    }
+  ],
+  "vuelta_calma": "1 km en cinta de cierre + estiramientos de cadera, isquios y core. Hielo en el tobillo si notaste molestia con los burpees.",
+  "cierre": "buen apaño improvisado: metcon Full Body corto e intenso + core variado, justo el tipo de sesión que te sale natural viniendo de CrossFit. Queda apuntado en el histórico. Lo único a vigilar es el tobillo por el impacto de los burpees — si aguantó sin molestia, vamos por buen camino para volver a la comba y la sentadilla libre. Sin pesos que registrar salvo que quieras apuntar la kettlebell del swing; dímela y la guardo.",
+  "notas_extra": "Sesión REALIZADA improvisada por Noel el 2026-09-07 en casa, en lugar de la sesión planificada (2026-09-07-casa, pierna/core sin tobillo). Estructura: 5 rondas de [5 burpees, 7 kettlebell swings, 10 flexiones, 15 sit-ups] + 10 min de core a intervalos 30/30 (plancha, superman, crunch, crunch con peso). Sin registro de pesos (peso de KB no facilitado). Ojo: burpees = impacto, en contexto de tobillo tocado."
+}
