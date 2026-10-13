@@ -1,0 +1,54 @@
+{
+  "_doc": "Registro de composición corporal (InBody / báscula del gym). Una toma ~mensual por persona, misma hora/condiciones (Noel: por la tarde tras entrenar). Se añade una entrada por fecha en registro.tu / registro.ella. El panel (construir-composicion.js) dibuja la evolución de cada métrica. Campos por entrada: fecha + métricas (kg/%/índice). Deja fuera lo que no venga en la lectura.",
+  "personas": { "tu": "Noel", "ella": "Vicky" },
+  "objetivo": {
+    "tu": {
+      "peso": 68.1,
+      "grasa_pct": 15,
+      "hito": { "peso": 74, "grasa_pct": 22, "plazo": "3-4 meses" }
+    },
+    "ella": {
+      "peso": 55,
+      "grasa_pct": 25,
+      "hito": { "peso": 61, "grasa_pct": 31, "plazo": "3-4 meses" }
+    }
+  },
+  "registro": {
+    "tu": [
+      {
+        "fecha": "2026-09-08",
+        "peso": 81.5,
+        "imc": 26.9,
+        "grasa_pct": 29.0,
+        "grasa_kg": 23.6,
+        "musculo": 32.5,
+        "mlg": 57.9,
+        "agua": 42.6,
+        "visceral": 10,
+        "proteinas": 11.5,
+        "minerales": 3.8,
+        "tmb": 1620,
+        "grado_obesidad": 122,
+        "inbody": 68
+      }
+    ],
+    "ella": [
+      {
+        "fecha": "2026-09-08",
+        "peso": 67.2,
+        "imc": 26.3,
+        "grasa_pct": 38.6,
+        "grasa_kg": 25.9,
+        "musculo": 22.5,
+        "mlg": 41.3,
+        "agua": 30.3,
+        "visceral": 13,
+        "proteinas": 8.1,
+        "minerales": 2.9,
+        "tmb": 1262,
+        "grado_obesidad": 122,
+        "inbody": 66
+      }
+    ]
+  }
+}

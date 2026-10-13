@@ -1,0 +1,168 @@
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--text:#f2f2f2;--muted:#9aa0ab;--border:#2a2e37}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);padding:24px 16px 60px}
+  .wrap{max-width:820px;margin:0 auto}
+  .eyebrow{color:#35c46a;font-weight:700;letter-spacing:.08em;font-size:.8rem;text-transform:uppercase}
+  h1{margin:6px 0 4px;font-size:1.6rem}
+  header p{color:var(--muted);margin:0 0 6px;line-height:1.5;font-size:.9rem}
+  .legend{display:flex;gap:16px;align-items:center;margin-top:8px;font-size:.85rem;flex-wrap:wrap}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+  .dash{width:16px;height:0;border-top:2px dashed #35c46a;display:inline-block}
+  .resumen{background:var(--card);border:1px solid var(--border);border-left:4px solid #4aa3ff;border-radius:12px;padding:12px 16px;margin-top:16px}
+  .resumen p{margin:0 0 6px;line-height:1.5;font-size:.92rem}
+  .resumen .hito-line{color:#f5a623;font-size:.88rem;margin:0 0 6px;line-height:1.5}
+  .resumen .hint{color:var(--muted);font-size:.85rem;margin:0}
+  .grupo{margin-top:26px}
+  .grupo>h2{font-size:1.15rem;margin:0 0 12px;border-bottom:2px solid currentColor;display:inline-block;padding-bottom:3px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+  .mcard{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+  .mhead h3{margin:0 0 6px;font-size:1rem}
+  .chart{margin:2px 0 8px}
+  .noimg{height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;background:#0f1115;border-radius:8px}
+  .mrow{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:3px 0;font-variant-numeric:tabular-nums}
+  .mwho{font-weight:700;font-size:.85rem}
+  .mval{font-size:1.02rem;font-weight:700}
+  .mval small{color:var(--muted);font-weight:400;font-size:.7rem;margin-left:2px}
+  .mval.muted,.muted{color:var(--muted);font-weight:400;font-size:.85rem}
+  .delta{font-size:.72rem;font-weight:700;margin-left:6px;padding:1px 6px;border-radius:6px}
+  .delta.good{color:#8ff0b0;background:rgba(53,196,106,.15)}
+  .delta.bad{color:#ff9e8f;background:rgba(255,90,60,.15)}
+  .delta.flat{color:var(--muted);background:rgba(154,160,171,.12)}
+  .meta-note{margin-top:6px;font-size:.8rem;color:#35c46a}
+  footer{margin-top:32px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;line-height:1.6}
+</style>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COACH · Composición corporal</div>
+    <h1>🧬 Composición — Noel & Vicky</h1>
+    <p>Evolución de las mediciones del InBody, toma a toma (≈1/mes). Lo que importa es la <b>tendencia</b>: grasa bajando mientras el músculo aguanta. Cada punto es una medición; una toma suelta fluctúa con hidratación y hora, así que miramos la línea, no el decimal de un día.</p>
+    <div class="legend"><span><i class="dot" style="background:#4aa3ff"></i>Noel</span><span><i class="dot" style="background:#ff8fab"></i>Vicky</span><span><i class="dash" style="border-top-color:#f5a623"></i>hito</span><span><i class="dash"></i>meta</span></div>
+  </header>
+  <div class="resumen">
+    <p><b>Noel</b> · última toma 08/09: <b>81,5 kg</b>, <b>29,0%</b> grasa, <b>32,5 kg</b> de músculo. 🎯 Meta final: <b>68,1 kg</b> / <b>15%</b> de grasa (a 13,4 kg), perdiendo grasa y manteniendo el músculo.</p>
+    <p class="hito-line">🟠 Próximo hito (3-4 meses): <b>74,0 kg</b> / <b>22%</b> de grasa. Objetivo alcanzable antes de mirar la meta final.</p>
+    <p class="hint">Primera toma registrada: aún no hay tendencia. En cuanto haya una segunda medición (≈1 mes) verás las líneas y si la grasa baja mientras el músculo aguanta — que es la señal de que el plan funciona.</p>
+  </div>
+  <div class="grupo"><h2 style="color:#35c46a">Lo que miramos</h2>
+<div class="grid"><div class="mcard">
+    <div class="mhead"><h3>Peso</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de peso" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">66</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">74</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">83</text><line x1="34" y1="72.4" x2="310" y2="72.4" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="69.4" text-anchor="end" fill="#f5a623" font-size="8">hito 74,0</text><line x1="34" y1="113.7" x2="310" y2="113.7" stroke="#35c46a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="110.7" text-anchor="end" fill="#35c46a" font-size="8">meta 68,1</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">81,5<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">67,2<small>kg</small> </span></div>
+    <div class="meta-note">🟠 Hito: 74,0 kg — faltan 7,5 kg</div><div class="meta-note">🎯 Meta: 68,1 kg — faltan 13,4 kg</div>
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>% Masa grasa</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de grasa_pct" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">13</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">27</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">40</text><line x1="34" y1="90.3" x2="310" y2="90.3" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="87.3" text-anchor="end" fill="#f5a623" font-size="8">hito 22,0</text><line x1="34" y1="120.0" x2="310" y2="120.0" stroke="#35c46a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="310" y="117.0" text-anchor="end" fill="#35c46a" font-size="8">meta 15,0</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="20.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="60.7" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">29,0<small>%</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">38,6<small>%</small> </span></div>
+    <div class="meta-note">🟠 Hito: 22,0 % — faltan 7,0 %</div><div class="meta-note">🎯 Meta: 15,0 % — faltan 14,0 %</div>
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Masa grasa</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de grasa_kg" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">23,4</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">24,8</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">26,1</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="20.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="120.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">23,6<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">25,9<small>kg</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Masa muscular esquelética</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de musculo" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">22</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">28</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">33</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">32,5<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">22,5<small>kg</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Masa libre de grasa</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de mlg" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">40</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">50</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">59</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">57,9<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">41,3<small>kg</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Grasa visceral (índice)</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de visceral" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">9,8</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">11,5</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">13,2</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="20.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="120.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">10<small></small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">13<small></small> </span></div>
+    
+  </div></div></div>
+  <div class="grupo"><h2 style="color:#f5a623">Otros / avanzados</h2>
+<div class="grid"><div class="mcard">
+    <div class="mhead"><h3>IMC</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de imc" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">26,3</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">26,6</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">26,9</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">26,9<small></small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">26,3<small></small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Tasa metabólica basal</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de tmb" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">1233</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">1441</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">1649</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">1620<small>kcal</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">1262<small>kcal</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>InBody score</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de inbody" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">65,8</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">67,0</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">68,2</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">68<small>pts</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">66<small>pts</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Agua corporal total</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de agua" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">29</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">36</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">44</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">42,6<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">30,3<small>kg</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Proteínas</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de proteinas" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">7,8</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">9,8</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">11,8</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">11,5<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">8,1<small>kg</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Minerales</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de minerales" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">2,8</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">3,3</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">3,9</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="120.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="20.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">3,8<small>kg</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">2,9<small>kg</small> </span></div>
+    
+  </div>
+<div class="mcard">
+    <div class="mhead"><h3>Grado de obesidad</h3></div>
+    <div class="chart"><svg viewBox="0 0 320 150" width="100%" role="img" aria-label="Evolución de grado_obesidad" style="max-width:340px">
+    <line x1="34" y1="128.0" x2="310" y2="128.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="131.0" text-anchor="end" fill="#9aa0ab" font-size="8">120,8</text><line x1="34" y1="70.0" x2="310" y2="70.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="73.0" text-anchor="end" fill="#9aa0ab" font-size="8">122,0</text><line x1="34" y1="12.0" x2="310" y2="12.0" stroke="#2a2e37" stroke-width="1"/><text x="29" y="15.0" text-anchor="end" fill="#9aa0ab" font-size="8">123,2</text><text x="172.0" y="144" text-anchor="middle" fill="#9aa0ab" font-size="8">08/09</text>
+    <circle cx="172.0" cy="70.0" r="2.8" fill="#ff8fab"/><circle cx="172.0" cy="70.0" r="2.8" fill="#4aa3ff"/>
+  </svg></div>
+    <div class="mrow"><span class="mwho" style="color:#4aa3ff">Noel</span><span class="mval">122<small>%</small> </span></div><div class="mrow"><span class="mwho" style="color:#ff8fab">Vicky</span><span class="mval">122<small>%</small> </span></div>
+    
+  </div></div></div>
+  <footer>Fuente: composicion.json · básculas de bioimpedancia (InBody): fiables en tendencia, no al gramo. Para registrar una toma nueva, pásale los datos a COACH tras pesarte y se actualiza este panel.</footer>
+</div>
