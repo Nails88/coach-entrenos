@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-08-08",
+  "patron": "Full Body — Cuerpo completo",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "60 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#f5a623",
+  "intro": "Cambiamos el chip tras dos ciclos PPL: hoy Full Body para variar el estímulo y tocar todo el cuerpo en una sesión. La lógica es un compuesto grande por cada patrón —pierna (rodilla y cadera), empuje y tirón— más hombro y core, sin solapar recuperación porque cada ejercicio ataca una zona distinta. Con energía media, elijo máquinas y recorridos guiados para el trabajo pesado: menos gasto en estabilizar, más foco en apretar cada patrón con buena técnica. Ideal cuando entrenas pocos días, porque una sola sesión ya cubre el cuerpo entero.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta para subir pulsaciones. Después, movilidad global: 10 círculos de brazos por sentido · 15 band pull-aparts · 15 sentadillas al aire con pausa abajo · 10 balanceos de pierna adelante-atrás por lado · 1 serie ligera en la máquina de pecho y otra en el jalón (12-15 reps) para grabar los patrones antes de cargar.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0770", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Cuádriceps", "Glúteos", "Isquiotibiales"], "instruccion": "Barra sobre trapecios, pies a la anchura de hombros y puntas ligeramente hacia fuera. Core activo y pecho alto, baja doblando cadera y rodilla hasta que el muslo quede paralelo, pausa breve y empuja con los talones.", "nota": "el rey del día y el que más calorías mueve — con energía media prioriza profundidad y control; el Smith te deja apretar seguro sin gastar foco en equilibrar." },
+        { "id": "0577", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Pecho", "Tríceps", "Hombros"], "instruccion": "Sentado, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi extender los codos sin bloquearlos de golpe, pausa breve al frente y vuelve controlado sintiendo el estiramiento del pecho.", "nota": "tu empuje del día — recorrido completo por delante de la carga; la máquina te da estabilidad para centrarte en el pecho." },
+        { "id": "0198", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Dorsales", "Bíceps"], "instruccion": "Sentado con las rodillas bajo las almohadillas, agarre prono algo más ancho que los hombros. Jala la barra hacia el pecho alto liderando con los codos hacia abajo y atrás, aprieta los omóplatos y sube controlado hasta estirar del todo.", "nota": "tu tirón del día — inicia bajando los codos, no tirando con las manos; equilibra el empuje anterior para que hombros y espalda queden compensados." },
+        { "id": "0085", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Isquiotibiales", "Glúteos", "Lumbar"], "instruccion": "De pie con la barra pegada a los muslos, rodillas ligeramente flexionadas y fijas. Lleva la cadera atrás bajando la barra pegada al cuerpo hasta notar el estiramiento en los isquios, y empuja la cadera al frente apretando glúteos arriba.", "nota": "el patrón de cadera que complementa la sentadilla — movimiento de cadera, no de rodilla; espalda recta y para cuando la notes curvarse." },
+        { "id": "0584", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Hombros"], "instruccion": "Sentado en la máquina, brazos bajo las almohadillas. Sube hasta que los brazos queden paralelos al suelo liderando con el codo, pausa arriba y baja controlado.", "nota": "aislamiento del deltoide lateral para redondear los hombros — peso moderado y sin impulso; que suba el codo, no la muñeca." },
+        { "id": "0464", "series": "3", "tiempo": "30-40s", "descanso": "30s", "musculos": ["Oblicuos", "Core"], "instruccion": "Plancha alta sobre la esterilla, manos bajo los hombros. Gira el torso llevando un brazo hacia el techo, alternando lados, con la cadera estable y sin dejar caer los lumbares.", "nota": "core como cierre de fuerza antes del cardio — respiración fluida, no aguantes el aire; la cadera firme es lo que trabaja, no la velocidad." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte: ritmo que te deje hablar en frases cortas. Zancada relajada y respiración controlada.", "nota": "el kilómetro final aprovecha que llegas con las reservas tocadas de todo el trabajo de fuerza, así que tira más de grasa — perfecto para tu objetivo. Si vas cargado, bájalo a trote muy suave, pero remátalo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de cuádriceps de pie (30s/lado), estiramiento de pecho en marco de puerta (30s/lado), estiramiento de dorsal colgado o en polea (30s/lado), estiramiento de isquios con pierna estirada (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "buena sesión de cuerpo completo para variar tras el bloque PPL — has tocado pierna, empuje, tirón, hombro y core en una sola, con los dos kilómetros de cinta enmarcando el trabajo. El Full Body rinde mucho cuando la semana es de pocos días, porque cada sesión ya es completa. Si repites este formato, alterna un Full Body A (como hoy, dominante de sentadilla) con un B dominante de bisagra/empuje distinto para no repetir siempre lo mismo. Cuando vuelvas, dime entorno, tiempo y energía y seguimos."
+}
