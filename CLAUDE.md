@@ -245,3 +245,4 @@ El usuario entrena en un gimnasio **Technogym**. Ten en cuenta al montar días d
   - `0760` smith leg press → usa `0739` (sled 45° leg press).
   - `3562` barbell glute bridge two legs on bench → usa `1409` (barbell glute bridge en suelo).
 - **Sentadilla por defecto:** el usuario prefiere **back squat con barra libre** (`0043` barbell full squat), estilo CrossFit, en vez del Smith squat (`0770`). Úsalo como sentadilla base en días de pierna salvo que pida lo contrario.
+- **Tríceps — ir variando:** alterna según veas (ambos valen, enfatizan cabezas distintas): **pushdown en polea alta** (`0201` cable pushdown / `0241` V-bar — cabeza lateral; el usuario suele tenerlo a mano) y **extensión overhead** (`0194`, polea baja o mancuerna a dos manos — cabeza larga). No es error poner uno u otro; el usuario prefiere que se vayan rotando. Al registrar, anota cuál fue (en pushdown se suele cargar más que en overhead, no son comparables 1:1).
