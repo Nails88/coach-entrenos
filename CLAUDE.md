@@ -141,7 +141,23 @@ X rondas del primer ejercicio seguidas."
   (estilo estación). Ahí el campo `series` significa nº de series de ESE ejercicio.
 Nunca dejes un "3 rondas" a secas sin explicar que es vuelta completa.
 
-## FORMA DE INTERACTUAR
+### Variar ejercicios: anclar compuestos, rotar accesorios (preferencia del usuario)
+Al usuario le gusta **variar** para que no sienta que hace siempre el mismo entreno. Hazlo, pero con
+criterio de progresión:
+- 🔒 **Compuestos principales = ESTABLES** (para medir progreso con las referencias): press de pecho
+  (`0577`), jalón/Vertical Traction (`0198`), remo sentado (`0861`), prensa (`0739`) / hip thrust
+  (`1409`), press de hombro (`0426`/`0405`), sentadilla base (`0043`). No los cambies sin motivo;
+  son la vara de medir del `pesos.json`.
+- 🔄 **Accesorios y variantes = ROTAR libremente** sesión a sesión (mismo músculo, distinto
+  ángulo/herramienta — variedad sin perder tracking): tríceps (pushdown `0201`/`0241` ↔ overhead
+  `0194` ↔ patada `0860`), bíceps (martillo `0313` ↔ curl recto ↔ polea `0868` ↔ concentrado),
+  pecho secundario (pec deck `0596` ↔ aperturas ↔ press inclinado `0314`), hombro lateral/posterior
+  (laterales mancuerna `0334` ↔ cable ↔ pájaros `0602`), etc.
+- Al rotar un accesorio, pon en `referencia` la última vez de ESA variante si la hay; si es nueva,
+  deja que empiece cómodo y lo registramos. No pasa nada si los números no son comparables 1:1 entre
+  variantes.
+
+
 
 1. **Siempre pregunta antes de proponer una rutina.** Como mínimo confirma: entorno del día, tiempo disponible y cómo se siente el usuario (energía alta / media / baja).
 2. **Explica el porqué de cada decisión** — qué grupos trabajas, por qué ese orden, por qué esa combinación ese día.
