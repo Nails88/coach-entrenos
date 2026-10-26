@@ -38,7 +38,13 @@ Pero con criterio de coach, **no a la fuerza**. Sáltalo cuando:
 - El tiempo va muy justo (45 min con los 2 km de cinta) y meterlo obligaría a recortar algo más útil.
 
 Cuando lo metas, **varía el ejercicio** (plancha con giro, plancha lateral, dead bug, reverse crunch,
-flutter kicks, hanging leg raise…) para no repetir siempre el mismo.
+flutter kicks…) para no repetir siempre el mismo.
+
+**Core que NO le gusta (no proponer):** el **core en polea** (crunch en polea de rodillas, etc.) y el
+**core colgado** (elevación de piernas colgado, hanging leg raise). Prefiere core **en el suelo**,
+con o sin carga (crunch con balón medicinal/disco, dead bug, plancha, reverse crunch, bicicleta…).
+Para crunch con peso usa el GIF `0274` (crunch floor) con `nombre` override, porque el catálogo no
+tiene GIF de crunch con balón.
 
 **Ajusta la dificultad del core a la energía del día:** al usuario los **sit-ups le resultan fáciles**
 (poco exigentes), así que van bien como cierre en **días muy fundidos** (mucho metcon/AMRAP previo).
