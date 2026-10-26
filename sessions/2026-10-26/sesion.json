@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-10-26",
+  "patron": "Pierna sentada + Core (rehab tobillo — sin cargar el pie)",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45-50 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Tras el tren superior de ayer, hoy toca PIERNA — pero la versión sentada, sin cargar el pie, por el tobillo de Noel (sin alta del fisio todavía). Todo en máquinas donde el rodillo va sobre la pierna y el pie no empuja nada: extensión de cuádriceps, curl femoral, abducción (abrir) y aducción (cerrar). Fuera prensa, hip thrust, sentadilla, gemelo, cinta e impacto. Es una pierna más ligera que una prensa a 100 kg, así que busca CONTROL y CONTRACCIÓN: bajadas lentas (2-3s) y pausa de 1s arriba, más que mover pesos. Luego, core. Energía media y 3 series por ejercicio, sin ir al fallo. VICKY: tú no tienes el límite de tobillo, así que arriba tienes un bloque extra solo para ti (prensa y hip thrust) si te apetece pierna completa; Noel, ese bloque sáltatelo. Debajo de cada ejercicio, vuestras referencias.",
+  "calentamiento": "Noel: 5-6 min de bici suave si el tobillo lo tolera, o movilidad de cadera y rodilla (sin impacto). Vicky: 1 km a trote suave en cinta si te apetece. Después, para los dos: 15 puentes de glúteo en el suelo · 10 rotaciones de cadera por lado · movilidad de rodillas · 1-2 series de aproximación ligeras en la extensión antes de las de trabajo.",
+  "bloques": [
+    {
+      "titulo": "🌸 EXTRA SOLO VICKY — pierna completa (Noel, sáltate este bloque)",
+      "ejercicios": [
+        { "id": "0739", "series": "3", "reps": "10-12", "descanso": "90s", "tipo": "compuesto", "referencia": "Vicky 60/80/100 kg (Noel: NO, carga el pie)", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentada en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y planos en la plataforma. Empuja con toda la planta sin bloquear las rodillas de golpe y baja controlada a un rango cómodo.", "nota": "SOLO VICKY: tu pierna principal, sin límite de tobillo. Empuja con el talón y baja controlada. Noel: este ejercicio NO lo haces (el pie empuja y carga el tobillo)." },
+        { "id": "1409", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Vicky 15/20/20 kg (Noel: NO, carga el pie)", "musculos": ["Glúteos", "Isquiotibiales"], "instruccion": "Tumbada con la espalda apoyada en un banco, barra sobre la cadera (con almohadilla). Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1-2s y baja controlada.", "nota": "SOLO VICKY: tu rey del glúteo. Pausa apretando arriba. Noel: este tampoco (empuja con el talón y carga el tobillo)." }
+      ]
+    },
+    {
+      "titulo": "🦵 Pierna sentada — sin cargar el pie (los dos)",
+      "ejercicios": [
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 20/25/30 kg · Vicky 10/15/17,5 kg", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento (2-3s). El pie NO empuja nada.", "nota": "cuádriceps sin tocar el tobillo (el rodillo va en la espinilla). Hoy es tu ejercicio principal de pierna: busca la contracción y la bajada lenta, y si el 30 sale muy fácil, prueba a subir. Si notas el tobillo, avisa." },
+        { "id": "0586", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 20/25/27,5 kg · Vicky 15/17,5/20 kg", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo (o sentado), pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos, aprieta arriba y baja lento sin soltar de golpe.", "nota": "isquio por flexión de rodilla, cero tobillo. No despegues la cadera para robar rango; controla la bajada." },
+        { "id": "0597", "series": "3", "reps": "15-20", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 40/42,5/45 kg · Vicky 30/35/40 kg", "musculos": ["Glúteos", "Abductores"], "instruccion": "Sentado con la espalda apoyada, abre las piernas empujando contra las almohadillas todo lo que puedas, pausa apretando el glúteo lateral 1s al final y junta lento. El pie no empuja nada: el trabajo es de cadera.", "nota": "glúteo medio, sentado y sin tocar el tobillo. Inclínate un pelín hacia delante para notarlo más. Series altas buscando el ardor." },
+        { "id": "0598", "series": "3", "reps": "15-20", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 25/30/35 kg · Vicky 25/30/35 kg", "musculos": ["Aductores"], "instruccion": "Sentado con la espalda apoyada y las almohadillas por dentro de las rodillas. Junta las piernas apretando el muslo interno, pausa 1s al cerrar y abre lento controlando. El pie no empuja nada.", "nota": "aductores (muslo interno), la gemela de la máquina anterior pero cerrando. Sentado y sin tobillo. Controla la apertura, no dejes que las almohadillas te abran de golpe." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core (los dos, sin apoyar el pie)",
+      "ejercicios": [
+        { "id": "0175", "nombre": "Crunch en polea (de rodillas)", "series": "3", "reps": "12-15", "descanso": "45s", "musculos": ["Abdomen", "Core"], "instruccion": "De rodillas frente a la polea alta con la cuerda, sujétala a los lados de la cabeza. Enrolla el abdomen llevando los codos hacia los muslos (cadera casi fija), aprieta abajo 1s y sube controlado sin tirar con los brazos.", "nota": "core con carga y progresable, de rodillas (sin cargar el pie). El movimiento es enrollar el abdomen, no tirar con los brazos ni bascular la cadera." },
+        { "id": "0276", "nombre": "Dead bug (bicho muerto)", "series": "3", "reps": "10/lado", "descanso": "40s", "musculos": ["Core", "Transverso abdominal"], "instruccion": "Boca arriba, brazos al techo y rodillas a 90°. Baja de forma alterna brazo y pierna contrarios hasta casi rozar el suelo, mantén la lumbar pegada al suelo y vuelve. Alterna lados.", "nota": "core de control para variar del crunch, tumbado y sin tobillo. La lumbar NO se despega del suelo; si se arquea, baja menos la pierna." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min de estiramientos suaves: isquios sentado (30s/lado), glúteo tumbado (figura-4, 30s/lado), cuádriceps de pie sin forzar el tobillo y aductores (mariposa con las rodillas sueltas, sin forzar). Sin kilómetro de cinta para Noel (tobillo). Si el fisio te ha dado movilidad de tobillo, buen momento para hacerla con calma.",
+  "cierre": "buen día de pierna sentada y core, respetando el tobillo de Noel: cuádriceps, isquios, glúteo medio y aductores trabajados sin que el pie cargue nada, y core de remate. Vicky aprovecha para meter su pierna completa. Hoy manda el control y la contracción, no el peso. Noel: lo que canse, bien; lo que MOLESTE el tobillo, se para y me avisas. Rellenad el registrador con los pesos y me lo pasáis. ¡A darle con cabeza! 💪",
+  "notas_extra": "Pierna sentada ankle-safe para Noel (sin alta de fisio): extension 0585, curl femoral 0586, abduccion 0597, aduccion 0598 + core (crunch polea 0175, dead bug 0276). Bloque EXTRA solo para Vicky: prensa 0739 + hip thrust 1409 (opcional, no sabemos si viene; Noel NO los hace). Al registrar, si Vicky no viene usar ella:'-'; los de prensa/hip thrust son solo de Vicky (tu:'-'). Noel: sin km de cierre."
+}
