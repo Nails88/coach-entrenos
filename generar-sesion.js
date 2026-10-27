@@ -167,7 +167,25 @@ const cierre = spec.cierre
 
 // --- Registrador de pesos en la propia página (rellenar + generar texto para pegar a COACH) ---
 let regNames = { tu: 'Tú', ella: 'Ella' };
-try { const pj = JSON.parse(fs.readFileSync(path.join(root, 'pesos.json'), 'utf8')); if (pj.personas) regNames = pj.personas; } catch {}
+let pesosReg = {};
+try {
+  const pj = JSON.parse(fs.readFileSync(path.join(root, 'pesos.json'), 'utf8'));
+  if (pj.personas) regNames = pj.personas;
+  pesosReg = pj.registro || {};
+} catch {}
+
+// Pesos de la última vez de un ejercicio, anteriores a esta sesión, por persona:
+// { tu: ["37,5","42,5"], ella: [...] } (solo los números de la parte antes del paréntesis) o null.
+const fechaSesion = String(fecha).slice(0, 10);
+function pesosAnteriores(id) {
+  const ent = (pesosReg[id] || [])
+    .filter(e => String(e.fecha).slice(0, 10) < fechaSesion)
+    .sort((a, b) => String(a.fecha).localeCompare(String(b.fecha)));
+  const nums = s => String(s || '').split('(')[0].match(/\d+(?:[.,]\d+)?/g) || [];
+  const ultimo = who => { for (let i = ent.length - 1; i >= 0; i--) { const n = nums(ent[i][who]); if (n.length) return n; } return []; };
+  const r = { tu: ultimo('tu'), ella: ultimo('ella') };
+  return (r.tu.length || r.ella.length) ? r : null;
+}
 
 // Valores para precargar el registrador (p. ej. lo ya hecho a media sesión).
 // spec.prellenado[<id>] = { tu: ["60","80",...], ella: [...] } (una casilla por serie).
@@ -180,7 +198,7 @@ const loggables = [];
   let sets = parseInt(ej.series, 10);
   if (!(sets >= 1 && sets <= 8)) sets = 1;
   const pre = prellenado[ej.id] || {};
-  loggables.push({ nombre, sets, pre: { tu: pre.tu || [], ella: pre.ella || [] } });
+  loggables.push({ nombre, sets, pre: { tu: pre.tu || [], ella: pre.ella || [] }, prev: pesosAnteriores(ej.id) });
 }));
 
 const wlogJS = `
@@ -196,6 +214,14 @@ const wlogJS = `
     try{var v=localStorage.getItem(key(inp));if(v!=null&&!inp.value)inp.value=v;}catch(e){}
     inp.addEventListener('input',function(){save(inp);});
   });
+  // Botones por ejercicio: "↺ Última vez" rellena con los pesos de la última vez; "✕" vacía el ejercicio.
+  function exInputs(btn){var w=btn.parentNode;while(w&&!(w.classList&&w.classList.contains('wex')))w=w.parentNode;return w?w.querySelectorAll('.win'):[];}
+  document.querySelectorAll('.wrep').forEach(function(b){b.addEventListener('click',function(){
+    exInputs(b).forEach(function(inp){var p=inp.getAttribute('data-prev');if(p){inp.value=p;save(inp);}});
+  });});
+  document.querySelectorAll('.wx').forEach(function(b){b.addEventListener('click',function(){
+    exInputs(b).forEach(function(inp){inp.value='';save(inp);});
+  });});
   if(clr){
     var armed=false,at;
     function disarm(){armed=false;clr.textContent='Borrar';clr.classList.remove('warn');}
@@ -238,17 +264,19 @@ const wlogJS = `
 function wexRow(o) {
   const boxes = who => Array.from({ length: o.sets }, (_, i) => {
     const pv = (o.pre && o.pre[who] && o.pre[who][i] != null) ? String(o.pre[who][i]).trim() : '';
-    return `<input class="win" data-name="${esc(o.nombre)}" data-who="${who}" data-set="${i}" placeholder="${i + 1}"${pv ? ` value="${esc(pv)}"` : ''}>`;
+    const prevV = (o.prev && o.prev[who] && o.prev[who][i]) ? String(o.prev[who][i]) : '';
+    return `<input class="win" data-name="${esc(o.nombre)}" data-who="${who}" data-set="${i}" placeholder="${esc(prevV || String(i + 1))}"${prevV ? ` data-prev="${esc(prevV)}"` : ''}${pv ? ` value="${esc(pv)}"` : ''}>`;
   }).join('');
+  const hayPrev = o.prev && (o.prev.tu.length || o.prev.ella.length);
   return `<div class="wex">
-      <div class="wname">${esc(o.nombre)}</div>
+      <div class="whead"><div class="wname">${esc(o.nombre)}</div><div class="wacts">${hayPrev ? '<button type="button" class="wrep" title="Rellenar con los pesos de la última vez">↺ Última vez</button>' : ''}<button type="button" class="wx" title="Vaciar este ejercicio" aria-label="Vaciar este ejercicio">✕</button></div></div>
       <div class="wline"><span class="wwho">${esc(regNames.tu)}</span><div class="wsets">${boxes('tu')}</div></div>
       <div class="wline"><span class="wwho">${esc(regNames.ella)}</span><div class="wsets">${boxes('ella')}</div></div>
     </div>`;
 }
 
 const registroPesos = loggables.length ? `  <div class="block-title">📋 Registrar pesos</div>
-  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Los números en <b>gris</b> son lo que hicisteis la última vez: si repetís, toca <b>↺ Última vez</b> en ese ejercicio y se rellena; si cambia algo, escribe encima. La <b>✕</b> vacía ese ejercicio. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
   <div class="reglog">
     ${loggables.map(wexRow).join('\n    ')}
   </div>
@@ -356,6 +384,11 @@ const html = `<!DOCTYPE html>
   .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
   .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
   .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .whead { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+  .whead .wname { margin-bottom: 6px; }
+  .wacts { display: flex; gap: 6px; flex: none; }
+  .wrep { padding: 5px 10px; font-size: 0.78rem; font-weight: 700; border-radius: 8px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .wx { padding: 5px 9px; font-size: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; }
   .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
   .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
   .wsets { display: flex; gap: 5px; flex-wrap: wrap; }

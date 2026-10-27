@@ -82,6 +82,14 @@ artefacto/dispositivo) según se escribe y la restaura al reabrir el artefacto �
 la página sin perder lo metido. Tiene botón **Borrar** (doble toque; el sandbox de los Artifacts
 bloquea `confirm()`, por eso NO se usa `confirm`/`alert`/`prompt` en el código del artefacto).
 
+**Repetir última vez:** cada ejercicio del registrador muestra en gris (placeholder) los pesos de la
+última vez de cada persona (sacados de `pesos.json`, última entrada ANTERIOR a la fecha de la sesión,
+por persona) y un botón **"↺ Última vez"** que rellena las casillas con esos valores. Cada ejercicio
+tiene también una **"✕"** que vacía sus casillas. Si el ejercicio no tiene historial, no hay botón ni
+gris. El gris NO cuenta como peso: solo lo escrito de verdad entra en el resumen. Se genera solo en
+`generar-sesion.js`, no hay que hacer nada al montar la sesión. (Sin botón global "rellenar todo", a
+propósito: metería en el resumen ejercicios no hechos.)
+
 ## REGISTRO DE COMPOSICIÓN CORPORAL (InBody / báscula del gym)
 
 El usuario se pesa ~**1 vez al mes** en la báscula de bioimpedancia del gym (InBody), misma hora y
