@@ -117,12 +117,27 @@ function renderCard(ej) {
 
   const nota = ej.nota ? `<p class="note">Nota técnica: ${esc(ej.nota)}</p>` : '';
 
+  // Referencia de pesos de la última vez (del registro pesos.json). Texto libre, p. ej.
+  // "tú 30/35/40 kg · ella 15/20 kg". Ayuda a no tener que recordar la carga en cada máquina.
+  const ref = ej.referencia ? `<p class="ref">📈 Última vez: ${esc(ej.referencia)}</p>` : '';
+
+  // Tipo: etiqueta opcional para saber el orden. "compuesto" = hazlo primero (fresco);
+  // "accesorio" = orden flexible (si la máquina está pillada, puedes reordenar sin problema).
+  const tipo = ej.tipo === 'compuesto'
+    ? `<span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>`
+    : (ej.tipo === 'accesorio' ? `<span class="tipo tipo-acc">🔄 Orden flexible</span>` : '');
+
+  // Nombre: si la spec trae "nombre", se usa tal cual (override, p. ej. cardio con GIF prestado).
+  const nombre = ej.nombre ? ej.nombre : titleCase(ex.name);
+
   return `
   <div class="card">
-    <img src="${esc(gif)}" alt="${esc(ex.name)}" loading="lazy">
+    <img src="${esc(gif)}" alt="${esc(nombre)}" loading="lazy">
     <div class="card-body">
-      <h3>${esc(titleCase(ex.name))}</h3>
+      <h3>${esc(nombre)}</h3>
+      ${tipo}
       <div class="muscles">${tags}</div>${presc}
+      ${ref}
       <p class="instructions">${esc(instruccion)}</p>
       ${nota}
     </div>
@@ -149,6 +164,126 @@ const vuelta = spec.vuelta_calma
 const cierre = spec.cierre
   ? `  <footer><b>Nota de coach:</b> ${esc(spec.cierre)}</footer>\n`
   : '';
+
+// --- Registrador de pesos en la propia página (rellenar + generar texto para pegar a COACH) ---
+let regNames = { tu: 'Tú', ella: 'Ella' };
+let pesosReg = {};
+try {
+  const pj = JSON.parse(fs.readFileSync(path.join(root, 'pesos.json'), 'utf8'));
+  if (pj.personas) regNames = pj.personas;
+  pesosReg = pj.registro || {};
+} catch {}
+
+// Pesos de la última vez de un ejercicio, anteriores a esta sesión, por persona:
+// { tu: ["37,5","42,5"], ella: [...] } (solo los números de la parte antes del paréntesis) o null.
+const fechaSesion = String(fecha).slice(0, 10);
+function pesosAnteriores(id) {
+  const ent = (pesosReg[id] || [])
+    .filter(e => String(e.fecha).slice(0, 10) < fechaSesion)
+    .sort((a, b) => String(a.fecha).localeCompare(String(b.fecha)));
+  const nums = s => String(s || '').split('(')[0].match(/\d+(?:[.,]\d+)?/g) || [];
+  const ultimo = who => { for (let i = ent.length - 1; i >= 0; i--) { const n = nums(ent[i][who]); if (n.length) return n; } return []; };
+  const r = { tu: ultimo('tu'), ella: ultimo('ella') };
+  return (r.tu.length || r.ella.length) ? r : null;
+}
+
+// Valores para precargar el registrador (p. ej. lo ya hecho a media sesión).
+// spec.prellenado[<id>] = { tu: ["60","80",...], ella: [...] } (una casilla por serie).
+const prellenado = spec.prellenado || {};
+const loggables = [];
+(spec.bloques || []).forEach(b => (b.ejercicios || []).forEach(ej => {
+  if (ej.id === '3666') return; // el cardio de cinta no lleva peso
+  const ex = byId.get(ej.id);
+  const nombre = ej.nombre ? ej.nombre : (ex ? titleCase(ex.name) : `Ejercicio ${ej.id}`);
+  let sets = parseInt(ej.series, 10);
+  if (!(sets >= 1 && sets <= 8)) sets = 1;
+  const pre = prellenado[ej.id] || {};
+  loggables.push({ nombre, sets, pre: { tu: pre.tu || [], ella: pre.ella || [] }, prev: pesosAnteriores(ej.id) });
+}));
+
+const wlogJS = `
+(function(){
+  var fecha=${JSON.stringify(fecha)};
+  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout'),clr=document.getElementById('wclear');
+  if(!gen) return;
+  var KP='pw:'+fecha+'|';
+  function key(inp){return KP+inp.getAttribute('data-name')+'|'+inp.getAttribute('data-who')+'|'+inp.getAttribute('data-set');}
+  function save(inp){try{var v=(inp.value||'').trim();if(v)localStorage.setItem(key(inp),v);else localStorage.removeItem(key(inp));}catch(e){}}
+  // Restaura lo guardado en este navegador y autoguarda según se escribe (no se pierde al salir del artefacto).
+  document.querySelectorAll('.win').forEach(function(inp){
+    try{var v=localStorage.getItem(key(inp));if(v!=null&&!inp.value)inp.value=v;}catch(e){}
+    inp.addEventListener('input',function(){save(inp);});
+  });
+  // Botones por ejercicio: "↺ Última vez" rellena con los pesos de la última vez; "✕" vacía el ejercicio.
+  function exInputs(btn){var w=btn.parentNode;while(w&&!(w.classList&&w.classList.contains('wex')))w=w.parentNode;return w?w.querySelectorAll('.win'):[];}
+  document.querySelectorAll('.wrep').forEach(function(b){b.addEventListener('click',function(){
+    exInputs(b).forEach(function(inp){var p=inp.getAttribute('data-prev');if(p){inp.value=p;save(inp);}});
+  });});
+  document.querySelectorAll('.wx').forEach(function(b){b.addEventListener('click',function(){
+    exInputs(b).forEach(function(inp){inp.value='';save(inp);});
+  });});
+  if(clr){
+    var armed=false,at;
+    function disarm(){armed=false;clr.textContent='Borrar';clr.classList.remove('warn');}
+    clr.addEventListener('click',function(){
+      if(!armed){armed=true;clr.textContent='¿Seguro? Pulsa otra vez';clr.classList.add('warn');at=setTimeout(disarm,3000);return;}
+      clearTimeout(at);disarm();
+      document.querySelectorAll('.win').forEach(function(inp){inp.value='';try{localStorage.removeItem(key(inp));}catch(e){}});
+      if(out){out.value='';out.hidden=true;}if(copy)copy.hidden=true;
+    });
+  }
+  function build(){
+    var order=[],data={};
+    document.querySelectorAll('.win').forEach(function(inp){
+      var n=inp.getAttribute('data-name'),who=inp.getAttribute('data-who'),set=+inp.getAttribute('data-set');
+      if(order.indexOf(n)<0) order.push(n);
+      data[n]=data[n]||{tu:[],ella:[]};
+      data[n][who][set]=(inp.value||'').trim();
+    });
+    var lines=['PESOS '+fecha];
+    order.forEach(function(n){
+      var tu=(data[n].tu||[]).filter(function(v){return v;}).join('/');
+      var ella=(data[n].ella||[]).filter(function(v){return v;}).join('/');
+      if(!tu&&!ella) return;
+      lines.push(n+': '+(tu||'-')+' | '+(ella||'-'));
+    });
+    return lines.length>1?lines.join('\\n'):'PESOS '+fecha+' (rellena algún peso primero)';
+  }
+  gen.addEventListener('click',function(){
+    out.value=build(); out.hidden=false; copy.hidden=false;
+    out.style.height='auto'; out.style.height=(out.scrollHeight+4)+'px';
+  });
+  copy.addEventListener('click',function(){
+    out.select(); out.setSelectionRange(0,99999);
+    var done=function(){copy.textContent='¡Copiado!';setTimeout(function(){copy.textContent='Copiar';},1500);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(out.value).then(done,function(){try{document.execCommand('copy');done();}catch(e){}});}
+    else{try{document.execCommand('copy');done();}catch(e){}}
+  });
+})();`;
+
+function wexRow(o) {
+  const boxes = who => Array.from({ length: o.sets }, (_, i) => {
+    const pv = (o.pre && o.pre[who] && o.pre[who][i] != null) ? String(o.pre[who][i]).trim() : '';
+    const prevV = (o.prev && o.prev[who] && o.prev[who][i]) ? String(o.prev[who][i]) : '';
+    return `<input class="win" data-name="${esc(o.nombre)}" data-who="${who}" data-set="${i}" placeholder="${esc(prevV || String(i + 1))}"${prevV ? ` data-prev="${esc(prevV)}"` : ''}${pv ? ` value="${esc(pv)}"` : ''}>`;
+  }).join('');
+  const hayPrev = o.prev && (o.prev.tu.length || o.prev.ella.length);
+  return `<div class="wex">
+      <div class="whead"><div class="wname">${esc(o.nombre)}</div><div class="wacts">${hayPrev ? '<button type="button" class="wrep" title="Rellenar con los pesos de la última vez">↺ Última vez</button>' : ''}<button type="button" class="wx" title="Vaciar este ejercicio" aria-label="Vaciar este ejercicio">✕</button></div></div>
+      <div class="wline"><span class="wwho">${esc(regNames.tu)}</span><div class="wsets">${boxes('tu')}</div></div>
+      <div class="wline"><span class="wwho">${esc(regNames.ella)}</span><div class="wsets">${boxes('ella')}</div></div>
+    </div>`;
+}
+
+const registroPesos = loggables.length ? `  <div class="block-title">📋 Registrar pesos</div>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Los números en <b>gris</b> son lo que hicisteis la última vez: si repetís, toca <b>↺ Última vez</b> en ese ejercicio y se rellena; si cambia algo, escribe encima. La <b>✕</b> vacía ese ejercicio. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
+  <div class="reglog">
+    ${loggables.map(wexRow).join('\n    ')}
+  </div>
+  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button><button type="button" id="wclear" class="wsec">Borrar</button></div>
+  <textarea id="wout" readonly hidden></textarea>
+  <script>${wlogJS}</script>
+` : '';
 
 const metaPills = [
   spec.entorno ? `<div class="pill">Entorno: <b>${esc(spec.entorno)}</b></div>` : '',
@@ -226,6 +361,12 @@ const html = `<!DOCTYPE html>
     background: #000;
   }
   .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
   .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
   .muscles span {
     background: color-mix(in srgb, var(--accent) 15%, transparent);
@@ -240,6 +381,32 @@ const html = `<!DOCTYPE html>
   .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
   .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
   .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .whead { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+  .whead .wname { margin-bottom: 6px; }
+  .wacts { display: flex; gap: 6px; flex: none; }
+  .wrep { padding: 5px 10px; font-size: 0.78rem; font-weight: 700; border-radius: 8px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .wx { padding: 5px 9px; font-size: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
+  .wsec.warn { color: #ff5a3c !important; border-color: #ff5a3c !important; }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
   footer {
     margin-top: 36px;
     padding-top: 20px;
@@ -269,15 +436,18 @@ ${calentamiento}
 ${bloquesHtml}
 
 ${vuelta}
+${registroPesos}
 ${cierre}</div>
 </body>
 </html>
 `;
 
-const outDir = path.join(root, 'sessions', fecha);
+// La página se escribe en la MISMA carpeta que el sesion.json (no en sessions/<fecha>),
+// para permitir varias sesiones el mismo día (p. ej. sessions/<fecha>-core/).
+const outDir = path.dirname(specPath);
 fs.mkdirSync(outDir, { recursive: true });
 const outPath = path.join(outDir, 'index.html');
 fs.writeFileSync(outPath, html);
 
 const nEj = (spec.bloques || []).reduce((n, b) => n + (b.ejercicios || []).length, 0);
-console.log(`OK -> sessions/${fecha}/index.html (${nEj} ejercicios, GIFs remotos)`);
+console.log(`OK -> ${outPath} (${nEj} ejercicios, GIFs remotos)`);

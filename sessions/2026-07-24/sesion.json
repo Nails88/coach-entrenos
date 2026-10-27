@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-07-24",
+  "patron": "Pierna — Cuádriceps / Isquios / Glúteos / Gemelos",
+  "entorno": "Gimnasio con máquinas",
+  "tiempo": "60 min",
+  "energia": "Alta",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Cierras el ciclo Push/Pull/Legs: el 17 hiciste Empuje, ayer Tirón y hoy toca Pierna. Es el día que más masa muscular mueve, así que el gasto calórico es el más alto de la semana — perfecto para tu objetivo de definición. Como llegas con energía alta y ni cuádriceps ni isquios han competido con el trabajo de estos días, vamos a apretar carga en los compuestos. Alterno un patrón de rodilla (sentadilla) con uno de cadera (peso muerto rumano) para repartir el estímulo entre cuádriceps e isquios sin machacar solo una zona.",
+  "calentamiento": "3 min bici o remo suave para subir pulsaciones · 15 sentadillas al aire con pausa abajo · 10 zancadas caminando por pierna · 15 puentes de glúteo en el suelo (activa el glúteo antes de cargar cadera) · 1 serie ligera en el Smith, 12 reps, para grabar el patrón antes de subir peso.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0770", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Cuádriceps", "Glúteos", "Isquiotibiales"], "instruccion": "Barra sobre trapecios, pies a la anchura de hombros y puntas ligeramente hacia fuera. Core activo, pecho alto, baja doblando cadera y rodilla hasta que el muslo quede paralelo (o algo por debajo), pausa breve y empuja con los talones.", "nota": "es tu compuesto rey del día — con energía alta sube carga, pero no sacrifiques la profundidad; el Smith te deja apretar seguro porque la barra va guiada." },
+        { "id": "0085", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Isquiotibiales", "Glúteos", "Lumbar"], "instruccion": "De pie con la barra pegada a los muslos, rodillas ligeramente flexionadas y fijas. Lleva la cadera atrás bajando la barra pegada al cuerpo hasta notar el estiramiento en los isquios, y empuja la cadera al frente apretando glúteos arriba.", "nota": "el movimiento es de cadera, no de rodilla — la espalda recta todo el rato; en cuanto la sientas curvarse, ahí está tu rango máximo, no bajes más." },
+        { "id": "2611", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentado con la espalda pegada al respaldo, empuja la plataforma con una pierna hasta casi extender (sin bloquear la rodilla de golpe), pausa breve y vuelve controlado. Termina una pierna antes de pasar a la otra.", "nota": "unilateral a propósito — corrige descompensaciones entre piernas que el CrossFit bilateral suele tapar. Iguala reps y control en ambos lados." },
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo justo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento.", "nota": "aislamiento puro de cuádriceps para rematar la parte frontal — busca la contracción, no el peso; la pausa arriba es donde está el trabajo." },
+        { "id": "0599", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Isquiotibiales"], "instruccion": "Sentado, muslos fijos bajo la almohadilla, pantorrillas sobre el rodillo. Flexiona las rodillas llevando los talones hacia atrás todo lo que puedas, aprieta y sube lento a la posición inicial.", "nota": "equilibra el trabajo de extensión anterior — un isquio fuerte protege la rodilla. Controla la fase de bajada, no la sueltes de golpe." },
+        { "id": "0605", "series": "4", "reps": "15-20", "descanso": "45s", "musculos": ["Gemelos", "Sóleo"], "instruccion": "De pie con los hombros bajo las almohadillas, pies a la anchura de cadera. Sube los talones tan alto como puedas extendiendo el tobillo, pausa 1s arriba y baja hasta notar el estiramiento completo.", "nota": "el gemelo responde a rango completo y repeticiones altas — nada de rebotes; sube apretando y estira abajo en cada rep." }
+      ]
+    },
+    {
+      "titulo": "⚡ Finisher",
+      "ejercicios": [
+        { "id": "0597", "series": "3", "reps": "15-20", "descanso": "40s", "musculos": ["Glúteos", "Abductores"], "instruccion": "Sentado con la espalda apoyada, abre las piernas empujando contra las almohadillas todo lo que puedas, pausa apretando el glúteo al final y junta lento.", "nota": "cierre corto de glúteo medio — aguanta 1s en la apertura máxima; quema pero es barato de recuperar y redondea el trabajo de cadera del día." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de cuádriceps de pie sujetando el tobillo (30s/lado), estiramiento de isquios con pierna estirada apoyada (30s/lado), estiramiento de glúteo sentado con tobillo sobre rodilla (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "cierras la semana completa Push/Pull/Legs — tres estímulos distintos sin solapar recuperación, justo como manda tu split. El día de pierna es el que más grasa mueve, así que este es el que más suma a tu objetivo; llegar con energía alta y aprovecharla en los compuestos ha sido la decisión correcta. Mañana o pasado toca descanso o movilidad suave, que las piernas avisan al segundo día. Cuando arranques la próxima semana dime entorno, tiempo y energía y decidimos si repetimos PPL o rotamos a Full Body para variar el estímulo."
+}
