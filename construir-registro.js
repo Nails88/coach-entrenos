@@ -31,10 +31,11 @@ const META = {
   '0043': ['Back squat (barra libre)', 'Pierna'], '0085': ['Peso muerto rumano', 'Pierna'], '0739': ['Prensa 45°', 'Pierna'],
   '0585': ['Extensión de cuádriceps', 'Pierna'], '0586': ['Curl femoral', 'Pierna'], '0605': ['Gemelo de pie', 'Pierna'],
   '1409': ['Hip thrust / puente de glúteo', 'Pierna'], '0597': ['Abducción sentado (abrir)', 'Pierna'], '0598': ['Aducción sentado (cerrar)', 'Pierna'],
-  '0549': ['Kettlebell swing (ruso)', 'Pierna']
+  '0549': ['Kettlebell swing (ruso)', 'Pierna'],
+  '0274': ['Crunch con peso (balón/disco)', 'Core']
 };
-const GRUPOS = ['Empuje', 'Tirón', 'Pierna', 'Otros'];
-const ACENTO = { 'Empuje': '#ff5a3c', 'Tirón': '#3ca8ff', 'Pierna': '#35c46a', 'Otros': '#f5a623' };
+const GRUPOS = ['Empuje', 'Tirón', 'Pierna', 'Core', 'Otros'];
+const ACENTO = { 'Empuje': '#ff5a3c', 'Tirón': '#3ca8ff', 'Pierna': '#35c46a', 'Core': '#b57bff', 'Otros': '#f5a623' };
 
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const fechaCorta = f => { const [, m, dd] = String(f).split('-'); return `${dd}/${m}`; };
