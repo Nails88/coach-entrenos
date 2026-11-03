@@ -98,6 +98,11 @@ gris. El gris NO cuenta como peso: solo lo escrito de verdad entra en el resumen
 `generar-sesion.js`, no hay que hacer nada al montar la sesión. (Sin botón global "rellenar todo", a
 propósito: metería en el resumen ejercicios no hechos.)
 
+Sesiones sin pesos (movilidad, etc.): pon `"sin_registrador": true` en la `sesion.json` y el
+generador no pinta el registrador. En movilidad cada ejercicio va **una vez** ("una pasada", sin
+series ni rondas) y se dice explícito en el título del bloque y en la intro. Evitar en movilidad lo
+que le molesta al tobillo (postura de mariposa, arrodillado, lunges).
+
 ## REGISTRO DE COMPOSICIÓN CORPORAL (InBody / báscula del gym)
 
 El usuario se pesa ~**1 vez al mes** en la báscula de bioimpedancia del gym (InBody), misma hora y

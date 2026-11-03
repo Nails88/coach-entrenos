@@ -275,7 +275,7 @@ function wexRow(o) {
     </div>`;
 }
 
-const registroPesos = loggables.length ? `  <div class="block-title">📋 Registrar pesos</div>
+const registroPesos = (loggables.length && !spec.sin_registrador) ? `  <div class="block-title">📋 Registrar pesos</div>
   <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Los números en <b>gris</b> son lo que hicisteis la última vez: si repetís, toca <b>↺ Última vez</b> en ese ejercicio y se rellena; si cambia algo, escribe encima. La <b>✕</b> vacía ese ejercicio. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
   <div class="reglog">
     ${loggables.map(wexRow).join('\n    ')}

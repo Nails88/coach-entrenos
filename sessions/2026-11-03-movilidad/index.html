@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COACH — Movilidad y recuperación activa (sin impacto, sin carga de pie) · 2026-11-03-movilidad</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card-bg: #1a1d24;
+    --accent: #00b3a4;
+    --text: #f2f2f2;
+    --muted: #9aa0ab;
+    --border: #2a2e37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  header .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  header h1 { margin: 6px 0 8px; font-size: 1.8rem; }
+  header p { color: var(--muted); margin: 0; line-height: 1.5; }
+  .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .pill b { color: var(--text); }
+  .prose { color: var(--muted); line-height: 1.6; margin-top: -6px; }
+  .block-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 32px 0 14px;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 18px;
+  }
+  .card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+  }
+  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
+  .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
+  .muscles span {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .prescription { display: flex; gap: 18px; margin-bottom: 10px; font-size: 0.9rem; }
+  .prescription div b { display: block; font-size: 1.05rem; }
+  .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+  .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .whead { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+  .whead .wname { margin-bottom: 6px; }
+  .wacts { display: flex; gap: 6px; flex: none; }
+  .wrep { padding: 5px 10px; font-size: 0.78rem; font-weight: 700; border-radius: 8px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .wx { padding: 5px 9px; font-size: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
+  .wsec.warn { color: #ff5a3c !important; border-color: #ff5a3c !important; }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
+  footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 560px) {
+    .card { grid-template-columns: 1fr; }
+    .card img { width: 100%; height: auto; max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COACH · Sesión de hoy</div>
+    <h1>Movilidad y recuperación activa (sin impacto, sin carga de pie)</h1>
+    <p>Sesión de movilidad: recuperación activa para soltar hombros, pecho, espalda y cadera, que son lo que más se acorta con las dominadas, flexiones y remos. Cero impacto y cero carga en el pie, así que encaja con tus semanas de rehabilitación del tobillo. FORMATO — importante: aquí NO hay series ni vueltas. Haz cada ejercicio UNA VEZ, en orden, de arriba abajo; cada uno lleva su tiempo (por ejemplo 40s por lado). Al terminar el último, has acabado. Ritmo lento, respiración tranquila, sin rebotes ni forzar: se estira hasta notar tensión, nunca dolor. Para el tobillo, esta sesión no sustituye a los ejercicios que te mandó el fisio: esos los haces aparte, tal y como te los indicó. Y si alguna postura incomoda el tobillo, la cambias o te la saltas.</p>
+    <div class="meta-row">
+      <div class="pill">Entorno: <b>Casa — esterilla, silla y goma</b></div>
+      <div class="pill">Tiempo: <b>~25 min</b></div>
+      <div class="pill">Energía: <b>Baja-Media</b></div>
+      <div class="pill">Objetivo: <b>Recuperación activa y movilidad</b></div>
+    </div>
+  </header>
+
+  <div class="block-title">🔥 Calentamiento</div>
+  <p class="prose">2 min para entrar en calor: camina por casa, 10 círculos de brazos adelante y atrás, 10 rotaciones suaves de cadera por lado y un par de respiraciones profundas. No hace falta más: esto es movilidad, no entreno.</p>
+
+  <div class="block-title">🙆 Parte alta — hombros, pecho, espalda y cuello (una pasada, cada ejercicio una vez)</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1167-3uj0Ozg.gif" alt="Apertura dinámica de pecho" loading="lazy">
+    <div class="card-body">
+      <h3>Apertura dinámica de pecho</h3>
+      
+      <div class="muscles"><span>Pecho</span><span>Hombro</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">De pie con la espalda recta y los pies a la anchura de los hombros. Extiende los brazos a los lados, paralelos al suelo. Llévalos despacio hacia delante cruzándolos frente al cuerpo, notando el estiramiento en el pecho, y vuelve a abrirlos. Lento y controlado.</p>
+      <p class="note">Nota técnica: calentamiento de pecho y hombro antes de estirar. Que se note el pecho, sin arquear la lumbar ni encogerte de hombros.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1271-Uto7l43.gif" alt="Estiramiento de pecho y hombro delantero (manos entrelazadas)" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento de pecho y hombro delantero (manos entrelazadas)</h3>
+      
+      <div class="muscles"><span>Pecho</span><span>Hombro anterior</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>30s</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">De pie con la espalda recta. Extiende los brazos al frente a la altura de los hombros y cruza un brazo sobre el otro. Entrelaza los dedos y presiona las palmas entre sí. Aprieta suavemente los omóplatos y empuja las manos hacia delante, notando el estiramiento en el pecho y la parte delantera de los hombros. Repite cambiando el brazo que va encima.</p>
+      <p class="note">Nota técnica: el estiramiento que más vas a notar tras tanto empuje y dominadas. Tensión suave, sin dolor en el hombro. 30s y luego cambias el brazo que cruza.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1365-GSDioYu.gif" alt="Estiramiento de espalda alta (brazos arriba)" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento de espalda alta (brazos arriba)</h3>
+      
+      <div class="muscles"><span>Espalda alta</span><span>Dorsales</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>25s</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">De pie con la espalda recta y los pies a la anchura de los hombros. Extiende los brazos al frente, entrelaza los dedos y gira las palmas hacia fuera. Eleva despacio los brazos por encima de la cabeza, rectos y paralelos, apretando los omóplatos. Mantén y suelta.</p>
+      <p class="note">Nota técnica: suelta hombros y espalda alta, que trabajan con el remo y las dominadas. Brazos rectos, sin subir los hombros hacia las orejas ni arquear la lumbar.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0643-Z5YStHW.gif" alt="Estiramiento de tríceps" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento de tríceps</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombro</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>30s por lado</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">De pie o sentado erguido. Sube un brazo por encima de la cabeza y dobla el codo para que la mano llegue hacia el omóplato contrario. Con la otra mano tira suavemente del codo hacia el lado opuesto de la cabeza, notando el estiramiento en el tríceps. Mantén y cambia de lado.</p>
+      <p class="note">Nota técnica: tríceps y parte trasera del hombro. Suave, sin tirar del codo a lo bruto.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1403-x2chWLO.gif" alt="Estiramiento lateral de cuello" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento lateral de cuello</h3>
+      
+      <div class="muscles"><span>Cuello</span><span>Trapecio</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>25s por lado</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">De pie o sentado erguido con los hombros relajados. Inclina la cabeza hacia un lado, llevando la oreja hacia el hombro, sin subir el hombro. Mantén respirando lento y repite del otro lado.</p>
+      <p class="note">Nota técnica: cuello y trapecio, lo que se carga con dominadas y remos. Muy suave: es de los que se hacen sin forzar nada.</p>
+    </div>
+  </div>
+
+  <div class="block-title">🧘 Columna y cadera — en el suelo, sin cargar el pie (una pasada, cada ejercicio una vez)</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/2329-2jl9K55.gif" alt="Rotación de columna sentado (codo a la rodilla contraria)" loading="lazy">
+    <div class="card-body">
+      <h3>Rotación de columna sentado (codo a la rodilla contraria)</h3>
+      
+      <div class="muscles"><span>Columna</span><span>Oblicuos</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>8-10 por lado (alternando)</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Sentado en el suelo con las rodillas dobladas y los pies planos, a la anchura de la cadera. Manos detrás de la cabeza con los codos hacia fuera. Activa el abdomen y gira despacio el torso llevando el codo derecho hacia la rodilla izquierda; haz una pausa y vuelve. Luego al otro lado, alternando.</p>
+      <p class="note">Nota técnica: movilidad de columna y oblicuos. Gira desde el torso, no solo con los brazos. Pies planos, tobillo neutro. Lento y fluido.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0690-QFmz6ch.gif" alt="Estiramiento de espalda baja (sentado en la silla)" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento de espalda baja (sentado en la silla)</h3>
+      
+      <div class="muscles"><span>Espalda baja</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>40s</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Siéntate en el borde de una silla con los pies planos en el suelo y las manos en los muslos. Inclínate despacio hacia delante desde la cadera con la espalda recta, notando el estiramiento en la zona lumbar. Mantén y vuelve despacio.</p>
+      <p class="note">Nota técnica: suelta la zona lumbar. Inclínate desde la cadera, sin rebotes y sin redondear de golpe.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1576-sU5BrfP.gif" alt="Estiramiento de isquios tumbado (pierna arriba)" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento de isquios tumbado (pierna arriba)</h3>
+      
+      <div class="muscles"><span>Isquiotibiales</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>40s por lado</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Túmbate boca arriba con las piernas extendidas. Flexiona una rodilla y llévala hacia el pecho sujetándote el muslo o la espinilla. Endereza la pierna tanto como puedas manteniéndola elevada, notando el estiramiento detrás del muslo. Mantén y cambia de pierna.</p>
+      <p class="note">Nota técnica: isquios sin cargar el pie. Rodilla casi estirada pero sin bloquearla; tensión suave detrás del muslo.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1424-DeDThfG.gif" alt="Estiramiento de glúteo sentado (figura 4)" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento de glúteo sentado (figura 4)</h3>
+      
+      <div class="muscles"><span>Glúteos</span><span>Piramidal</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>40s por lado</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Sentado en el suelo con las piernas extendidas. Dobla una rodilla y cruza ese tobillo sobre el muslo contrario. Apoya la mano de ese lado en el suelo detrás de ti y, con la otra mano, presiona suavemente la rodilla para profundizar el estiramiento. Mantén y cambia de lado.</p>
+      <p class="note">Nota técnica: glúteo y cadera. OJO con el tobillo: en esta postura el tobillo queda girado sobre la rodilla; si te molesta, estira el glúteo tumbado con la pierna doblada (tira la rodilla hacia el pecho) o sáltatelo.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0613-BWnJR72.gif" alt="Estiramiento de cuádriceps tumbado de lado (opcional)" loading="lazy">
+    <div class="card-body">
+      <h3>Estiramiento de cuádriceps tumbado de lado (opcional)</h3>
+      
+      <div class="muscles"><span>Cuádriceps</span></div>
+        <div class="prescription">
+          <div><b>1</b><span>Series</span></div>
+          <div><b>30s por lado</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Tumbado de lado, dobla la rodilla de arriba y agarra el pie o el tobillo (o usa una goma) acercando el talón hacia el glúteo, con la cadera abierta y la espalda recta. Respira.</p>
+      <p class="note">Nota técnica: OPCIONAL: cuádriceps y flexor de cadera. Pone el tobillo en flexión: si lo notas o molesta, salta este ejercicio (puedes estirar el cuádriceps de pie apoyado en la pared).</p>
+    </div>
+  </div>
+
+  <div class="block-title">🧘 Vuelta a la calma</div>
+  <p class="prose">2 min tumbado boca arriba sobre la esterilla, respirando hondo: inhala 4s, exhala 6s. Suelta hombros, cadera y cuello. Si hoy te toca tus ejercicios de tobillo del fisio, hazlos ahora con calma y tal como te los indicó.</p>
+
+
+  <footer><b>Nota de coach:</b> sesión de movilidad hecha: has soltado hombros, pecho, espalda y cadera sin cargar el pie, que es justo lo que pide tu semana de rehabilitación. Es un día de recuperación activa, no un día de entreno: no hace falta registrar pesos. Lo notarás sobre todo en hombros y espalda alta. Si alguna postura incomodó el tobillo, me lo dices y la cambio para la próxima. ¡Buen trabajo! 🧘</footer>
+</div>
+</body>
+</html>
