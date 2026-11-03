@@ -1,0 +1,127 @@
+{
+  "fecha": "2026-09-05",
+  "patron": "Tirón — Espalda / Bíceps / Deltoide posterior",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#3ca8ff",
+  "intro": "¡Hola Vicky! Tirón para cerrar el tren superior tras el empuje del 03: espalda + bíceps + deltoide posterior. Debajo de cada ejercicio tienes tus pesos de la última vez como referencia, así que la idea es igualar o superar. La regla del día: la espalda tira, el bíceps solo acompaña — inicia cada tirón bajando los codos. Y usa el registrador de pesos de abajo para apuntar según entrenas y pasárselos a COACH al terminar. ¡A darle!",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta. Después: 15 band pull-aparts (activan deltoide posterior y romboides) · 8-10 dead hangs de 5-8s colgada de la barra · 1 serie ligera en la Vertical Traction, 15 reps, para sentir la retracción escapular.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        {
+          "id": "0198",
+          "nombre": "Vertical Traction (jalón vertical)",
+          "series": "4",
+          "reps": "8-10",
+          "descanso": "90s",
+          "tipo": "compuesto",
+          "referencia": "Vicky 22,5/27,5/32,5 kg",
+          "musculos": [
+            "Dorsales",
+            "Bíceps"
+          ],
+          "instruccion": "Sentada con el pecho apoyado en el cojín y los muslos asegurados, agarra las asas de arriba con los brazos estirados. Jala hacia abajo llevando los codos abajo y atrás hasta los hombros, apretando los omóplatos, y sube controlado hasta estirar del todo.",
+          "nota": "compuesto de anchura de espalda — inicia el tirón BAJANDO los codos, no tirando con las manos; el pecho apoyado te impide hacer trampa echándote atrás."
+        },
+        {
+          "id": "0861",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "75s",
+          "tipo": "compuesto",
+          "referencia": "Vicky 20/30/35 kg",
+          "musculos": [
+            "Espalda media",
+            "Bíceps"
+          ],
+          "instruccion": "Sentada frente a la polea baja, pies en los apoyapiés y rodillas algo flexionadas. Espalda recta, jala las agarraderas hacia el abdomen llevando los codos atrás y apretando los omóplatos, y suelta controlado sin dejar que los hombros se vayan al frente.",
+          "nota": "grosor de espalda — espalda recta; si te echas atrás con el tronco para mover el peso, estás usando lumbar en vez de espalda."
+        },
+        {
+          "id": "0602",
+          "nombre": "Reverse fly en máquina (pájaros)",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "referencia": "Vicky 4/4 kg (con mancuerna)",
+          "musculos": [
+            "Deltoide posterior",
+            "Romboides"
+          ],
+          "instruccion": "Sentada con el pecho apoyado, agarra las asas al frente con los brazos casi estirados. Abre los brazos hacia atrás en arco, liderando con el codo, apretando la parte de atrás del hombro, y vuelve controlado. Si la máquina está ocupada, hazlo con mancuernas inclinada.",
+          "nota": "deltoide posterior — brazos casi rectos, peso moderado y aprieta atrás; es salud de hombro y postura."
+        },
+        {
+          "id": "0868",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "musculos": [
+            "Bíceps"
+          ],
+          "instruccion": "De pie frente a la polea baja, agarre supino a la anchura de los hombros y codos pegados al torso. Flexiona subiendo el agarre hacia los hombros, aprieta arriba y baja controlado.",
+          "nota": "primera vez que registramos este — apunta el peso. Tensión constante, nada de balancear la cadera."
+        },
+        {
+          "id": "0313",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "referencia": "Vicky 6/6/6 kg (mancuerna)",
+          "musculos": [
+            "Bíceps",
+            "Antebrazos"
+          ],
+          "instruccion": "De pie, mancuernas con agarre neutro (palmas hacia el torso). Flexiona manteniendo el brazo superior quieto, pausa arriba y baja controlado.",
+          "nota": "agarre neutro (más braquial y antebrazo) — si el 6 salió con margen la última vez, prueba el 7 u 8 en la última serie."
+        }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        {
+          "id": "0872",
+          "nombre": "Reverse crunch (encogimiento inverso)",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "40s",
+          "musculos": [
+            "Abdomen inferior",
+            "Core"
+          ],
+          "instruccion": "Tumbada boca arriba, rodillas dobladas y manos a los lados. Lleva las rodillas hacia el pecho enrollando la cadera y despegando el glúteo del suelo, y baja controlado sin tocar del todo.",
+          "nota": "el movimiento es ENROLLAR la pelvis con el abdomen bajo, no balancear las piernas ni coger impulso."
+        }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        {
+          "id": "3666",
+          "nombre": "Carrera en cinta",
+          "series": "1",
+          "tiempo": "1 km",
+          "descanso": "—",
+          "musculos": [
+            "Cardio",
+            "Piernas"
+          ],
+          "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte. Zancada relajada y respiración controlada.",
+          "nota": "cierre metabólico que tira más de grasa al llegar con las reservas tocadas."
+        }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: estiramiento de dorsal colgada o en polea baja (30s/lado), estiramiento de bíceps con brazo extendido contra la pared (30s/lado), estiramiento de deltoide posterior cruzando el brazo por delante (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "¡buen tirón, Vicky! Codos atrás apretando la espalda, el bíceps solo acompaña. Cuando termines, rellena el registrador de abajo, dale a Generar y Copiar, y que Noel me pase el texto (o pégalo tú). ¡A por las marcas!",
+  "notas_extra": "Sesión solo de Vicky (Noel no entrenó). Sustituciones: reverse fly con MANCUERNA (máquina ocupada). Abs: SIT-UPS con 8 kg en vez de reverse crunch. Cardio de cierre: corrió 5 KM (en vez de 1 km). Pesos en pesos.json."
+}

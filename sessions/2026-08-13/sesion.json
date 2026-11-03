@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-08-13",
+  "patron": "Full Body B — Bisagra / Hombro / Espalda",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "45-60 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#f5a623",
+  "intro": "Segundo Full Body de la semana, versión B: el complemento del anterior. El del 08 fue dominante de sentadilla y pecho, así que hoy lideramos con bisagra de cadera (peso muerto rumano) y empuje vertical (press de hombro), y metemos un remo horizontal para la espalda. Entre los dos días acabas cubriendo todo el cuerpo por ambos lados sin repetir el mismo estímulo. Con energía media, máquinas y mancuernas para el trabajo pesado y foco en técnica; empezamos por el peso muerto rumano porque es el que más te exige de sistema nervioso y quieres pegarle fresco.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta para subir pulsaciones. Después, específico: 10 balanceos de pierna adelante-atrás por lado · 15 band pull-aparts · 10 buenos días sin peso (bisagra de cadera) · 10 círculos de brazos por sentido · 1 serie ligera de peso muerto rumano con barra vacía, 12 reps, para grabar el patrón de cadera.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0085", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Isquiotibiales", "Glúteos", "Lumbar"], "instruccion": "De pie con la barra pegada a los muslos, rodillas ligeramente flexionadas y fijas. Lleva la cadera atrás bajando la barra pegada al cuerpo hasta notar el estiramiento en los isquios, y empuja la cadera al frente apretando glúteos arriba.", "nota": "el rey del día — movimiento de cadera, no de rodilla; espalda recta todo el rato y para de bajar en cuanto la notes curvarse. Le pegas fresco a propósito porque es el más exigente." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Hombros", "Tríceps"], "instruccion": "De pie (o sentado en banco con respaldo si prefieres más estabilidad), core apretado, mancuernas a la altura de los hombros con las palmas al frente. Empuja arriba sin arquear la lumbar, pausa arriba y baja controlado.", "nota": "tu empuje vertical del día — puedes hacerlo sentado sin problema, como te gusta, y así aíslas más el hombro; glúteo y abdomen apretados protegen la lumbar." },
+        { "id": "1350", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Espalda media", "Bíceps"], "instruccion": "Sentado con el pecho apoyado en el soporte, agarra las asas y jala llevando los codos hacia atrás pegados al cuerpo, apretando los omóplatos al final. Vuelve controlado sin dejar que los hombros se vayan al frente.", "nota": "tu tirón del día — pecho firme contra el soporte para no compensar con lumbar; junta los omóplatos como si sujetaras un lápiz entre ellos." },
+        { "id": "0760", "series": "3", "reps": "12", "descanso": "60s", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentado en la máquina, pies a la anchura de hombros en la plataforma. Empuja hasta casi extender sin bloquear las rodillas de golpe, y baja controlado flexionando hasta unos 90°.", "nota": "complementa el peso muerto atacando el cuádriceps, que en la bisagra trabaja poco — empuja con toda la planta del pie y no dejes que las rodillas se metan hacia dentro." },
+        { "id": "0586", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo, pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos todo lo que puedas, aprieta arriba y baja lento sin soltar de golpe.", "nota": "remata el isquio por su función de flexión de rodilla (el peso muerto lo trabaja estirándolo) — no despegues la cadera del banco para ganar rango." },
+        { "id": "0464", "series": "3", "tiempo": "30-40s", "descanso": "30s", "musculos": ["Core", "Oblicuos"], "instruccion": "Plancha alta sobre la esterilla, manos bajo los hombros. Gira el torso llevando un brazo hacia el techo, alternando lados, con la cadera estable y sin dejar caer los lumbares.", "nota": "core como cierre de fuerza antes del cardio — respiración fluida, no aguantes el aire; la cadera firme es lo que trabaja, no la velocidad." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte: ritmo que te deje hablar en frases cortas. Zancada relajada y respiración controlada.", "nota": "el kilómetro final aprovecha que llegas con las reservas tocadas de todo el trabajo de fuerza, así que tira más de grasa — perfecto para tu objetivo. Si vas cargado de piernas por el peso muerto, bájalo a trote muy suave, pero remátalo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de isquios con pierna estirada apoyada (30s/lado), estiramiento de hombro cruzando el brazo por delante (30s/lado), estiramiento de dorsal colgado o en polea (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "con este cierras los dos Full Body de la semana bien repartidos: uno de sentadilla+pecho, este de bisagra+hombro+espalda, así que has tocado todo el cuerpo por ambos lados sin machacar nada dos veces. El peso muerto rumano es el que más carga la recuperación, así que si mañana notas los isquios cargados es normal. Cuando vuelvas, dime entorno, tiempo y energía y decidimos si seguimos alternando Full Body A/B o volvemos a PPL."
+}

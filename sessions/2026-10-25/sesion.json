@@ -1,0 +1,34 @@
+{
+  "fecha": "2026-10-25",
+  "patron": "Tren superior (golpe en la pierna — sin pierna)",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "50-55 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff5a3c",
+  "intro": "Día de tren superior completo: empuje + tirón + hombro + brazos, SIN pierna por el golpe que tenéis (y de paso a Noel no le toca el tobillo). Nada de forzar la pierna golpeada: ni cargarla, ni impacto, ni la cinta hoy. Energía media: 3 series por ejercicio (brazos 2-3), técnica por delante y sin ir al fallo. Vicky, tu muñeca ya tira fina (press a 27,5 la última 👏), presses con normalidad. Debajo de cada ejercicio, vuestras referencias.",
+  "calentamiento": "Calentamiento SIN impacto ni carga de pierna (por el golpe): 5 min de movilidad de hombro y torácica + 15 band pull-aparts + 10 rotaciones de hombro con banda. Nada de cinta, bici fuerte ni saltos. Después, 1-2 series de aproximación ligeras en el press de pecho y en el jalón.",
+  "bloques": [
+    {
+      "titulo": "💪 Tren superior — empuje, tirón y brazos",
+      "ejercicios": [
+        { "id": "0577", "series": "3", "reps": "10-12", "descanso": "80s", "tipo": "compuesto", "referencia": "Noel 37,5/42,5/42,5 kg · Vicky 17,5/22,5/27,5 kg", "musculos": ["Pecho", "Tríceps", "Hombro anterior"], "instruccion": "Sentado en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlado notando el pecho, con las escápulas retraídas.", "nota": "tu empuje de pecho, en fresco. Controla la bajada (2s). Vicky: a por los 27,5 otra vez, o incluso 30 si sale limpio." },
+        { "id": "0198", "nombre": "Vertical Traction / Jalón vertical", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 35/40/45 kg · Vicky 25/30/35 kg", "musculos": ["Dorsales", "Espalda"], "instruccion": "En la Vertical Traction (o jalón al pecho), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA, baja el agarre hasta el pecho apretando el dorsal y sube controlado sin soltar la tensión.", "nota": "tu tirón vertical. Pecho arriba, tira con los codos hacia los bolsillos y aprieta abajo." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "70s", "tipo": "compuesto", "referencia": "Noel 10/12/14 kg (mancuerna) · Vicky 6/8/10 kg (mancuerna)", "musculos": ["Hombro", "Tríceps"], "instruccion": "Sentado en un banco con respaldo casi vertical (~85-90°), mancuernas a la altura de los hombros y palmas al frente. Empuja arriba sin bloquear del todo ni arquear la lumbar, y baja controlado hasta los hombros. Abdomen apretado.", "nota": "empuje vertical, sentado. Respaldo casi recto (no tumbado). Sube en línea con las orejas." },
+        { "id": "0861", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 35/40/45 kg · Vicky 25/30/35 kg", "musculos": ["Espalda", "Dorsales", "Romboides"], "instruccion": "Sentado en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.", "nota": "tu tirón horizontal. Aprieta juntando los omóplatos atrás, tronco quieto sin balanceo." },
+        { "id": "0602", "series": "3", "reps": "15", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 5/10/10 kg · Vicky 2,5/5/5 kg", "musculos": ["Hombro posterior"], "instruccion": "En la máquina de reverse fly (la dual del pec deck) mirando al respaldo, o sentado inclinado con mancuernas. Abre los brazos hacia atrás apretando el trasero del hombro y vuelve lento. Codos casi fijos, sin impulso.", "nota": "deltoide posterior: equilibra todo el empuje y mejora la postura. Manda la contracción, no el peso — 15 reps apretando atrás." },
+        { "id": "0313", "series": "3", "reps": "10-12", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 10/10/10 kg (mancuerna) · Vicky 6/6/6 kg (mancuerna)", "musculos": ["Bíceps", "Braquial"], "instruccion": "De pie o sentado con mancuernas, agarre neutro (palmas mirándose, tipo martillo). Sube alternando o a la vez sin girar la muñeca, codos pegados al cuerpo, y baja controlado. Sin balanceo del tronco.", "nota": "bíceps. Agarre neutro (martillo) todo el rato y bajada controlada. Hazlo sentado si no quieres estar de pie por la pierna." },
+        { "id": "0194", "series": "3", "reps": "12-15", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 10/12,5/12,5 kg · Vicky 5/7,5/7,5 kg", "musculos": ["Tríceps"], "instruccion": "Extensión de tríceps por encima de la cabeza (mancuerna a dos manos o polea alta con cuerda). Codos apuntando arriba y pegados a la cabeza; estira desde el codo y baja controlado sintiendo el estiramiento del tríceps.", "nota": "cierre de tríceps con la cabeza larga estirada. Solo se mueve el antebrazo, codos quietos. Si vais justos de tiempo/energía, este es el recortable." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher (opcional, sin pierna)",
+      "ejercicios": [
+        { "id": "0175", "nombre": "Crunch en polea (de rodillas)", "series": "3", "reps": "12-15", "descanso": "45s", "musculos": ["Abdomen", "Core"], "instruccion": "De rodillas frente a la polea alta con la cuerda, sujétala a los lados de la cabeza. Enrolla el abdomen llevando los codos hacia los muslos (cadera casi fija), aprieta abajo 1s y sube controlado sin tirar con los brazos.", "nota": "core con carga, de rodillas (no apoyas ni cargas la pierna golpeada). Opcional si sobra energía. El movimiento es enrollar el abdomen, no tirar con los brazos." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min de estiramientos de tren superior: pecho en marco de puerta, dorsal agarrado inclinándote, tríceps por encima de la cabeza y hombro cruzando el brazo. Nada de cinta hoy (pierna + tobillo a descansar). Hielo en la pierna golpeada si lo notáis cargado.",
+  "cierre": "buen día de tren superior: empuje, tirón, hombro y brazos completos, dejando la pierna golpeada tranquila (ni carga ni impacto) — y sin tocar el tobillo de Noel. Técnica por delante y sin fallo. Rellenad el registrador con los pesos de los dos y me lo pasáis. Y Noel, acuérdate del InBody esta semana. ¡A darle brazos y espalda! 💪",
+  "notas_extra": "Dia de tren superior porque tienen un golpe en la pierna y no quieren forzarla. Para Noel + Vicky. Cero pierna, cero impacto, sin cinta (golpe de pierna + tobillo de Noel en rehab). Vicky sin restricciones de muneca (presses normales). Energia media, sin fallo."
+}
