@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COACH — Full Body B (variación del A) · 2026-09-18</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card-bg: #1a1d24;
+    --accent: #00b3a4;
+    --text: #f2f2f2;
+    --muted: #9aa0ab;
+    --border: #2a2e37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  header .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  header h1 { margin: 6px 0 8px; font-size: 1.8rem; }
+  header p { color: var(--muted); margin: 0; line-height: 1.5; }
+  .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .pill b { color: var(--text); }
+  .prose { color: var(--muted); line-height: 1.6; margin-top: -6px; }
+  .block-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 32px 0 14px;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 18px;
+  }
+  .card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+  }
+  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
+  .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
+  .muscles span {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .prescription { display: flex; gap: 18px; margin-bottom: 10px; font-size: 0.9rem; }
+  .prescription div b { display: block; font-size: 1.05rem; }
+  .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+  .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
+  .wsec.warn { color: #ff5a3c !important; border-color: #ff5a3c !important; }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
+  footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 560px) {
+    .card { grid-template-columns: 1fr; }
+    .card img { width: 100%; height: auto; max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COACH · Sesión de hoy</div>
+    <h1>Full Body B (variación del A)</h1>
+    <p>Full Body B, la variante del martes. La idea de hoy: cubrir el cuerpo entero otra vez pero VARIANDO — y con dos objetivos claros. Uno: recuperar el REMO, que el otro día se quedó fuera por máquina ocupada. Dos: cambiar el patrón de pierna a máquinas (hip thrust + extensión) para que cuádriceps e isquios, que vienen de la prensa y el RDL del martes, sigan trabajando pero recuperándose — y sin forzar el tobillo. Para la muñeca de Vicky, que sigue tocada: pecho en PEC DECK y hombro en ELEVACIONES LATERALES (nada de presses que carguen la muñeca); Noel sí hace press de pecho. Energía media: 3 series por ejercicio, técnica por delante y sin ir a fallo. Cardio de arranque caminando o bici suave (sin correr por el tobillo) y hoy sin kilómetro de cierre. Debajo de cada ejercicio, vuestras referencias.</p>
+    <div class="meta-row">
+      <div class="pill">Entorno: <b>Gimnasio con máquinas y mancuernas</b></div>
+      <div class="pill">Tiempo: <b>~50 min</b></div>
+      <div class="pill">Energía: <b>Media</b></div>
+      <div class="pill">Objetivo: <b>Definición / pérdida de grasa</b></div>
+    </div>
+  </header>
+
+  <div class="block-title">🔥 Calentamiento</div>
+  <p class="prose">5-8 min de bici o caminando suave para entrar en calor sin impacto (hoy sin trote por el tobillo). Después, activación: 15 puentes de glúteo en suelo · 15 band pull-aparts para espalda/hombro · movilidad de cadera y hombro · 1-2 series de aproximación ligeras en el hip thrust y en el primer tirón antes de las de trabajo.</p>
+
+  <div class="block-title">🔀 Full Body B — máquinas, cuidando tobillo y muñeca</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1409-qKBpF7I.gif" alt="Barbell Glute Bridge" loading="lazy">
+    <div class="card-body">
+      <h3>Barbell Glute Bridge</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Glúteos</span><span>Isquiotibiales</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>90s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 12,5/17,5/17,5 kg · Vicky 5/5/5 kg</p>
+      <p class="instructions">Tumbado con la espalda apoyada en un banco, barra sobre la cadera (con almohadilla). Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1-2s y baja controlado.</p>
+      <p class="note">Nota técnica: tu bisagra de hoy: todo cadera, el tobillo queda neutro y el isquio/glúteo trabaja sin la carga axial del RDL del martes. Pausa arriba apretando glúteo; podéis cargar tranquilos que aquí el tobillo no sufre.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0577-T0yTjgW.gif" alt="Lever Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>Lever Chest Press</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Pecho</span><span>Tríceps</span><span>Hombro anterior</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 37,5/42,5/47,5 kg (Vicky hace el pec deck de abajo)</p>
+      <p class="instructions">Sentado en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlado notando el pecho, con las escápulas retraídas.</p>
+      <p class="note">Nota técnica: empuje horizontal para Noel (muñeca recta, nudillos al techo). VICKY hoy no hace este: va directa al pec deck de abajo por la muñeca.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0596-v3xmPAR.gif" alt="Pec deck (empuje de pecho de Vicky — muñeca)" loading="lazy">
+    <div class="card-body">
+      <h3>Pec deck (empuje de pecho de Vicky — muñeca)</h3>
+      <span class="tipo tipo-acc">🔄 Orden flexible</span>
+      <div class="muscles"><span>Pecho</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Vicky 17,5/15 kg (Noel sigue con el press de arriba)</p>
+      <p class="instructions">En el pec deck (contractor), espalda apoyada y codos a la altura de los hombros. Junta los brazos por delante apretando el pecho, pausa 1s en el centro y abre lento controlando la fase negativa.</p>
+      <p class="note">Nota técnica: el empuje de pecho de Vicky sin cargar la muñeca (empujas con los antebrazos, muñeca neutra). Aprieta en el centro y abre despacio. Noel no lo hace: él con el press.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0861-fUBheHs.gif" alt="Cable Seated Row" loading="lazy">
+    <div class="card-body">
+      <h3>Cable Seated Row</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Espalda</span><span>Dorsales</span><span>Romboides</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 35/40/45 kg · Vicky 25/30/35 kg</p>
+      <p class="instructions">Sentado en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.</p>
+      <p class="note">Nota técnica: tu tirón horizontal — el que se quedó pendiente el martes. Aprieta juntando los omóplatos atrás, tronco quieto sin balanceo. La fuerza sale de la ESPALDA, no de los brazos.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0198-RVwzP10.gif" alt="Vertical Traction / Jalón vertical" loading="lazy">
+    <div class="card-body">
+      <h3>Vertical Traction / Jalón vertical</h3>
+      <span class="tipo tipo-comp">🔒 Compuesto · haz primero</span>
+      <div class="muscles"><span>Dorsales</span><span>Espalda</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>10-12</b><span>Reps</span></div>
+          <div><b>75s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 37,5/42,5/47,5 kg · Vicky 27,5/30/30 kg</p>
+      <p class="instructions">En la Vertical Traction de Technogym (o jalón al pecho si está ocupada), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA, baja el agarre hasta el pecho apretando el dorsal y sube controlado sin soltar la tensión.</p>
+      <p class="note">Nota técnica: tu tirón vertical. Recuerda: la Vertical Traction es de ESPALDA. Pecho arriba, codos hacia los bolsillos y aprieta abajo.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0585-my33uHU.gif" alt="Lever Leg Extension" loading="lazy">
+    <div class="card-body">
+      <h3>Lever Leg Extension</h3>
+      <span class="tipo tipo-acc">🔄 Orden flexible</span>
+      <div class="muscles"><span>Cuádriceps</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>60s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 20/25/30 kg · Vicky 10/15/17,5 kg</p>
+      <p class="instructions">Sentado, espalda apoyada, el rodillo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento (2-3s).</p>
+      <p class="note">Nota técnica: tu patrón de rodilla de hoy, aislado y sin nada de tobillo — cubre el cuádriceps que hoy no metemos con prensa. Busca la contracción y la pausa arriba; si el cuádriceps viene cargado del martes, quédate en el rango bajo de reps.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0334-DsgkuIt.gif" alt="Dumbbell Lateral Raise" loading="lazy">
+    <div class="card-body">
+      <h3>Dumbbell Lateral Raise</h3>
+      <span class="tipo tipo-acc">🔄 Orden flexible</span>
+      <div class="muscles"><span>Hombro lateral</span></div>
+        <div class="prescription">
+          <div><b>3</b><span>Series</span></div>
+          <div><b>12-15</b><span>Reps</span></div>
+          <div><b>45s</b><span>Descanso</span></div>
+        </div>
+      <p class="ref">📈 Última vez: Noel 6/6/8 kg (mancuerna) · Vicky 4/4/4 kg (mancuerna)</p>
+      <p class="instructions">De pie, mancuernas a los lados, codos ligeramente flexionados. Sube los brazos en abanico hasta la altura de los hombros (meñique un pelín arriba) y baja lento. Sin balanceo del tronco.</p>
+      <p class="note">Nota técnica: el hombro de hoy para los DOS, en vez del press (muñeca de Vicky a salvo, y a Noel le va bien de complemento al pecho). Peso moderado y técnica: mejor 12-15 limpias que tirar de impulso.</p>
+    </div>
+  </div>
+
+  <div class="block-title">🧘 Vuelta a la calma</div>
+  <p class="prose">3-4 min de estiramientos: glúteo tumbado (figura-4, 30s/lado), cuádriceps de pie (suave, sin forzar el tobillo), pecho en marco de puerta (30s/lado) y dorsal/espalda agarrado inclinándote (30s/lado). Hoy sin kilómetro de cierre; si queda tiempo y ánimo y el tobillo lo permite, 5-8 min de bici suave opcionales.</p>
+
+  <div class="block-title">📋 Registrar pesos</div>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
+  <div class="reglog">
+    <div class="wex">
+      <div class="wname">Barbell Glute Bridge</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Barbell Glute Bridge" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Barbell Glute Bridge" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Barbell Glute Bridge" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Barbell Glute Bridge" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Barbell Glute Bridge" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Barbell Glute Bridge" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Lever Chest Press</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Lever Chest Press" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Lever Chest Press" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Lever Chest Press" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Lever Chest Press" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Lever Chest Press" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Lever Chest Press" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Pec deck (empuje de pecho de Vicky — muñeca)</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Pec deck (empuje de pecho de Vicky — muñeca)" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Pec deck (empuje de pecho de Vicky — muñeca)" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Pec deck (empuje de pecho de Vicky — muñeca)" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Pec deck (empuje de pecho de Vicky — muñeca)" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Pec deck (empuje de pecho de Vicky — muñeca)" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Pec deck (empuje de pecho de Vicky — muñeca)" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Cable Seated Row</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Cable Seated Row" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Cable Seated Row" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Cable Seated Row" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Cable Seated Row" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Cable Seated Row" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Cable Seated Row" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Vertical Traction / Jalón vertical</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Vertical Traction / Jalón vertical" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Lever Leg Extension</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Lever Leg Extension" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Lever Leg Extension" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Lever Leg Extension" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Lever Leg Extension" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Lever Leg Extension" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Lever Leg Extension" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Dumbbell Lateral Raise</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Dumbbell Lateral Raise" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Dumbbell Lateral Raise" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Dumbbell Lateral Raise" data-who="tu" data-set="2" placeholder="3"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Dumbbell Lateral Raise" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Dumbbell Lateral Raise" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Dumbbell Lateral Raise" data-who="ella" data-set="2" placeholder="3"></div></div>
+    </div>
+  </div>
+  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button><button type="button" id="wclear" class="wsec">Borrar</button></div>
+  <textarea id="wout" readonly hidden></textarea>
+  <script>
+(function(){
+  var fecha="2026-09-18";
+  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout'),clr=document.getElementById('wclear');
+  if(!gen) return;
+  var KP='pw:'+fecha+'|';
+  function key(inp){return KP+inp.getAttribute('data-name')+'|'+inp.getAttribute('data-who')+'|'+inp.getAttribute('data-set');}
+  function save(inp){try{var v=(inp.value||'').trim();if(v)localStorage.setItem(key(inp),v);else localStorage.removeItem(key(inp));}catch(e){}}
+  // Restaura lo guardado en este navegador y autoguarda según se escribe (no se pierde al salir del artefacto).
+  document.querySelectorAll('.win').forEach(function(inp){
+    try{var v=localStorage.getItem(key(inp));if(v!=null&&!inp.value)inp.value=v;}catch(e){}
+    inp.addEventListener('input',function(){save(inp);});
+  });
+  if(clr){
+    var armed=false,at;
+    function disarm(){armed=false;clr.textContent='Borrar';clr.classList.remove('warn');}
+    clr.addEventListener('click',function(){
+      if(!armed){armed=true;clr.textContent='¿Seguro? Pulsa otra vez';clr.classList.add('warn');at=setTimeout(disarm,3000);return;}
+      clearTimeout(at);disarm();
+      document.querySelectorAll('.win').forEach(function(inp){inp.value='';try{localStorage.removeItem(key(inp));}catch(e){}});
+      if(out){out.value='';out.hidden=true;}if(copy)copy.hidden=true;
+    });
+  }
+  function build(){
+    var order=[],data={};
+    document.querySelectorAll('.win').forEach(function(inp){
+      var n=inp.getAttribute('data-name'),who=inp.getAttribute('data-who'),set=+inp.getAttribute('data-set');
+      if(order.indexOf(n)<0) order.push(n);
+      data[n]=data[n]||{tu:[],ella:[]};
+      data[n][who][set]=(inp.value||'').trim();
+    });
+    var lines=['PESOS '+fecha];
+    order.forEach(function(n){
+      var tu=(data[n].tu||[]).filter(function(v){return v;}).join('/');
+      var ella=(data[n].ella||[]).filter(function(v){return v;}).join('/');
+      if(!tu&&!ella) return;
+      lines.push(n+': '+(tu||'-')+' | '+(ella||'-'));
+    });
+    return lines.length>1?lines.join('\n'):'PESOS '+fecha+' (rellena algún peso primero)';
+  }
+  gen.addEventListener('click',function(){
+    out.value=build(); out.hidden=false; copy.hidden=false;
+    out.style.height='auto'; out.style.height=(out.scrollHeight+4)+'px';
+  });
+  copy.addEventListener('click',function(){
+    out.select(); out.setSelectionRange(0,99999);
+    var done=function(){copy.textContent='¡Copiado!';setTimeout(function(){copy.textContent='Copiar';},1500);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(out.value).then(done,function(){try{document.execCommand('copy');done();}catch(e){}});}
+    else{try{document.execCommand('copy');done();}catch(e){}}
+  });
+})();</script>
+
+  <footer><b>Nota de coach:</b> buen Full Body B: recuperamos el remo, pierna a máquina (hip thrust + extensión) para seguir entrenando cuádriceps/isquios mientras se recuperan del martes y sin cargar el tobillo, y pecho/hombro adaptados a la muñeca de Vicky. Equilibrado y sin forzar nada tocado. Cuidad el tobillo (nada que MOLESTE, solo que canse) y Vicky la muñeca. Rellenad los dos el registrador de abajo y me lo pasáis. ¡A darle con cabeza! 💪</footer>
+</div>
+</body>
+</html>

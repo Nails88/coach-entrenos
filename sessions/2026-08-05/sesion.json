@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-08-05",
+  "patron": "Pierna — Cuádriceps / Isquios / Glúteos / Gemelos",
+  "entorno": "Gimnasio con máquinas",
+  "tiempo": "60 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Cierras el ciclo Push/Pull/Legs: Empuje el 02, Tirón ayer y hoy Pierna. Es el día que más masa muscular mueve y más calorías gasta, así que es el que más suma a tu definición. Con energía media no vamos a por récords: máquinas estables para el trabajo pesado (menos gasto en estabilizar) y foco en rango completo. Alterno patrón de rodilla (sentadilla) y de cadera (peso muerto rumano) para repartir el estímulo entre cuádriceps e isquios.",
+  "calentamiento": "Arranque: 1 km a trote suave en la cinta para subir pulsaciones y entrar en calor. Después, específico de pierna: 15 sentadillas al aire con pausa abajo · 10 zancadas caminando por pierna · 15 puentes de glúteo en el suelo (activa el glúteo antes de cargar cadera) · 1 serie ligera en el Smith, 12 reps, para grabar el patrón antes de subir peso.",
+  "bloques": [
+    {
+      "titulo": "💪 Bloque principal",
+      "ejercicios": [
+        { "id": "0770", "series": "4", "reps": "8-10", "descanso": "90s", "musculos": ["Cuádriceps", "Glúteos", "Isquiotibiales"], "instruccion": "Barra sobre trapecios, pies a la anchura de hombros y puntas ligeramente hacia fuera. Core activo y pecho alto, baja doblando cadera y rodilla hasta que el muslo quede paralelo (o algo por debajo), pausa breve y empuja con los talones.", "nota": "tu compuesto principal — con energía media, prioriza profundidad y control sobre la carga; el Smith guía la barra y te deja apretar seguro sin gastar foco en equilibrar." },
+        { "id": "0085", "series": "3", "reps": "10-12", "descanso": "90s", "musculos": ["Isquiotibiales", "Glúteos", "Lumbar"], "instruccion": "De pie con la barra pegada a los muslos, rodillas ligeramente flexionadas y fijas. Lleva la cadera atrás bajando la barra pegada al cuerpo hasta notar el estiramiento en los isquios, y empuja la cadera al frente apretando glúteos arriba.", "nota": "el movimiento es de cadera, no de rodilla — espalda recta todo el rato; en cuanto la notes curvarse, ahí está tu rango, no bajes más." },
+        { "id": "2611", "series": "3", "reps": "10-12", "descanso": "75s", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentado con la espalda pegada al respaldo, empuja la plataforma con una pierna hasta casi extender (sin bloquear la rodilla de golpe), pausa breve y vuelve controlado. Termina una pierna antes de pasar a la otra.", "nota": "unilateral a propósito — corrige descompensaciones entre piernas que el trabajo bilateral suele tapar; iguala reps y control en ambos lados." },
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo justo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento.", "nota": "aislamiento puro de cuádriceps para rematar la parte frontal — busca la contracción, no el peso; la pausa arriba es donde está el trabajo." },
+        { "id": "0586", "series": "3", "reps": "12-15", "descanso": "60s", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo, pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos todo lo que puedas, aprieta arriba y baja lento sin soltar de golpe.", "nota": "equilibra la extensión anterior — un isquio fuerte protege la rodilla; no despegues la cadera del banco para ganar rango, eso es lumbar compensando." },
+        { "id": "0605", "series": "4", "reps": "15-20", "descanso": "45s", "musculos": ["Gemelos", "Sóleo"], "instruccion": "De pie con los hombros bajo las almohadillas, pies a la anchura de cadera. Sube los talones tan alto como puedas extendiendo el tobillo, pausa 1s arriba y baja hasta notar el estiramiento completo.", "nota": "el gemelo responde a rango completo y repeticiones altas — nada de rebotes; sube apretando y estira abajo en cada rep." }
+      ]
+    },
+    {
+      "titulo": "🏁 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "series": "1", "tiempo": "1 km", "descanso": "—", "musculos": ["Cardio", "Piernas"], "instruccion": "1 km en cinta para cerrar, un pelín más rápido que el de calentamiento pero sin ahogarte: ritmo que te deje hablar en frases cortas. Zancada relajada y respiración controlada.", "nota": "hoy el kilómetro final hace de finisher — llegas con el glucógeno de las piernas tocado del trabajo de fuerza, así que este cardio suave tira más de grasa. Si las piernas van muy cargadas, bájalo a trote muy suave, pero remata el kilómetro." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de cuádriceps de pie sujetando el tobillo (30s/lado), estiramiento de isquios con pierna estirada apoyada (30s/lado), estiramiento de glúteo sentado con tobillo sobre rodilla (30s/lado), respiración profunda 5 ciclos.",
+  "cierre": "cierras la semana completa Push/Pull/Legs con el día que más grasa mueve, y con energía media lo has llevado por técnica y rango en vez de forzar carga — la decisión correcta. Ojo que las piernas avisan al segundo día, así que planifica descanso o movilidad suave para mañana. La próxima semana dime entorno, tiempo y energía y decidimos si repetimos PPL o rotamos a Full Body para variar el estímulo."
+}

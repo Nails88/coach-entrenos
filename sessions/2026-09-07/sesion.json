@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-09-07",
+  "patron": "Pierna (sin carga de tobillo) + Core",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "50-60 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#35c46a",
+  "intro": "Toca Pierna (Vicky hizo Tirón), pero Noel tiene el tobillo tocado, así que hoy va TODO a máquinas y sentados: nada de sentadilla libre, gemelo de pie ni correr (impacto). Trabajamos rodilla y cadera sin que el tobillo cargue — prensa controlada, hip thrust, extensión, femoral y abducción — y rematamos con core, que es seguro para el tobillo. El cardio hoy va en bici o elíptica (sin impacto). NOTA PARA VICKY: tu tobillo está bien, así que si quieres puedes añadir back squat con barra y hacer el cierre corriendo; el resto igual. Debajo de cada ejercicio tenéis vuestras referencias.",
+  "calentamiento": "5-6 min de bici o elíptica suave (hoy sin cinta, para no dar impacto al tobillo) para subir pulsaciones. Después, activación sin cargar tobillo: 15 puentes de glúteo en el suelo · 10 elevaciones de rodilla sentado · movilidad suave de cadera. Nada de saltos ni sentadillas profundas con peso en el calentamiento.",
+  "bloques": [
+    {
+      "titulo": "🦵 Bloque principal (máquinas, sin tobillo)",
+      "ejercicios": [
+        { "id": "0739", "series": "4", "reps": "10-12", "descanso": "90s", "tipo": "compuesto", "referencia": "Noel 40/60/70 kg · Vicky 40/60/70 kg", "musculos": ["Cuádriceps", "Glúteos"], "instruccion": "Sentado en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y planos en la plataforma. Empuja con toda la planta (talón firme) sin bloquear las rodillas de golpe, y baja controlado a un rango CÓMODO sin que el tobillo tenga que doblarse a tope.", "nota": "tu compuesto principal hoy — el pie va plano y empujas con talón/mediopié, así el tobillo no sufre. Si notas molestia, reduce el rango de bajada; no fuerces la dorsiflexión." },
+        { "id": "1409", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "musculos": ["Glúteos", "Isquiotibiales"], "instruccion": "Tumbado boca arriba, rodillas dobladas y pies planos cerca del glúteo. Barra sobre la cadera (con almohadilla). Empuja con los talones subiendo la cadera hasta alinear rodillas-cadera-hombros, aprieta el glúteo arriba 1-2s y baja controlado.", "nota": "hip thrust: todo el trabajo es de cadera, el tobillo queda neutro (perfecto hoy). Empuja con el talón y basculando la pelvis, no arqueando la lumbar." },
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 20/22,5/25 kg · Vicky 10/15/15 kg", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento.", "nota": "aislamiento de cuádriceps sin nada de tobillo — busca la contracción y la pausa arriba. A batir la última vez." },
+        { "id": "0586", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 20/25/25 kg · Vicky 15/15/15 kg", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo, pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos, aprieta arriba y baja lento sin soltar de golpe.", "nota": "isquio por flexión de rodilla, cero tobillo — no despegues la cadera del banco para ganar rango." },
+        { "id": "0597", "series": "3", "reps": "15-20", "descanso": "45s", "tipo": "accesorio", "musculos": ["Glúteos", "Abductores"], "instruccion": "Sentado con la espalda apoyada, abre las piernas empujando contra las almohadillas todo lo que puedas, pausa apretando el glúteo lateral al final y junta lento.", "nota": "glúteo medio, sentado y sin tobillo — inclínate un pelín hacia delante para notarlo más. Buen cierre de pierna hoy." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0276", "nombre": "Dead bug (bicho muerto)", "series": "3", "reps": "10/lado", "descanso": "40s", "musculos": ["Core", "Transverso abdominal"], "instruccion": "Boca arriba, brazos al techo y rodillas a 90°. Baja de forma alterna brazo y pierna contrarios hasta casi rozar el suelo, mantén la lumbar pegada al suelo y vuelve. Alterna lados.", "nota": "control y anti-extensión, cero impacto — la clave es que la lumbar NO se despegue; si se arquea, baja menos la pierna." },
+        { "id": "0464", "nombre": "Plancha (aguante isométrico)", "series": "3", "tiempo": "30-40s", "descanso": "30s", "musculos": ["Core", "Abdomen"], "instruccion": "Plancha sobre los antebrazos, codos bajo los hombros y cuerpo en línea recta de cabeza a talones. Aprieta glúteo y abdomen y aguanta quieto (sin el giro que muestra el GIF).", "nota": "cierre isométrico de core — línea recta, no dejes caer la cadera. Seguro para el tobillo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: estiramiento de cuádriceps de pie sujetando el tobillo (suave, sin forzar), estiramiento de isquios sentado (30s/lado), estiramiento de glúteo tumbado (30s/lado). Cardio de cierre opcional: 5-8 min de bici o elíptica suave (Noel: sin correr; Vicky: puedes correr si quieres). Y si el tobillo lo pide, hielo 10 min al acabar.",
+  "cierre": "buen día de pierna resolviendo la limitación: todo máquinas y sentados, sin que el tobillo cargue ni reciba impacto, y con core de propina. Noel: cuida ese tobillo — si durante la sesión algo lo molesta, para ese ejercicio; no merece la pena. Cuando pase la molestia volvemos a la sentadilla libre y la cinta. Rellenad el registrador de abajo con los pesos (los dos) y me lo pasáis. ¡A darle con cabeza!"
+}

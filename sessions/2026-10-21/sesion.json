@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-10-21",
+  "patron": "Full Body A (vuelta tras parón — rehab tobillo)",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "50-55 min",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#9b5de5",
+  "intro": "Volvéis al gym tras el parón, así que Full Body para reactivar el cuerpo entero de forma amable — mejor esto que machacar un solo grupo en frío. Seguimos respetando el tobillo de Noel (sin alta todavía): tren superior completo y pierna SOLO en máquinas donde el pie no empuja (extensión y curl femoral). Fuera prensa, hip thrust, sentadilla, gemelo, cinta/impacto hasta que el fisio dé el OK. Energía media y venís de descanso: 3 series por ejercicio, técnica por delante y SIN ir al fallo — hoy toca recuperar sensaciones y el hábito, no batir marcas (eso lo dejamos para cuando el cuerpo vuelva a su ritmo). Vicky, tu muñeca ya tira fina (press a 25 la última), así que presses con normalidad. Debajo de cada ejercicio, vuestras referencias.",
+  "calentamiento": "Noel: 5-6 min de bici suave o movilidad (sin impacto por el tobillo). Vicky: 1 km a trote suave en cinta si te apetece. Después, para los dos: 15 band pull-aparts · movilidad de hombro y cadera · 15 puentes de glúteo en suelo · 1-2 series de aproximación ligeras en el press de pecho y en el jalón.",
+  "bloques": [
+    {
+      "titulo": "🏋️ Full Body — tren superior + pierna sentada (sin tobillo)",
+      "ejercicios": [
+        { "id": "0577", "series": "3", "reps": "10-12", "descanso": "80s", "tipo": "compuesto", "referencia": "Noel 37,5/42,5/45 kg · Vicky 17,5/22,5/25 kg", "musculos": ["Pecho", "Tríceps", "Hombro anterior"], "instruccion": "Sentado en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlado notando el pecho, con las escápulas retraídas.", "nota": "empuje de pecho, en fresco. Controla la bajada (2s). Venís de parón: empieza algo por debajo de tu tope y sube si sale limpio." },
+        { "id": "0198", "nombre": "Vertical Traction / Jalón vertical", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 35/40/45 kg · Vicky 25/30/35 kg", "musculos": ["Dorsales", "Espalda"], "instruccion": "En la Vertical Traction (o jalón al pecho), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA, baja el agarre hasta el pecho apretando el dorsal y sube controlado sin soltar la tensión.", "nota": "tirón vertical. Pecho arriba, tira con los codos hacia los bolsillos y aprieta abajo." },
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 20/25/30 kg · Vicky 10/15/17,5 kg", "musculos": ["Cuádriceps"], "instruccion": "Sentado, espalda apoyada, el rodillo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento (2-3s). El pie NO empuja nada.", "nota": "cuádriceps sin tocar el tobillo (el rodillo va en la espinilla). Contracción y pausa arriba. Noel: si notas el tobillo, avisa y lo quitamos." },
+        { "id": "0861", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 35/40/45 kg · Vicky 25/30/35 kg", "musculos": ["Espalda", "Dorsales", "Romboides"], "instruccion": "Sentado en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.", "nota": "tirón horizontal. Aprieta juntando los omóplatos atrás, tronco quieto sin balanceo." },
+        { "id": "0586", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 22,5/25/27,5 kg · Vicky 10/12/15 kg", "musculos": ["Isquiotibiales"], "instruccion": "Tumbado boca abajo (o sentado), pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos, aprieta arriba y baja lento sin soltar de golpe.", "nota": "isquio por flexión de rodilla, cero tobillo. No despegues la cadera para robar rango; controla la bajada." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "70s", "tipo": "accesorio", "referencia": "Noel 10/12/14 kg (mancuerna) · Vicky 6/8/10 kg (mancuerna)", "musculos": ["Hombro", "Tríceps"], "instruccion": "Sentado en un banco con respaldo casi vertical (~85-90°), mancuernas a la altura de los hombros y palmas al frente. Empuja arriba sin bloquear del todo ni arquear la lumbar, y baja controlado hasta los hombros. Abdomen apretado.", "nota": "empuje vertical, sentado (estable, cero equilibrio para el tobillo). Respaldo casi recto; sube en línea con las orejas." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher",
+      "ejercicios": [
+        { "id": "0175", "nombre": "Crunch en polea (de rodillas)", "series": "3", "reps": "12-15", "descanso": "45s", "musculos": ["Abdomen", "Core"], "instruccion": "De rodillas frente a la polea alta con la cuerda, sujétala a los lados de la cabeza. Enrolla el abdomen llevando los codos hacia los muslos (cadera casi fija), aprieta abajo 1s y sube controlado sin tirar con los brazos.", "nota": "core con carga, de rodillas (cero tobillo). El movimiento es enrollar el abdomen, no tirar con los brazos ni bascular la cadera." }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min de estiramientos sin cargar el tobillo: pecho en marco de puerta, dorsal agarrado inclinándote, cuádriceps e isquios suaves. Hoy sin kilómetro de cinta para Noel (tobillo). Si el fisio te ha dado movilidad de tobillo, buen momento para hacerla con calma.",
+  "cierre": "buena vuelta tras el parón: full body completo con el tobillo a salvo (tren superior + pierna sentada), recuperando sensaciones sin forzar. Empezad conservadores de carga, que venís de descanso; ya subiremos. Noel: nada que MOLESTE el tobillo. Rellenad el registrador con los pesos de los dos y me lo pasáis. Y acuérdate de pesarte en el InBody esta semana. ¡Con cabeza! 💪",
+  "notas_extra": "Full Body A tras parón, para Noel + Vicky. Noel sigue en rehab de tobillo (sin alta): solo lo que no carga el pie (tren superior + extension 0585 y curl femoral 0586 sentados). Sin prensa/hip thrust/cinta. Vicky sin restricciones (muneca resuelta, presses normales). Energia media, sin fallo (vuelta de descanso)."
+}
