@@ -32,7 +32,8 @@ const META = {
   '0585': ['Extensión de cuádriceps', 'Pierna'], '0586': ['Curl femoral', 'Pierna'], '0605': ['Gemelo de pie', 'Pierna'],
   '1409': ['Hip thrust / puente de glúteo', 'Pierna'], '0597': ['Abducción sentado (abrir)', 'Pierna'], '0598': ['Aducción sentado (cerrar)', 'Pierna'],
   '0549': ['Kettlebell swing (ruso)', 'Pierna'],
-  '0274': ['Crunch con peso (balón/disco)', 'Core']
+  '0274': ['Crunch con peso (balón/disco)', 'Core'],
+  '0201': ['Tríceps pushdown (polea alta)', 'Empuje']
 };
 const GRUPOS = ['Empuje', 'Tirón', 'Pierna', 'Core', 'Otros'];
 const ACENTO = { 'Empuje': '#ff5a3c', 'Tirón': '#3ca8ff', 'Pierna': '#35c46a', 'Core': '#b57bff', 'Otros': '#f5a623' };
