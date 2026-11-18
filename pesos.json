@@ -92,6 +92,11 @@
         "fecha": "2026-11-15",
         "tu": "37,5/42,5/47,5 kg",
         "ella": "17,5/22,5/27,5 kg"
+      },
+      {
+        "fecha": "2026-11-18",
+        "tu": "40/45/50 kg",
+        "ella": "17,5/25/30 kg"
       }
     ],
     "0314": [
@@ -104,6 +109,11 @@
         "fecha": "2026-09-03",
         "tu": "8/10/12/14 kg (mancuerna)",
         "ella": "6/8/10/12 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-11-18",
+        "tu": "10/12 kg (mancuerna)",
+        "ella": "10/12 kg (mancuerna)"
       }
     ],
     "0426": [
@@ -178,6 +188,11 @@
         "fecha": "2026-09-30",
         "tu": "6/6/6 kg (mancuerna)",
         "ella": "4/4/4 kg (mancuerna)"
+      },
+      {
+        "fecha": "2026-11-18",
+        "tu": "6/6/6 kg (mancuerna)",
+        "ella": "4/4/4 kg (mancuerna)"
       }
     ],
     "0194": [
@@ -202,14 +217,9 @@
         "ella": "5/7,5/7,5 kg"
       },
       {
-        "fecha": "2026-10-25",
-        "tu": "10/12,5/15 kg (pushdown, polea de arriba)",
-        "ella": "5/7,5/10 kg (pushdown, polea de arriba)"
-      },
-      {
-        "fecha": "2026-11-01",
-        "tu": "12,5/15 kg (pushdown, polea de arriba)",
-        "ella": "10/12,5 kg (pushdown, polea de arriba)"
+        "fecha": "2026-11-18",
+        "tu": "12,5/15 kg (overhead, polea)",
+        "ella": "5/7,5 kg (overhead, polea)"
       }
     ],
     "0596": [
@@ -304,6 +314,11 @@
         "fecha": "2026-11-15",
         "tu": "35/40/45 kg",
         "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-11-18",
+        "tu": "35/40/45 kg",
+        "ella": "25/30/35 kg"
       }
     ],
     "0861": [
@@ -366,6 +381,11 @@
         "fecha": "2026-11-15",
         "tu": "35/40/50 kg",
         "ella": "25/30/35 kg"
+      },
+      {
+        "fecha": "2026-11-18",
+        "tu": "40/45/50 kg",
+        "ella": "25/30/35 kg"
       }
     ],
     "0602": [
@@ -393,6 +413,11 @@
         "fecha": "2026-10-25",
         "tu": "5/5/5 kg",
         "ella": "2,5/2,5/2,5 kg"
+      },
+      {
+        "fecha": "2026-11-18",
+        "tu": "5/5/10 kg",
+        "ella": "2,5/5/5 kg"
       }
     ],
     "0313": [
@@ -640,6 +665,16 @@
       }
     ],
     "0201": [
+      {
+        "fecha": "2026-10-25",
+        "tu": "10/12,5/15 kg (pushdown, polea de arriba)",
+        "ella": "5/7,5/10 kg (pushdown, polea de arriba)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "tu": "12,5/15 kg (pushdown, polea de arriba)",
+        "ella": "10/12,5 kg (pushdown, polea de arriba)"
+      },
       {
         "fecha": "2026-11-15",
         "tu": "15/17,5 kg (pushdown, polea alta)",
