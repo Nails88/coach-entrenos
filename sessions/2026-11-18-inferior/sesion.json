@@ -6,7 +6,7 @@
   "energia": "Media",
   "objetivo": "Definición / pérdida de grasa",
   "acento": "#ff7a3d",
-  "intro": "Tren inferior CORTO: plan de 45-50 min (con esperas y descansos, lo normal es acabar en ~1h10). NOEL: peso muerto rumano a muy poco peso como PRUEBA (mancuernas de 4-6 kg o barra sola), extensión, curl femoral y abducción sentados (el pie no empuja) y una plancha para cerrar. La aducción, la 4ª máquina sentada, va como 🔸 opcional. Si algo MOLESTA (no que canse), se para ese ejercicio. VICKY: prensa, peso muerto rumano y las máquinas; el hip thrust es 🔸 opcional para ti. Formato gym: SERIES de cada ejercicio seguidas (con su descanso) antes de pasar al siguiente. Si hay cola, las máquinas se pueden reordenar; peso muerto y prensa, primero. Los 2 opcionales solo si vais bien de tiempo.",
+  "intro": "Tren inferior CORTO: plan de 45-50 min (con esperas y descansos, lo normal es acabar en ~1h10). NOEL: peso muerto rumano a muy poco peso como PRUEBA (mancuernas de 4-6 kg o barra sola), extensión, curl femoral sentado y abducción sentados (el pie no empuja) y una plancha para cerrar. La aducción, la 4ª máquina sentada, va como 🔸 opcional. Si algo MOLESTA (no que canse), se para ese ejercicio. VICKY: prensa, peso muerto rumano y las máquinas; el hip thrust es 🔸 opcional para ti. Formato gym: SERIES de cada ejercicio seguidas (con su descanso) antes de pasar al siguiente. Si hay cola, las máquinas se pueden reordenar; peso muerto y prensa, primero. Los 2 opcionales solo si vais bien de tiempo.",
   "calentamiento": "5 min, sin alargarlo. Noel: bici suave o movilidad de cadera (sin impacto por el tobillo); puentes de glúteo en el suelo y círculos de tobillo si te apetece. Vicky: 1 km a trote suave si te apetece, o lo mismo que Noel. Antes del peso muerto, 1-2 series de aproximación sin peso o con la barra sola.",
   "bloques": [
     {
@@ -57,17 +57,18 @@
           "nota": "cuádriceps sin tocar el tobillo (el rodillo va en la espinilla). Contracción arriba y bajada lenta."
         },
         {
-          "id": "0586",
+          "id": "0599",
           "series": "3",
           "reps": "12-15",
           "descanso": "60s",
           "tipo": "accesorio",
-          "referencia": "Noel 20/25/30 kg · Vicky 15/17,5/20 kg (15/11)",
+          "referencia": "sin historial en la máquina sentada (el curl tumbado no es comparable): empezad cómodos, sin ir al límite",
           "musculos": [
             "Isquiotibiales"
           ],
-          "instruccion": "Tumbado boca abajo (o sentado), pantorrillas bajo el rodillo y caderas pegadas al banco. Flexiona las rodillas llevando los talones hacia los glúteos, aprieta arriba y baja lento sin soltar de golpe.",
-          "nota": "isquio por flexión de rodilla, cero tobillo. No despegues la cadera; controla la bajada. Hoy ya tenéis el peso muerto, así que no vayáis al límite."
+          "instruccion": "Sentado en la máquina con la espalda apoyada, el rodillo sobre la parte baja de las pantorrillas y el cojín bloqueando los muslos. Flexiona las rodillas llevando los talones hacia abajo y atrás, aprieta el isquio 1s y vuelve lento sin soltar el peso de golpe.",
+          "nota": "isquio en máquina sentada, cero tobillo (el pie no empuja). Ajusta el respaldo para que la rodilla quede alineada con el eje de la máquina. Es nueva para vosotros: empezad con menos peso que en el tumbado y apuntad lo que salga. Controla la subida del peso (2-3s).",
+          "nombre": "Curl femoral sentado (máquina)"
         },
         {
           "id": "0597",
@@ -141,5 +142,5 @@
   ],
   "vuelta_calma": "3 min: isquios sentado, cuádriceps de pie apoyado a la pared sin forzar el tobillo, glúteo en figura-4 tumbado y aductores sentado con las plantas juntas si no te molesta el tobillo. Sin kilómetro de cinta para Noel (tobillo). Si te toca tus ejercicios de tobillo del fisio, ahora.",
   "cierre": "Tren inferior corto: Noel con peso muerto de prueba, 3 máquinas sentadas y plancha; Vicky con prensa, peso muerto y máquinas. Opcionales (aducción y hip thrust) solo si sobra tiempo. Noel: cuéntame cómo ha ido el tobillo en la prueba para decidir el martes. Rellenad el registrador y me lo pasáis. ¡A darle con cabeza! 💪",
-  "notas_extra": "Segunda sesion del 18/11 (inferior). Noel: 4 maquinas 0585/0586/0597/0598 + prueba RDL 1459 muy ligero (sin historial, registrar pesos) + plancha 0464. Vicky: prensa 0739, hip thrust 1409, RDL, + maquinas. Core opcional 0872 sin historial. Energia asumida media. REDUCIDO a 5 + plancha + 2 opcionales (aduccion 0598, hip thrust 1409); reverse crunch fuera."
+  "notas_extra": "Segunda sesion del 18/11 (inferior). Noel: 4 maquinas 0585/0586/0597/0598 + prueba RDL 1459 muy ligero (sin historial, registrar pesos) + plancha 0464. Vicky: prensa 0739, hip thrust 1409, RDL, + maquinas. Core opcional 0872 sin historial. Energia asumida media. REDUCIDO a 5 + plancha + 2 opcionales (aduccion 0598, hip thrust 1409); reverse crunch fuera. CAMBIO 19/11: curl femoral tumbado 0586 -> sentado 0599 (sin historial)."
 }
