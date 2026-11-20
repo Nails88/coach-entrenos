@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-10-27",
+  "patron": "PRUEBA del registrador (botón Última vez)",
+  "entorno": "Gimnasio (sesión de prueba, no es un entreno real)",
+  "tiempo": "—",
+  "energia": "—",
+  "objetivo": "Probar el registrador",
+  "acento": "#00b3a4",
+  "intro": "ARTEFACTO DE PRUEBA — no es un entreno de verdad, sirve para que pruebes el registrador de pesos nuevo. Baja hasta '📋 Registrar pesos' y prueba: (1) los números en GRIS dentro de las casillas son lo que hicisteis la última vez; (2) toca '↺ Última vez' en un ejercicio y se rellenan solas las casillas de los dos; (3) escribe encima de alguna para cambiarla; (4) toca la ✕ para vaciar ese ejercicio; (5) en 'Crunch en suelo' NO hay botón ni gris porque no tiene historial; (6) deja un ejercicio sin tocar y pulsa 'Generar resumen' para comprobar que NO sale en el resumen. Nada de esto se guarda en tu histórico real: es solo esta página.",
+  "calentamiento": "Nada: es una prueba.",
+  "bloques": [
+    {
+      "titulo": "🧪 Ejercicios de prueba (con y sin historial)",
+      "ejercicios": [
+        { "id": "0577", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "musculos": ["Pecho"], "instruccion": "Press de pecho en máquina (ejercicio de prueba).", "nota": "Con historial: tiene botón ↺ y números en gris." },
+        { "id": "0198", "nombre": "Vertical Traction / Jalón vertical", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "musculos": ["Dorsales"], "instruccion": "Jalón vertical (ejercicio de prueba).", "nota": "Con historial: tiene botón ↺ y números en gris." },
+        { "id": "0585", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "musculos": ["Cuádriceps"], "instruccion": "Extensión de cuádriceps (ejercicio de prueba).", "nota": "Con historial: tiene botón ↺ y números en gris." },
+        { "id": "0596", "nombre": "Pec deck", "series": "3", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "musculos": ["Pecho"], "instruccion": "Pec deck (ejercicio de prueba).", "nota": "Con historial: tiene botón ↺ y números en gris." },
+        { "id": "0274", "nombre": "Crunch en suelo", "series": "3", "reps": "12-15", "descanso": "45s", "musculos": ["Abdomen"], "instruccion": "Crunch en suelo (ejercicio de prueba).", "nota": "SIN historial: no tiene botón ↺ ni números en gris (solo la ✕)." }
+      ]
+    }
+  ],
+  "vuelta_calma": "Nada: es una prueba.",
+  "cierre": "Si todo te cuadra, este mismo registrador saldrá en todas las sesiones nuevas. Dime qué cambiarías (tamaño de los botones, textos, colores…) y lo ajusto.",
+  "notas_extra": "Sesion de PRUEBA del registrador con boton '↺ Ultima vez' por ejercicio, valor anterior en gris y ✕ para vaciar. No registrar pesos de esta sesion en pesos.json."
+}
