@@ -184,7 +184,7 @@ criterio de progresión:
 - 🔄 **Accesorios y variantes = ROTAR libremente** sesión a sesión (mismo músculo, distinto
   ángulo/herramienta — variedad sin perder tracking): tríceps (pushdown `0201`/`0241` ↔ overhead
   `0194` ↔ patada `0860`), bíceps (martillo `0313` ↔ curl recto ↔ polea `0868` ↔ concentrado),
-  pecho secundario (pec deck `0596` ↔ aperturas ↔ press inclinado `0314`), hombro lateral/posterior
+  hombro lateral/completo (laterales mancuerna `0334` ↔ polea `0178` ↔ **around the world** `2143`: elevación lateral hasta juntar las mancuernas sobre la cabeza, brazos estirados y peso muy ligero; alternativa a usar con criterio, Noel aún no ha decidido si la prefiere a las laterales), pecho secundario (pec deck `0596` ↔ aperturas ↔ press inclinado `0314`), hombro lateral/posterior
   (laterales mancuerna `0334` ↔ cable ↔ pájaros `0602`), etc.
 - Al rotar un accesorio, pon en `referencia` la última vez de ESA variante si la hay; si es nueva,
   deja que empiece cómodo y lo registramos. No pasa nada si los números no son comparables 1:1 entre
