@@ -140,6 +140,7 @@ function renderCard(ej) {
       ${ref}
       <p class="instructions">${esc(instruccion)}</p>
       ${nota}
+      ${logFor(ej)}
     </div>
   </div>`;
 }
@@ -148,8 +149,6 @@ function renderBloque(b) {
   const cards = (b.ejercicios || []).map(renderCard).join('\n');
   return `  <div class="block-title">${esc(b.titulo || 'Bloque')}</div>\n${cards}`;
 }
-
-const bloquesHtml = (spec.bloques || []).map(renderBloque).join('\n\n');
 
 const calentamiento = spec.calentamiento
   ? `  <div class="block-title">🔥 Calentamiento</div>
@@ -190,16 +189,17 @@ function pesosAnteriores(id) {
 // Valores para precargar el registrador (p. ej. lo ya hecho a media sesión).
 // spec.prellenado[<id>] = { tu: ["60","80",...], ella: [...] } (una casilla por serie).
 const prellenado = spec.prellenado || {};
-const loggables = [];
-(spec.bloques || []).forEach(b => (b.ejercicios || []).forEach(ej => {
-  if (ej.id === '3666') return; // el cardio de cinta no lleva peso
+// Casillas de peso de UN ejercicio (se pintan dentro de su tarjeta). '' si no aplica.
+function logFor(ej) {
+  if (spec.sin_registrador || ej.id === '3666') return ''; // cardio de cinta: sin peso
   const ex = byId.get(ej.id);
   const nombre = ej.nombre ? ej.nombre : (ex ? titleCase(ex.name) : `Ejercicio ${ej.id}`);
   let sets = parseInt(ej.series, 10);
   if (!(sets >= 1 && sets <= 8)) sets = 1;
   const pre = prellenado[ej.id] || {};
-  loggables.push({ nombre, sets, pre: { tu: pre.tu || [], ella: pre.ella || [] }, prev: pesosAnteriores(ej.id) });
-}));
+  return wexRow({ nombre, sets, pre: { tu: pre.tu || [], ella: pre.ella || [] }, prev: pesosAnteriores(ej.id) });
+}
+const hayRegistro = !spec.sin_registrador && (spec.bloques || []).some(b => (b.ejercicios || []).some(e => e.id !== '3666'));
 
 const wlogJS = `
 (function(){
@@ -275,11 +275,10 @@ function wexRow(o) {
     </div>`;
 }
 
-const registroPesos = (loggables.length && !spec.sin_registrador) ? `  <div class="block-title">📋 Registrar pesos</div>
-  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Los números en <b>gris</b> son lo que hicisteis la última vez: si repetís, toca <b>↺ Última vez</b> en ese ejercicio y se rellena; si cambia algo, escribe encima. La <b>✕</b> vacía ese ejercicio. 💾 Se <b>guarda solo</b> en este dispositivo según lo escribes, así que puedes salir del artefacto y volver sin perder nada. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH; luego, si quieres, <b>Borra</b> para dejarlo limpio.</p>
-  <div class="reglog">
-    ${loggables.map(wexRow).join('\n    ')}
-  </div>
+const bloquesHtml = (spec.bloques || []).map(renderBloque).join('\n\n');
+
+const registroPesos = hayRegistro ? `  <div class="block-title">📋 Resumen de pesos</div>
+  <p class="prose">Los pesos se rellenan <b>en cada ejercicio</b>, justo debajo de su descripción: una casilla por serie, en blanco lo que no hagáis. Los números en <b>gris</b> son lo que hicisteis la última vez: toca <b>↺ Última vez</b> si repetís, o escribe encima si cambia; la <b>✕</b> vacía ese ejercicio. 💾 Se <b>guarda solo</b> en este dispositivo, así que puedes salir y volver sin perder nada. Al terminar pulsa <b>Generar resumen</b>, <b>copia</b> el texto y pásaselo a COACH; luego, si quieres, <b>Borrar</b> para dejarlo limpio.</p>
   <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button><button type="button" id="wclear" class="wsec">Borrar</button></div>
   <textarea id="wout" readonly hidden></textarea>
   <script>${wlogJS}</script>
@@ -382,6 +381,9 @@ const html = `<!DOCTYPE html>
   .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
   .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
   .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .card .wex { margin-top: 12px; background: #0f1115; }
+  .card .wex .wname { font-size: 0; margin: 0; }
+  .card .wex .wname::before { content: "⚖️ Pesos de hoy"; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
   .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
   .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
   .whead { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }

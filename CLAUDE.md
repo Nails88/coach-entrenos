@@ -84,6 +84,9 @@ Flujo:
   generador la muestra como una línea 📈 "Última vez: …" en la tarjeta, para que no tenga que recordar
   la carga de cada máquina. Muestra los pesos de las series (lo más útil); si solo hay uno, ese.
 
+### Casillas de peso DENTRO de cada ejercicio (cambio 22/11)
+Las casillas del registrador van **dentro de la tarjeta de cada ejercicio**, justo debajo de su descripción/nota (bloque "⚖️ Pesos de hoy"), para no tener que subir y bajar. Al final de la página queda solo "📋 Resumen de pesos" con **Generar resumen / Copiar / Borrar** (a petición de Noel, el botón de resumen se queda abajo). El cardio de cinta (`3666`) no lleva casillas. Lo gestiona `generar-sesion.js` (`logFor(ej)`), no hay que hacer nada al montar la sesión.
+
 ### Autoguardado del registrador (localStorage)
 El registrador de cada sesión **autoguarda cada casilla en el navegador** (localStorage, por
 artefacto/dispositivo) según se escribe y la restaura al reabrir el artefacto — así se puede salir de
