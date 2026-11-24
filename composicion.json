@@ -59,6 +59,24 @@
         "inbody": 74,
         "cintura_cadera": 0.96,
         "altura": 174
+      },
+      {
+        "fecha": "2026-11-24",
+        "peso": 83.8,
+        "imc": 27.7,
+        "grasa_pct": 26.1,
+        "grasa_kg": 21.9,
+        "musculo": 34.9,
+        "mlg": 61.9,
+        "agua": 45.5,
+        "visceral": 9,
+        "proteinas": 12.3,
+        "minerales": 4.14,
+        "tmb": 1707,
+        "grado_obesidad": 126,
+        "inbody": 74,
+        "cintura_cadera": 0.97,
+        "altura": 174
       }
     ],
     "ella": [
