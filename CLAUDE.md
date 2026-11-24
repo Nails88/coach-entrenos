@@ -289,6 +289,7 @@ El usuario entrena en un gimnasio **Technogym**. Ten en cuenta al montar días d
   - **Pec deck / contractor de pecho** → usa `0596` (lever seated fly). Buena para aislar pecho (alternativa a las aperturas con mancuerna).
   - **Reverse fly / pájaros en máquina** → usa `0602` (lever seated reverse fly). Deltoide posterior; va genial en días de empuje/tirón para equilibrar hombro.
   - (Es una máquina dual Pectoral + Reverse Fly.)
+  - **Su pec deck se usa con los CODOS/antebrazos apoyados en las almohadillas** (brazo encogido, codo a la altura del hombro, mano hacia arriba), no con los brazos estirados agarrando asas. Palanca más corta → pesos mucho menores (Noel ~5-10 kg, Vicky ~2,5 kg el 24/11). Se registra bajo `0596` (el catálogo no tiene GIF de esa variante: usar `0596` con `nombre` override "Pec deck (apoyando los codos)" e `instruccion` propia). Los pesos de 0596 anteriores al 24/11 (17,5-32,5 kg) probablemente eran de otra variante o mal anotados: no tomarlos como referencia.
 - **Máquinas que NO tiene** (no las propongas; usa la alternativa):
   - **Máquina de elevación lateral** (`0584`) → NO está. Usa **mancuernas** `0334` (dumbbell lateral raise).
 - **Vertical Traction (Technogym)** = **jalón vertical / lat pulldown → ESPALDA (dorsales)**, no hombro (el usuario la tenía como "de hombro de arriba a abajo"; en realidad es un tirón vertical). Úsala en días de **Tirón**. Equivale a `0198` (cable pulldown) como GIF de referencia.
