@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COACH — Panel de referencia — ejercicios de pecho parecidos al pec deck · 2026-11-24-pecho-ref</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card-bg: #1a1d24;
+    --accent: #e8467c;
+    --text: #f2f2f2;
+    --muted: #9aa0ab;
+    --border: #2a2e37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  header .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  header h1 { margin: 6px 0 8px; font-size: 1.8rem; }
+  header p { color: var(--muted); margin: 0; line-height: 1.5; }
+  .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .pill b { color: var(--text); }
+  .prose { color: var(--muted); line-height: 1.6; margin-top: -6px; }
+  .block-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 32px 0 14px;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 18px;
+  }
+  .card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+  }
+  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
+  .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
+  .muscles span {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .prescription { display: flex; gap: 18px; margin-bottom: 10px; font-size: 0.9rem; }
+  .prescription div b { display: block; font-size: 1.05rem; }
+  .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+  .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .card .wex { margin-top: 12px; background: #0f1115; }
+  .card .wex .wname { font-size: 0; margin: 0; }
+  .card .wex .wname::before { content: "⚖️ Pesos de hoy"; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .whead { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+  .whead .wname { margin-bottom: 6px; }
+  .wacts { display: flex; gap: 6px; flex: none; }
+  .wrep { padding: 5px 10px; font-size: 0.78rem; font-weight: 700; border-radius: 8px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .wx { padding: 5px 9px; font-size: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
+  .wsec.warn { color: #ff5a3c !important; border-color: #ff5a3c !important; }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
+  footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 560px) {
+    .card { grid-template-columns: 1fr; }
+    .card img { width: 100%; height: auto; max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COACH · Sesión de hoy</div>
+    <h1>Panel de referencia — ejercicios de pecho parecidos al pec deck</h1>
+    <p>Panel solo para identificar el ejercicio, no es un entreno. Mira los GIFs y dime el NÚMERO (#xxxx) del que hicisteis el 24/11 con 5/10/10 kg (Noel) y 2,5 kg (Vicky). El primero es el que yo llamo pec deck / contractor de pecho. Luego vienen otras máquinas de pecho, aperturas en polea y aperturas con mancuernas.</p>
+    <div class="meta-row">
+      <div class="pill">Entorno: <b>Gimnasio con máquinas</b></div>
+      <div class="pill">Tiempo: <b>—</b></div>
+      <div class="pill">Energía: <b>—</b></div>
+      <div class="pill">Objetivo: <b>Identificar el ejercicio de pecho que hicisteis</b></div>
+    </div>
+  </header>
+
+
+  <div class="block-title">⭐ Lo que yo tengo anotado como pec deck</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0596-v3xmPAR.gif" alt="#0596 · Lever Seated Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0596 · Lever Seated Fly</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Trapecios</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y colócate en la máquina con la espalda apoyada en la almohadilla. Agarra las asas con un agarre pronado y mantén los codos ligeramente flexionados. Exhala y empuja las asas hacia adelante, juntándolas frente a tu pecho. Haz una pausa por un momento, contrayendo los músculos del pecho. Inhala y vuelve lentamente a la posición inicial, permitiendo que los músculos del pecho se estiren. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0596. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="block-title">Otras máquinas de pecho (palanca / Technogym)</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0577-T0yTjgW.gif" alt="#0577 · Lever Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>#0577 · Lever Chest Press</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y colócate en la máquina con la espalda totalmente apoyada en la almohadilla. Sujeta las asas con un agarre prono y coloca los codos en un ángulo de 90 grados. Empuja las asas hacia adelante hasta que los brazos queden completamente extendidos, exhalando durante el movimiento. Haz una pausa breve al final del movimiento, luego vuelve lentamente a la posición inicial, inhalando mientras lo haces. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0577. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0576-DOoWcnA.gif" alt="#0576 · Lever Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>#0576 · Lever Chest Press</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y colócate en la máquina con la espalda totalmente apoyada en la almohadilla. Sujeta las asas con un agarre prono y coloca los codos en un ángulo de 90 grados. Empuja las asas hacia adelante hasta que los brazos queden completamente extendidos, exhalando durante el movimiento. Haz una pausa breve al final del movimiento, luego vuelve lentamente a la posición inicial, inhalando mientras lo haces. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0576. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1299-jHAnWmT.gif" alt="#1299 · Lever Incline Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>#1299 · Lever Incline Chest Press</h3>
+      
+      <div class="muscles"><span>Hombros</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta el asiento y el respaldo de la máquina de palanca a una posición cómoda. Siéntate en la máquina con la espalda apoyada en el respaldo y los pies planos en el suelo. Sujeta las asas con un agarre prono y coloca las manos un poco más separadas que la altura de los hombros. Empuja las asas hacia adelante y alejándolas del cuerpo hasta que los brazos queden completamente extendidos. Haz una pausa breve, luego flexiona lentamente los codos y baja las asas de vuelta hacia el pecho. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 1299. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1479-o17Jfkt.gif" alt="#1479 · Lever Incline Chest Press V. 2" loading="lazy">
+    <div class="card-body">
+      <h3>#1479 · Lever Incline Chest Press V. 2</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y el ángulo del respaldo de la máquina de palanca a una posición cómoda. Siéntate en la máquina con la espalda apoyada en el respaldo y los pies planos en el suelo. Sujeta las asas con un agarre prono y coloca las manos un poco más separadas que la altura de los hombros. Empuja las asas hacia adelante y alejándolas del cuerpo hasta que los brazos queden completamente extendidos, pero sin bloquear los codos. Haz una pausa breve en la posición completamente extendida, luego flexiona lentamente los codos y baja las asas de vuelta hacia el pecho. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 1479. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1300-vsVoPHt.gif" alt="#1300 · Lever Decline Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>#1300 · Lever Decline Chest Press</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y el respaldo de la máquina de palanca a una posición cómoda. Siéntate en la máquina con la espalda apoyada en el respaldo y los pies planos en el suelo. Sujeta las asas con un agarre prono y coloca las manos un poco más separadas que la altura de los hombros. Empuja las asas hacia adelante y alejándolas del cuerpo hasta que los brazos queden completamente extendidos. Baja lentamente las asas de vuelta hacia el pecho, manteniendo los codos ligeramente flexionados. Haz una pausa breve en la parte baja, luego empuja las asas de vuelta a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 1300. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/3758-WbNq5Xu.gif" alt="#3758 · Lever Standing Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>#3758 · Lever Standing Chest Press</h3>
+      
+      <div class="muscles"><span>Hombros</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y colócate en la máquina con los pies planos en el suelo. Agarra las asas con un agarre prono y coloca las manos a la altura del pecho. Empuja las asas hacia adelante hasta que los brazos queden completamente extendidos, manteniendo los codos ligeramente flexionados. Haz una pausa por un momento y luego lleva lentamente las asas de vuelta hacia el pecho, manteniendo el control durante todo el movimiento. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 3758. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1301-wDN97Ca.gif" alt="#1301 · Machine Inner Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>#1301 · Machine Inner Chest Press</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y colócate en la máquina con la espalda totalmente apoyada en la almohadilla. Sujeta las asas con un agarre prono y coloca los codos en un ángulo de 90 grados. Empuja las asas hacia adelante hasta que los brazos queden completamente extendidos, exhalando durante el movimiento. Haz una pausa al final del movimiento y luego vuelve lentamente a la posición inicial, inhalando mientras lo haces. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 1301. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="block-title">Aperturas y cruces en polea</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0171-tBWXbIT.gif" alt="#0171 · Cable Incline Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0171 · Cable Incline Fly</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la máquina de cable a una posición baja y sujeta las agarraderas. Siéntate en un banco inclinado con la espalda apoyada en el respaldo y los pies planos en el suelo. Sujeta las agarraderas con un agarre prono y extiende los brazos rectos frente a ti. Manteniendo una ligera flexión en los codos, abre los brazos hacia los lados con un movimiento controlado. Haz una pausa breve en la posición completamente extendida, luego vuelve lentamente a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0171. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0179-FVmZVhk.gif" alt="#0179 · Cable Low Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0179 · Cable Low Fly</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Sujeta las agarraderas a las poleas bajas de una máquina de cable y selecciona un peso adecuado. Ponte de pie en el centro de la máquina con los pies separados a la altura de los hombros y una ligera flexión en las rodillas. Sujeta las agarraderas con un agarre prono y extiende los brazos hacia los lados, manteniendo una ligera flexión en los codos. Manteniendo el control, lleva lentamente los brazos hacia adelante con un movimiento amplio, cruzándolos frente al cuerpo. Haz una pausa por un momento en el punto más alto del movimiento, sintiendo el estiramiento en los músculos del pecho. Invierte el movimiento y regresa lentamente los brazos a la posición inicial, manteniendo la tensión en los músculos del pecho durante todo el recorrido. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0179. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0188-xLYSdtg.gif" alt="#0188 · Cable Middle Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0188 · Cable Middle Fly</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Sujeta los cables a ambos lados de una máquina de cable a la altura del pecho. Ponte de pie en el centro de la máquina con un pie ligeramente delante del otro. Sujeta las agarraderas con un agarre prono y extiende los brazos hacia los lados. Mantén una ligera flexión en los codos y conserva una leve inclinación hacia adelante. Activa los músculos del pecho y lleva los brazos hacia adelante con un movimiento amplio. Haz una pausa por un momento en el centro y luego regresa lentamente los brazos a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0188. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0227-Pr9Rhf4.gif" alt="#0227 · Cable Standing Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0227 · Cable Standing Fly</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Coloca los mangos en los cables a la altura del pecho. Ponte de pie con los pies separados a la altura de los hombros, de espaldas a la máquina de cable. Agarra los mangos con un agarre prono, con las palmas hacia adelante. Da un paso adelante para crear tensión en los cables. Mantén el core activado y la espalda recta durante todo el ejercicio. Con una ligera flexión en los codos, lleva lentamente los brazos hacia adelante y júntalos frente al pecho. Aprieta los músculos del pecho en el punto máximo del movimiento. Invierte lentamente el movimiento, regresando los brazos a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0227. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0185-lJJ7Yq8.gif" alt="#0185 · Cable Lying Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0185 · Cable Lying Fly</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Sujeta las agarraderas a los cables y túmbate boca arriba en un banco con los pies apoyados planos en el suelo. Sujeta las agarraderas con las palmas una frente a la otra y los brazos extendidos rectos por encima del pecho. Manteniendo una ligera flexión en los codos, baja los brazos hacia los lados en un amplio arco hasta sentir un estiramiento en el pecho. Haz una pausa por un momento y luego aprieta los músculos del pecho para regresar los brazos a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0185. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1269-UKWTJWR.gif" alt="#1269 · Cable Standing Up Straight Crossovers" loading="lazy">
+    <div class="card-body">
+      <h3>#1269 · Cable Standing Up Straight Crossovers</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ponte de pie en el medio de una máquina de cable con los pies separados a la altura de los hombros. Sujeta los mangos de los cables con las palmas hacia abajo y los brazos extendidos hacia los lados. Manteniendo los brazos rectos, junta las manos frente a tu cuerpo, cruzándolas una sobre la otra. Haz una pausa breve, luego regresa lentamente a la posición inicial, manteniendo los brazos extendidos. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 1269. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1270-j7XMAyn.gif" alt="#1270 · Cable Upper Chest Crossovers" loading="lazy">
+    <div class="card-body">
+      <h3>#1270 · Cable Upper Chest Crossovers</h3>
+      
+      <div class="muscles"><span>Deltoides</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Coloca los mangos en los cables a la altura del pecho. Ponte de pie en el centro de la máquina de cable con un pie ligeramente delante del otro. Sujeta las agarraderas con las palmas hacia abajo y los brazos extendidos hacia los lados. Mantén una ligera flexión en los codos y activa el core. Tira de los cables juntos frente al pecho, cruzándolos uno sobre el otro. Aprieta los músculos del pecho en el punto máximo del movimiento. Suelta lentamente los cables de vuelta a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 1270. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0158-7saC5zz.gif" alt="#0158 · Cable Decline Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0158 · Cable Decline Fly</h3>
+      
+      <div class="muscles"><span>Hombros</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la máquina de cable a una posición declinada. Ponte de pie de espaldas a la máquina con los pies separados a la altura de los hombros. Sujeta las agarraderas con las palmas hacia adelante y los brazos extendidos rectos frente a ti. Manteniendo una ligera flexión en los codos, abre los brazos hacia los lados con un movimiento controlado. Haz una pausa breve en la posición completamente extendida, luego vuelve lentamente a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0158. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="block-title">Aperturas con mancuernas</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0308-yz9nUhF.gif" alt="#0308 · Dumbbell Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0308 · Dumbbell Fly</h3>
+      
+      <div class="muscles"><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Túmbate boca arriba en un banco con una mancuerna en cada mano, con las palmas enfrentadas entre sí. Extiende los brazos rectos hacia arriba sobre el pecho, con una ligera flexión en los codos. Manteniendo una ligera flexión en los codos, baja los brazos hacia los lados en un amplio arco hasta sentir un estiramiento en el pecho. Haz una pausa por un momento, luego invierte el movimiento y lleva las mancuernas de nuevo hacia arriba hasta la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0308. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0319-ESOd5Pl.gif" alt="#0319 · Dumbbell Incline Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0319 · Dumbbell Incline Fly</h3>
+      
+      <div class="muscles"><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta un banco inclinado a un ángulo de 45 grados. Siéntate en el banco con una mancuerna en cada mano, con las palmas enfrentadas entre sí. Recuéstate en el banco y empuja las mancuernas hacia arriba hasta la posición inicial, directamente por encima del pecho. Baja las mancuernas hacia los lados describiendo un amplio arco hasta sentir un estiramiento en el pecho. Haz una pausa por un momento, luego contrae los músculos del pecho para llevar las mancuernas de nuevo hacia arriba hasta la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0319. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0302-xXm4nYq.gif" alt="#0302 · Dumbbell Decline Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0302 · Dumbbell Decline Fly</h3>
+      
+      <div class="muscles"><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Túmbate en un banco declinado con los pies sujetos y la cabeza más baja que las caderas. Sostén una mancuerna en cada mano con las palmas enfrentadas entre sí y los brazos extendidos por encima del pecho. Baja las mancuernas hacia los lados describiendo un amplio arco hasta sentir un estiramiento en el pecho. Haz una pausa por un momento, luego contrae los músculos del pecho para llevar las mancuernas de vuelta a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0302. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0331-1PLE8e9.gif" alt="#0331 · Dumbbell Incline Twisted Flyes" loading="lazy">
+    <div class="card-body">
+      <h3>#0331 · Dumbbell Incline Twisted Flyes</h3>
+      
+      <div class="muscles"><span>Hombros</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta un banco inclinado a un ángulo de 45 grados y siéntate en él con una mancuerna en cada mano, con las palmas enfrentadas entre sí. Recuéstate en el banco y empuja las mancuernas hacia arriba hasta la posición inicial, directamente por encima del pecho, con los brazos extendidos. Baja las mancuernas hacia los lados describiendo un amplio arco hasta sentir un estiramiento en el pecho. Mientras bajas las mancuernas, gira las muñecas de modo que las palmas queden mirando hacia adelante en la parte inferior del movimiento. Invierte el movimiento y lleva las mancuernas de nuevo hacia arriba hasta la posición inicial, contrayendo los músculos del pecho en la parte superior. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0331. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0307-reFHapa.gif" alt="#0307 · Dumbbell Decline Twist Fly" loading="lazy">
+    <div class="card-body">
+      <h3>#0307 · Dumbbell Decline Twist Fly</h3>
+      
+      <div class="muscles"><span>Hombros</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Túmbate en un banco declinado con la cabeza más baja que las caderas. Sostén una mancuerna en cada mano con las palmas enfrentadas entre sí y los brazos extendidos rectos hacia arriba sobre el pecho. Baja las mancuernas hacia los lados describiendo un amplio arco hasta sentir un estiramiento en el pecho. Mientras bajas las mancuernas, gira las muñecas de modo que las palmas queden mirando hacia adelante en la parte inferior del movimiento. Invierte el movimiento y lleva las mancuernas de nuevo hacia arriba hasta la posición inicial, contrayendo los músculos del pecho en la parte superior. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0307. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="block-title">Pecho con peso corporal / press en polea</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/2144-nIR4Rwl.gif" alt="#2144 · Cable Seated Chest Press" loading="lazy">
+    <div class="card-body">
+      <h3>#2144 · Cable Seated Chest Press</h3>
+      
+      <div class="muscles"><span>Hombros</span><span>Tríceps</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la altura del asiento y las agarraderas del cable a una posición cómoda. Siéntate en el banco con la espalda recta y los pies apoyados planos en el suelo. Sujeta las agarraderas del cable con un agarre prono a la altura del hombro. Empuja las agarraderas hacia adelante y alejándolas del cuerpo, extendiendo los brazos por completo. Haz una pausa por un momento y luego regresa lentamente las agarraderas a la posición inicial. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 2144. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0151-7xI5MXA.gif" alt="#0151 · Cable Bench Press" loading="lazy">
+    <div class="card-body">
+      <h3>#0151 · Cable Bench Press</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ajusta la máquina de cable a la altura del pecho y coloca las agarraderas. Ponte de pie de espaldas a la máquina con los pies separados a la altura de los hombros. Sujeta las agarraderas con agarre prono y da un paso hacia adelante para crear tensión en los cables. Coloca los pies firmemente en el suelo y activa el core. Flexiona los codos y lleva las manos a la altura de los hombros, manteniendo los codos en un ángulo de 90 grados. Empuja las agarraderas hacia adelante, extendiendo completamente los brazos frente a ti. Haz una pausa breve, luego invierte lentamente el movimiento, llevando las manos de vuelta a la altura de los hombros. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 0151. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1297-HbSG1Pw.gif" alt="#1297 · Isometric Chest Squeeze" loading="lazy">
+    <div class="card-body">
+      <h3>#1297 · Isometric Chest Squeeze</h3>
+      
+      <div class="muscles"><span>Tríceps</span><span>Hombros</span></div>
+        <div class="prescription">
+          <div><b>—</b><span>Series</span></div>
+          <div><b>—</b><span>Reps</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Ponte de pie con los pies separados a la altura de los hombros y las rodillas ligeramente flexionadas. Extiende los brazos rectos frente a ti, paralelos al suelo, con las palmas una frente a la otra. Aprieta los músculos del pecho con la mayor fuerza posible, manteniendo los brazos rectos. Mantén esta posición durante unos segundos, concentrándote en contraer los músculos del pecho. Suelta la contracción y relaja los músculos del pecho. Repite el número de repeticiones deseado.</p>
+      <p class="note">Nota técnica: Número para decirme cuál fue: 1297. (Ejercicio de referencia, no es parte de ningún entreno.)</p>
+      
+    </div>
+  </div>
+
+
+
+  <footer><b>Nota de coach:</b> Dime el número del ejercicio que hicisteis y lo registro bien en el historial.</footer>
+</div>
+</body>
+</html>
