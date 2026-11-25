@@ -214,6 +214,13 @@ const wlogJS = `
     try{var v=localStorage.getItem(key(inp));if(v!=null&&!inp.value)inp.value=v;}catch(e){}
     inp.addEventListener('input',function(){save(inp);});
   });
+  // Notas libres del entreno: autoguardado en el navegador y se incluyen en el resumen.
+  var nt=document.getElementById('wnotes');
+  function nkey(){return KP+'__notas';}
+  if(nt){
+    try{var nv=localStorage.getItem(nkey());if(nv&&!nt.value)nt.value=nv;}catch(e){}
+    nt.addEventListener('input',function(){try{var v=nt.value.trim();if(v)localStorage.setItem(nkey(),nt.value);else localStorage.removeItem(nkey());}catch(e){}});
+  }
   // Botones por ejercicio: "↺ Última vez" rellena con los pesos de la última vez; "✕" vacía el ejercicio.
   function exInputs(btn){var w=btn.parentNode;while(w&&!(w.classList&&w.classList.contains('wex')))w=w.parentNode;return w?w.querySelectorAll('.win'):[];}
   document.querySelectorAll('.wrep').forEach(function(b){b.addEventListener('click',function(){
@@ -229,6 +236,7 @@ const wlogJS = `
       if(!armed){armed=true;clr.textContent='¿Seguro? Pulsa otra vez';clr.classList.add('warn');at=setTimeout(disarm,3000);return;}
       clearTimeout(at);disarm();
       document.querySelectorAll('.win').forEach(function(inp){inp.value='';try{localStorage.removeItem(key(inp));}catch(e){}});
+      if(nt){nt.value='';try{localStorage.removeItem(nkey());}catch(e){}}
       if(out){out.value='';out.hidden=true;}if(copy)copy.hidden=true;
     });
   }
@@ -247,6 +255,8 @@ const wlogJS = `
       if(!tu&&!ella) return;
       lines.push(n+': '+(tu||'-')+' | '+(ella||'-'));
     });
+    var nota=nt?nt.value.trim():'';
+    if(nota){lines.push('');lines.push('NOTAS: '+nota.replace(/\\r?\\n/g,'\\n'));}
     return lines.length>1?lines.join('\\n'):'PESOS '+fecha+' (rellena algún peso primero)';
   }
   gen.addEventListener('click',function(){
@@ -276,6 +286,10 @@ function wexRow(o) {
 }
 
 const bloquesHtml = (spec.bloques || []).map(renderBloque).join('\n\n');
+
+const notasHtml = hayRegistro ? `  <div class="block-title">📝 Notas del entreno</div>
+  <textarea id="wnotes" class="wnotes" rows="4" placeholder="Apunta aquí lo que quieras durante el entreno: qué ejercicio cambiasteis, cómo va el tobillo, qué no hicisteis, sensaciones… Se guarda solo y sale en el resumen."></textarea>
+` : '';
 
 const registroPesos = hayRegistro ? `  <div class="block-title">📋 Resumen de pesos</div>
   <p class="prose">Los pesos se rellenan <b>en cada ejercicio</b>, justo debajo de su descripción: una casilla por serie, en blanco lo que no hagáis. Los números en <b>gris</b> son lo que hicisteis la última vez: toca <b>↺ Última vez</b> si repetís, o escribe encima si cambia; la <b>✕</b> vacía ese ejercicio. 💾 Se <b>guarda solo</b> en este dispositivo, así que puedes salir y volver sin perder nada. Al terminar pulsa <b>Generar resumen</b>, <b>copia</b> el texto y pásaselo a COACH; luego, si quieres, <b>Borrar</b> para dejarlo limpio.</p>
@@ -402,6 +416,8 @@ const html = `<!DOCTYPE html>
   #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
   .wsec { background: transparent !important; color: var(--muted) !important; border: 1px solid var(--border) !important; margin-left: auto; }
   .wsec.warn { color: #ff5a3c !important; border-color: #ff5a3c !important; }
+  .wnotes { width: 100%; min-height: 96px; padding: 10px; font: 16px/1.5 inherit; font-family: inherit; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .wnotes:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
   #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
   .ref {
     font-size: 0.82rem; font-weight: 600; color: var(--text);
@@ -437,6 +453,7 @@ const html = `<!DOCTYPE html>
 ${calentamiento}
 ${bloquesHtml}
 
+${notasHtml}
 ${vuelta}
 ${registroPesos}
 ${cierre}</div>

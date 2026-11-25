@@ -87,6 +87,9 @@ Flujo:
 ### Casillas de peso DENTRO de cada ejercicio (cambio 22/11)
 Las casillas del registrador van **dentro de la tarjeta de cada ejercicio**, justo debajo de su descripción/nota (bloque "⚖️ Pesos de hoy"), para no tener que subir y bajar. Al final de la página queda solo "📋 Resumen de pesos" con **Generar resumen / Copiar / Borrar** (a petición de Noel, el botón de resumen se queda abajo). El cardio de cinta (`3666`) no lleva casillas. Lo gestiona `generar-sesion.js` (`logFor(ej)`), no hay que hacer nada al montar la sesión.
 
+### Notas libres del entreno (cambio 25/11)
+Al final de los ejercicios (antes de la vuelta a la calma) cada página con registrador lleva un campo **"📝 Notas del entreno"** (textarea `#wnotes`, autoguardado en localStorage y vaciado por **Borrar**). Su texto sale en el resumen que genera **Generar resumen**, bajo una línea `NOTAS: ...` tras las líneas de pesos. **Al recibir un resumen, lee las NOTAS**: pueden decir qué ejercicios se cambiaron/no se hicieron, el estado del tobillo, etc.; regístralo en la `notas_extra` de la sesión y en `pesos.json` según corresponda. Lo gestiona `generar-sesion.js`.
+
 ### Autoguardado del registrador (localStorage)
 El registrador de cada sesión **autoguarda cada casilla en el navegador** (localStorage, por
 artefacto/dispositivo) según se escribe y la restaura al reabrir el artefacto — así se puede salir de
