@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COACH — Metcon Full Body + Core (improvisado, en casa) — REGISTRO · 2026-09-07</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card-bg: #1a1d24;
+    --accent: #f5a623;
+    --text: #f2f2f2;
+    --muted: #9aa0ab;
+    --border: #2a2e37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  header .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  header h1 { margin: 6px 0 8px; font-size: 1.8rem; }
+  header p { color: var(--muted); margin: 0; line-height: 1.5; }
+  .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .pill b { color: var(--text); }
+  .prose { color: var(--muted); line-height: 1.6; margin-top: -6px; }
+  .block-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 32px 0 14px;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 18px;
+  }
+  .card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+  }
+  .card-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .tipo {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.02em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .tipo-comp { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
+  .tipo-acc { background: #2a2e37; color: var(--muted); }
+  .muscles { font-size: 0.8rem; color: var(--muted); margin-bottom: 10px; }
+  .muscles span {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .prescription { display: flex; gap: 18px; margin-bottom: 10px; font-size: 0.9rem; }
+  .prescription div b { display: block; font-size: 1.05rem; }
+  .prescription div span { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .instructions { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+  .note { font-size: 0.8rem; color: var(--accent); margin-top: 6px; }
+  .reglog { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 12px; }
+  .wex { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--card-bg); }
+  .wname { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .wline { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .wwho { width: 42px; flex: none; font-size: 0.75rem; color: var(--muted); }
+  .wsets { display: flex; gap: 5px; flex-wrap: wrap; }
+  .win { width: 48px; padding: 8px 4px; text-align: center; font-size: 16px; border-radius: 8px; border: 1px solid var(--border); background: #0f1115; color: var(--text); }
+  .win:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .win::placeholder { color: #565b66; }
+  .wbtns { display: flex; gap: 10px; margin-bottom: 10px; }
+  .wbtns button { padding: 10px 16px; font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; background: var(--accent); color: #0f1115; cursor: pointer; }
+  #wcopy { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+  #wout { width: 100%; min-height: 80px; padding: 10px; font: 0.9rem/1.5 ui-monospace, monospace; border-radius: 8px; border: 1px solid var(--accent); background: #0f1115; color: var(--text); resize: vertical; margin-bottom: 12px; }
+  .ref {
+    font-size: 0.82rem; font-weight: 600; color: var(--text);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 6px;
+    margin: 8px 0 0;
+  }
+  footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 560px) {
+    .card { grid-template-columns: 1fr; }
+    .card img { width: 100%; height: auto; max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COACH · Sesión de hoy</div>
+    <h1>Metcon Full Body + Core (improvisado, en casa) — REGISTRO</h1>
+    <p>REGISTRO de lo que montaste tú solo (no la sesión planificada). Te saliste del guion de máquinas/tobillo y te fuiste a un metcon estilo CrossFit: 5 rondas de un circuito Full Body + un finisher de core de 10 min a intervalos. Lo apunto tal cual para que quede en el histórico. Nota de coach: los burpees llevan salto e impacto — si el tobillo estaba tocado, ojo con esto; si aguantó bien, buena señal de que va mejorando (pero vigílalo estos días).</p>
+    <div class="meta-row">
+      <div class="pill">Entorno: <b>Casa / material básico (kettlebell)</b></div>
+      <div class="pill">Tiempo: <b>~25-30 min</b></div>
+      <div class="pill">Energía: <b>Alta</b></div>
+      <div class="pill">Objetivo: <b>Definición / pérdida de grasa</b></div>
+    </div>
+  </header>
+
+  <div class="block-title">🔥 Calentamiento</div>
+  <p class="prose">1 km de carrera suave en cinta (arranque habitual) + movilidad general antes de arrancar el circuito.</p>
+
+  <div class="block-title">🔁 Circuito — 5 rondas (For Time / AMRAP)</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1160-dK9394r.gif" alt="Burpees" loading="lazy">
+    <div class="card-body">
+      <h3>Burpees</h3>
+      
+      <div class="muscles"><span>Full body</span><span>Cardio</span></div>
+        <div class="prescription">
+          <div><b>5 rondas</b><span>Series</span></div>
+          <div><b>5</b><span>Reps</span></div>
+          <div><b>encadenado</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Pecho al suelo, subes y saltas con palmada arriba. 5 por ronda.</p>
+      <p class="note">Nota técnica: el que mete el pico cardiovascular y el impacto — si el tobillo protesta, se puede escalar a burpee sin salto (step-back).</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0549-UHJlbu3.gif" alt="Kettlebell swing" loading="lazy">
+    <div class="card-body">
+      <h3>Kettlebell swing</h3>
+      
+      <div class="muscles"><span>Glúteos</span><span>Isquiotibiales</span><span>Core</span></div>
+        <div class="prescription">
+          <div><b>5 rondas</b><span>Series</span></div>
+          <div><b>7</b><span>Reps</span></div>
+          <div><b>encadenado</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Bisagra de cadera, la kettlebell sube por empuje de cadera (no de brazos), hasta la altura de los ojos/hombros. 7 por ronda.</p>
+      <p class="note">Nota técnica: potencia de cadera y espalda baja — swing ruso a la altura de los ojos. Aprieta glúteo arriba.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0662-I4hDWkc.gif" alt="Flexiones (push-ups)" loading="lazy">
+    <div class="card-body">
+      <h3>Flexiones (push-ups)</h3>
+      
+      <div class="muscles"><span>Pecho</span><span>Tríceps</span><span>Hombro</span></div>
+        <div class="prescription">
+          <div><b>5 rondas</b><span>Series</span></div>
+          <div><b>10</b><span>Reps</span></div>
+          <div><b>encadenado</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Cuerpo en línea, codos ~45°, pecho al suelo y arriba. 10 por ronda.</p>
+      <p class="note">Nota técnica: empuje de tronco superior — línea recta, sin que caiga la cadera. Se escalan de rodillas si el pico de fatiga aprieta.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/3679-6ZCiYWQ.gif" alt="Sit-ups (abdominales)" loading="lazy">
+    <div class="card-body">
+      <h3>Sit-ups (abdominales)</h3>
+      
+      <div class="muscles"><span>Abdomen</span><span>Core</span></div>
+        <div class="prescription">
+          <div><b>5 rondas</b><span>Series</span></div>
+          <div><b>15</b><span>Reps</span></div>
+          <div><b>fin de ronda</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Tumbado, subes el tronco completo hasta sentarte y bajas controlado. 15 por ronda.</p>
+      <p class="note">Nota técnica: los que te resultan fáciles — perfectos como remate de ronda cuando ya vas fundido.</p>
+    </div>
+  </div>
+
+  <div class="block-title">🔥 Finisher de core — 10 min a intervalos (30s ON / 30s OFF)</div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0464-CosupLu.gif" alt="Plancha" loading="lazy">
+    <div class="card-body">
+      <h3>Plancha</h3>
+      
+      <div class="muscles"><span>Core</span><span>Abdomen</span></div>
+        <div class="prescription">
+          <div><b>intervalos</b><span>Series</span></div>
+          <div><b>30s ON / 30s OFF</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Plancha sobre antebrazos, cuerpo en línea, apretando glúteo y abdomen (aguante isométrico).</p>
+      <p class="note">Nota técnica: uno de los ejercicios del bloque de 10 min de core variado.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0489-zhMwOwE.gif" alt="Superman (extensión lumbar)" loading="lazy">
+    <div class="card-body">
+      <h3>Superman (extensión lumbar)</h3>
+      
+      <div class="muscles"><span>Lumbar</span><span>Glúteos</span></div>
+        <div class="prescription">
+          <div><b>intervalos</b><span>Series</span></div>
+          <div><b>30s ON / 30s OFF</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Boca abajo, elevas brazos y piernas a la vez apretando glúteo y espalda baja, y bajas controlado.</p>
+      <p class="note">Nota técnica: compensa el trabajo de abdomen con la cadena posterior — no tires del cuello.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0274-TFqbd8t.gif" alt="Crunch" loading="lazy">
+    <div class="card-body">
+      <h3>Crunch</h3>
+      
+      <div class="muscles"><span>Abdomen</span></div>
+        <div class="prescription">
+          <div><b>intervalos</b><span>Series</span></div>
+          <div><b>30s ON / 30s OFF</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Tumbado, despegas los omóplatos enrollando el abdomen (recorrido corto) y bajas controlado.</p>
+      <p class="note">Nota técnica: recorrido corto y foco en apretar, no en subir mucho.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0267-kjJ3VoQ.gif" alt="Crunch con peso" loading="lazy">
+    <div class="card-body">
+      <h3>Crunch con peso</h3>
+      
+      <div class="muscles"><span>Abdomen</span></div>
+        <div class="prescription">
+          <div><b>intervalos</b><span>Series</span></div>
+          <div><b>30s ON / 30s OFF</b><span>Tiempo</span></div>
+          <div><b>—</b><span>Descanso</span></div>
+        </div>
+      
+      <p class="instructions">Igual que el crunch pero sujetando un peso (disco/mancuerna) sobre el pecho o detrás de la cabeza para añadir carga.</p>
+      <p class="note">Nota técnica: la versión cargada — sube el estímulo sin cambiar el patrón.</p>
+    </div>
+  </div>
+
+  <div class="block-title">🧘 Vuelta a la calma</div>
+  <p class="prose">1 km en cinta de cierre + estiramientos de cadera, isquios y core. Hielo en el tobillo si notaste molestia con los burpees.</p>
+
+  <div class="block-title">📋 Registrar pesos</div>
+  <p class="prose">Una casilla por serie: mete el peso de cada serie según entrenáis. Deja en blanco lo que no hagáis. Al terminar pulsa <b>Generar</b> y <b>Copia</b> el texto para pegárselo a COACH.</p>
+  <div class="reglog">
+    <div class="wex">
+      <div class="wname">Burpees</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Burpees" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Burpees" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Burpees" data-who="tu" data-set="2" placeholder="3"><input class="win" data-name="Burpees" data-who="tu" data-set="3" placeholder="4"><input class="win" data-name="Burpees" data-who="tu" data-set="4" placeholder="5"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Burpees" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Burpees" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Burpees" data-who="ella" data-set="2" placeholder="3"><input class="win" data-name="Burpees" data-who="ella" data-set="3" placeholder="4"><input class="win" data-name="Burpees" data-who="ella" data-set="4" placeholder="5"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Kettlebell swing</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Kettlebell swing" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Kettlebell swing" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Kettlebell swing" data-who="tu" data-set="2" placeholder="3"><input class="win" data-name="Kettlebell swing" data-who="tu" data-set="3" placeholder="4"><input class="win" data-name="Kettlebell swing" data-who="tu" data-set="4" placeholder="5"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Kettlebell swing" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Kettlebell swing" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Kettlebell swing" data-who="ella" data-set="2" placeholder="3"><input class="win" data-name="Kettlebell swing" data-who="ella" data-set="3" placeholder="4"><input class="win" data-name="Kettlebell swing" data-who="ella" data-set="4" placeholder="5"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Flexiones (push-ups)</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Flexiones (push-ups)" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Flexiones (push-ups)" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Flexiones (push-ups)" data-who="tu" data-set="2" placeholder="3"><input class="win" data-name="Flexiones (push-ups)" data-who="tu" data-set="3" placeholder="4"><input class="win" data-name="Flexiones (push-ups)" data-who="tu" data-set="4" placeholder="5"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Flexiones (push-ups)" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Flexiones (push-ups)" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Flexiones (push-ups)" data-who="ella" data-set="2" placeholder="3"><input class="win" data-name="Flexiones (push-ups)" data-who="ella" data-set="3" placeholder="4"><input class="win" data-name="Flexiones (push-ups)" data-who="ella" data-set="4" placeholder="5"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Sit-ups (abdominales)</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Sit-ups (abdominales)" data-who="tu" data-set="0" placeholder="1"><input class="win" data-name="Sit-ups (abdominales)" data-who="tu" data-set="1" placeholder="2"><input class="win" data-name="Sit-ups (abdominales)" data-who="tu" data-set="2" placeholder="3"><input class="win" data-name="Sit-ups (abdominales)" data-who="tu" data-set="3" placeholder="4"><input class="win" data-name="Sit-ups (abdominales)" data-who="tu" data-set="4" placeholder="5"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Sit-ups (abdominales)" data-who="ella" data-set="0" placeholder="1"><input class="win" data-name="Sit-ups (abdominales)" data-who="ella" data-set="1" placeholder="2"><input class="win" data-name="Sit-ups (abdominales)" data-who="ella" data-set="2" placeholder="3"><input class="win" data-name="Sit-ups (abdominales)" data-who="ella" data-set="3" placeholder="4"><input class="win" data-name="Sit-ups (abdominales)" data-who="ella" data-set="4" placeholder="5"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Plancha</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Plancha" data-who="tu" data-set="0" placeholder="1"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Plancha" data-who="ella" data-set="0" placeholder="1"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Superman (extensión lumbar)</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Superman (extensión lumbar)" data-who="tu" data-set="0" placeholder="1"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Superman (extensión lumbar)" data-who="ella" data-set="0" placeholder="1"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Crunch</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Crunch" data-who="tu" data-set="0" placeholder="1"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Crunch" data-who="ella" data-set="0" placeholder="1"></div></div>
+    </div>
+    <div class="wex">
+      <div class="wname">Crunch con peso</div>
+      <div class="wline"><span class="wwho">Noel</span><div class="wsets"><input class="win" data-name="Crunch con peso" data-who="tu" data-set="0" placeholder="1"></div></div>
+      <div class="wline"><span class="wwho">Vicky</span><div class="wsets"><input class="win" data-name="Crunch con peso" data-who="ella" data-set="0" placeholder="1"></div></div>
+    </div>
+  </div>
+  <div class="wbtns"><button type="button" id="wgen">Generar resumen</button><button type="button" id="wcopy" hidden>Copiar</button></div>
+  <textarea id="wout" readonly hidden></textarea>
+  <script>
+(function(){
+  var fecha="2026-09-07";
+  var gen=document.getElementById('wgen'),copy=document.getElementById('wcopy'),out=document.getElementById('wout');
+  if(!gen) return;
+  function build(){
+    var order=[],data={};
+    document.querySelectorAll('.win').forEach(function(inp){
+      var n=inp.getAttribute('data-name'),who=inp.getAttribute('data-who'),set=+inp.getAttribute('data-set');
+      if(order.indexOf(n)<0) order.push(n);
+      data[n]=data[n]||{tu:[],ella:[]};
+      data[n][who][set]=(inp.value||'').trim();
+    });
+    var lines=['PESOS '+fecha];
+    order.forEach(function(n){
+      var tu=(data[n].tu||[]).filter(function(v){return v;}).join('/');
+      var ella=(data[n].ella||[]).filter(function(v){return v;}).join('/');
+      if(!tu&&!ella) return;
+      lines.push(n+': '+(tu||'-')+' | '+(ella||'-'));
+    });
+    return lines.length>1?lines.join('\n'):'PESOS '+fecha+' (rellena algún peso primero)';
+  }
+  gen.addEventListener('click',function(){
+    out.value=build(); out.hidden=false; copy.hidden=false;
+    out.style.height='auto'; out.style.height=(out.scrollHeight+4)+'px';
+  });
+  copy.addEventListener('click',function(){
+    out.select(); out.setSelectionRange(0,99999);
+    var done=function(){copy.textContent='¡Copiado!';setTimeout(function(){copy.textContent='Copiar';},1500);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(out.value).then(done,function(){try{document.execCommand('copy');done();}catch(e){}});}
+    else{try{document.execCommand('copy');done();}catch(e){}}
+  });
+})();</script>
+
+  <footer><b>Nota de coach:</b> buen apaño improvisado: metcon Full Body corto e intenso + core variado, justo el tipo de sesión que te sale natural viniendo de CrossFit. Queda apuntado en el histórico. Lo único a vigilar es el tobillo por el impacto de los burpees — si aguantó sin molestia, vamos por buen camino para volver a la comba y la sentadilla libre. Sin pesos que registrar salvo que quieras apuntar la kettlebell del swing; dímela y la guardo.</footer>
+</div>
+</body>
+</html>

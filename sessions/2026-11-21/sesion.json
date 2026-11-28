@@ -1,0 +1,150 @@
+{
+  "fecha": "2026-11-21",
+  "patron": "Empuje corto (pecho / hombro / tríceps)",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "~45-50 min de plan (en la práctica, ~1h10-1h30 con esperas)",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#e8467c",
+  "intro": "Empuje corto, tras el superior del miércoles y la pierna del jueves: hoy solo EMPUJE (pecho, hombro y tríceps), así el tirón descansa y queda para el siguiente día. Plan de 45-50 min (con esperas, lo normal es ~1h10). Estructura: 2 básicos (press de pecho y press de hombro) + 3 accesorios, de los cuales 2 son novedad respecto al miércoles: pec deck y laterales en POLEA (en vez de mancuerna). Cierre con el tríceps en pushdown. Al final, 2 🔸 OPCIONALES (press inclinado y crunch con peso) solo si vais bien de tiempo. Todo sentado o de pie sin impacto, así que el tobillo de Noel no tiene límite hoy. Formato gym: SERIES de cada ejercicio seguidas (con su descanso) antes de pasar al siguiente. Si hay cola, los accesorios se reordenan; los dos básicos primero. Debajo de cada ejercicio, vuestra última referencia.",
+  "calentamiento": "5 min, sin alargarlo. Noel: bici suave o movilidad de hombro y cadera (sin impacto por el tobillo). Vicky: 1 km a trote suave si te apetece, o lo mismo que Noel. Después, 1-2 series de aproximación ligeras en el press de pecho y unas rotaciones de hombro con goma o mancuernas muy ligeras.",
+  "bloques": [
+    {
+      "titulo": "🏋️ Básicos (3 series cada uno)",
+      "ejercicios": [
+        {
+          "id": "0577",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "75s",
+          "tipo": "compuesto",
+          "referencia": "Noel 40/45/50 kg · Vicky 17,5/25/30 kg (18/11)",
+          "musculos": [
+            "Pecho",
+            "Tríceps",
+            "Hombro anterior"
+          ],
+          "instruccion": "Sentado en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlado notando el pecho, con las escápulas retraídas.",
+          "nota": "empuje de pecho, en fresco. El miércoles subisteis un escalón (40/45/50 y 17,5/25/30): hoy repetid ese peso y buscad 10-12 limpias antes de subir más. Vicky: muñeca recta; si molesta, pasa al pec deck."
+        },
+        {
+          "id": "0426",
+          "nombre": "Press de hombro sentado con mancuernas",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "70s",
+          "tipo": "compuesto",
+          "referencia": "Noel 8/10/12 kg · Vicky 6/8/10 kg (mancuerna, 10/11)",
+          "musculos": [
+            "Hombro",
+            "Tríceps"
+          ],
+          "instruccion": "Sentado en un banco con respaldo casi vertical (~85-90°), mancuernas a la altura de los hombros y palmas al frente. Empuja arriba sin bloquear del todo ni arquear la lumbar, y baja controlado hasta los hombros. Abdomen apretado.",
+          "nota": "empuje vertical, el hombro frontal con peso (el miércoles trabajasteis el lateral y el posterior). Sentado con respaldo casi recto, estable para el tobillo. Si el 12 sale limpio en la última serie, sube un escalón."
+        }
+      ]
+    },
+    {
+      "titulo": "✨ Accesorios (3 series, orden flexible)",
+      "ejercicios": [
+        {
+          "id": "0596",
+          "nombre": "Pec deck / Contractor de pecho",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "referencia": "Noel 25/27,5/30 kg · Vicky 12,5/15/17,5 kg (28/09)",
+          "musculos": [
+            "Pecho"
+          ],
+          "instruccion": "Sentado con la espalda apoyada, codos a la altura de los hombros (o agarres según la máquina). Junta los brazos delante del pecho apretando 1s y vuelve lento sin soltar el peso de golpe.",
+          "nota": "novedad de hoy: aislamiento de pecho, hace semanas que no lo tocáis. Pausa de 1s al cerrar y bajada de 2-3s; menos peso y más sensación. Los pesos son de septiembre: empezad cómodos."
+        },
+        {
+          "id": "0178",
+          "nombre": "Elevaciones laterales en polea",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "50s",
+          "tipo": "accesorio",
+          "referencia": "sin historial en polea (con mancuerna: Noel 6 kg · Vicky 4 kg): empezad ligeros, 2-4 kg",
+          "musculos": [
+            "Hombro lateral"
+          ],
+          "instruccion": "De pie de lado a la polea baja, agarre con la mano del lado contrario. Sube el brazo en abanico hasta la altura del hombro con el codo ligeramente flexionado y baja lento, sin balanceo del tronco.",
+          "nota": "novedad de hoy: el lateral en polea mantiene tensión constante, también abajo, a diferencia de la mancuerna. Pesa muy poco; el peso mínimo ya se nota. Hacedlo por lado."
+        },
+        {
+          "id": "0201",
+          "nombre": "Tríceps en pushdown (polea alta)",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "50s",
+          "tipo": "accesorio",
+          "referencia": "Noel 15/17,5 kg · Vicky 12,5/15 kg (pushdown, 15/11)",
+          "musculos": [
+            "Tríceps"
+          ],
+          "instruccion": "De pie frente a la polea alta con cuerda o barra. Codos pegados al costado y quietos; empuja hacia abajo estirando los codos del todo, aprieta el tríceps 1s y sube controlado sin separar los codos del cuerpo.",
+          "nota": "pushdown, hacia abajo (el overhead del miércoles fue el otro: hacia arriba). Tres series para cerrar el tríceps. Solo se mueve el antebrazo, codos quietos."
+        }
+      ]
+    },
+    {
+      "titulo": "🔸 OPCIONALES — solo si vais bien de tiempo (2 series cada uno)",
+      "ejercicios": [
+        {
+          "id": "0314",
+          "nombre": "🔸 OPCIONAL — Press inclinado con mancuernas",
+          "series": "2",
+          "reps": "10-12",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "referencia": "Noel 10/12 kg · Vicky 10/12 kg (mancuerna, 18/11)",
+          "musculos": [
+            "Pecho superior",
+            "Hombro anterior",
+            "Tríceps"
+          ],
+          "instruccion": "En un banco inclinado (~30°), mancuernas a la altura del pecho con codos a ~45°. Empuja hacia arriba juntando ligeramente las mancuernas sin chocarlas y baja controlado hasta notar el estiramiento del pecho.",
+          "nota": "pecho alto: el miércoles lo hicisteis de opcional. Hoy, si hay tiempo, a repetir con el mismo peso. OPCIONAL."
+        },
+        {
+          "id": "2143",
+          "nombre": "🔸 OPCIONAL — Elevación lateral hasta arriba (around the world)",
+          "series": "2",
+          "reps": "10-12",
+          "descanso": "45s",
+          "tipo": "accesorio",
+          "referencia": "sin historial: empezad MUY ligeros (Noel 4 kg · Vicky 2 kg) y apuntad lo que salga",
+          "musculos": [
+            "Hombro",
+            "Deltoide lateral",
+            "Trapecio"
+          ],
+          "instruccion": "De pie, mancuernas a los lados con las palmas hacia dentro. Con los brazos casi estirados, súbelos en arco por los costados hasta juntar las mancuernas por encima de la cabeza, como dibujando un círculo alrededor del cuerpo, y baja lento por el mismo camino (unos 3 segundos).",
+          "nota": "novedad como OPCIONAL, a probar: hombro completo, el peso se nota mucho con los brazos estirados. Tronco quieto, sin balanceo ni encoger los hombros hacia las orejas. Si lo prefieres a las laterales en polea, dímelo y lo cambiamos en próximos entrenos. OPCIONAL."
+        },
+        {
+          "id": "0274",
+          "nombre": "🔸 OPCIONAL — Crunch en suelo con peso (balón medicinal o disco)",
+          "series": "2",
+          "reps": "12-15",
+          "descanso": "40s",
+          "tipo": "accesorio",
+          "referencia": "Noel 10/10/10 kg · Vicky 6/6/6 kg (15/11)",
+          "musculos": [
+            "Abdomen",
+            "Core"
+          ],
+          "instruccion": "Tumbado boca arriba con las rodillas dobladas y los pies apoyados en el suelo. Sujeta el balón medicinal (o un disco/mancuerna) contra el pecho. Enrolla el abdomen despegando los omóplatos (recorrido corto), aprieta arriba 1s y baja controlado.",
+          "nota": "core en el suelo para cerrar, solo si queda tiempo. El GIF muestra el crunch sin peso: tú añades el balón o disco. Sube enrollando el abdomen, no tirando del cuello. OPCIONAL."
+        }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: pecho en marco de puerta, hombro cruzado, tríceps por encima de la cabeza y cuello suave. Sin kilómetro de cinta para Noel (tobillo). Buen momento para tus ejercicios de tobillo del fisio.",
+  "cierre": "Empuje corto: 2 básicos con progresión (pecho y hombro), pec deck y laterales en polea como novedad, y tríceps para cerrar. Los opcionales, solo si sobra tiempo. Tirón para la próxima. Rellenad el registrador y me lo pasáis. ¡A darle con cabeza! 💪",
+  "notas_extra": "Sabado 21/11, Noel+Vicky, energia media, sin excursion. Empuje corto tras superior (18/11) e inferior (19/11, hecho el jueves). Noel: rehab tobillo, sin carga del pie; estado del tobillo/fisio no confirmado hoy. Novedades: pec deck 0596 (28/09), laterales en polea 0178 (sin historial). Opcionales: inclinado 0314, crunch con peso 0274. Anadido around the world 2143 como opcional (a peticion de Noel; alternativa de hombro lateral para futuros entrenos, a criterio de COACH)."
+}

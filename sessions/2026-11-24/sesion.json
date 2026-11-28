@@ -1,0 +1,150 @@
+{
+  "fecha": "2026-11-24",
+  "patron": "Tren superior (empuje + tirón) — básicos + novedades",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "~45-50 min de plan (en la práctica, ~1h10-1h30 con esperas)",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#4aa3ff",
+  "intro": "Tren superior para hoy, tras 5 días de descanso y con Noel en su último día de rehabilitación (todo es sentado o de pie sin impacto, así que el tobillo no limita nada). Plan de 45-50 min (con esperas, lo normal es ~1h10). Estructura: 4 básicos de siempre (press de pecho, jalón, remo y press de hombro) + 2 novedades respecto al superior del 18/11: pec deck y elevaciones laterales con mancuernas. Al final, 2 🔸 OPCIONALES (curl martillo y el around the world, el que queríais probar) solo si vais bien de tiempo. Formato gym: SERIES de cada ejercicio seguidas (con su descanso) antes de pasar al siguiente. Si hay cola, los accesorios se reordenan; los básicos mejor primero, en fresco. Los pesos se apuntan en cada ejercicio, justo debajo; abajo del todo queda el botón de resumen.",
+  "calentamiento": "5 min, sin alargarlo. Noel: bici suave o movilidad de hombro y cadera (sin impacto: sigues sin cinta hasta que te vea el fisio). Vicky: 1 km a trote suave si te apetece, o lo mismo que Noel. Después, 1-2 series de aproximación ligeras en el press de pecho y unas rotaciones de hombro con goma o mancuernas muy ligeras.",
+  "bloques": [
+    {
+      "titulo": "🏋️ Básicos (3 series cada uno)",
+      "ejercicios": [
+        {
+          "id": "0577",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "75s",
+          "tipo": "compuesto",
+          "referencia": "Noel 40/45/50 kg · Vicky 17,5/25/30 kg (18/11)",
+          "musculos": [
+            "Pecho",
+            "Tríceps",
+            "Hombro anterior"
+          ],
+          "instruccion": "Sentado en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlado notando el pecho, con las escápulas retraídas.",
+          "nota": "empuje de pecho, en fresco. El 18/11 subisteis un escalón: hoy repetid ese peso y buscad 10-12 limpias antes de subir más. Vicky: muñeca recta; si molesta, pasa al pec deck."
+        },
+        {
+          "id": "0198",
+          "nombre": "Vertical Traction / Jalón vertical",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "75s",
+          "tipo": "compuesto",
+          "referencia": "Noel 35/40/45 kg · Vicky 25/30/35 kg (18/11)",
+          "musculos": [
+            "Dorsales",
+            "Espalda"
+          ],
+          "instruccion": "En la Vertical Traction (o jalón al pecho), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA, baja el agarre hasta el pecho apretando el dorsal y sube controlado sin soltar la tensión.",
+          "nota": "tirón vertical. Pecho arriba, tira con los codos hacia los bolsillos y aprieta abajo. Lleváis varias sesiones con el mismo peso: si las dos primeras salen limpias, probad un escalón en la última serie."
+        },
+        {
+          "id": "0861",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "75s",
+          "tipo": "compuesto",
+          "referencia": "Noel 40/45/50 kg · Vicky 25/30/35 kg (18/11)",
+          "musculos": [
+            "Espalda",
+            "Dorsales",
+            "Romboides"
+          ],
+          "instruccion": "Sentado en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.",
+          "nota": "tirón horizontal. La fuerza sale de la ESPALDA: aprieta juntando los omóplatos y mantén el tronco quieto. 10-12 limpias, sin ir al fallo."
+        },
+        {
+          "id": "0426",
+          "nombre": "Press de hombro sentado con mancuernas",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "70s",
+          "tipo": "compuesto",
+          "referencia": "Noel 8/10/12 kg · Vicky 6/8/10 kg (mancuerna, 10/11)",
+          "musculos": [
+            "Hombro",
+            "Tríceps"
+          ],
+          "instruccion": "Sentado en un banco con respaldo casi vertical (~85-90°), mancuernas a la altura de los hombros y palmas al frente. Empuja arriba sin bloquear del todo ni arquear la lumbar, y baja controlado hasta los hombros. Abdomen apretado.",
+          "nota": "empuje vertical, el hombro frontal con peso. Sentado con respaldo casi recto, estable. Si el 12 sale limpio en la última serie, sube un escalón."
+        }
+      ]
+    },
+    {
+      "titulo": "✨ Novedades de hoy (3 series, orden flexible)",
+      "ejercicios": [
+        {
+          "id": "0596",
+          "nombre": "Pec deck / Contractor de pecho",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "referencia": "Noel 25/27,5/30 kg · Vicky 12,5/15/17,5 kg (28/09)",
+          "musculos": [
+            "Pecho"
+          ],
+          "instruccion": "Sentado con la espalda apoyada, codos a la altura de los hombros (o agarres según la máquina). Junta los brazos delante del pecho apretando 1s y vuelve lento sin soltar el peso de golpe.",
+          "nota": "aislamiento de pecho para rematar: hace semanas que no lo tocáis. Pausa de 1s al cerrar y bajada de 2-3s; menos peso y más sensación. Los pesos son de septiembre: empezad cómodos."
+        },
+        {
+          "id": "0334",
+          "nombre": "Elevaciones laterales con mancuernas",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "50s",
+          "tipo": "accesorio",
+          "referencia": "Noel 6/6/6 kg · Vicky 4/4/4 kg (mancuerna, 18/11)",
+          "musculos": [
+            "Hombro lateral"
+          ],
+          "instruccion": "De pie, mancuernas a los lados, codos ligeramente flexionados. Sube los brazos en abanico hasta la altura de los hombros (meñique un pelín arriba) y baja lento, sin balanceo.",
+          "nota": "deltoide lateral con mancuernas, sin tocar las poleas (que suelen estar llenas). Mejor 12-15 limpias que impulso. Si el 6/4 kg va fácil, sube un escalón."
+        }
+      ]
+    },
+    {
+      "titulo": "🔸 OPCIONALES — solo si vais bien de tiempo (2 series cada uno)",
+      "ejercicios": [
+        {
+          "id": "0313",
+          "nombre": "🔸 OPCIONAL — Curl martillo",
+          "series": "2",
+          "reps": "10-12",
+          "descanso": "45s",
+          "tipo": "accesorio",
+          "referencia": "Noel 10/12/12 kg · Vicky 6/6/6 kg (mancuerna, 25/10)",
+          "musculos": [
+            "Bíceps",
+            "Braquial"
+          ],
+          "instruccion": "De pie o sentado con mancuernas, agarre neutro (palmas mirándose). Sube alternando o a la vez sin girar la muñeca, codos pegados al cuerpo, y baja controlado. Sin balanceo del tronco.",
+          "nota": "bíceps y braquial con mancuernas, en vez del curl en polea. Bajada controlada y sin balanceo. OPCIONAL."
+        },
+        {
+          "id": "2143",
+          "nombre": "🔸 OPCIONAL — Elevación lateral hasta arriba (around the world)",
+          "series": "2",
+          "reps": "10-12",
+          "descanso": "45s",
+          "tipo": "accesorio",
+          "referencia": "sin historial: empezad MUY ligeros (Noel 4 kg · Vicky 2 kg) y apuntad lo que salga",
+          "musculos": [
+            "Hombro",
+            "Deltoide lateral",
+            "Trapecio"
+          ],
+          "instruccion": "De pie, mancuernas a los lados con las palmas hacia dentro. Con los brazos casi estirados, súbelos en arco por los costados hasta juntar las mancuernas por encima de la cabeza, como dibujando un círculo alrededor del cuerpo, y baja lento por el mismo camino (unos 3 segundos).",
+          "nota": "el que queríais probar. Hombro completo; con los brazos estirados el peso se nota mucho. Tronco quieto, sin encoger los hombros. Si lo preferís a las laterales, me lo decís y lo rotamos. OPCIONAL."
+        }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: pecho en marco de puerta, dorsal agarrado inclinándote, hombro cruzado y tríceps por encima de la cabeza. Sin cinta para Noel hasta que te vea el fisio. Buen momento para tus ejercicios de tobillo de hoy, el último día de rehabilitación.",
+  "cierre": "Tren superior: los 4 básicos para seguir midiendo progreso (y con pesos subidos el 18/11), 2 novedades (pec deck y laterales) y, si sobra tiempo, el curl martillo y el around the world. Noel: último día de rehabilitación, enhorabuena por la constancia; cuéntame qué te dice el fisio y planificamos la vuelta a la pierna. Rellenad los pesos en cada ejercicio y me pasáis el resumen. ¡A darle con cabeza! 💪",
+  "notas_extra": "Martes 24/11, Noel+Vicky, energia asumida media (no confirmada), gym. Noel: ultimo dia de rehab (fisio aun no visto). Entrenos anteriores: superior 18/11, inferior 19/11; empuje 21/11 y tiron 22/11 NO realizados. Novedades: pec deck 0596 (28/09), laterales polea 0178 (sin historial). Opcionales: curl polea 0868, around the world 2143 (sin historial). CAMBIO: laterales polea 0178 -> laterales mancuerna 0334 y curl polea 0868 -> martillo 0313 (poleas cruzadas llenas, a Noel no le gusta el de polea). REALIZADO 24/11: press pecho, jalon, press hombro, pec deck (5/10/10 | 2,5; confirmado pec deck, pesos anteriores dudosos), laterales mancuerna, + triceps PUSHDOWN (sin pesos) + 4 rondas de plancha. NO: remo, martillo, around the world. InBody Noel 24/11."
+}

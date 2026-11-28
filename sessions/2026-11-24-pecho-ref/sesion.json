@@ -1,0 +1,160 @@
+{
+  "fecha": "2026-11-24-pecho-ref",
+  "patron": "Panel de referencia — ejercicios de pecho parecidos al pec deck",
+  "entorno": "Gimnasio con máquinas",
+  "tiempo": "—",
+  "energia": "—",
+  "objetivo": "Identificar el ejercicio de pecho que hicisteis",
+  "acento": "#e8467c",
+  "sin_registrador": true,
+  "intro": "Panel solo para identificar el ejercicio, no es un entreno. Mira los GIFs y dime el NÚMERO (#xxxx) del que hicisteis el 24/11 con 5/10/10 kg (Noel) y 2,5 kg (Vicky). El primero es el que yo llamo pec deck / contractor de pecho. Luego vienen otras máquinas de pecho, aperturas en polea y aperturas con mancuernas.",
+  "bloques": [
+    {
+      "titulo": "⭐ Lo que yo tengo anotado como pec deck",
+      "ejercicios": [
+        {
+          "id": "0596",
+          "nombre": "#0596 · Lever Seated Fly",
+          "nota": "Número para decirme cuál fue: 0596. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        }
+      ]
+    },
+    {
+      "titulo": "Otras máquinas de pecho (palanca / Technogym)",
+      "ejercicios": [
+        {
+          "id": "0577",
+          "nombre": "#0577 · Lever Chest Press",
+          "nota": "Número para decirme cuál fue: 0577. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0576",
+          "nombre": "#0576 · Lever Chest Press",
+          "nota": "Número para decirme cuál fue: 0576. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "1299",
+          "nombre": "#1299 · Lever Incline Chest Press",
+          "nota": "Número para decirme cuál fue: 1299. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "1479",
+          "nombre": "#1479 · Lever Incline Chest Press V. 2",
+          "nota": "Número para decirme cuál fue: 1479. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "1300",
+          "nombre": "#1300 · Lever Decline Chest Press",
+          "nota": "Número para decirme cuál fue: 1300. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "3758",
+          "nombre": "#3758 · Lever Standing Chest Press",
+          "nota": "Número para decirme cuál fue: 3758. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "1301",
+          "nombre": "#1301 · Machine Inner Chest Press",
+          "nota": "Número para decirme cuál fue: 1301. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        }
+      ]
+    },
+    {
+      "titulo": "Aperturas y cruces en polea",
+      "ejercicios": [
+        {
+          "id": "0171",
+          "nombre": "#0171 · Cable Incline Fly",
+          "nota": "Número para decirme cuál fue: 0171. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0179",
+          "nombre": "#0179 · Cable Low Fly",
+          "nota": "Número para decirme cuál fue: 0179. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0188",
+          "nombre": "#0188 · Cable Middle Fly",
+          "nota": "Número para decirme cuál fue: 0188. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0227",
+          "nombre": "#0227 · Cable Standing Fly",
+          "nota": "Número para decirme cuál fue: 0227. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0185",
+          "nombre": "#0185 · Cable Lying Fly",
+          "nota": "Número para decirme cuál fue: 0185. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "1269",
+          "nombre": "#1269 · Cable Standing Up Straight Crossovers",
+          "nota": "Número para decirme cuál fue: 1269. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "1270",
+          "nombre": "#1270 · Cable Upper Chest Crossovers",
+          "nota": "Número para decirme cuál fue: 1270. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0158",
+          "nombre": "#0158 · Cable Decline Fly",
+          "nota": "Número para decirme cuál fue: 0158. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        }
+      ]
+    },
+    {
+      "titulo": "Aperturas con mancuernas",
+      "ejercicios": [
+        {
+          "id": "0308",
+          "nombre": "#0308 · Dumbbell Fly",
+          "nota": "Número para decirme cuál fue: 0308. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0319",
+          "nombre": "#0319 · Dumbbell Incline Fly",
+          "nota": "Número para decirme cuál fue: 0319. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0302",
+          "nombre": "#0302 · Dumbbell Decline Fly",
+          "nota": "Número para decirme cuál fue: 0302. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0331",
+          "nombre": "#0331 · Dumbbell Incline Twisted Flyes",
+          "nota": "Número para decirme cuál fue: 0331. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0307",
+          "nombre": "#0307 · Dumbbell Decline Twist Fly",
+          "nota": "Número para decirme cuál fue: 0307. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        }
+      ]
+    },
+    {
+      "titulo": "Pecho con peso corporal / press en polea",
+      "ejercicios": [
+        {
+          "id": "2144",
+          "nombre": "#2144 · Cable Seated Chest Press",
+          "nota": "Número para decirme cuál fue: 2144. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "0151",
+          "nombre": "#0151 · Cable Bench Press",
+          "nota": "Número para decirme cuál fue: 0151. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        },
+        {
+          "id": "1297",
+          "nombre": "#1297 · Isometric Chest Squeeze",
+          "nota": "Número para decirme cuál fue: 1297. (Ejercicio de referencia, no es parte de ningún entreno.)"
+        }
+      ]
+    }
+  ],
+  "vuelta_calma": "",
+  "cierre": "Dime el número del ejercicio que hicisteis y lo registro bien en el historial."
+}

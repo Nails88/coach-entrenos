@@ -1,0 +1,146 @@
+{
+  "fecha": "2026-11-18-inferior",
+  "patron": "Tren inferior (rehab tobillo para Noel — toma de contacto) + core",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "~45-50 min de plan (en la práctica, ~1h10-1h30 con esperas)",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff7a3d",
+  "intro": "Tren inferior CORTO: plan de 45-50 min (con esperas y descansos, lo normal es acabar en ~1h10). NOEL: peso muerto rumano a muy poco peso como PRUEBA (mancuernas de 4-6 kg o barra sola), extensión, curl femoral sentado y abducción sentados (el pie no empuja) y una plancha para cerrar. La aducción, la 4ª máquina sentada, va como 🔸 opcional. Si algo MOLESTA (no que canse), se para ese ejercicio. VICKY: prensa, peso muerto rumano y las máquinas; el hip thrust es 🔸 opcional para ti. Formato gym: SERIES de cada ejercicio seguidas (con su descanso) antes de pasar al siguiente. Si hay cola, las máquinas se pueden reordenar; peso muerto y prensa, primero. Los 2 opcionales solo si vais bien de tiempo.",
+  "calentamiento": "5 min, sin alargarlo. Noel: bici suave o movilidad de cadera (sin impacto por el tobillo); puentes de glúteo en el suelo y círculos de tobillo si te apetece. Vicky: 1 km a trote suave si te apetece, o lo mismo que Noel. Antes del peso muerto, 1-2 series de aproximación sin peso o con la barra sola.",
+  "bloques": [
+    {
+      "titulo": "🏋️ Bloque principal (3 series cada uno)",
+      "ejercicios": [
+        {
+          "id": "0739",
+          "nombre": "Prensa 45° (SOLO VICKY)",
+          "series": "3",
+          "reps": "10-12",
+          "descanso": "90s",
+          "tipo": "compuesto",
+          "referencia": "Vicky 100/140/160 kg (15/11) (Noel: NO, carga el pie)",
+          "musculos": [
+            "Cuádriceps",
+            "Glúteos"
+          ],
+          "instruccion": "Sentada en la prensa a 45°, espalda y cadera pegadas al respaldo, pies a la anchura de hombros y planos en la plataforma. Empuja con toda la planta sin bloquear las rodillas de golpe y baja controlada a un rango cómodo.",
+          "nota": "SOLO VICKY: tu pierna principal. Con 160 ya fuiste dos veces; hoy mantén lo que salga limpio, sin forzar. Noel: este NO lo haces, tú vas con el peso muerto ligero y las máquinas."
+        },
+        {
+          "id": "1459",
+          "nombre": "Peso muerto rumano con mancuernas (NOEL: muy ligero, prueba)",
+          "series": "3",
+          "reps": "12",
+          "descanso": "75s",
+          "tipo": "compuesto",
+          "musculos": [
+            "Isquiotibiales",
+            "Glúteos",
+            "Espalda baja"
+          ],
+          "instruccion": "De pie con una mancuerna en cada mano por delante de los muslos, rodillas casi rectas y fijas. Lleva la CADERA atrás bajando el tronco con la espalda recta hasta notar el estiramiento del isquio, y sube apretando glúteo. Bisagra de cadera, no sentadilla.",
+          "nota": "NOEL: es PRUEBA con muy poco peso (mancuernas de 4-6 kg o barra sola), apoyando el pie plano sin empujar; si el tobillo avisa, paras. Antes del ejercicio, 1 serie sin peso. VICKY: peso moderado (6-10 kg por mano); espalda recta siempre y baja lento (3s)."
+        },
+        {
+          "id": "0585",
+          "nombre": "Extensión de cuádriceps",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "referencia": "Noel 20/25/30 kg · Vicky 10/15/20 kg (15/11)",
+          "musculos": [
+            "Cuádriceps"
+          ],
+          "instruccion": "Sentado, espalda apoyada, el rodillo por encima de los tobillos. Extiende las rodillas subiendo el peso, aprieta el cuádriceps arriba 1s y baja lento (2-3s). El pie NO empuja nada.",
+          "nota": "cuádriceps sin tocar el tobillo (el rodillo va en la espinilla). Contracción arriba y bajada lenta."
+        },
+        {
+          "id": "0599",
+          "series": "3",
+          "reps": "12-15",
+          "descanso": "60s",
+          "tipo": "accesorio",
+          "referencia": "sin historial en la máquina sentada (el curl tumbado no es comparable): empezad cómodos, sin ir al límite",
+          "musculos": [
+            "Isquiotibiales"
+          ],
+          "instruccion": "Sentado en la máquina con la espalda apoyada, el rodillo sobre la parte baja de las pantorrillas y el cojín bloqueando los muslos. Flexiona las rodillas llevando los talones hacia abajo y atrás, aprieta el isquio 1s y vuelve lento sin soltar el peso de golpe.",
+          "nota": "isquio en máquina sentada, cero tobillo (el pie no empuja). Ajusta el respaldo para que la rodilla quede alineada con el eje de la máquina. Es nueva para vosotros: empezad con menos peso que en el tumbado y apuntad lo que salga. Controla la subida del peso (2-3s).",
+          "nombre": "Curl femoral sentado (máquina)"
+        },
+        {
+          "id": "0597",
+          "nombre": "Abducción sentado",
+          "series": "3",
+          "reps": "15-20",
+          "descanso": "45s",
+          "tipo": "accesorio",
+          "referencia": "Noel 40/45/47,5 kg · Vicky 30/35/35 kg (10/11)",
+          "musculos": [
+            "Glúteos",
+            "Abductores"
+          ],
+          "instruccion": "Sentado con la espalda apoyada, abre las piernas empujando contra las almohadillas todo lo que puedas, pausa apretando el glúteo lateral 1s al final y junta lento. El pie no empuja nada: el trabajo es de cadera.",
+          "nota": "glúteo medio. Inclínate un pelín hacia delante para notarlo más. Series altas buscando el ardor."
+        }
+      ]
+    },
+    {
+      "titulo": "🔥 Core en el suelo",
+      "ejercicios": [
+        {
+          "id": "0464",
+          "nombre": "Plancha",
+          "series": "2",
+          "tiempo": "30-40s",
+          "descanso": "30s",
+          "musculos": [
+            "Core",
+            "Abdomen"
+          ],
+          "instruccion": "Plancha sobre los antebrazos, codos bajo los hombros, cuerpo en línea recta de cabeza a talones. Aprieta glúteo y abdomen y aguanta quieto (sin el giro que muestra el GIF).",
+          "nota": "NOEL: es la prueba del tobillo en isométrico: los dedos del pie apoyan, así que si molesta lo haces con rodillas apoyadas. Línea recta, no dejes caer la cadera."
+        }
+      ]
+    },
+    {
+      "titulo": "🔸 OPCIONALES — solo si vais bien de tiempo (2 series cada uno)",
+      "ejercicios": [
+        {
+          "id": "0598",
+          "nombre": "🔸 OPCIONAL — Aducción sentado",
+          "series": "2",
+          "reps": "15-20",
+          "descanso": "45s",
+          "tipo": "accesorio",
+          "referencia": "Noel 25/30/35 kg · Vicky 25/30/35 kg (26/10)",
+          "musculos": [
+            "Aductores"
+          ],
+          "instruccion": "Sentado con la espalda apoyada y las piernas abiertas contra las almohadillas. Junta las piernas apretando la cara interna del muslo, pausa 1s y abre lento sin dejar caer el peso.",
+          "nota": "la 4ª máquina sentada de Noel, la que más se salta. aductores (cara interna del muslo), el complemento de la abducción. Controla la apertura; es una máquina donde se suele ir muy rápido. Sentado, sin cargar el pie. OPCIONAL: si vais bien de tiempo."
+        },
+        {
+          "id": "1409",
+          "nombre": "🔸 OPCIONAL — Hip thrust con barra (SOLO VICKY)",
+          "series": "2",
+          "reps": "10-12",
+          "descanso": "75s",
+          "tipo": "compuesto",
+          "referencia": "Vicky 15/20/20 kg (04/10) (Noel: no, hasta el OK del fisio)",
+          "musculos": [
+            "Glúteos",
+            "Isquiotibiales"
+          ],
+          "instruccion": "Espalda alta apoyada en un banco, barra sobre la cadera (con protección). Pies a la anchura de la cadera. Empuja la cadera hacia arriba hasta alinear tronco y muslos, aprieta el glúteo 1s arriba y baja controlado.",
+          "nota": "SOLO VICKY: glúteo. Última vez muy ligero; si va fácil, sube un escalón. Mentón al pecho y costillas abajo, sin arquear la lumbar arriba. OPCIONAL: si vais bien de tiempo."
+        }
+      ]
+    }
+  ],
+  "vuelta_calma": "3 min: isquios sentado, cuádriceps de pie apoyado a la pared sin forzar el tobillo, glúteo en figura-4 tumbado y aductores sentado con las plantas juntas si no te molesta el tobillo. Sin kilómetro de cinta para Noel (tobillo). Si te toca tus ejercicios de tobillo del fisio, ahora.",
+  "cierre": "Tren inferior corto: Noel con peso muerto de prueba, 3 máquinas sentadas y plancha; Vicky con prensa, peso muerto y máquinas. Opcionales (aducción y hip thrust) solo si sobra tiempo. Noel: cuéntame cómo ha ido el tobillo en la prueba para decidir el martes. Rellenad el registrador y me lo pasáis. ¡A darle con cabeza! 💪",
+  "notas_extra": "Segunda sesion del 18/11 (inferior). Noel: 4 maquinas 0585/0586/0597/0598 + prueba RDL 1459 muy ligero (sin historial, registrar pesos) + plancha 0464. Vicky: prensa 0739, hip thrust 1409, RDL, + maquinas. Core opcional 0872 sin historial. Energia asumida media. REDUCIDO a 5 + plancha + 2 opcionales (aduccion 0598, hip thrust 1409); reverse crunch fuera. CAMBIO 19/11: curl femoral tumbado 0586 -> sentado 0599 (sin historial). REALIZADO 18-19/11: RDL con BARRA (kilos totales incl. barra; Noel 20/30/40 prueba, tobillo sin molestias), extension, curl sentado, abduccion, plancha SI. Aducción e hip thrust NO (sin tiempo, maquinas llenas)."
+}

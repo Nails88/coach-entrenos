@@ -1,0 +1,44 @@
+{
+  "fecha": "2026-11-22",
+  "patron": "Tirón corto (espalda / bíceps) — solo Vicky",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "~45-50 min de plan (en la práctica, ~1h10 con esperas)",
+  "energia": "Media",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#2fb8a0",
+  "intro": "Tirón corto para Vicky, hoy sola. Ayer fue empuje y el jueves pierna, así que hoy toca TIRÓN (espalda y bíceps), que es lo que llevaba más descansado. Plan de 45-50 min (con esperas, lo normal es ~1h10). Estructura: 2 básicos de siempre (jalón y remo) + 2 novedades de espalda (remo alto en máquina y pullover en polea con brazos rectos) + curl de bíceps en polea. Al final, 2 🔸 OPCIONALES (curl martillo y dead bug) solo si vas bien de tiempo. Rutina fija de cinta: 1 km suave al empezar y 1 km al final. Formato gym: SERIES de cada ejercicio seguidas (con su descanso) antes de pasar al siguiente. Si hay cola, los accesorios se reordenan; jalón y remo primero. Debajo de cada ejercicio, tu última referencia.",
+  "calentamiento": "1 km a trote suave en la cinta (5-8 min). Después, movilidad de hombro y escápulas (círculos de brazos, band pull-aparts si tienes goma o 10 retracciones de escápula colgada en el jalón) y 1-2 series de aproximación ligeras en el jalón. No hace falta más.",
+  "bloques": [
+    {
+      "titulo": "🏋️ Básicos (3 series cada uno)",
+      "ejercicios": [
+        { "id": "0198", "nombre": "Vertical Traction / Jalón vertical", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Vicky 25/30/35 kg (18/11)", "musculos": ["Dorsales", "Espalda"], "instruccion": "En la Vertical Traction (o jalón al pecho), agarre algo más ancho que los hombros. Lleva los codos abajo y atrás tirando con la ESPALDA, baja el agarre hasta el pecho apretando el dorsal y sube controlada sin soltar la tensión.", "nota": "tirón vertical. Pecho arriba, tira con los codos hacia los bolsillos y aprieta abajo. Llevas 2 sesiones iguales (25/30/35): si las dos primeras salen limpias, prueba un escalón en la última serie." },
+        { "id": "0861", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Vicky 25/30/35 kg (18/11)", "musculos": ["Espalda", "Dorsales", "Romboides"], "instruccion": "Sentada en la polea baja, pecho arriba y espalda firme (sin encorvarte). Rema llevando los codos pegados al cuerpo hasta el abdomen, juntando las escápulas al final, y vuelve estirando sin dejar caer el peso ni redondear la espalda.", "nota": "tirón horizontal. La fuerza sale de la ESPALDA: aprieta juntando los omóplatos y mantén el tronco quieto. 10-12 limpias, sin ir al fallo. También 25/30/35 las últimas veces: escalón en la última serie si va fácil." }
+      ]
+    },
+    {
+      "titulo": "✨ Novedades de espalda + bíceps (3 series, orden flexible)",
+      "ejercicios": [
+        { "id": "0581", "nombre": "Remo alto en máquina (high row)", "series": "3", "reps": "10-12", "descanso": "60s", "tipo": "accesorio", "referencia": "sin historial: empieza con unos 20 kg (menos que el remo bajo) y apunta lo que salga", "musculos": ["Espalda alta", "Dorsales", "Romboides"], "instruccion": "Sentada en la máquina de remo alto con el pecho contra el apoyo. Agarra las asas y tira hacia abajo y atrás llevando los codos hacia las costillas, aprieta la espalda alta 1s y vuelve controlada sin soltar la tensión.", "nota": "novedad de hoy: el remo alto carga la espalda alta y el dorsal desde otro ángulo que el remo bajo. Peso moderado, pecho pegado al apoyo y sin encoger los hombros hacia las orejas." },
+        { "id": "0238", "nombre": "Pullover en polea con brazos rectos (straight arm pulldown)", "series": "3", "reps": "12-15", "descanso": "50s", "tipo": "accesorio", "referencia": "sin historial: empieza con 10-15 kg y apunta lo que salga", "musculos": ["Dorsales"], "instruccion": "De pie frente a la polea alta con barra o cuerda, brazos casi estirados y el tronco algo inclinado. Baja las manos en arco hasta los muslos apretando el dorsal, sin doblar los codos, y sube controlada hasta la altura de la cabeza.", "nota": "novedad de hoy: aislamiento de dorsal, con los brazos rectos para que no entre el bíceps. Peso ligero y sensación en el costado de la espalda; codos casi estirados todo el rato." },
+        { "id": "0868", "nombre": "Curl de bíceps en polea", "series": "3", "reps": "12-15", "descanso": "45s", "tipo": "accesorio", "referencia": "Vicky 5/10 kg (01/11)", "musculos": ["Bíceps"], "instruccion": "De pie frente a la polea baja con barra o cuerda. Codos pegados al costado y quietos; flexiona subiendo hasta arriba apretando el bíceps y baja controlada (2s). No balancees el cuerpo para subir.", "nota": "bíceps con tensión constante. Solo hiciste 2 series la última vez (5/10): hoy 3, empezando por el 5 y subiendo si va fácil." }
+      ]
+    },
+    {
+      "titulo": "🔸 OPCIONALES — solo si vas bien de tiempo (2 series cada uno)",
+      "ejercicios": [
+        { "id": "0313", "nombre": "🔸 OPCIONAL — Curl martillo", "series": "2", "reps": "10-12", "descanso": "45s", "tipo": "accesorio", "referencia": "Vicky 6/6/6 kg (mancuerna, 25/10)", "musculos": ["Bíceps", "Braquial"], "instruccion": "De pie o sentada con mancuernas, agarre neutro (palmas mirándose). Sube alternando o a la vez sin girar la muñeca, codos pegados al cuerpo, y baja controlada. Sin balanceo del tronco.", "nota": "braquial y antebrazo, que el curl en polea no carga igual. Sube a 8 kg si el 6 ya se queda corto. OPCIONAL." },
+        { "id": "0276", "nombre": "🔸 OPCIONAL — Dead bug (bicho muerto)", "series": "2", "reps": "10/lado", "descanso": "30s", "tipo": "accesorio", "referencia": "sin peso", "musculos": ["Core", "Transverso abdominal"], "instruccion": "Boca arriba, brazos al techo y rodillas a 90°. Baja de forma alterna brazo y pierna contrarios hasta casi rozar el suelo, mantén la lumbar pegada al suelo y vuelve. Alterna lados.", "nota": "core en el suelo, de control. La lumbar NO se despega del suelo; si se arquea, baja menos la pierna. OPCIONAL." }
+      ]
+    },
+    {
+      "titulo": "🏃 Cierre en cinta",
+      "ejercicios": [
+        { "id": "3666", "nombre": "Carrera en cinta", "tiempo": "1 km", "descanso": "-", "musculos": ["Cardio"], "instruccion": "1 km en la cinta, un poco más rápido que el de calentamiento pero sin ir al límite. Respira por la nariz los primeros 400 m y termina fuerte los últimos 200.", "nota": "cierre fijo de la rutina: 1 km para terminar. Si vas muy justa de tiempo, es lo último que se acorta, no lo primero que se quita." }
+      ]
+    }
+  ],
+  "vuelta_calma": "2-3 min: dorsal agarrada inclinándote, pecho en marco de puerta, bíceps con el brazo estirado a la pared y respiración lenta tras el km.",
+  "cierre": "Tirón corto: jalón y remo como base, dos novedades de espalda (remo alto y pullover en polea) y bíceps para cerrar. Los opcionales, solo si sobra tiempo, y el km final siempre. Rellena el registrador y me lo pasas. ¡A darle con cabeza! 💪",
+  "notas_extra": "Domingo 22/11, VICKY sola (Noel no entrena), gym, energia asumida media. Sabado 21/11 fueron al gym (empuje planificado; pesos no reportados aun). Vicky sin limite de tobillo. Novedades: remo alto 0581 y straight arm pulldown 0238 (sin historial). Cinta: 1 km inicio + 1 km final (3666). Opcionales: martillo 0313, dead bug 0276."
+}

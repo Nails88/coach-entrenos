@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-09-09",
+  "patron": "Empuje (pecho + hombro + tríceps)",
+  "entorno": "Gimnasio con máquinas y mancuernas",
+  "tiempo": "55-60 min",
+  "energia": "Alta",
+  "objetivo": "Definición / pérdida de grasa",
+  "acento": "#ff5a3c",
+  "intro": "Día de EMPUJE para los dos, y con energía alta: le damos caña a pecho, hombro y tríceps. Toca este patrón porque ayer fue Pierna (que hoy descansa y se recupera de los 100 kg de prensa 😅) y antes Vicky venía de Tirón — así el ciclo Push/Pull/Legs queda redondo. Ventaja extra: el empuje no carga el tobillo, así que hoy entrenas tranquilo. Lo único con tobillo son los dos kilómetros de cinta: como no te duele pero no quieres forzar, hazlos a trote SUAVE (o cámbialos por bici/elíptica si lo notas); Vicky a ritmo normal. Debajo de cada ejercicio tenéis vuestras referencias de la última vez.",
+  "calentamiento": "1 km a trote SUAVE en la cinta para arrancar (Noel: sin forzar el tobillo; si lo notas, bici/elíptica; Vicky: ritmo normal). Después, activación de hombro sin impacto: 15 rotaciones externas con banda o mancuerna ligera · 10 elevaciones frontales suaves · 10 flexiones de rodillas para despertar el pecho · movilidad de hombro (círculos). 1-2 series de aproximación ligeras en el press de pecho antes de ir a por las de trabajo.",
+  "bloques": [
+    {
+      "titulo": "🏋️ Bloque principal (empuje)",
+      "ejercicios": [
+        { "id": "0577", "series": "4", "reps": "8-10", "descanso": "90s", "tipo": "compuesto", "referencia": "Noel 35/40/45 kg · Vicky 15/20/25 kg", "musculos": ["Pecho", "Tríceps", "Hombro anterior"], "instruccion": "Sentado en la máquina de press de pecho, espalda pegada al respaldo y agarres a la altura del pecho. Empuja hasta casi estirar (sin bloquear de golpe) y vuelve controlado notando el pecho. Escápulas retraídas todo el rato.", "nota": "tu compuesto principal de hoy, en fresco. Energía alta = a batir la última vez: si sacas las 10 limpias en la 3ª/4ª serie, sube. Baja controlado (2s) para no perder tensión." },
+        { "id": "0426", "series": "3", "reps": "10-12", "descanso": "75s", "tipo": "compuesto", "referencia": "Noel 8/10/12 kg (mancuerna) · Vicky 6/8/10 kg (mancuerna)", "musculos": ["Hombro", "Tríceps"], "instruccion": "De pie (o sentado con respaldo si prefieres), mancuernas a la altura de los hombros, palmas al frente. Empuja arriba sin bloquear del todo ni arquear la lumbar, y baja controlado hasta los hombros. Aprieta el abdomen para no compensar con la espalda.", "nota": "press de hombro, tu segundo compuesto. Si de pie te obliga a tensar mucho para estabilizar (y el tobillo), hazlo sentado con respaldo — igual de válido y descargas el equilibrio." },
+        { "id": "0596", "series": "4", "reps": "12-15", "descanso": "60s", "tipo": "accesorio", "referencia": "Noel 15/20/25/30 kg · Vicky 5/10/15/20 kg", "musculos": ["Pecho"], "instruccion": "En el pec deck (contractor), espalda apoyada y codos a la altura de los hombros. Junta los brazos por delante apretando el pecho, pausa 1s en el centro y abre lento controlando la fase negativa.", "nota": "aislamiento de pecho en tu Technogym. Busca la contracción, no el peso: pausa en el centro y abre despacio. En la última serie, si te queda gas, drop set bajando 1-2 placas al fallo." },
+        { "id": "0334", "series": "3", "reps": "12-15", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 6/6/8 kg (mancuerna) · Vicky 4/5/5 kg (mancuerna)", "musculos": ["Hombro lateral"], "instruccion": "De pie, mancuernas a los lados, codos ligerísimamente flexionados. Sube los brazos en abanico hasta la altura de los hombros (como si vertieras agua, meñique un pelín arriba) y baja lento. Sin balanceo.", "nota": "deltoide lateral, el que da anchura al hombro. Peso moderado y técnica: mejor 12 limpias que 8 con impulso. (La máquina de laterales no está en tu gym, por eso van con mancuerna.)" },
+        { "id": "0602", "series": "3", "reps": "15", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 6/6/8 kg (mancuerna) · Vicky 4/4/4 kg", "musculos": ["Hombro posterior"], "instruccion": "En la máquina de reverse fly (la dual del pec deck) mirando al respaldo, o sentado con mancuernas inclinado al frente. Abre los brazos hacia atrás apretando la parte trasera del hombro y vuelve lento. Codos casi fijos.", "nota": "deltoide posterior: equilibra el hombro (compensa tanto empuje) y mejora la postura. Aquí manda la contracción, nada de peso. En tu gym es la máquina dual del pec deck." },
+        { "id": "0194", "series": "3", "reps": "12-15", "descanso": "45s", "tipo": "accesorio", "referencia": "Noel 7,5/10/12,5 kg · Vicky 5/7,5/7,5 kg", "musculos": ["Tríceps"], "instruccion": "Extensión de tríceps por encima de la cabeza (con mancuerna a dos manos o polea alta con cuerda). Codos apuntando arriba y pegados a la cabeza; estira desde el codo y baja controlado sintiendo el estiramiento del tríceps.", "nota": "cierre de tríceps con la cabeza larga bien estirada. Codos quietos apuntando al techo, solo se mueve el antebrazo. A batir la última vez." }
+      ]
+    },
+    {
+      "titulo": "🔥 Core finisher (con energía)",
+      "ejercicios": [
+        { "id": "0472", "nombre": "Elevación de piernas colgado", "series": "3", "reps": "10-12", "descanso": "45s", "musculos": ["Core", "Abdomen inferior"], "instruccion": "Colgado de la barra, sube las piernas rectas (o rodillas si no llegas) hasta la horizontal controlando, sin balancearte, y baja lento. Aprieta el abdomen para no columpiarte.", "nota": "core exigente aprovechando que vienes con energía, y cero tobillo (vas colgado). Si te columpias, dobla las rodillas y sube así; si no hay barra cómoda, cámbialo por reverse crunch en suelo." }
+      ]
+    }
+  ],
+  "vuelta_calma": "Estiramiento de pecho en marco de puerta (30s/lado), estiramiento de tríceps por encima de la cabeza (30s/lado) y de hombro cruzando el brazo (30s/lado). Y para cerrar, el kilómetro de cinta: 1 km, Noel a ritmo suave (sin forzar el tobillo; bici si lo notas), Vicky puede apretar un poco más.",
+  "cierre": "buen día de empuje con energía: pecho y hombro en fresco, aislamiento de pec deck, laterales y pájaros para redondear el hombro, tríceps y un core exigente de propina — todo sin tocar el tobillo. Ese kilómetro suave de hoy también le va bien al tobillo para recuperar movilidad sin impacto fuerte. Rellenad los dos el registrador de abajo con los pesos y me lo pasáis para actualizar el progreso. ¡A empujar fuerte! 🔥"
+}

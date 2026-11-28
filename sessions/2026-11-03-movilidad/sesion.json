@@ -1,0 +1,154 @@
+{
+  "fecha": "2026-11-03-movilidad",
+  "patron": "Movilidad y recuperación activa (sin impacto, sin carga de pie)",
+  "entorno": "Casa — esterilla, silla y goma",
+  "tiempo": "~25 min",
+  "energia": "Baja-Media",
+  "objetivo": "Recuperación activa y movilidad",
+  "acento": "#00b3a4",
+  "sin_registrador": true,
+  "intro": "Sesión de movilidad: recuperación activa para soltar hombros, pecho, espalda y cadera, que son lo que más se acorta con las dominadas, flexiones y remos. Cero impacto y cero carga en el pie, así que encaja con tus semanas de rehabilitación del tobillo. FORMATO — importante: aquí NO hay series ni vueltas. Haz cada ejercicio UNA VEZ, en orden, de arriba abajo; cada uno lleva su tiempo (por ejemplo 40s por lado). Al terminar el último, has acabado. Ritmo lento, respiración tranquila, sin rebotes ni forzar: se estira hasta notar tensión, nunca dolor. Para el tobillo, esta sesión no sustituye a los ejercicios que te mandó el fisio: esos los haces aparte, tal y como te los indicó. Y si alguna postura incomoda el tobillo, la cambias o te la saltas.",
+  "calentamiento": "2 min para entrar en calor: camina por casa, 10 círculos de brazos adelante y atrás, 10 rotaciones suaves de cadera por lado y un par de respiraciones profundas. No hace falta más: esto es movilidad, no entreno.",
+  "bloques": [
+    {
+      "titulo": "🙆 Parte alta — hombros, pecho, espalda y cuello (una pasada, cada ejercicio una vez)",
+      "ejercicios": [
+        {
+          "id": "1167",
+          "nombre": "Apertura dinámica de pecho",
+          "series": "1",
+          "reps": "10-12",
+          "descanso": "—",
+          "musculos": [
+            "Pecho",
+            "Hombro"
+          ],
+          "instruccion": "De pie con la espalda recta y los pies a la anchura de los hombros. Extiende los brazos a los lados, paralelos al suelo. Llévalos despacio hacia delante cruzándolos frente al cuerpo, notando el estiramiento en el pecho, y vuelve a abrirlos. Lento y controlado.",
+          "nota": "calentamiento de pecho y hombro antes de estirar. Que se note el pecho, sin arquear la lumbar ni encogerte de hombros."
+        },
+        {
+          "id": "1271",
+          "nombre": "Estiramiento de pecho y hombro delantero (manos entrelazadas)",
+          "series": "1",
+          "tiempo": "30s",
+          "descanso": "—",
+          "musculos": [
+            "Pecho",
+            "Hombro anterior"
+          ],
+          "instruccion": "De pie con la espalda recta. Extiende los brazos al frente a la altura de los hombros y cruza un brazo sobre el otro. Entrelaza los dedos y presiona las palmas entre sí. Aprieta suavemente los omóplatos y empuja las manos hacia delante, notando el estiramiento en el pecho y la parte delantera de los hombros. Repite cambiando el brazo que va encima.",
+          "nota": "el estiramiento que más vas a notar tras tanto empuje y dominadas. Tensión suave, sin dolor en el hombro. 30s y luego cambias el brazo que cruza."
+        },
+        {
+          "id": "1365",
+          "nombre": "Estiramiento de espalda alta (brazos arriba)",
+          "series": "1",
+          "tiempo": "25s",
+          "descanso": "—",
+          "musculos": [
+            "Espalda alta",
+            "Dorsales"
+          ],
+          "instruccion": "De pie con la espalda recta y los pies a la anchura de los hombros. Extiende los brazos al frente, entrelaza los dedos y gira las palmas hacia fuera. Eleva despacio los brazos por encima de la cabeza, rectos y paralelos, apretando los omóplatos. Mantén y suelta.",
+          "nota": "suelta hombros y espalda alta, que trabajan con el remo y las dominadas. Brazos rectos, sin subir los hombros hacia las orejas ni arquear la lumbar."
+        },
+        {
+          "id": "0643",
+          "nombre": "Estiramiento de tríceps",
+          "series": "1",
+          "tiempo": "30s por lado",
+          "descanso": "—",
+          "musculos": [
+            "Tríceps",
+            "Hombro"
+          ],
+          "instruccion": "De pie o sentado erguido. Sube un brazo por encima de la cabeza y dobla el codo para que la mano llegue hacia el omóplato contrario. Con la otra mano tira suavemente del codo hacia el lado opuesto de la cabeza, notando el estiramiento en el tríceps. Mantén y cambia de lado.",
+          "nota": "tríceps y parte trasera del hombro. Suave, sin tirar del codo a lo bruto."
+        },
+        {
+          "id": "1403",
+          "nombre": "Estiramiento lateral de cuello",
+          "series": "1",
+          "tiempo": "25s por lado",
+          "descanso": "—",
+          "musculos": [
+            "Cuello",
+            "Trapecio"
+          ],
+          "instruccion": "De pie o sentado erguido con los hombros relajados. Inclina la cabeza hacia un lado, llevando la oreja hacia el hombro, sin subir el hombro. Mantén respirando lento y repite del otro lado.",
+          "nota": "cuello y trapecio, lo que se carga con dominadas y remos. Muy suave: es de los que se hacen sin forzar nada."
+        }
+      ]
+    },
+    {
+      "titulo": "🧘 Columna y cadera — en el suelo, sin cargar el pie (una pasada, cada ejercicio una vez)",
+      "ejercicios": [
+        {
+          "id": "2329",
+          "nombre": "Rotación de columna sentado (codo a la rodilla contraria)",
+          "series": "1",
+          "reps": "8-10 por lado (alternando)",
+          "descanso": "—",
+          "musculos": [
+            "Columna",
+            "Oblicuos"
+          ],
+          "instruccion": "Sentado en el suelo con las rodillas dobladas y los pies planos, a la anchura de la cadera. Manos detrás de la cabeza con los codos hacia fuera. Activa el abdomen y gira despacio el torso llevando el codo derecho hacia la rodilla izquierda; haz una pausa y vuelve. Luego al otro lado, alternando.",
+          "nota": "movilidad de columna y oblicuos. Gira desde el torso, no solo con los brazos. Pies planos, tobillo neutro. Lento y fluido."
+        },
+        {
+          "id": "0690",
+          "nombre": "Estiramiento de espalda baja (sentado en la silla)",
+          "series": "1",
+          "tiempo": "40s",
+          "descanso": "—",
+          "musculos": [
+            "Espalda baja"
+          ],
+          "instruccion": "Siéntate en el borde de una silla con los pies planos en el suelo y las manos en los muslos. Inclínate despacio hacia delante desde la cadera con la espalda recta, notando el estiramiento en la zona lumbar. Mantén y vuelve despacio.",
+          "nota": "suelta la zona lumbar. Inclínate desde la cadera, sin rebotes y sin redondear de golpe."
+        },
+        {
+          "id": "1576",
+          "nombre": "Estiramiento de isquios tumbado (pierna arriba)",
+          "series": "1",
+          "tiempo": "40s por lado",
+          "descanso": "—",
+          "musculos": [
+            "Isquiotibiales"
+          ],
+          "instruccion": "Túmbate boca arriba con las piernas extendidas. Flexiona una rodilla y llévala hacia el pecho sujetándote el muslo o la espinilla. Endereza la pierna tanto como puedas manteniéndola elevada, notando el estiramiento detrás del muslo. Mantén y cambia de pierna.",
+          "nota": "isquios sin cargar el pie. Rodilla casi estirada pero sin bloquearla; tensión suave detrás del muslo."
+        },
+        {
+          "id": "1424",
+          "nombre": "Estiramiento de glúteo sentado (figura 4)",
+          "series": "1",
+          "tiempo": "40s por lado",
+          "descanso": "—",
+          "musculos": [
+            "Glúteos",
+            "Piramidal"
+          ],
+          "instruccion": "Sentado en el suelo con las piernas extendidas. Dobla una rodilla y cruza ese tobillo sobre el muslo contrario. Apoya la mano de ese lado en el suelo detrás de ti y, con la otra mano, presiona suavemente la rodilla para profundizar el estiramiento. Mantén y cambia de lado.",
+          "nota": "glúteo y cadera. OJO con el tobillo: en esta postura el tobillo queda girado sobre la rodilla; si te molesta, estira el glúteo tumbado con la pierna doblada (tira la rodilla hacia el pecho) o sáltatelo."
+        },
+        {
+          "id": "0613",
+          "nombre": "Estiramiento de cuádriceps tumbado de lado (opcional)",
+          "series": "1",
+          "tiempo": "30s por lado",
+          "descanso": "—",
+          "musculos": [
+            "Cuádriceps"
+          ],
+          "instruccion": "Tumbado de lado, dobla la rodilla de arriba y agarra el pie o el tobillo (o usa una goma) acercando el talón hacia el glúteo, con la cadera abierta y la espalda recta. Respira.",
+          "nota": "OPCIONAL: cuádriceps y flexor de cadera. Pone el tobillo en flexión: si lo notas o molesta, salta este ejercicio (puedes estirar el cuádriceps de pie apoyado en la pared)."
+        }
+      ]
+    }
+  ],
+  "vuelta_calma": "2 min tumbado boca arriba sobre la esterilla, respirando hondo: inhala 4s, exhala 6s. Suelta hombros, cadera y cuello. Si hoy te toca tus ejercicios de tobillo del fisio, hazlos ahora con calma y tal como te los indicó.",
+  "cierre": "sesión de movilidad hecha: has soltado hombros, pecho, espalda y cadera sin cargar el pie, que es justo lo que pide tu semana de rehabilitación. Es un día de recuperación activa, no un día de entreno: no hace falta registrar pesos. Lo notarás sobre todo en hombros y espalda alta. Si alguna postura incomodó el tobillo, me lo dices y la cambio para la próxima. ¡Buen trabajo! 🧘",
+  "notas_extra": "Sesion de MOVILIDAD en casa, ~25 min, para Noel (rehab de tobillo: sin impacto ni carga de pie). Cada ejercicio UNA vez, formato 'una pasada' explicito. Sin registrador de pesos (sin_registrador: true). Evitados: mariposa (el tobillo le molesto en esa postura), arrodillado, lunges, ejercicios de tobillo (los manda el fisio). Con aviso de tobillo en figura 4 (1424) y cuadriceps tumbado (0613, opcional). Propuesta paralela al circuito del 03/11, sin modificarlo."
+}
