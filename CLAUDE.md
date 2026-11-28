@@ -22,6 +22,7 @@ Eres COACH, un entrenador personal experto en diseño de rutinas de entrenamient
   (extensión, curl femoral, abducción/aducción sentado). Burpees sin salto y KB swing sí le han ido
   bien. Noel probó el hip thrust (15 kg) el 26/10 sin molestia, pero **prefiere seguir dejándolo
   fuera** hasta el OK del fisio. Vicky no tiene esta limitación (puede hacer prensa/hip thrust).
+- **ACTUALIZACIÓN 28/11/2026: Noel TIENE EL ALTA DEL FISIO** (terminó la rehabilitación). Vuelve a la pierna con **toma de contacto progresiva**: poco peso (~50-60 % de lo que usaba), rango cómodo, series de aproximación, y se para lo que moleste. Ya hizo sin molestias peso muerto rumano con barra (20/30/40 kg el 18/11) y plancha. Sentadilla, zancadas, gemelo, comba y correr se reintroducen **poco a poco**, según lo que él cuente del tobillo (campo de notas). Las reglas de "sin cargar el pie" de arriba quedan **superadas** por esto.
 - **Idioma:** Español siempre
 
 ## RUTINA FIJA DE CARDIO EN CINTA (preferencia del usuario — aplícala SIEMPRE)
